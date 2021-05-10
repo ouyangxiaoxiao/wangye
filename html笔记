@@ -1,0 +1,77 @@
+
+
+
+为网页注入灵魂javaScrip
+延时执行脚本 defer
+
+第一个小程序
+
+<meta charset="UTF-8"><!--指定编码格式，避免乱码-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--自适应的设置-->
+h1-h6标签，h1作为标题标签 其它内容轻易不要用
+src插入图片加入文字提示alt以便在图片不能打开的时候显示，并且设置宽width和高height
+加入target="_blank 这个是指在新的网页打开
+<hr> 换行
+
+一个爱的网站墙
+https://ilovefishc.com/html5/html5/lesson0/love/
+爱情表达强
+
+https://ilovefishc.com/html5/html5/lesson1/timeline/
+时间轴
+http://demo.fishc.com
+素材及案例服务器网站
+
+
+
+
+
+
+
+实例一：指定网页编码
+
+<meta charset="UTF-8">
+实例二：为搜索引擎提供关键词
+
+<meta name="keywords" content="小甲鱼,Web开发,HTML5,CSS3,Web编程教学">
+实例三：描述网页内容
+
+<meta name="description" content="《零基础入门学习Web开发》案例演示">
+实例四：定义网页的作者
+
+<meta name="author" content="小甲鱼">
+实例五：设置网页尺寸自适应
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+实例六：每 5 秒刷新一下浏览器并跳转到指定页面
+
+<meta http-equiv="refresh" content="5;http://bbs.fishc.com">
+
+
+
+<a href="https://man.ilovefishc.com/pageHTML5/a.html" >
+        <img src="https://p.ssl.qhimg.com/t01586d7a1117a8872e.png" alt="这是一张图片" width="100px" height="100px" >
+    </a>
+
+    这样的a标签 可以插入图片并且跳转
+
+
+指定css 颜色
+<style type="text/css">
+        h1 {color: red}
+        p {color: blue}
+        a{
+            color: black;
+        }
+    </style>
+
+专属打印服务
+不同设备可以显示不同的样式
+引用外部css 外部样式表的写法
+<link rel="stylesheet" href="style.css">
+
+网站图标
+<link rel="icon" href="../img/favicon.ico">
+base 标签 可以拼接固定路径，再用a标签指定后半部分路径<a href="test1">第一个例子</a>
