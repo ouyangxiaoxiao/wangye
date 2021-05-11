@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="cyberplayer.js"></script>
+</head>
+<body>
+222
+<!--以下是显示内容-->
+
+<div id="playercontainer"></div>
+<!--<script type="text/javascript" src="https://bce.bdstatic.com/jwplayer/3.5.2/cyberplayer.js"></script>-->
+
+<script type="text/javascript">
+    var player = cyberplayer("playercontainer").setup({
+        width: 640,
+        height: 360,
+        autostart: true,
+        stretching: "uniform",
+        volume: 100,
+        controls: true,
+        starttime: 0, // playlist 播放都从头开始
+        playlist: [ // 播放列表设置
+            {
+                sources: [
+                    {
+                        file: "http://content.bitsontherun.com/videos/bkaovAYt-52qL9xLP.mp4"
+                    }
+                ],
+                title: "视频1"
+            },
+            {
+                sources: [
+                    {
+                        file: "http://cyberplayer.bcelive.com/videoworks/mda-kbuhu4wqdi08dwix/cyberplayer/mp4/cyberplayer-demo.mp4"
+                    }
+                ],
+                title: "视频2"
+            }
+        ],
+        ak: "xxxxxxxxxxxxxxxx" // 公有云平台注册即可获得accessKey
+    });
+</script>
+3333
+</body>
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--222-->
+
+<!--<div id="playercontainer"></div>-->
+<!--<script type="text/javascript" src="https://bce.bdstatic.com/jwplayer/3.5.2/cyberplayer.js"></script>-->
+<!--<script type="text/javascript">-->
+<!--    var player = cyberplayer("playercontainer").setup({-->
+<!--        width: 640,-->
+<!--        height: 360,-->
+<!--        file: "http://vv.taozhi.online/97ee3128fb7c4aa192fdda5ad3ef0a7d/9d200d08c7d84de5b0d1d6ec920cf4bc-344224e4bd96a82c40aff82fc734ac0e-ld.mp4", // hls及ts地址必须支持跨域，且使用Token加密策略进行过转码。-->
+<!--        autostart: false,-->
+<!--        stretching: "uniform",-->
+<!--        volume: 100,-->
+<!--        controls: Fls,-->
+<!--        ak: "188b205c677842a2ac87e648de3d3f96" ,// 公有云平台注册即可获得accessKey-->
+<!--        primary: "videojs" ,// 要使移动端有效，此参数必设！！-->
+<!--        tokenEncrypt: "false" ,// 说明使用token加密-->
+<!--    });-->
+<!--    player.on("beforePlay", function (e) {-->
+<!--        // 这里模拟从后端获得token的操作，实际的token应该是后端来获取并传给前端的-->
+<!--        setTimeout(function() {-->
+<!--            player.setToken(e.file, "254f31da62b55d8f6305a70db5df1b03c91bb1dc20471cdf9845580a53fa01af_65593318163644148361e06c10affc4d_1640966400");-->
+<!--        }, 500);-->
+<!--    });-->
+<!--</script>-->
+
+
+
+<!--</body>-->
+<!--</html>-->
