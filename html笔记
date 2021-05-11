@@ -1,5 +1,6 @@
 
-
+github 公用域名
+https://ouyangxiaoxiao.github.io/wangye/
 
 为网页注入灵魂javaScrip
 延时执行脚本 defer
@@ -75,3 +76,7 @@ http://demo.fishc.com
 网站图标
 <link rel="icon" href="../img/favicon.ico">
 base 标签 可以拼接固定路径，再用a标签指定后半部分路径<a href="test1">第一个例子</a>
+js神奇的js
+视频被限制域播放目前无解
+视频播放页面的收起和展开被绑定了事件
+准备找下一首
