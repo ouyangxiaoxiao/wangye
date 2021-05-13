@@ -1,0 +1,491 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+<title>1-1 走进VEGAS的数字世界（上） - Vegas Pro12 从新手到高手系统教程 - 影视后期制作学院 - 勤学网</title>
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/dist/css/bootstrap.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/index.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/xueyuan.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/kecheng.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/member.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/ganyan.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/order.css?v=202004081500">
+<link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/extend.css?v=202004081500">
+
+<script src="http://m.qinxue.com/index.php?r=index/loadSySinfo"></script>
+<script src="http://m.qinxue.com/index.php?r=index/loadUserInfo"></script>
+<script src="http://sta.qinxue.com/mobile/js/jquery-1.11.1.js?v=202004081500"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/mobile/js/jquery.cookie.js?v=202004081500"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/jquery.lazy_min.js?v=202004081500"></script>
+<script src="http://sta.qinxue.com/mobile/dist/js/bootstrap.js?v=202004081500"></script>
+<script src="http://sta.qinxue.com/mobile/js/jquery.lazy.js?v=202004081500"></script>
+<script src="http://sta.qinxue.com/mobile/js/common.js?v=202004081500"></script>
+<script type="text/javascript">
+$(function(){
+	// 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+	$('img').lazy();
+});
+</script>
+</head>
+<body>
+
+<div class="i_top">	
+	<div class="i_top_return">
+				<a href="http://m.qinxue.com/index.php?r=tutorial/mulu&tuid=30"><img src="http://sta.qinxue.com/mobile/images/tubiao_arr02.png" height="50" /></a>
+			</div>
+	
+	<div class="i_top_logo"><a href="http://m.qinxue.com/index.html"><img src="http://sta.qinxue.com/mobile/images/logo.png" height="30" /></a></div>
+    <div class="i_top_more"><a href="javascript:void(0);" id="headerLogin"><img src="http://sta.qinxue.com/mobile/images/more_arr01.png" height="24" /></a></div>
+    <div class="i_top_search"><a href="http://m.qinxue.com/index.php?r=search/index"><img src="http://sta.qinxue.com/mobile/images/search_arr01.png" height="24" /></a></div>
+        	
+</div>
+
+
+<div class="container-fluid member_bottom">
+	<div class="row">
+		<div class="col-xs-3 member_bottom_menu01"><a href="http://m.qinxue.com/index.html" class="">首页</a></div>
+        <div class="col-xs-3 member_bottom_menu02">
+			<a class="member_bottom_xiala current">课程</a>
+			<div class="member_bottom_box" style="display:none;">
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2&tcid=0&lid=0" class="">平面设计</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3&tcid=0&lid=0" class="">影视后期</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1&tcid=0&lid=0" class="">室内设计</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5&tcid=0&lid=0" class="">景观设计</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4&tcid=0&lid=0" class="">机械设计</a>
+			</div>
+		</div>
+        <div class="col-xs-3 member_bottom_menu03"><a href="http://m.qinxue.com/index.php?r=vip/index" class="">VIP</a></div>
+        <div class="col-xs-3 member_bottom_menu04"><a href="http://m.qinxue.com/index.php?r=member/index" class="">我的</a></div>
+	</div>
+</div>
+
+	<div class="container-fluid i_top_xl">
+	<div class="row">
+    	<div class="col-xs-12 xl_01" id="headHtml" style="padding-bottom:15px; border-bottom:1px solid #eeeeee;">
+    		 <div style="color:#999;text-align:center;height:50px;line-height:50px;">loading...</div>
+    	</div>
+    	<div class="xl_02" style="padding-top:15px; width:120px; float:left;">
+        <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>课程设置</strong></div>
+		<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2"><button type="button" class="btn btn-default">平面设计</button></a></div>
+        <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1"><button type="button" class="btn btn-default">室内设计</button></a></div>
+        <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3"><button type="button" class="btn btn-default">影视后期</button></a></div>
+        <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5"><button type="button" class="btn btn-default">园林景观</button></a></div>
+        <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4"><button type="button" class="btn btn-default">机械设计</button></a></div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left; margin-left:10px;">
+	        <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>快速导航</strong></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=index"><button type="button" class="btn btn-default">网站首页</button></a></div>
+			<div class="xl_menu_li" style="display: none;"><a href="http://m.qinxue.com/ganyan/?ob=2"><button type="button" class="btn btn-default">学员感言</button></a></div>
+	        <div class="xl_menu_li"><a href="http://m.qinxue.com/teacher/"><button type="button" class="btn btn-default">师资团队</button></a></div>
+	    	<div class="xl_menu_li"><a href="http://m.qinxue.com/about.html"><button type="button" class="btn btn-default">关于我们</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/help/"><button type="button" class="btn btn-default">帮助中心</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=app/index"><button type="button" class="btn btn-default">APP下载</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=onlineCustomer/index"><button type="button" class="btn btn-default">联系客服</button></a></div>			
+        </div>
+	</div>
+</div>
+<div class="i_top_xl_bj">&nbsp;</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".i_top_more").click(function(){
+		$(".i_top_xl").animate({right:"0px"});
+		$(".i_top_xl_bj").show();
+	});
+	$(".i_top_xl_bj").click(function(){
+		$(".i_top_xl").animate({right:"-300px"});
+		$(".i_top_xl_bj").hide();
+	});
+});
+</script>	
+	<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+	<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+	$(document).ready(function(){
+		$(".member_bottom_xiala").click(function(){
+			$(".member_bottom_box").slideToggle();
+		});
+	});
+</script>
+<script >
+	var PLAY_TUID = "30";
+	var PLAY_TUCID = "9";
+	var URL_LOADPLAY ="http://m.qinxue.com/index.php?r=chapter/loadplay";
+	var PREV_CHAPTER = "";
+	var NEXT_CHAPTER = "http://m.qinxue.com/30-10.html";
+    function qxplayerLast() {
+        var strVideoUrlLastTime = "http://m.qinxue.com/index.php?r=video/setLastVideoTime&tuid=30&tucid=9";
+        ajax.init()
+            .setUrl( strVideoUrlLastTime )
+            .setData({})
+            .setIsTip( false )
+            .setCbSuccess(  )
+            .setCbError(  )
+            .preRun()
+            .run();
+    }
+</script>
+<style>
+        .white_content { 
+            display: none; 
+            position: fixed; 
+            top: 0px; 
+            left: 0px; 
+            width:100%;
+            height:100%;
+            background-color: #000000; 
+            z-index:10003; 
+            overflow:hidden;
+			text-align:center;
+			margin:0px auto;
+        } 
+  		#playercode{margin:0px auto;text-align:center;}
+        .i_top{ position: relative; left: 0px !important;}
+</style>
+<script type="text/javascript">
+	$(window).scroll(function(){
+        var Kmenu = $("#kecheng_menuTop").offset().top
+        var ILeft = $(window).width() / 2 - $("body").width() / 2;
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop >= Kmenu){
+			$("#kecheng_menu").css({position:"fixed",top:0,left:ILeft});
+		}else{
+			$("#kecheng_menu").css({position:'',top:'',left:''});
+		}
+	});
+</script>
+
+<div id="" class="kecheng_img">
+                    <div id="jqPlayerSetup" class="newplay_play">
+            <div id="jqPlayerLoading">
+                <video src="http://vv.taozhi.cn/aa33e2da9f7f4e1b82415c4be692830e/d0b8626d16f14977b6d6f423c2ebf130-ef4201da6f14ff3b8bf1ddeef0113290-ld.mp4" autoplay="autoplay" width="100%" />
+                <div class="kecheng_img_play">
+                                            <a onclick="window.location.href = 'http://m.qinxue.com/index.php?r=jump/index&pos=50&go=http%3A%2F%2Fm.qinxue.com%2Flogin.html'" href="javascript:;">&nbsp;</a>
+                                    </div>
+            </div>
+            <div id="myPlayer" style="display:none;">
+
+                
+                    
+            </div>
+        </div>
+        <script type="text/javascript">
+            $("#jqBtnPlayOragian_play").click(function () {
+                $("#jqPlayerLoading").css("display","none");
+                 $("#myPlayer").css("display","");
+            });
+        </script>
+    <!--    <img src="--><!--" />-->
+<!--    <div class="kecheng_img_play">-->
+<!--        <a href="#kecheng_tishi">&nbsp;</a>-->
+<!--    </div>-->
+</div>
+
+<div class="container-fluid">
+<div class="row kecheng_menu">
+    <div class="col-xs-12 kecheng_menu_sx">
+	<a href="javascript:void(0);" class="on_section" id="on_section" style="float: left;">上一节</a>
+	<a href="javascript:void(0);" class="next_section" id="next_section" style="float: right;">下一节</a>
+    </div>   
+</div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 kecheng_jieshao" style="border-bottom: 1px solid #eeeeee; margin-bottom: 0px;">
+            <div style="font-size: 18px;">Vegas Pro12 从新手到高手系统教程</div>
+
+                
+                <div class="col-xs-12" style="padding: 0px; color: #999999; " >
+                    <span class="span01">5.3小时</span>
+                    <span class="span01">基础入门</span>
+                    <span class="span01" onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='block';">讲师：赵清宇</span>
+                </div>
+				
+				                <div class="col-xs-12" style="padding: 0px; margin: 8px 0px 15px;">
+                    <div class="col-xs-4" style="padding: 0px;">
+                                                <a href="http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dorder%2Ftutorials%26tu_id%3D30%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-default btn-block">
+                        	   								<em style='font-family:Arial;font-style:normal;'>&yen</em>130 单买
+                                                     </a>
+                    </div>
+                                        <div class="col-xs-8" style="padding-right: 0px;">
+                        <a href="http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dvip%2Findex%26catid%3D3%26type%3D1%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-success btn-block">
+                            <em style='font-family:Arial;font-style:normal;'>&yen</em>499 开通会员免费学
+                        </a>
+                    </div>
+                </div>
+				        </div>
+    </div>
+</div>
+
+<div id="jqPopTeacherInfo" class="play_teacher_pop_bj" style="display:none;">
+    <div class="play_teacher_pop">
+        <a onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='none';" class="play_teacher_pop_x"><img src="http://sta.qinxue.com/mobile/images/x.gif" /></a>
+        <div class="teacher_list" style="height:auto;">
+	<div class="teacher_list_left"><img src="http://img.qinxue.com/teacher/85/head-85.jpg" /></div>
+	<div class="teacher_list_right">
+		<span><strong>赵清宇</strong></span>
+		主攻：vegas <br />	
+	</div>
+</div>
+<div class="teacher_list_jj">简介：在河北电视台担任栏目责任编辑，主要负责栏目日常播出的节目，同时也参与其他广告项目的制作，有着10的丰富工作经验，擅长vegas以及其他专业非编剪辑软件。</div>    </div>
+</div>
+<div id="kecheng_menuTop" style="height: 0px;"></div>
+<div class="container-fluid" id="kecheng_menu">
+    <div class="row kecheng_menu">
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/30-0.html" ><span class="span01">课程</span>介绍</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30"  class="dangqian"><span class="span01">课程</span>目录</a></div>
+        <!-- <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/jietu&tuid=30" ><span class="span01">课程</span>截图</a></div>  -->
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/sucai&tuid=30" ><span class="span01">课程</span>素材</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/pingjia&tuid=30" ><span class="span01">学员</span>评价</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/biji&tuid=30" ><span class="span01">学员</span>笔记</a></div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row kecheng_mulu">
+<div class="col-xs-12 kecheng_mulu_list">
+<dl>
+		      	      <dt>第一章  vegas 快速入门</dt>
+	      		      	      <dd  class="dangqian">
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=9">
+				<div>1-1 走进VEGAS的数字世界（上）</div>
+				<span>本节时长：7分钟</span><span>了解vegas 软件以及剪辑知识</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=10">
+				<div>1-2 走进VEGAS的数字世界（下）</div>
+				<span>本节时长：7分钟</span><span>着重了解制作视频需要注意哪些流程</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=13">
+				<div>1-3  如何在vegas里创建项目与保存项目文件</div>
+				<span>本节时长：7分钟</span><span>如何在vegas里创建项目与保存项目文件，在创建项目与保存项目的时候需要注意修改哪些参数，保留哪些参数，这些参数之间的变化会有什么样不同的效果</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=23">
+				<div>1-4 属性参数设置</div>
+				<span>本节时长：8分钟</span><span>设置参数以及参数之间的变化</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=24">
+				<div>1-5 熟悉工作环境-环境界面</div>
+				<span>本节时长：7分钟</span><span>熟练掌握工作界面</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=25">
+				<div>1-6 在vegas里如何导入素材以及如何使用修剪器创作视频</div>
+				<span>本节时长：16分钟</span><span>在vegas里如何把视频导入到软件里进行创作，以及如何使用修剪器修建素材</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=48">
+				<div>1-7 剪辑详解、渲染格式</div>
+				<span>本节时长：21分钟</span><span>如何剪辑以及渲染输出哪种格式</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=49">
+				<div>1-8   30分钟学会制作精美的视频mv（上）</div>
+				<span>本节时长：20分钟</span><span>30分钟教你如何利用自己喜欢的素材（视频，图片）制作出精美的视频mv</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=50">
+				<div>1-9   30分钟学会制作精美的视频mv（下）</div>
+				<span>本节时长：13分钟</span><span>30分钟教你如何利用自己喜欢的素材（视频，图片）制作出精美的视频mv</span>
+			</a>
+	      </dd>
+	      		      	      <dt>第二章   视频剪辑大师的成长之路</dt>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=51">
+				<div>2-1轨道运动详解</div>
+				<span>本节时长：8分钟</span><span>着重了解轨道之间的联系与区别</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=52">
+				<div>2-2色键</div>
+				<span>本节时长：12分钟</span><span>了解vegas 的色键功能</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=53">
+				<div>2-3关键帧</div>
+				<span>本节时长：20分钟</span><span>了解关键帧在视频剪辑中的重要性</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=54">
+				<div>2-4 特效</div>
+				<span>本节时长：24分钟</span><span>了解剪辑的时候特效所带来不一样的效果</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=55">
+				<div>2-5字的特效</div>
+				<span>本节时长：15分钟</span><span>了解字幕的特效技巧而制作出精美的字效</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=56">
+				<div>2-6音频处理</div>
+				<span>本节时长：21分钟</span><span>了解音频在整个剪辑中的重要性，以及修改前期音频的不足</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=57">
+				<div>2-7声画合一</div>
+				<span>本节时长：23分钟</span><span>了解声音与画面之间的联系与重要性</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=58">
+				<div>2-8 分组功能和3D轨道</div>
+				<span>本节时长：13分钟</span><span>了解vegas的3D 功能</span>
+			</a>
+	      </dd>
+	      		      	      <dt>第三章 快速提高vegas的技巧</dt>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=59">
+				<div>3-1子母轨</div>
+				<span>本节时长：8分钟</span><span>了解vegas中子母轨之间的微妙联系</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=60">
+				<div>3-2 合成模式</div>
+				<span>本节时长：6分钟</span><span>如何通过两个以上的画面合成一个，从而给画面增加一抹色彩</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=61">
+				<div>3-3透明标</div>
+				<span>本节时长：5分钟</span><span>如何给画面增加一个透明标志比如logo</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=62">
+				<div>3-4 静态遮罩</div>
+				<span>本节时长：8分钟</span><span>如何灵活运用遮罩的效果而使静态的画面不再单调</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=63">
+				<div>3-5 视频遮罩</div>
+				<span>本节时长：10分钟</span><span>如何灵活运用遮罩的效果而使运动的画面增添色彩</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=64">
+				<div>3-6关键帧遮罩</div>
+				<span>本节时长：10分钟</span><span>如何利用关键帧做到遮罩的效果</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=65">
+				<div>3-7画面变形</div>
+				<span>本节时长：7分钟</span><span>如何使画面恰到好处的达到变形的效果</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=66">
+				<div>3-8仿三维特效</div>
+				<span>本节时长：6分钟</span><span>如何在vegas 里做出仿3D 的效果</span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=304">
+				<div>3-9 视频调色</div>
+				<span>本节时长：6分钟</span><span><p>如何给不完美的视频或者图片进行调色，以达到剪辑着想要的效果，比如如何将彩色照片调成黑白照片</p></span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=305">
+				<div>3-10 查看示波器</div>
+				<span>本节时长：5分钟</span><span><p>如何利用软件自带示波器进行查看以及二次操作</p></span>
+			</a>
+	      </dd>
+	      		      	      <dd >
+			<a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30&tucid=306">
+				<div>3-11 脚本的应用</div>
+				<span>本节时长：3分钟</span><span><p>如何在vegas里利用脚本来操作剪辑技巧</p></span>
+			</a>
+	      </dd>
+	      	</dl>
+</div>
+</div>
+</div>
+
+<!--<div class="container-fluid">-->
+<!--<div class="row kecheng_jieshao">-->
+<!--	<div class="col-xs-12 kecheng_jieshao_con">-->
+<!--        <div style="height:auto; overflow:hidden;">-->
+<!--	        <p><strong>--><!--</strong></p>-->
+<!--	        <p>--><!--</p>-->
+<!--	        <img id="jqImgStudyNav" src="" style="display:none;"/>-->
+<!--        </div>-->
+<!--        <div class="kecheng_tishi" style="margin-top:15px;">学习方式：<br />1.用电脑打开勤学网学习<br />2.安装勤学网APP,用手机或平板学习</div>-->
+<!--        <div class="col-xs-12" style="background:#ffffff; margin:15px 0px; padding:0px;">-->
+<!--        <div class="col-xs-12" style="margin-top:15px;"><strong>移动APP下载</strong></div>-->
+<!--		<div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnApkDownload"><img src="--><!--/mobile/images/app_android.png"/></a></div>-->
+<!--        <div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnIosDownload"><img src="--><!--/mobile/images/app_iphone.png"/></a></div>-->
+<!--        </div>-->
+<!--        -->
+<!--    </div>-->
+<!--</div>-->
+<!--</div>-->
+
+<div id="light03" class="white_content04_x" style="display:none;"><a href="javascript:;" onclick = "closewindow02()" title="关闭"><img src="http://sta.qinxue.com/images/white_content_x02.png" onmouseout="this.src='http://sta.qinxue.com/images/white_content_x02.png'" onmouseover="this.src='http://sta.qinxue.com/images/white_content_x02_02.png'"  /></a></div>
+<div id="light02" class="white_content" style="display:none;text-align: center;">
+  
+  <div id="playercode" >	
+    <script src='http://player.polyv.net/script/polyvplayer.min.js'></script>
+<div id='plv_6fdf1970faff8555a549c73a3f4a37e4_6'></div>
+<script>
+var player = polyvObject('#plv_6fdf1970faff8555a549c73a3f4a37e4_6').videoPlayer({
+	'width':'100%',
+	'height':'576',
+	'vid' : '6fdf1970faff8555a549c73a3f4a37e4_6',
+ 'forceH5':true 
+});
+</script>  </div>
+</div>
+
+<script type="text/javascript">
+var URL_APP_DOWNLOAD = "http://m.qinxue.com/index.php?r=app/download";
+var URL_APP_DOWNLOADURL = "http://dlapp.qinxue.com/qinxue_android_v1.0.apk";
+</script>
+<script type="text/javascript" src="http://sta.qinxue.com/mobile/js/play_chapter.js?v=202004081500"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/mobile/js/tutorial_player_m.js?v=202004081500"></script>
+
+
+<script type="text/javascript">
+    </script>
+	<div style="height:80px;"></div>
+
+<div id="jqAjaxLoadingTipFooter" class="ajaxLoadingFooter">处理中...</div>
+<div class="go_top" style="display:none;"><a href="#">&nbsp;</a></div>
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254537038'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254537038' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<script type="text/javascript">		
+	$(function(){
+		objSysRegist.evalResizeEvent();
+	});
+</script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop >= 460){
+			$(".go_top").css("display","block");
+		}else{
+			$(".go_top").css("display","none");
+		}
+	});
+</script>
+
+</body>
+</html>

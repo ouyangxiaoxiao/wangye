@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <title>花海书香 - 同步课堂在线自学平台</title>
+    <link rel="stylesheet" href="mobile/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="mobile/css/index.css">
+    <link rel="stylesheet" href="mobile/css/xueyuan.css">
+    <link rel="stylesheet" href="mobile/css/kecheng.css">
+    <link rel="stylesheet" href="mobile/css/member.css">
+    <link rel="stylesheet" href="mobile/css/ganyan.css">
+    <link rel="stylesheet" href="mobile/css/order.css">
+    <link rel="stylesheet" href="mobile/css/extend.css">
+
+    <script src="http://m.qinxue.com/index.php?r=index/loadSySinfo"></script>
+    <script src="http://m.qinxue.com/index.php?r=index/loadUserInfo"></script>
+    <script src="mobile/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="mobile/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy_min.js"></script>
+    <script src="mobile/dist/js/bootstrap.js"></script>
+    <script src="mobile/js/jquery.lazy.js"></script>
+    <script src="mobile/js/common.js"></script>
+
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script type="text/javascript">
+        $(function(){
+            // 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+            $('img').lazy();
+        });
+    </script>
+</head>
+<!--******************************************复制1****************************************-->
+<body>
+
+<div class="i_top">
+    <div class="i_top_return">
+        <a href="javascript:history.go(-1);"><img src="http://sta.qinxue.com/mobile/images/tubiao_arr02.png" height="50" /></a>
+    </div>
+
+    <div class="i_top_logo"><a href="index.html"><img src="mobile/images/logo.png" height="30" /></a></div>
+    <div class="i_top_more"><a href="javascript:void(0);" id="headerLogin"><img src="mobile/images/more_arr01.png" height="24" /></a></div>
+    <div class="i_top_search"><a href="http://m.qinxue.com/index.php?r=search/index"><img src="mobile/images/search_arr01.png" height="24" /></a></div>
+
+</div>
+
+
+<div class="container-fluid member_bottom">
+    <div class="row">
+        <div class="col-xs-3 member_bottom_menu01"><a href="index.html" class="current">首页</a></div>
+        <div class="col-xs-3 member_bottom_menu02">
+            <a class="member_bottom_xiala ">课程</a>
+            <div class="member_bottom_box" style="display:none;">
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2&tcid=0&lid=0" class="">小学同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3&tcid=0&lid=0" class="">初中同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1&tcid=0&lid=0" class="">高中同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5&tcid=0&lid=0" class="">思维逻辑训练</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4&tcid=0&lid=0" class="">课外兴趣启发</a>
+            </div>
+        </div>
+        <div class="col-xs-3 member_bottom_menu03"><a href="会员页面.html" class="">VIP</a></div>
+        <div class="col-xs-3 member_bottom_menu04"><a href="http://m.qinxue.com/index.php?r=member/index" class="">我的</a></div>
+    </div>
+</div>
+
+<div class="container-fluid i_top_xl">
+    <div class="row">
+        <div class="col-xs-12 xl_01" id="headHtml" style="padding-bottom:15px; border-bottom:1px solid #eeeeee;">
+            <div style="color:#999;text-align:center;height:50px;line-height:50px;">loading...</div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>课程设置</strong></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2"><button type="button" class="btn btn-default">小学同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1"><button type="button" class="btn btn-default">初中同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3"><button type="button" class="btn btn-default">高中同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5"><button type="button" class="btn btn-default">思维逻辑训练</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4"><button type="button" class="btn btn-default">课外知识启发</button></a></div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left; margin-left:10px;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>快速导航</strong></div>
+            <div class="xl_menu_li"><a href="index.html"><button type="button" class="btn btn-default">网站首页</button></a></div>
+            <div class="xl_menu_li" style="display: none;"><a href="http://m.qinxue.com/ganyan/?ob=2"><button type="button" class="btn btn-default">学员感言</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/teacher/"><button type="button" class="btn btn-default">师资团队</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/about.html"><button type="button" class="btn btn-default">关于我们</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/help/"><button type="button" class="btn btn-default">帮助中心</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=app/index"><button type="button" class="btn btn-default">APP下载</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=onlineCustomer/index"><button type="button" class="btn btn-default">联系客服</button></a></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="i_top_xl_bj">&nbsp;</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_top_more").click(function(){
+            $(".i_top_xl").animate({right:"0px"});
+            $(".i_top_xl_bj").show();
+        });
+        $(".i_top_xl_bj").click(function(){
+            $(".i_top_xl").animate({right:"-300px"});
+            $(".i_top_xl_bj").hide();
+        });
+    });
+</script>
+<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+    $(document).ready(function(){
+        $(".member_bottom_xiala").click(function(){
+            $(".member_bottom_box").slideToggle();
+        });
+    });
+</script>
+<script >
+    var PLAY_TUID = "30";
+    var PLAY_TUCID = "9";
+    var URL_LOADPLAY ="http://m.qinxue.com/index.php?r=chapter/loadplay";
+    var PREV_CHAPTER = "";
+    var NEXT_CHAPTER = "http://m.qinxue.com/30-10.html";
+    function qxplayerLast() {
+        var strVideoUrlLastTime = "http://m.qinxue.com/index.php?r=video/setLastVideoTime&tuid=30&tucid=9";
+        ajax.init()
+            .setUrl( strVideoUrlLastTime )
+            .setData({})
+            .setIsTip( false )
+            .setCbSuccess(  )
+            .setCbError(  )
+            .preRun()
+            .run();
+    }
+</script>
+<style>
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        background-color: #000000;
+        z-index:10003;
+        overflow:hidden;
+        text-align:center;
+        margin:0px auto;
+    }
+    #playercode{margin:0px auto;text-align:center;}
+    .i_top{ position: relative; left: 0px !important;}
+</style>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var Kmenu = $("#kecheng_menuTop").offset().top
+        var ILeft = $(window).width() / 2 - $("body").width() / 2;
+        var scrollTop = $(this).scrollTop();
+        if(scrollTop >= Kmenu){
+            $("#kecheng_menu").css({position:"fixed",top:0,left:ILeft});
+        }else{
+            $("#kecheng_menu").css({position:'',top:'',left:''});
+        }
+    });
+</script>
+
+<div id="" class="kecheng_img">
+    <div id="jqPlayerSetup" class="newplay_play">
+        <div id="jqPlayerLoading">
+            <video controls="controls" autoplay="autoplay" id="video"　src="" poster="" width="100%" />
+            <div class="kecheng_img_play">
+                <a onclick="window.location.href = 'http://m.qinxue.com/index.php?r=jump/index&pos=50&go=http%3A%2F%2Fm.qinxue.com%2Flogin.html'" href="javascript:;">&nbsp;</a>
+            </div>
+        </div>
+        <div id="myPlayer" style="display:none;">
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#jqBtnPlayOragian_play").click(function () {
+            $("#jqPlayerLoading").css("display","none");
+            $("#myPlayer").css("display","");
+        });
+    </script>
+    <!--    <img src="--><!--" />-->
+    <!--    <div class="kecheng_img_play">-->
+    <!--        <a href="#kecheng_tishi">&nbsp;</a>-->
+    <!--    </div>-->
+</div>
+
+<div class="container-fluid">
+    <div class="row kecheng_menu">
+        <div class="col-xs-12 kecheng_menu_sx">
+            <a href="javascript:void(0);" class="on_section" id="on_section" style="float: left;">上一节</a>
+            <a href="javascript:void(0);" class="next_section" id="next_section" style="float: right;">下一节</a>
+        </div>
+    </div>
+</div>
+
+<!--***************************以上部分可以复制************************************-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 kecheng_jieshao" style="border-bottom: 1px solid #eeeeee; margin-bottom: 0px;">
+            <div style="font-size: 18px;">三十六计</div>
+
+
+            <div class="col-xs-12" style="padding: 0px; color: #999999; " >
+                <span class="span01"> 逻辑思维训练</span>
+                <span class="span01">三十六计</span>
+                <span class="span01" onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='block';"></span>
+            </div>
+
+            <div class="col-xs-12" style="padding: 0px; margin: 8px 0px 15px;">
+                <div class="col-xs-4" style="padding: 0px;">
+                    <a href="http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dorder%2Ftutorials%26tu_id%3D30%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-default btn-block">
+                        <em style='font-family:Arial;font-style:normal;'>&yen</em>130 单买
+                    </a>
+                </div>
+                <div class="col-xs-8" style="padding-right: 0px;">
+                    <a href="http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dvip%2Findex%26catid%3D3%26type%3D1%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-success btn-block">
+                        <em style='font-family:Arial;font-style:normal;'>&yen</em>499 开通会员免费学
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="jqPopTeacherInfo" class="play_teacher_pop_bj" style="display:none;">
+    <div class="play_teacher_pop">
+        <a onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='none';" class="play_teacher_pop_x"><img src="http://sta.qinxue.com/mobile/images/x.gif" /></a>
+        <div class="teacher_list" style="height:auto;">
+            <div class="teacher_list_left"><img src="http://img.qinxue.com/teacher/85/head-85.jpg" /></div>
+            <div class="teacher_list_right">
+                <span><strong>赵清宇</strong></span>
+                主攻：vegas <br />
+            </div>
+        </div>
+        <div class="teacher_list_jj">简介：在河北电视台担任栏目责任编辑，主要负责栏目日常播出的节目，同时也参与其他广告项目的制作，有着10的丰富工作经验，擅长vegas以及其他专业非编剪辑软件。</div>    </div>
+</div>
+<div id="kecheng_menuTop" style="height: 0px;"></div>
+<div class="container-fluid" id="kecheng_menu">
+    <div class="row kecheng_menu">
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/30-0.html" ><span class="span01">课程</span>介绍</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30"  class="dangqian"><span class="span01">课程</span>目录</a></div>
+        <!-- <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/jietu&tuid=30" ><span class="span01">课程</span>截图</a></div>  -->
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">课程</span>素材</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/pingjia&tuid=30" ><span class="span01">学员</span>评价</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">学员</span>笔记</a></div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row kecheng_mulu">
+        <div class="col-xs-12 kecheng_mulu_list">
+            <dl>
+
+
+
+
+
+                <dd ><li value="	http://vv.taozhi.cn/a197034478e243d89350e055e19494f6/817f56d1a1044ece800fb7a43a35121f-0094a145ce886943d77b8ed206ccc272-ld.mp4	" ><div>	三十六计开篇宣传	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/e6e4fbbe3fbc4b3096d52358ae72803c/de620d63695f4bd798cc1b7301b9fa79-55002cb44ee3894c0d6c8ec3fc81dd15-ld.mp4	" ><div>	1.瞒天过海	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/7c8003e07bd4498998394bf4dfed5046/b017b1443d124c5e862339bf99fcbd9a-f9fc9c6dd5ad3d78f749750ee4afe68d-ld.mp4	" ><div>	2.围魏救赵	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/2bc93d4c95b248c787d7b0c025afd327/f1ab5c7cb4184bce96517c8fb13c00dc-aad007b04982ecb8b579af0b68b6f109-ld.mp4	" ><div>	3.借刀杀人	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/9eff72e5ba264daaba77dd27d191e1dd/4e19aad12528433f985f07cd59805dd2-59f57b1fd18077c74a86bd16335dca74-ld.mp4	" ><div>	4.以逸待劳	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/f2e002bfdd4e40d1aeab95ff97355f51/e09a46ac15ec4695b47ad9142564d6a8-b7a4cf1736cec048c9a64a35ee6a7a1c-ld.mp4	" ><div>	5.趁火打劫	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/5422f2c577b24f169d4ea015aae85ac6/42528f8f08814be78997a6bf4925b084-007325080a964e16ecbc8e39bc3f0bb2-ld.mp4	" ><div>	6.声东击西	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/f1b43b6930544099be799015e3229ef6/c67593afa0ba4ed0ad537f117579ec77-76ec19c905d6239944a5117a015c4a90-ld.mp4	" ><div>	7.无中生有	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/690fdfe9758c431593cf0ef390d95c7f/11dc0d8508634d359b3e44dace99ac20-e177a53ae780ec76ac18d74683c94499-ld.mp4	" ><div>	8.暗度陈仓	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/de5a4dd7aace4cc4b54b42be6132eb6d/6be2d1b2aa054362ab78208af8ecfcd9-0d67436d8e52a0ae6b2d598ad766a998-ld.mp4	" ><div>	9.隔岸观火	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/d2354525838f4f92b92c8f8f3b73fe65/5c91c36344924845b1efc0421cc9f8d5-31ee55c9da10019b28003831d9863057-ld.mp4	" ><div>	10.笑里藏刀	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/15ff83c8b19c4c24807daf9272fa102c/8712ceed7d9f43f1afd6e7d196b1b927-a943e1bc8a0f9282ea31cb3ac00ac6c9-ld.mp4	" ><div>	11.李代桃僵	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/c2ab3b96d5d0472c82f743995380c741/d30b5ce162c043ddb5331d937f0871ed-59d02bb7a81fdbbde7efad652c4c1353-ld.mp4	" ><div>	12.顺手牵羊	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/770d873441f74bf2a9cd74e6192eb538/5732ae9c24f04bf882da0e5f1e7254e1-244a082acbe214c81b9e2dbf1a27d4c5-ld.mp4	" ><div>	13.打草惊蛇	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/82fa2cc78f2d48179631143c26d63984/7e4ae6a0f94c441e943a3c1034e67c74-79b7a0503c5d8a8f890807df5a146d07-ld.mp4	" ><div>	14.借尸还魂	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/e35b2a70d2f2431d8a1af6dd7cb61020/275c4d26081943fcb263f5221497d536-c64ec2ce8f0b832bb2bc62b653c01ccb-ld.mp4	" ><div>	15.调虎离山	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/1e1d2838c08249bcb2c980bc574c7fc3/82157423f62a4d8ea80bcf109e47357f-d3df24697ceefd4f8aec2c738611c531-ld.mp4	" ><div>	16.欲擒故纵	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/31555aff74a045c3b17d551a11163594/4c7a35bc39e14be386cb41496c6d7dc1-016f1fc70d1008eb8323894e2523c561-ld.mp4	" ><div>	17.抛砖引玉	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/4759a355c9534c45a1ab1bbd22eb0f9d/47ec118a421d4f529ddc517182a88abb-6dfba32355d89b70d906087715e520b6-ld.mp4	" ><div>	18.擒贼擒王	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/b9d665bfedbf4adca23dce5b4289ae3d/e558bb9d67fc4479b18105d1507a39db-6b4af933c66bb80f16c264174c1da410-ld.mp4	" ><div>	19.釜底抽薪	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/6b72f3df38ec494b8501c65c24109e07/7cc338b47cbd49e0843e788c1e776fb8-1b6ee860f669938ea44c0fd4f6ae7631-ld.mp4	" ><div>	20.混水摸鱼	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/8eb97ba1138e4dd99570fe5c2d1eb6ce/e73ddddf0c1f44a9af385e2bb08abbb8-5cae49ad317701c0aa419fefc1f5d6a5-ld.mp4	" ><div>	21.金蝉脱壳	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/9b3bd89c18e145aaa2be61f33dbdfdec/a2a0c14252504b0fb00ab07c09af21f1-6fbe499ba63891c132a00440ad8e96ec-ld.mp4	" ><div>	22.关门捉贼	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/345a0fba87e74182b12926145ab6cb31/7c6108c6af934a49aed6ef2596a1011e-1206512ee4d003b5e096f9fe8751fca6-ld.mp4	" ><div>	23.远交近攻	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/599e10c7db5d40d8b3baa91805b95361/3872d58515a84653b7b2b1456c97270f-82ad5e6613b2234ada8c89a03c826aba-ld.mp4	" ><div>	24.假道伐虢	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/e40941a012ba49f19fc237d38caa98a1/ebae2e6d97d5482fa583b900fcc07578-74b9cc7201094a02a74e8f1d3bb34935-ld.mp4	" ><div>	25.偷梁换柱	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/26ba92ee8c1447e499b590767645f9bc/678cffcee9c3405a9121df20b4e19513-eb915de1f3d127a4c4c0bb7972aa6b1e-ld.mp4	" ><div>	26.指桑骂槐	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/90686c2afbd049c5be07a0cd96459fa6/ba020f71bb95411182353b4ea7207f69-0339f529382681cc4791df87c533f968-ld.mp4	" ><div>	27.假痴不癫	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/ff9b7cedb37a4de99277cd010350d1fd/2666f43287e244b5a8785543e94d452a-120bf52ca4931fc9c7758e2e66fef545-ld.mp4	" ><div>	28.上屋抽梯	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/ac0e988e785c405194080425ad593f30/b669a4b7153e432b913dd967716bd3a8-9e15e787bf64fbb1a8251c5551a3e080-ld.mp4	" ><div>	29.树上开花	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/047c7acaa5e243f4953db71f0b565013/eee7a76bd3b1452188d0af74202c6282-2b4726fc11aa0cdf3aa84f009c6f2774-ld.mp4	" ><div>	30.反客为主	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/50c3287354494cf6ada92d40788bb8ee/a1c86fe6172a4d44aad4ae7d87299f68-30d49fa7563837433621b893e0ddc1b6-ld.mp4	" ><div>	31.美人计	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/feb0372517374468b0cb7a435bd01f08/50d915b4d2a14720ab8a008b50b11c30-5718e4384be8cc205eecb9c04a0fb750-ld.mp4	" ><div>	32.空城计	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/5f134c50ec014375a5e0423863b0a2bb/ed6f95997e3a4ed6b28a24c5836f6733-eac5e793fefd92ab1ac33df17dec3784-ld.mp4	" ><div>	33.反间计	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/bd1d4470b1984829a952a203703c7e39/0058f377f15b4bc28a02ca35d979641f-012c0babd4552009efcd4ee9c0e6959c-ld.mp4	" ><div>	34.苦肉计	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/9a161f8b5e2b499c87eec97b2a818526/714187c07865434292a1eb76e8fccc53-d4f6956909c79ed2569ca208cb91c549-ld.mp4	" ><div>	35.连环计	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/600a18b776694b3baf81b078bd68a4cb/36f0dfd7a9244bac9abd50fdd30581f1-4a95f9558143fc0621313de4ed269f43-ld.mp4	" ><div>	36.走为上计	</div><span>课程归类：	小学	一年级	语文	</span><span>	三十六计	</span></li></dd>
+
+
+
+
+            </dl>
+        </div>
+    </div>
+
+    <button title="收起播放列表" id="playList-hidden">  </button>
+    <button title="展开播放列表" id="playList-show1">  </button>
+    <!--<div class="container-fluid">-->
+    <!--<div class="row kecheng_jieshao">-->
+    <!--	<div class="col-xs-12 kecheng_jieshao_con">-->
+    <!--        <div style="height:auto; overflow:hidden;">-->
+    <!--	        <p><strong>--><!--</strong></p>-->
+    <!--	        <p>--><!--</p>-->
+    <!--	        <img id="jqImgStudyNav" src="" style="display:none;"/>-->
+    <!--        </div>-->
+    <!--        <div class="kecheng_tishi" style="margin-top:15px;">学习方式：<br />1.用电脑打开勤学网学习<br />2.安装勤学网APP,用手机或平板学习</div>-->
+    <!--        <div class="col-xs-12" style="background:#ffffff; margin:15px 0px; padding:0px;">-->
+    <!--        <div class="col-xs-12" style="margin-top:15px;"><strong>移动APP下载</strong></div>-->
+    <!--		<div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnApkDownload"><img src="--><!--/mobile/images/app_android.png"/></a></div>-->
+    <!--        <div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnIosDownload"><img src="--><!--/mobile/images/app_iphone.png"/></a></div>-->
+    <!--        </div>-->
+    <!--        -->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="light03" class="white_content04_x" style="display:none;"><a href="javascript:;" onclick = "closewindow02()" title="关闭"><img src="http://sta.qinxue.com/images/white_content_x02.png" onmouseout="this.src='http://sta.qinxue.com/images/white_content_x02.png'" onmouseover="this.src='http://sta.qinxue.com/images/white_content_x02_02.png'"  /></a></div>
+    <div id="light02" class="white_content" style="display:none;text-align: center;">
+
+        <div id="playercode" >
+
+            <div id='plv_6fdf1970faff8555a549c73a3f4a37e4_6'></div>
+            <script>
+                var player = polyvObject('#plv_6fdf1970faff8555a549c73a3f4a37e4_6').videoPlayer({
+                    'width':'100%',
+                    'height':'576',
+                    'vid' : '6fdf1970faff8555a549c73a3f4a37e4_6',
+                    'forceH5':true
+                });
+            </script>  </div>
+    </div>
+
+    <script type="text/javascript">
+        var URL_APP_DOWNLOAD = "http://m.qinxue.com/index.php?r=app/download";
+        var URL_APP_DOWNLOADURL = "http://dlapp.qinxue.com/qinxue_android_v1.0.apk";
+    </script>
+
+
+
+    <script type="text/javascript">
+    </script>
+    <div style="height:80px;"></div>
+
+    <div id="jqAjaxLoadingTipFooter" class="ajaxLoadingFooter">处理中...</div>
+    <div class="go_top" style="display:none;"><a href="#">&nbsp;</a></div>
+    <div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254537038'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254537038' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    <script type="text/javascript">
+        $(function(){
+            objSysRegist.evalResizeEvent();
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scrollTop = $(this).scrollTop();
+            if(scrollTop >= 460){
+                $(".go_top").css("display","block");
+            }else{
+                $(".go_top").css("display","none");
+            }
+        });
+    </script>
+
+</body>
+</html>

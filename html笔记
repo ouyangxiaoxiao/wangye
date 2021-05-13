@@ -1,8 +1,8 @@
 
-github 公用域名
+********github 公用域名
 https://ouyangxiaoxiao.github.io/wangye/
-
-为网页注入灵魂javaScrip
+https://fishc.com.cn/鱼c工作室
+*********为网页注入灵魂javaScrip
 延时执行脚本 defer
 
 第一个小程序
@@ -76,7 +76,90 @@ http://demo.fishc.com
 网站图标
 <link rel="icon" href="../img/favicon.ico">
 base 标签 可以拼接固定路径，再用a标签指定后半部分路径<a href="test1">第一个例子</a>
+**************注释应该简洁明了***********
+
+
 js神奇的js
 视频被限制域播放目前无解
 视频播放页面的收起和展开被绑定了事件
 准备找下一首
+/**/css注释
+<--js注释-->
+html 里面的styel也要用专用的注释方法
+如无必要无需多加
+块级元素span 包裹重要的文字，然后css去设置颜色  插入css   <style></style>
+行内元素 在p 标签下的 多少个空格都是变成一个空格
+块级大于行内元素
+
+
+pre  预格式化     语义化 块级元素，让html 显示代码原本的样子
+html字符实体（Character Entities） html不能 使用<>
+pre
+    code
+********************
+var 定义变量 ，kdb定义键盘的输入，samp定义程序的输出
+
+
+<script type="text/javascript">
+    var user_input = prompt("你最喜欢吃的水果是：");
+    document.getElementById("fruit").innerHTML = user_input;
+</script>
+
+上面可以显示 用户输入 但是要用特殊元素包裹
+
+******************引用大作战*********
+q 元素适用于行内较短的引用
+blockquote 元素适合较多的 块级元素引用 会加缩进
+
+语义与呈现分离的概念
+
+cite元素----主要定义标题,会变成斜体
+abbr 元素 定义简称，会有提示
+dfn元素 变现定义中术语
+address 元素 定义文档或者文章的作者拥有者的联系信息
+ruby元素---------
+rt元素-------
+rp元素-----魑魅魍魉**********<ruby>魑<rp>（</rp><rt>chī</rt><rp>）</rp></ruby>
+bdo元素----------从右往左 ltr left to righy <bdo dir="rtl">
+                从右往左
+
+---------011-格式化大比拼---------
+b元素也能使得文本<b>变粗</b>，变粗但是它没有附带任何的语义 <br>
+    em元素也能使得文本<em>变倾斜</em>，变强调 <br>
+    i元素也能使得文本<i>变倾斜</i>，倾斜不强调 <br>
+但是推荐 使用css更为适合
+
+del元素，删除样式 带有删除线
+ins元素 ，带有下划线
+s元素 删除观点不正确的内容
+u元素 表示拼写错误的内容
+mark 元素 标记文本左右,黄色 像荧光笔一样标记起来
+sup元素 上标
+sub元素 下标
+small元素 表示变小
+
+***************012被安排的明明白白***********************
+li 元素 列表标签
+ul 元素 无序列表
+ol 元素 有序列表
+dl 元素 定义列表 dt项目内容 dd定义描述部分内容 配合使用
+css 对列表属性
+list-style-type
+ul.a{list-style-type: xxx;} 表示的样式 详见：https://man.ilovefishc.com/pageCSS3/list-style-type.html
+还可以设置图片为排序前缀
+列表嵌套
+*******************013数据就应该整整齐齐上***********
+<table> 标签用于定义 HTML 表格。
+<td> 标签用于定义 HTML 表格中的标准单元格。
+<th> 标签用于定义表格内的表头单元格。
+<tr> 标签用于定义 HTML 表格中的行。
+
+<style>
+        table,th,td{
+            border: 1px solid black;/*1个像素 实线 黑色*/
+    }
+    </style>
+    caption 表格上面的标题
+
+
+    <td rowspan="3">2</td><!--占用2列-->

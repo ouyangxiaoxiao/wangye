@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>colgroup元素和col元素演示</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="小甲鱼,Web开发,HTML5,CSS3,Web编程教学">
+    <meta name="description" content="《零基础入门学习Web开发》案例演示">
+    <meta name="author" content="小甲鱼">
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 将第 1 列的背景颜色设置为红色 -->
+        <!-- 将第 2、3 列的背景颜色设置为绿色 -->
+        <colgroup>
+            <col style="background: red">
+            <col span="2" style="background: green">
+        </colgroup>
+        <tr>
+            <td>1</td>
+            <td rowspan="3">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>

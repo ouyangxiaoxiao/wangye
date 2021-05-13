@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <title>搜索 - 勤学网</title>
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/dist/css/bootstrap.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/index.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/xueyuan.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/kecheng.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/member.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/ganyan.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/order.css?v=202004081500">
+    <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/extend.css?v=202004081500">
+
+    <script src="http://m.qinxue.com/index.php?r=index/loadSySinfo"></script>
+    <script src="http://m.qinxue.com/index.php?r=index/loadUserInfo"></script>
+    <script src="http://sta.qinxue.com/mobile/js/jquery-1.11.1.js?v=202004081500"></script>
+    <script type="text/javascript" src="http://sta.qinxue.com/mobile/js/jquery.cookie.js?v=202004081500"></script>
+    <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.lazy_min.js?v=202004081500"></script>
+    <script src="http://sta.qinxue.com/mobile/dist/js/bootstrap.js?v=202004081500"></script>
+    <script src="http://sta.qinxue.com/mobile/js/jquery.lazy.js?v=202004081500"></script>
+    <script src="http://sta.qinxue.com/mobile/js/common.js?v=202004081500"></script>
+    <script type="text/javascript">
+        $(function(){
+            // 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+            $('img').lazy();
+        });
+    </script>
+</head>
+<body>
+
+<div class="i_top">
+    <div class="i_top_return">
+        <a href="javascript:history.go(-1);"><img src="http://sta.qinxue.com/mobile/images/tubiao_arr02.png" height="50" /></a>
+    </div>
+
+    <div class="i_top_logo"><a href="http://m.qinxue.com/index.html"><img src="http://sta.qinxue.com/mobile/images/logo.png" height="30" /></a></div>
+    <div class="i_top_more"><a href="javascript:void(0);" id="headerLogin"><img src="http://sta.qinxue.com/mobile/images/more_arr01.png" height="24" /></a></div>
+    <div class="i_top_search"><a href="http://m.qinxue.com/index.php?r=search/index"><img src="http://sta.qinxue.com/mobile/images/search_arr01.png" height="24" /></a></div>
+
+</div>
+
+
+<div class="container-fluid member_bottom">
+    <div class="row">
+        <div class="col-xs-3 member_bottom_menu01"><a href="http://m.qinxue.com/index.html" class="">首页</a></div>
+        <div class="col-xs-3 member_bottom_menu02">
+            <a class="member_bottom_xiala ">课程</a>
+            <div class="member_bottom_box" style="display:none;">
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2&tcid=0&lid=0" class="">平面设计</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3&tcid=0&lid=0" class="">影视后期</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1&tcid=0&lid=0" class="">室内设计</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5&tcid=0&lid=0" class="">景观设计</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4&tcid=0&lid=0" class="">机械设计</a>
+            </div>
+        </div>
+        <div class="col-xs-3 member_bottom_menu03"><a href="http://m.qinxue.com/index.php?r=vip/index" class="">VIP</a></div>
+        <div class="col-xs-3 member_bottom_menu04"><a href="http://m.qinxue.com/index.php?r=member/index" class="">我的</a></div>
+    </div>
+</div>
+
+<div class="container-fluid i_top_xl">
+    <div class="row">
+        <div class="col-xs-12 xl_01" id="headHtml" style="padding-bottom:15px; border-bottom:1px solid #eeeeee;">
+            <div style="color:#999;text-align:center;height:50px;line-height:50px;">loading...</div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>课程设置</strong></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2"><button type="button" class="btn btn-default">平面设计</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1"><button type="button" class="btn btn-default">室内设计</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3"><button type="button" class="btn btn-default">影视后期</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5"><button type="button" class="btn btn-default">园林景观</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4"><button type="button" class="btn btn-default">机械设计</button></a></div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left; margin-left:10px;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>快速导航</strong></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=index"><button type="button" class="btn btn-default">网站首页</button></a></div>
+            <div class="xl_menu_li" style="display: none;"><a href="http://m.qinxue.com/ganyan/?ob=2"><button type="button" class="btn btn-default">学员感言</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/teacher/"><button type="button" class="btn btn-default">师资团队</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/about.html"><button type="button" class="btn btn-default">关于我们</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/help/"><button type="button" class="btn btn-default">帮助中心</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=app/index"><button type="button" class="btn btn-default">APP下载</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=onlineCustomer/index"><button type="button" class="btn btn-default">联系客服</button></a></div>
+        </div>
+    </div>
+</div>
+<div class="i_top_xl_bj">&nbsp;</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_top_more").click(function(){
+            $(".i_top_xl").animate({right:"0px"});
+            $(".i_top_xl_bj").show();
+        });
+        $(".i_top_xl_bj").click(function(){
+            $(".i_top_xl").animate({right:"-300px"});
+            $(".i_top_xl_bj").hide();
+        });
+    });
+</script>
+<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+    $(document).ready(function(){
+        $(".member_bottom_xiala").click(function(){
+            $(".member_bottom_box").slideToggle();
+        });
+    });
+</script>
+<div class="bs-example search" data-example-id="text-form-control" style="margin:0px; padding-top:70px;">
+    <form method="get" action="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0">
+        <div class="form-group search_text"><input name="keywords" type="text" class="form-control" value="" placeholder="请输入要搜索的关键词"></div>
+        <input type="hidden" name="r" value="search/result" />
+        <div class="search_btn"><button type="submit" class="btn btn-success">搜 索</button></div>
+    </form>
+</div>
+
+<div class="container-fluid">
+    <div class="row remen_search">
+        <div class="col-xs-12"><strong>热门搜索</strong></div>
+        <div class="col-xs-12">
+            <ul>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=Photoshop">Photoshop</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=illustrator">illustrator</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=CorelDraw">CorelDraw</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=Indesign">Indesign</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=PS">PS</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=修片">修片</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=字体设计">字体设计</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=特效">特效</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=UI设计">UI设计</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=插画">插画</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=谈单">谈单</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=施工图">施工图</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=cad">cad</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=效果图">效果图</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=3DMAX">3DMAX</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=色彩搭配">色彩搭配</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=SketchUp">SketchUp</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=方案">方案</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=手绘">手绘</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=Maya">Maya</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=AE">AE</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=Premiere">Premiere</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=Vegas">Vegas</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=Edius6">Edius6</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=NUKE">NUKE</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=影视合成">影视合成</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=影视特效">影视特效</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=动画">动画</a></li>
+                <li><a href="http://m.qinxue.com/index.php?r=search/result&ptcid=0&tcid=0&lid=0&keywords=游戏设计">游戏设计</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="height:80px;"></div>
+
+<div id="jqAjaxLoadingTipFooter" class="ajaxLoadingFooter">处理中...</div>
+<div class="go_top" style="display:none;"><a href="#">&nbsp;</a></div>
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254537038'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254537038' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<script type="text/javascript">
+    $(function(){
+        objSysRegist.evalResizeEvent();
+    });
+</script>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var scrollTop = $(this).scrollTop();
+        if(scrollTop >= 460){
+            $(".go_top").css("display","block");
+        }else{
+            $(".go_top").css("display","none");
+        }
+    });
+</script>
+
+</body>
+</html>

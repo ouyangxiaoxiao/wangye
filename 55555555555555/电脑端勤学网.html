@@ -1,0 +1,1334 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.2"><!--,minimum-scale=0.2, maximum-scale=0.2-->
+  <meta name="Keywords" content="Vegas Pro12 从新手到高手系统教程" />
+  <meta name="Description" content="着重了解制作视频需要注意哪些流程..." />
+  <title>1-2 走进VEGAS的数字世界（下） - Vegas Pro12 从新手到高手系统教程 - 影视后期制作学院 - 勤学网</title>
+  <link rel="shortcut icon" href="http://sta.qinxue.com/images/ico.ico">
+  <link href="http://sta.qinxue.com/css/index_min.css?v=202004161700" rel="StyleSheet" type="text/css">
+  <link href="http://sta.qinxue.com/css/extend_min.css?v=202004161700" rel="StyleSheet" type="text/css">
+  <link href="http://sta.qinxue.com/css/homepage/css/homepage.css?v=202004161700" rel="StyleSheet" type="text/css">
+    <link href="http://sta.qinxue.com/css/spare_min.css?v=202004161700" rel="StyleSheet" type="text/css">
+    <link href="http://sta.qinxue.com/css/css_min.css?v=202004161700" rel="StyleSheet" type="text/css">
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery-1.7.1_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.backgroundpos_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.plus.extend_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.dateselect_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.main_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/common_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/menu_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.lazy_min.js?v=202004161700"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.json-2.4_min.js?v=202004161700"></script>
+  <script type="text/javascript">
+$(function(){
+	// 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+	$('img').lazy();
+});
+</script>
+   
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!--header-->
+  <script type="text/javascript" src="http://sta.qinxue.com/js/jquery.cookie_min.js"></script>
+  <script type="text/javascript" src="http://sta.qinxue.com/js/user_comm_new.js?v=1"></script>
+ <script type="text/javascript">
+	var URL_LOGIN_MINI = "http://www.qinxue.com/login/mini.html?p=1";
+	var URL_LOGIN_GZH = "http://www.qinxue.com/index.php?r=login/wxGzh&p=1&tpl=blank";
+	var URL_REGISTER_MINI = "http://www.qinxue.com/index.php?r=register/mini";
+	var URL_MYINFO = "http://www.qinxue.com/index.php?r=member/myLoginedInfo";
+	var NBT_DEBUG = 0;
+	var WEB_PATH = "";
+	var IMAGE_DOMAIN = "http://img.qinxue.com";
+	var IMAGEA_DOMAIN = "http://imagea.qinxue.com";
+	var WEB_DOMAIN = "http://www.qinxue.com";
+	var STATIC_DOMAIN = "http://sta.qinxue.com";
+    var KEY_M3U8_ENC = "KEY_M3U8_ENC";//
+	
+	objUserInfo.userid = "";
+	objUserInfo.username = "";
+	objUserInfo.sign = "9f8299d205f4a0340c824e2484b1da10";
+</script>
+<script language="javascript" type="text/javascript" src="http://sta.qinxue.com/js/dialog/Dialog.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://sta.qinxue.com/css/jquery.dialog.1.0.css"/>
+<style>
+.menu li .vip_renew{ color: #ffffff; font-size: 12px; background-color: #dd0000; padding: 3px 6px 4px; border-radius: 3px;}
+.menu li .vip_renew:hover{ color:#ffff00;}
+</style>
+<a name="gotop"></a>
+<div class="top">
+  
+  <div class="i_top i_top02">
+    <div class="logo"><a href="http://www.qinxue.com"><img src="http://sta.qinxue.com/images/logo.jpg" border="0" title="勤学网" alt="勤学网" width="97" height="45" /></a></div>
+    <div class="top_right"> 
+      <div class="qq_history"> 
+      
+      <a href="#"><img src="http://sta.qinxue.com/images/history_arr.jpg" border="0" /></a>
+      
+      <div class="qq_tanchuang_history" style="display:none;" id="playhistory"></div>
+      
+      </div>
+     <div class="search">
+      	 <form method="get" action="http://www.qinxue.com/index.php?r=search/result" target="_blank">
+         	<input type="text" name="keywords" id="scbar_txt" value="" autocomplete="off" x-webkit-speech speech placeholder="" />
+         	<input type="hidden" name="r" value="search/result" />
+         	<!--<input type="hidden" name="do" value="search" />-->
+            <button type="submit" name="searchsubmit" id="scbar_btn" sc="1" class="pn pnc" value="true">搜索</button>
+		</form>
+      </div>
+      <div class="menu">
+        <ul>
+            <li><a href="http://www.qinxue.com" target="_self">首&nbsp;页</a></li>
+            <li class="li_3"><a href="javascript:;" class="noclick">全部课程</a>
+                <div class="li_3_content">
+                  <dl>
+                    <dd data-id="li_nav_01" class="dangqian"><a href="http://www.qinxue.com/pingmiansheji/" target="_blank">平面设计</a></dd>
+                    <dd data-id="li_nav_02"><a href="http://www.qinxue.com/shineisheji/" target="_blank">室内设计</a></dd>
+                    <dd data-id="li_nav_03"><a href="http://www.qinxue.com/yingshihouqi/" target="_blank">影视后期制作</a></dd>
+                    <dd data-id="li_nav_04"><a href="http://www.qinxue.com/yuanlinjingguan/" target="_blank">园林景观设计</a></dd>
+                    <dd data-id="li_nav_05"><a href="http://www.qinxue.com/jixiesheji/" target="_blank">机械设计</a></dd>
+</dl>
+                  <!-- <div class="li_nav">
+                    <div class="li_nav_01" style="display: block;">
+                      <dl style="font-size: 12px; font-weight: bold; color: #666666;">教程分类 </dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/72-0-0.html?sort=" target="_blank">视觉基础</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/20-0-0.html?sort=" target="_blank">Photoshop</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/89-0-0.html?sort=" target="_blank">字体设计</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/21-0-0.html?sort=" target="_blank">illustrator</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/47-0-0.html?sort=" target="_blank">字效设计</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/22-0-0.html?sort=" target="_blank">CorelDraw</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/90-0-0.html?sort=" target="_blank">插画</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/46-0-0.html?sort=" target="_blank">Indesign</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/39-0-0.html?sort=" target="_blank">修片</a></dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/116-0-0.html?sort=" target="_blank">Dreamweaver</a></dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/pingmiansheji/" style="font-size:12px;color:#ff6600 !important;" target="_blank">查看更多></a></dl>
+                    </div>
+                    <div class="li_nav_02" style="display: none;">
+                      <dl style="font-size: 12px; font-weight: bold; color: #666666;">教程分类 </dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/114-0-0.html?sort=" target="_blank">方案设计</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/7-0-0.html?sort=" target="_blank">Auto Cad</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/106-0-0.html?sort=" target="_blank">施工工艺</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/23-0-0.html?sort=" target="_blank">3DMAX</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/56-0-0.html?sort=" target="_blank">施工图</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/113-0-0.html?sort=" target="_blank">sketchup草图大师</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/57-0-0.html?sort=" target="_blank">效果图</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/62-0-0.html?sort=" target="_blank">Vray渲染</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/58-0-0.html?sort=" target="_blank">室内手绘</a></dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/133-0-0.html?sort=" target="_blank">sketchbook</a></dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/shineisheji/" style="font-size:12px;color:#ff6600 !important;" target="_blank">查看更多></a></dl>
+                    </div>
+                    <div class="li_nav_03" style="display: none;">
+                      <dl style="font-size: 12px; font-weight: bold; color: #666666;">教程分类 </dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/33-0-0.html?sort=" target="_blank">影视剪辑</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/42-0-0.html?sort=" target="_blank">After Effects</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/34-0-0.html?sort=" target="_blank">三维制作</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/98-0-0.html?sort=" target="_blank">Cinema 4D</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/9-0-0.html?sort=" target="_blank">影视合成</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/45-0-0.html?sort=" target="_blank">Maya</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/70-0-0.html?sort=" target="_blank">视频包装</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/44-0-0.html?sort=" target="_blank">3D MAX</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/85-0-0.html?sort=" target="_blank">影视特效</a></dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/43-0-0.html?sort=" target="_blank">NUKE</a></dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/yingshihouqi/" style="font-size:12px;color:#ff6600 !important;" target="_blank">查看更多></a></dl>
+                    </div>
+                    <div class="li_nav_04" style="display: none;">
+                      <dl style="font-size: 12px; font-weight: bold; color: #666666;">教程分类 </dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/52-0-0.html?sort=" target="_blank">施工图</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/63-0-0.html?sort=" target="_blank">vray</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/51-0-0.html?sort=" target="_blank">效果图</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/49-0-0.html?sort=" target="_blank">3ds MAX</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/55-0-0.html?sort=" target="_blank">方案</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/36-0-0.html?sort=" target="_blank">Auto Cad</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/50-0-0.html?sort=" target="_blank">手绘</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/96-0-0.html?sort=" target="_blank">SketchUp</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/53-0-0.html?sort=" target="_blank">建模</a></dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/109-0-0.html?sort=" target="_blank">Grasshopper</a></dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/yuanlinjingguan/" style="font-size:12px;color:#ff6600 !important;" target="_blank">查看更多></a></dl>
+                    </div>
+                    <div class="li_nav_05" style="display: none;">
+                      <dl style="font-size: 12px; font-weight: bold; color: #666666;">教程分类 </dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/jixiesheji/31-0-0.html?sort=" target="_blank">模具设计</a></dl>
+                      <dl><a href="http://www.qinxue.com/126.html" target="_blank">ANSYS</a></dl>
+                      <dl><a href="http://www.qinxue.com/jixiesheji/32-0-0.html?sort=" target="_blank">工业设计</a></dl>
+                      <dl><a href="http://www.qinxue.com/jixiesheji/25-0-0.html?sort=" target="_blank">Pro/E</a></dl>
+                      <dl><a href="http://www.qinxue.com/110.html" target="_blank">结构设计</a></dl>
+                      <dl><a href="http://www.qinxue.com/jixiesheji/28-0-0.html?sort=" target="_blank">UG</a></dl>
+                      <dl><a href="http://www.qinxue.com/33.html" target="_blank">CATIA</a></dl>
+                      <dl><a href="http://www.qinxue.com/81.html" target="_blank">Solidworks</a></dl>
+                      <dl><a href="http://www.qinxue.com/89.html" target="_blank">Keyshot</a></dl>
+                      <dl><a href="http://www.qinxue.com/34.html" target="_blank">Mastercam</a></dl>
+                      <dl>&nbsp;</dl>
+                      <dl><a href="http://www.qinxue.com/jixiesheji/" style="font-size:12px;color:#ff6600 !important;" target="_blank">查看更多></a></dl>
+                    </div>
+                  </div> -->
+                </div>
+            </li>
+            <!-- <li><a href="http://www.qinxue.com/teacher/" target="_self">师资团队</a> -->
+            <li><a href="http://www.qinxue.com/laoshi/" target="_self">老师加盟</a></li>
+            <li><a href="http://www.qinxue.com/ganyan/" target="_self" style="display: none;">学员感言</a></li>
+                                                	    	    <li id="jqLoginedInfo">
+	    		<a id="jqHeaderLogin" href="javascript:void(0);" style="float:none;">登录</a> / <a id="jqHeaderReg" href="javascript:void(0);" style="float:none;">注册</a></li>
+	            </ul>
+      </div>	
+    </div>
+  </div>
+</div>
+<div class="popup"></div>
+
+<div class="coupon_popup" style="display:none;">
+	<div class="coupon_popup_content">
+		<div class="coupon_popup_content_01">
+			仅收到本弹窗的用户，享此福利<br />
+			有效期24小时，&nbsp;<span id="jqTimeOver" _attr_time="0"></span>&nbsp;后券失效
+		</div>
+		<div class="coupon_popup_content_02">
+			<a href="http://www.qinxue.com/index.php?r=order/service&tsid=3"><img src="http://sta.qinxue.com/images/coupon_btn.png?v=201901071148" /></a>
+		</div>
+		<div class="coupon_popup_content_03">
+			注：仅收到本弹窗的用户，享受此福利，名额有限，送完即停。<br />
+			<strong>·</strong> 此券仅适用于开通vip会员&nbsp;&nbsp;&nbsp;<strong>·</strong> 此券有效期24小时，错过不再有&nbsp;&nbsp;&nbsp;<strong>·</strong> 本活动根据运营情况随时终止
+		</div>
+		<img src="http://sta.qinxue.com/images/coupon_clo.png" class="coupon_popup_close" title="关闭" />
+	</div>
+</div>
+
+<div class="coupon_popup_min" style="display:none;">
+  <a href="http://www.qinxue.com/index.php?r=order/service&tsid=3">
+      <span id="jqTimeOverHour"></span>小时后失效
+    <img src="http://sta.qinxue.com/images/coupon_x_btn.jpg" />
+  </a>
+  <img src="http://sta.qinxue.com/images/x3.png" class="coupon_popup_min_close" /> 
+</div>
+
+<script language="javascript" type="text/javascript" src="http://sta.qinxue.com/js/common/head.js?v=202004161700"></script>
+<script language="javascript" type="text/javascript">
+$(function(){
+	objStudyHistory.cfg.urlStudyHistory = "http://www.qinxue.com/index.php?r=chapter/ajaxGetUserSeek";
+	$(".qq_history").mouseenter( function(){ objStudyHistory.getStudyHistory(); });	
+});
+$(document).ready(function () {     
+        $(".li_3_content li").mouseover(function () {
+            var li_nav = $(this).attr("data-id"); 
+            $(".li_nav div").css("display", "none");
+            $("." + li_nav).css("display", "block");
+            $(this).addClass("dangqian").siblings(".li_3_content li").removeClass("dangqian");
+        });
+    });
+
+$(document).ready(function(){
+	var TPSHeight = $(".Tip_Popup_Scroll").height();
+	if (TPSHeight == 520)
+    {
+      $(".Tip_Popup_Scroll").css("padding-right","0px");
+    }
+  else{
+      $(".Tip_Popup_Scroll").css("padding-right","15px");
+    }
+});
+
+$(".coupon_popup_close").click(function(){
+	$(".coupon_popup_min").css("display","block");
+	$(".coupon_popup").css("display","none");
+});
+
+$(".coupon_popup_min_close").click(function(){
+  $(".coupon_popup_min").css("display","none");
+});
+</script><!--tip-->
+<!--content-->
+<script type="text/javascript" src="http://sta.qinxue.com/js/setcookiefunc.js?v=2016111401"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/QRCode_min.js?v=20161114"></script>
+
+<script type="text/javascript">
+var URL_ISLOGIN = "http://www.qinxue.com/index.php?r=index/islogin";
+var URL_PERMISSION = "http://www.qinxue.com/index.php?r=chapter/permission";
+var URL_GETNOTE = "http://www.qinxue.com/index.php?r=chapter/getMyNote";
+var praiseURL = "http://www.qinxue.com/index.php?r=memberNote/praise";
+var addNoteURL = "http://www.qinxue.com/index.php?r=memberNote/add";
+var openURL = "http://www.qinxue.com/index.php?r=memberNote/open";
+var curID = "";
+var SEEK = 0;
+var IMAGE_DOMAIN = "http://img.qinxue.com";
+var SSID = "17qt9bhm843m7ja0nljiip2vn6";
+
+var NOTE ='';
+var TUID ='';
+var CURRENT_USERINFO = {userid:0,nickname:''};
+
+var POSITION = '';
+var UNISSHOW = 1;
+var USERNICKNAME = "";
+var ISSUPPORTH5 = 0;
+
+var PLAYTUID = "30";
+
+var PLAYTUNAME = "Vegas Pro12 从新手到高手系统教程";
+var PLAYTUCID = "10";
+var PLAYNAME = "1-2 高 高（下）";
+var PLAY_URL_SIGN = "11489273b4552ea3bce9325f4d663e53";
+var PLAYIMG = "http://img.qinxue.com/tutorials/0/30-small.jpg";
+var PLAYIMGMIDDLE = "http://img.qinxue.com/tutorials/0/30-middle.jpg";
+
+var PLAY_GET_FILES = "http://www.qinxue.com/index.php?r=chapter/getFile";
+// 设置浏览记录
+setTutorialHistory(PLAYTUID,PLAYTUNAME,PLAYIMGMIDDLE);
+
+/**
+ *
+ * 播放时检查是否登录
+ */
+function playingCheckLogin(){
+	ajax.init()
+	  .setUrl( URL_ISLOGIN )
+	  //.setData( jsonData )
+	  .setCbSuccess("playingCheckLoginSuccess(data)")
+	  .setCbError( "playingCheckLoginError(data)" )
+	  .setIsTip(false)
+	  .preRun()
+	  .run();
+}
+
+/**
+ * 成功回调函数
+ */
+function playingCheckLoginSuccess( data )
+{
+	if(data.ISLOGIN != 1){
+		window.location.href = window.location;
+	}
+}
+
+/**
+ * 成功回调函数
+ */
+function playingCheckLoginError( data )
+{
+	//window.location.href = window.location;
+}
+
+
+/**
+ * 获得Session以及课程ID
+ */
+function jw_getSessionInfo()
+{
+	 	 /**/
+
+     return "QF0BD0AILjFiYQg7ZgwQWh4XEwMvLGgjVWAtVUEWQUsFW3NkYm0NZmFVRhZJHUgIdj5sZl4wY15BD0BLGwhzZD8wDGRpXhReQR9LXzo0LiFLbH5JEBoZS1cbLzIiIF54Mgkc";
+}
+
+</script>
+<style>
+.order_classification{ width:1019px; margin:0px -8px 0px; padding-top:6px;}
+.orderMaxName_list{ background: #ffffff; }
+</style>
+<div id="jqPlayerDebug" style="width:1200px;margin:0px auto;"></div>
+<div id="jqPlayerPluins" style="display:none;"></div>
+
+<div class="bfy_banner">
+
+
+
+
+
+
+  <div class="bfy_kuan">
+    <div class="bfy_sp_title"><h1><a style="font-size:24px;" href="http://www.qinxue.com/30.html">Vegas Pro12 滚滚滚</a>&nbsp;&gt;&nbsp;1-2 走进VEGAS的数字世界（下）</h1></div>
+
+    <div class="bfy_spbf" style="position:relative; ">
+    	<div class="bfq_ewm" style="display:none;">
+    	<img src="http://sta.qinxue.com/images/qxw_ewm.jpg" />
+    	<br /><img src="http://sta.qinxue.com/images/ewm_c.jpg" class="ewm_close" />
+    	</div>
+    	
+        
+<!--        --><!--        -->            		<script language="javascript" type="text/javascript">
+var PLAY_TUID = 30;
+var PLAY_TUCID = 10;
+var PLAY_KEY = "AjNcP1MtBWdYYAJ0ASoFYAAwA2lcOAExBzZVNlEzBWcBNA==";
+var URL_LOADFILEPATH = PLAY_GET_FILES;
+var URL_LOAD_PLAYLIST = "http://www.qinxue.com/index.php?r=chapter/playList&tuid=30&tucid=10";
+//@todo-此处提取封面图
+var URL_PREVIEW_IMAGE = "http://img.qinxue.com/tutorials/0/30-cover.jpg";
+var URL_VIDEO_AD = "http://videoa.qinxue.com/7_loading.flv";
+var CFG_LINE = {'1':{'name':'线路1','clickcalljs':'javascript:objChapterChangeLine.lineChange(1);'},'line2':{}};
+</script>
+<script language="javascript" type="text/javascript" src="http://sta.qinxue.com/js/jwplayer/5.10/jwplayer.min.js?v=202004161700"></script>
+<script language="javascript" type="text/javascript" src="http://sta.qinxue.com/js/jwplayer/5.10/jwplayer.loadv2.js?v=202004161700"></script>
+
+<script type="text/javascript" src="http://sta.qinxue.com/js/edit_note.js?v=202004161700"></script>
+<div id="jqPlayerSetup" style="width:1065px;height:629px;overflow:hidden;position:relative;">
+	<video src="http://vv.taozhi.cn/aa33e2da9f7f4e1b82415c4be692830e/d0b8626d16f14977b6d6f423c2ebf130-ef4201da6f14ff3b8bf1ddeef0113290-ld.mp4" width="1024" height="629" onerror="this.src='/mobile/images/tu-cover.jpg'" style="position:absolute;top:0px;left:0px;" autoplay="autoplay">
+	<div id="jqPlayerPreLoadingTip" style="display:none;"></div>
+	<div style="position:absolute;top:0px;width:1024px;">
+		<div class="player-o">
+		    <div id="player-1-jiantou" class="player-1-jiantou01" title="展开目录" style="display:none;"><a href="javascript:;">&nbsp;</a></div>
+			<div id="player-l" class="player-l">
+				<div class="player-lc"></div>
+				<div class="player-litems" id="player-litems"></div>
+			</div>
+			<div id="myPlayer" class="loadingPlayer" style="background-image:none;">
+				<div class="loadingMsg"><a href="javascript:void(0)" id="jqBtnPlay">&nbsp;</a></div>
+                <div class="loadingPlay">
+                  <div class="loadingPlayan"><a href="javascript:void(0)" id="jqBtnPlay02">&nbsp;</a></div>
+                </div>
+			</div>
+		</div>
+	</div>
+	
+	    
+    <div class="loadingPrompt" id="lineChange">
+    	<div class="Prompt_left">
+    	&nbsp;当前线路为 <span id="jqCurLine"></span>
+    	网络好像不太流畅,试试其他线路 <span id="jqOtherLine"> </span> 切换线路若仍有问题&nbsp;<a id="jqKaHelpLink" href="#" target="_blank"  style="color:#70a400; text-decoration:underline;">请点击这里</a>
+    	</div>
+      <div class="Prompt_right"><a href="javascript:objChapterChangeLine.closeLineChange();"><img src="http://sta.qinxue.com/images/gg_close.png" /></a></div>
+    </div>
+</div>
+
+<div id="jqPlayerVipTip" style="display:none;">
+	本节课程您可以试看<span id="jqPlayerVipTip_sktime">-</span>分钟，开通会员免费看。<a onclick="jw_show_order();" style="cursor:pointer;color:#ff6600;text-decoration:underline;">立即开通</a>
+</div>
+
+<div id="jqOrderSetup" class="play_open_member" style="display:none;">
+	<div class="play_open_member_title"><span id="jqOrderSetup_sk_end">亲，试看已结束<br /></span>开通影视后期学院年会员，可学习本学院所有教程+新增教程</div>
+	<div class="play_open_member_content">
+		<div class="play_open_member_content01">
+						影视后期学院已有 57 套教程 总计 867.8 个小时
+		</div>
+		<div class="play_open_member_content02">
+			<a href="http://www.qinxue.com/index.php?r=order/service&tsid=3" class="open_button02" target="_blank">立即开通会员</a>¥499/年
+		</div>
+		<div class="play_open_member_content04">
+			Vegas Pro12 从新手到高手系统教程&nbsp;&nbsp;&nbsp;共31节 
+			5.3小时 
+			单价 ¥130元&nbsp;&nbsp;&nbsp;
+			<a href="http://www.qinxue.com/index.php?r=order/tutorials&tu_id=30" class="open_button01" target="_blank">单买本课程</a>
+		</div>
+		<div class="play_open_member_content04">
+                        <a onclick="editNote02();">教程内容预览</a>
+                        &nbsp;&nbsp;&nbsp;
+            <a href="http://www.qinxue.com/ganyan/" target="_blank">看看学长学姐们如何评价</a>
+        </div>
+	</div>
+	<div class="play_open_member_close"><img src="http://sta.qinxue.com/images/x05.png"></div>
+</div>
+
+<div id="jqPlayerFlashSetup" class="PlayerFlashSetup" style="display:none;">
+	<div class="content_01">亲，您的FLASH插件出现异常，无法播放视频</div>
+	<div class="content_02">您可以:</div>
+	<div class="content_03">
+		<a href="//www.adobe.com/go/getflashplayer" target="_blank"><img src="http://sta.qinxue.com/images/flash_play.jpg" /><br />修复FLASH插件<span>（推荐）</span></a>
+	</div>
+</div>
+<script language="javascript">
+//试看结束
+function jw_sk_end()
+{
+	//$("#jqPlayerSetup").hide();
+	//popMsg.showCustomHtmlMsg( "温馨提示" , $("#jqOrderSetup").html() , false , true , {tpl:'v2'} );
+	$("#jqOrderSetup_sk_end").show();
+	$("#jqOrderSetup").show();
+	//console.log( "jw_sk_end" );
+}
+
+function jw_show_order()
+{
+	//popMsg.showCustomHtmlMsg( "温馨提示" , $("#jqOrderSetup").html() , false , true , {tpl:'v2'} );	
+	playObj.jwPlayObj.pause();
+	$("#jqOrderSetup_sk_end").hide();
+	$("#jqOrderSetup").show();
+	
+	objChapterChangeLine.closeLineChange();
+}
+
+//试看进行中
+function jw_sk_ing( _intSkTime )
+{
+	$("#jqPlayerVipTip_sktime").html( parseInt(_intSkTime/60) );
+	$("#jqPlayerVipTip").show();
+}
+
+function jw_login_tip()
+{
+	//未登录，提示登录
+	if( objUserInfo.myInfo.userid <= 0 )
+	{
+		setTimeout( function(){	$("#jqPlayerLoginTip").show();} ,  10000 );
+	}
+}
+
+function jw_sk_seek()
+{
+	//console.log( "jw_sk_seek" );
+	$("#jqOrderSetup").hide();
+}
+
+function jw_debug( _str )
+{
+	//console.log( _str );
+}
+
+/**安装FLASH*/
+function jwplayer_setupFlash()
+{
+	$("#jqPlayerSetup").hide();
+	$("#jqPlayerFlashSetup").show();
+}
+
+$(function(){
+  $(".play_open_member_close").click(function(){
+	$(".play_open_member").css("display","none");
+  });
+});
+
+</script>    	    </div>
+
+
+	<div class="bfy_spbiji">
+
+    	<div class="bfy_spbiji_ts" style="display:none;">提示：笔记时间。</div>
+    	<div class="bfy_spbiji_left"><a class="on_section" id="on_section">&nbsp;</a><a  class="next_section" id="next_section">&nbsp;</a></div>
+        <div class="bfy_spbiji_right" >
+        	<div class="bfy_spbiji_right_01">时间：<span id="positionDisplayNew">00:00</span>&nbsp;<span>|</span></div>
+            <div class="bfy_spbiji_right_02"><input  id ="note" type="text" onfocus="OnfocusFun(this);" onblur="OnBlurFun(this);" class="bfy_spbiji_right_input" value="记笔记更有助于积累资料、拓展新知，达到全面透彻学习的目的。点击这里开始写笔记。" maxlength="255"/></div>
+          <div class="bfy_spbiji_right_03"><span class="span01"><input id="unisshow" name="unisshow" type="checkbox"  /></span><span class="span02">隐藏</span></div>
+            <div class="bfy_spbiji_right_04">
+								<a href="javascript:submitAddNote();"><img src="http://sta.qinxue.com/images/save_notes_01.jpg" onmouseout="this.src='http://sta.qinxue.com/images/save_notes_01.jpg'" onmouseover="this.src='http://sta.qinxue.com/images/save_notes_02.jpg'" /></a>
+							</div>
+		</div>
+
+		<div class="bfy_spbiji_xiala" id="bfy_spbiji_xiala" style="display:none;"></div>
+
+		<input id="position" type="hidden" value="0"/>
+		<input id="tuid" type="hidden" value="30"/>
+		<input id="tucid" type="hidden" value="10"/>
+    </div>
+
+    <div class="bfy_spbottom">
+
+
+
+      <div class="bfy_spbottom_left"><!-- Baidu Button BEGIN --><div class="bdsharebuttonbox"><span class="fenxiangdao">分享到：</span><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="fenxiang_more" data-cmd="more"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://sta.qinxue.com/js/baidu_share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- Baidu Button END --></div>
+
+	
+            <div class="bfy_spbottom_right">
+      <!--<a href="javascript:gotoAnchor(2);"><img src="http://sta.qinxue.com/images/sp_an_01_03.jpg" onmouseout="this.src='http://sta.qinxue.com/images/sp_an_01_03.jpg'" onmouseover="this.src='http://sta.qinxue.com/images/sp_an_02_03.jpg'" title="有疑问" /></a>-->
+      
+            <a href="javascript:gotoAnchor(4);"><img src="http://sta.qinxue.com/images/xzfj.jpg" onmouseout="this.src='http://sta.qinxue.com/images/xzfj.jpg'" onmouseover="this.src='http://sta.qinxue.com/images/xzfj_02.jpg'" title="下载素材" /></a>
+      
+      <a id="jqBtnSubmitTask"
+             		href="javascript:objPlayChapterMore.runPermissionCheck(true,true,this,'您还没有购买本课程，不能提交作业哦');"
+               >
+      <img src="http://sta.qinxue.com/images/sp_an_01_04.jpg" onmouseout="this.src='http://sta.qinxue.com/images/sp_an_01_04.jpg'" onmouseover="this.src='http://sta.qinxue.com/images/sp_an_02_04.jpg'" title="交作业"  />
+      </a>
+
+      <a id="jqBtnSubmitQa"
+	          		href="javascript:objPlayChapterMore.runPermissionCheck(true,true,this,'您还没有购买本课程，不能提交问题哦');"
+       		 ><img src="http://sta.qinxue.com/images/sp_an_01_03.jpg" onmouseout="this.src='http://sta.qinxue.com/images/sp_an_01_03.jpg'" onmouseover="this.src='http://sta.qinxue.com/images/sp_an_02_03.jpg'" title="有疑问" /></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="c_main">
+		    <div class="right">
+
+      <div class="right_con">
+        <div class="title">本节介绍</div>
+	    <div class="con_con paddingg">
+	      <div class="teacher_list_jj"><br />着重了解制作视频需要注意哪些流程</div>
+	    </div>
+      </div>
+           <div class="right_con">
+			<div class="title">精彩笔记</div>
+			<div class="notes_tishi">提示:点击笔记时间可继续观看</div>
+			<div class="con_con" id="con_con" style="min-height:300px;">
+		    			  <div class="notes">
+		        <div class="notes_left">
+		          <div class="notes_img"><a href="http://www.qinxue.com/u1354358" target="_blank">
+		          <img title="tianshu663" class="jqUIconSmall" _src="http://imgu.qinxue.com/member/1355/u1354358-small.gif" width="49" height="49" _att_uid="1354358" src="http://img.qinxue.com/u_small.jpg"/></a></div>
+		          <div class="notes_name">tianshu663</div>
+		          <div class="notes_ding"><a href="javascript:;" onclick="praiseNote('1354358','24026');"><span id="praiseNum24026">顶(0)</span></a></div>
+		        </div>
+		        <div class="notes_right">
+			      <div class="notes_title">笔记时间： 01:46			      <a href="#gotop" onclick="seekTo(106);"><img src="http://sta.qinxue.com/images/ml_play.png" align="absmiddle" />&nbsp;</a>
+			      </div>
+			      <div class="notes_con">转场特效拖动到需要转场的两个素菜之间</div>
+			      <div class="notes_time">3天前</div>
+		        </div>
+			  </div>
+
+			  			  <div class="notes">
+		        <div class="notes_left">
+		          <div class="notes_img"><a href="http://www.qinxue.com/u652342" target="_blank">
+		          <img title="f芳" class="jqUIconSmall" _src="http://imgu.qinxue.com/member/653/u652342-small.gif" width="49" height="49" _att_uid="652342" src="http://img.qinxue.com/u_small.jpg"/></a></div>
+		          <div class="notes_name">f芳</div>
+		          <div class="notes_ding"><a href="javascript:;" onclick="praiseNote('652342','13972');"><span id="praiseNum13972">顶(0)</span></a></div>
+		        </div>
+		        <div class="notes_right">
+			      <div class="notes_title">笔记时间： 05:57			      <a href="#gotop" onclick="seekTo(357);"><img src="http://sta.qinxue.com/images/ml_play.png" align="absmiddle" />&nbsp;</a>
+			      </div>
+			      <div class="notes_con">框选区域，文件，渲染，可以选自己喜欢的格式，完成视频制作</div>
+			      <div class="notes_time">3天前</div>
+		        </div>
+			  </div>
+
+			  			  <div class="notes">
+		        <div class="notes_left">
+		          <div class="notes_img"><a href="http://www.qinxue.com/u652342" target="_blank">
+		          <img title="f芳" class="jqUIconSmall" _src="http://imgu.qinxue.com/member/653/u652342-small.gif" width="49" height="49" _att_uid="652342" src="http://img.qinxue.com/u_small.jpg"/></a></div>
+		          <div class="notes_name">f芳</div>
+		          <div class="notes_ding"><a href="javascript:;" onclick="praiseNote('652342','13971');"><span id="praiseNum13971">顶(0)</span></a></div>
+		        </div>
+		        <div class="notes_right">
+			      <div class="notes_title">笔记时间： 04:12			      <a href="#gotop" onclick="seekTo(252);"><img src="http://sta.qinxue.com/images/ml_play.png" align="absmiddle" />&nbsp;</a>
+			      </div>
+			      <div class="notes_con">右键插入视频轨道，点击新轨道，点击媒体发生器插入字幕。</div>
+			      <div class="notes_time">3天前</div>
+		        </div>
+			  </div>
+
+			  			  <div class="notes">
+		        <div class="notes_left">
+		          <div class="notes_img"><a href="http://www.qinxue.com/u652342" target="_blank">
+		          <img title="f芳" class="jqUIconSmall" _src="http://imgu.qinxue.com/member/653/u652342-small.gif" width="49" height="49" _att_uid="652342" src="http://img.qinxue.com/u_small.jpg"/></a></div>
+		          <div class="notes_name">f芳</div>
+		          <div class="notes_ding"><a href="javascript:;" onclick="praiseNote('652342','13970');"><span id="praiseNum13970">顶(0)</span></a></div>
+		        </div>
+		        <div class="notes_right">
+			      <div class="notes_title">笔记时间： 01:13			      <a href="#gotop" onclick="seekTo(73);"><img src="http://sta.qinxue.com/images/ml_play.png" align="absmiddle" />&nbsp;</a>
+			      </div>
+			      <div class="notes_con">按键盘加减号或窗口下的加减号放大时间线。</div>
+			      <div class="notes_time">3天前</div>
+		        </div>
+			  </div>
+
+			  			  <div class="notes">
+		        <div class="notes_left">
+		          <div class="notes_img"><a href="http://www.qinxue.com/u725279" target="_blank">
+		          <img title="qinbei03" class="jqUIconSmall" _src="http://imgu.qinxue.com/member/726/u725279-small.gif" width="49" height="49" _att_uid="725279" src="http://img.qinxue.com/u_small.jpg"/></a></div>
+		          <div class="notes_name">qinbei03</div>
+		          <div class="notes_ding"><a href="javascript:;" onclick="praiseNote('725279','74');"><span id="praiseNum74">顶(0)</span></a></div>
+		        </div>
+		        <div class="notes_right">
+			      <div class="notes_title">笔记时间： 02:56			      <a href="#gotop" onclick="seekTo(176);"><img src="http://sta.qinxue.com/images/ml_play.png" align="absmiddle" />&nbsp;</a>
+			      </div>
+			      <div class="notes_con">1-2  一般制作流程：文案——对素材进行选择和分类——初步剪辑——精剪（加转场、特效、音效、调色、制作字幕）——渲染</div>
+			      <div class="notes_time">3天前</div>
+		        </div>
+			  </div>
+
+			  
+		      <div class="notes_more"><a id="moreNoteLink" href="http://www.qinxue.com/note/30-10.html" target="_blank">更多 >></a></div>
+
+			</div>
+	</div>
+
+     
+    </div>
+    <div class="left" style="margin-top:-15px;">
+      <a name="m01">&nbsp;</a>
+      <a name="m02">&nbsp;</a>
+      <div class="left_con">
+	    <div class="title_02">
+          <ul>
+		  		  	<li id="one1" class="hover" onmouseup="setTab('one',1,6)" >教程目录</li>
+		              <li id="one2" onmouseup="setTab('one',2,6)" style="display:none;" >本节问题答疑</li>
+            <li id="one3" onmouseup="setTab('one',3,6)" style="display:none;">本节作业练习</li>
+                        <a name="sucai_xiazai"></a><li id="one4" onmouseup="setTab('one',4,6)" >教程素材</li>
+                        <a name="jiaocheng_dianpin"></a><li id="one5" onmouseup="setTab('one',5,6);objPlayChapterComment.clickLoadPagination( 0 );" >教程点评</li>
+          </ul>
+        </div>
+        	    <div  id="con_one_1" class="con_con con_02 zimu_con_one_1" style="display:block">
+          <div class="con_con paddingg scrolll">
+	      <table width="100%" border="0" cellspacing="0" cellpadding="6">
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title01">第一章  vegas 快速入门</div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-9.html" title="1-1 走进VEGAS的数字世界（上）"><dl>7分钟</dl><dl class="class_9 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-1 走进VEGAS的数字世界（上）</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr class="current">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-10.html" title="1-2 走进VEGAS的数字世界（下）"><dl>7分钟</dl><dl class="class_10 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-2 走进VEGAS的数字世界（下）</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-13.html" title="1-3  如何在vegas里创建项目与保存项目文件"><dl>7分钟</dl><dl class="class_13 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-3  如何在vegas里创建项目与保存项目文件</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-23.html" title="1-4 属性参数设置"><dl>8分钟</dl><dl class="class_23 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-4 属性参数设置</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-24.html" title="1-5 熟悉工作环境-环境界面"><dl>7分钟</dl><dl class="class_24 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-5 熟悉工作环境-环境界面</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-25.html" title="1-6 在vegas里如何导入素材以及如何使用修剪器创作视频"><dl>16分钟</dl><dl class="class_25 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-6 在vegas里如何导入素材以及如何使用修剪器创作视频</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-48.html" title="1-7 剪辑详解、渲染格式"><dl>21分钟</dl><dl class="class_48 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-7 剪辑详解、渲染格式</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-49.html" title="1-8   30分钟学会制作精美的视频mv（上）"><dl>20分钟</dl><dl class="class_49 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-8   30分钟学会制作精美的视频mv（上）</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-50.html" title="1-9   30分钟学会制作精美的视频mv（下）"><dl>13分钟</dl><dl class="class_50 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">1-9   30分钟学会制作精美的视频mv（下）</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title01">第二章   视频剪辑大师的成长之路</div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-51.html" title="2-1轨道运动详解"><dl>8分钟</dl><dl class="class_51 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-1轨道运动详解</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-52.html" title="2-2色键"><dl>12分钟</dl><dl class="class_52 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-2色键</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-53.html" title="2-3关键帧"><dl>20分钟</dl><dl class="class_53 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-3关键帧</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-54.html" title="2-4 特效"><dl>24分钟</dl><dl class="class_54 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-4 特效</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-55.html" title="2-5字的特效"><dl>15分钟</dl><dl class="class_55 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-5字的特效</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-56.html" title="2-6音频处理"><dl>21分钟</dl><dl class="class_56 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-6音频处理</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-57.html" title="2-7声画合一"><dl>23分钟</dl><dl class="class_57 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-7声画合一</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-58.html" title="2-8 分组功能和3D轨道"><dl>13分钟</dl><dl class="class_58 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">2-8 分组功能和3D轨道</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title01">第三章 快速提高vegas的技巧</div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-59.html" title="3-1子母轨"><dl>8分钟</dl><dl class="class_59 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-1子母轨</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-60.html" title="3-2 合成模式"><dl>6分钟</dl><dl class="class_60 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-2 合成模式</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-61.html" title="3-3透明标"><dl>5分钟</dl><dl class="class_61 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-3透明标</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-62.html" title="3-4 静态遮罩"><dl>8分钟</dl><dl class="class_62 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-4 静态遮罩</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-63.html" title="3-5 视频遮罩"><dl>10分钟</dl><dl class="class_63 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-5 视频遮罩</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-64.html" title="3-6关键帧遮罩"><dl>10分钟</dl><dl class="class_64 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-6关键帧遮罩</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-65.html" title="3-7画面变形"><dl>7分钟</dl><dl class="class_65 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-7画面变形</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-66.html" title="3-8仿三维特效"><dl>6分钟</dl><dl class="class_66 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-8仿三维特效</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-304.html" title="3-9 视频调色"><dl>6分钟</dl><dl class="class_304 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-9 视频调色</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-305.html" title="3-10 查看示波器"><dl>5分钟</dl><dl class="class_305 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-10 查看示波器</span>
+             </a></div>
+          </td>
+  </tr>
+  <tr onmouseout="this.bgColor='#ffffff';this.borderColor='#ffffff'"; onmouseover="this.bgColor='#f4f4f4'; this.borderColor='#f4f4f4'">
+    <td width="90%" align="left" valign="middle">
+            <div class="ml_tuc_title03"><a href="http://www.qinxue.com/30-306.html" title="3-11 脚本的应用"><dl>3分钟</dl><dl class="class_306 user_play_info" style="display:none;"></dl><span class="ml_tuc_title02_title">3-11 脚本的应用</span>
+             </a></div>
+          </td>
+  </tr>
+</table>
+<script >
+	var PREV_CHAPTER = "http://www.qinxue.com/30-9.html";
+	var NEXT_CHAPTER = "http://www.qinxue.com/30-13.html";
+</script>	      </div>
+	    </div>
+
+        <div id="con_one_2" style="display:none" class="con_con">
+          <div class="index_question_list">
+				<div class="tipNotice" style="height:25px;line-height:25px;padding:0px 5px;color:#999;">亲，如果您在学习本节课程时有疑问，可在此提问。</div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="3" style="margin-top:10px;">
+                  <tr>
+                    <td width="70%" align="left" valign="middle" bgcolor="#eeeeee"><strong>&nbsp;主题</strong></td>
+                    <td width="11%" align="center" valign="middle" bgcolor="#eeeeee"><strong>回复/查看</strong></td>
+                    <td width="19%" align="left" valign="middle" bgcolor="#eeeeee"><strong>最后回复人/回复时间</strong></td>
+                  </tr>
+                         			 <tr>
+                    <td colspan="3" style="color:#999;"><div class="nodata">还没有学员在学习本节课程时遇到问题</div></td>
+                  </tr>
+       			                  </table>
+                <div class="wytw">
+                  <div class="wytw_01"><a href="http://bbs.qinxue.com/forum.php?mod=post&action=newthread&fid=46&tuid=30&tucid=10&typeid=7" target="_blank"><img src="http://sta.qinxue.com/images/wytw.jpg" title="我要提问" /></a></div>
+                  <div class="wytw_02"><a href="http://bbs.qinxue.com/forum.php?mod=forumdisplay&fid=46&filter=typeid&typeid=7" target="_blank">更多 >></a></div>
+                </div>
+          </div>
+        </div>
+
+        <div id="con_one_3" style="display:none" class="con_con">
+                   <div class="index_operation">
+         		 暂未布置作业
+         </div>
+                 </div>
+                <div id="con_one_4" style="display:none" class="con_con">
+          <div class="attachment_download_01">
+          	<strong>下载附件说明：</strong><br />
+	          &nbsp;&nbsp;&nbsp;&nbsp;1.请不要从非官方渠道下载附件，以免下载到病毒文件。<br />
+	          &nbsp;&nbsp;&nbsp;&nbsp;2.如果您不知道如何使用附件，<a href="http://www.qinxue.com/help/9-4.html" target="_blank" style="color:#70a400;">请点击这里查看帮助</a>。<br />
+	          &nbsp;&nbsp;&nbsp;&nbsp;3.解压rar文件时，如需密码，密码为www.qinxue.com<br/>
+	          &nbsp;&nbsp;&nbsp;&nbsp;4.请在下方输入验证码，获取下载链接。
+          </div>
+          <div class="attachment_download_04">
+	          <strong>课程附件列表：</strong><br/>
+			                	                              			              			<li>Vegas 入门到精通教程</li>
+              			              		                    </div>
+          <div class="attachment_download_02">
+          <!-- <input name="captcha" type="text" class="input_user" id="captcha" title="验证码" size="15" style="color:gray" value="请输入验证码" onfocus="if(this.value=='请输入验证码'){this.value=''};this.style.color='black';" onblur="if(this.value==''||this.value=='请输入验证码'){this.value='请输入验证码';this.style.color='gray';}" />&nbsp;
+          <img align="absmiddle" id="jqCaptcha" src="/index.php?r=captcha/index&amp;backcolor=FFFFFF&amp;length=6&amp;random=61393" alt="" /><span id="jqChangeCaptcha">看不清?换一张</span><script>$(function(){ $("#jqChangeCaptcha").click(function(){ $("#jqCaptcha").attr("src","/index.php?r=captcha/index&backcolor=FFFFFF&length=6&random="+Math.random()); }); });</script><br /><br /> -->
+          <a href="javascript:;" onclick="objPlayChapterDownloadAtt.downloadAtt(30,10)"><img src="http://sta.qinxue.com/images/attachment_download.jpg" onmouseout="this.src='http://sta.qinxue.com/images/attachment_download.jpg'" onmouseover="this.src='http://sta.qinxue.com/images/attachment_download_02.jpg'" /></a>
+          </div>
+          <span id="attachment_download_03"></span>
+        </div>
+         
+        <div  id="con_one_5" style="display:none" class="con_con">
+            <div id="jqCommentLoginedInfo" class="comment_dlzc">
+								<a href="javascript:popLogin.show();">登录</a> | <a href="http://www.qinxue.com/register.html">注册</a>
+							  </div>
+      	    <div id="jqCommentTip" style="display:none;" class="comment_ts">
+	        亲，如果感觉课程好的话，请多多给好评哦，好评是我们继续开发更多好教程的源动力！<br/>
+			（如果您遇到了问题，请到论坛发帖，会得到更及时的帮助 <a target="_blank" href="http://bbs.qinxue.com/forum.php?mod=post&action=newthread&fid=46&tuid=30&tucid=10&typeid=7">bbs.qinxue.com</a>）
+			</div>
+	        <div class="comment_zs" id="commentCount">0/200</div>
+	        <div class="comment_con">
+	  			<textarea name="textarea" cols="" rows="" id="commentInput" defaulttxt="有什么感想，您也来说说吧"  style="color:gray"  onkeydown="this.style.color='black';">有什么感想，您也来说说吧</textarea>
+	 		 </div>
+	        <div class="comment_an">
+			  	<div id="page-tip" class="nodata" style="float:left;line-height:32px;"></div>
+			  	<input name="" id="subComment" type="image" src="http://sta.qinxue.com/images/fabiao.jpg" />
+			  </div>
+	        <div id="comment_list_container"></div>
+	        <div class="page">
+                <div id="tnt_pagination"></div>
+            </div>
+      <div id="jqMyCommentTip" class="comment_list_mycomment" style="display:none;">我的评论不见了？ 亲，<a target="_blank" href="http://www.qinxue.com/index.php?r=memberComment/index">请点击这里查看</a></div>
+	    </div>
+
+      </div>
+
+      
+  </div>
+  <div class="order_classification">
+      		<a href="http://www.qinxue.com/index.php?r=order/service&tsid=3" target="_blank">
+		<div  class="orderMaxName">
+	    	<div class="orderMaxName_list">
+				<h1>影视后期制作学院年会员</h1>
+				<dt>可学习影视后期制作学院所有课程+新增课程</dt>
+				<dl><em style='font-family:Arial;font-style:normal;'>&yen</em>499元<font>/</font>年</dl>
+				<dd>全网最系统影视后期教程，专业学习首选</dd>
+	        </div>
+		</div>
+	</a>			
+	<a href="http://www.qinxue.com/index.php?r=order/service&tsid=16" target="_blank">
+		<div  class="orderMaxName">
+	    	<div class="orderMaxName_list">
+				<h1>勤学网全站年会员</h1>
+				<dt>可学习全部<strong>5个学院</strong>所有课程+新增课程</dt>
+				<dl><em style='font-family:Arial;font-style:normal;'>&yen</em>979元<font>/</font>年</dl>
+				<dd>成为全视野优秀设计师，性价比更高<br/>五个学院原总价399+399+399+399+499=2095<br/><font>节省1116元</font></dd>
+	        </div>
+		</div>
+	</a>			
+	<a href="http://www.qinxue.com/index.php?r=order/service&tsid=13" target="_blank">
+		<div  class="orderMaxName">
+	    	<div class="orderMaxName_list">
+				<h1>影视后期制作学院年会员</h1>
+				<dt>可学习影视后期制作学院所有课程+新增课程</dt>
+				<dl><em style='font-family:Arial;font-style:normal;'>&yen</em>699元<font>/</font>2年</dl>
+				<dd>两年学习时间更充足，学更多，价格更实惠<br/><font>节省299元</font></dd>
+	        </div>
+		</div>
+	</a>			
+      </div>
+</div>
+
+<div id="fade" class="black_overlay02">&nbsp;</div>
+
+<div id="light03" class="white_content04_x"><a href="javascript:;" onclick = "closewindow02()" title="关闭"><img src="http://sta.qinxue.com/images/white_content_x02.png" onmouseout="this.src='http://sta.qinxue.com/images/white_content_x02.png'" onmouseover="this.src='http://sta.qinxue.com/images/white_content_x02_02.png'"  /></a></div>
+<div id="light02" class="white_content">
+  <div class="white_content05" style="display:none;">
+    <div class="linkto linktoPlay"><div class="linkto_p03"><div class="linkto_left"><span><em style="font-family:Arial;font-style:normal;">¥</em>1200元</span>平面设计学院年会员(所有教程+新增教程)&nbsp;</div><div class="linkto_right"><a title="平面设计学院年会员(所有教程+新增教程)" target="_blank" href="http://yuanxiwww.qinxue.com/index.php?r=order/service&amp;tsid=2&amp;gourl=%2Findex.php%3Fr%3Dchapter%2Fplay%26tuid%3D80%26tucid%3D130"><img src="http://sta.qinxue.com/images/baonian.jpg" onmouseout="this.src=&quot;http://sta.qinxue.com/images/baonian.jpg&quot;" onmouseover="this.src=&quot;http://sta.qinxue.com/images/baonian_02.jpg&quot;"></a></div></div><div class="linkto_p03"><div class="linkto_left"><span><em style="font-family:Arial;font-style:normal;">¥</em>350元</span>photoshop CS6零基础入门教程&nbsp;</div><div class="linkto_right"><a title="" target="_blank" href="http://yuanxiwww.qinxue.com/index.php?r=order/tutorials&amp;tu_id=80&amp;gourl=%2Findex.php%3Fr%3Dchapter%2Fplay%26tuid%3D80%26tucid%3D130"><img src="http://sta.qinxue.com/images/dangmai.jpg" onmouseout="this.src=&quot;http://sta.qinxue.com/images/dangmai.jpg&quot;" onmouseover="this.src=&quot;http://sta.qinxue.com/images/dangmai_02.jpg&quot;"></a></div></div></div>
+  </div>
+  <div id="playercode">
+      </div>
+</div>
+<div id="fade02" class="black_overlay">
+</div>
+
+<script type="text/javascript">
+var URL_COMMENTLIST = "http://www.qinxue.com/index.php?r=comment/commentList";
+var TUID = 30;
+var TUCID = 10;
+var CURHI = 'http://imgu.qinxue.com/member/0/u-small.gif';
+var CURNN = '';
+var COMMENT = "http://www.qinxue.com/index.php?r=comment/comment";
+var BBS_DOMAIN = "http://bbs.qinxue.com";
+var URL_DOWNLOAD_ATT = "http://www.qinxue.com/index.php?r=chapter/downloadAtt";
+var URL_CURRENT = "%2Findex.php%3Fr%3Dchapter%2Fplay%26tuid%3D30%26tucid%3D10";
+var URL_ISCOMMENT = "http://www.qinxue.com/index.php?r=comment/isComment";
+var URL_SUBTITLE = "http://www.qinxue.com/index.php?r=chapter/subtitle";
+var URL_SIGN = "4a273fa3c535633254ce3bc5d7cc473b";
+
+var URL_GETUDERPLAYINFO = "http://logstudy.qinxue.com/index.php?r=logStudy/playUserInfo";
+var URL_GETlOOKCHATER = "http://logstudy.qinxue.com/index.php?r=logStudy/getplayUserInfo";
+$(function(){
+	//设置用户播放记录
+	objGetPlayinfoLog.getUserPlayInfo(PLAYTUID,URL_SIGN);
+	objQR.checkUrl = "http://www.qinxue.com/index.php?r=index/getViewQrcodeSeting";
+	objQR.closeUrl = "http://www.qinxue.com/index.php?r=index/closeViewQrcode";
+	objQR.viewSetting('');
+
+    $("#slider").QxFadeSlider({
+        speed: 60000
+    });
+
+});
+</script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/QxFadeSlider.js?v=20161114"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/play_lookstatus.js?v=20161114"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/play_chapter.js?v=20160324"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/ZeroClipboard/jquery.zclip.min.js?v=20141219"></script>
+<script type="text/javascript" src="http://sta.qinxue.com/js/libs/qq_customer.js"></script>
+<div class="qq_go">
+ 			               
+    <a class="qq_feedback"></a>
+		<a title="返回顶部" class="qq_bottom" href="#gotop" style="display:none;"></a>
+    <div class="qq_weixin" style="display:none;">
+      <b>微信客服</b>
+      <img src="http://sta.qinxue.com/images/weixinkefu.jpg?v=20191121709" width="140" style="margin: 5px 0px;" />
+      微信号：qinxue7899
+      <iframe src="/index.php?r=entQq/index" frameborder="0" width="92" height="22" scrolling="no" allowTransparency="true" style="margin: 20px 0px 5px;" ></iframe>
+      <br />QQ：800135999
+    </div>
+</div>
+<script type="text/javascript" >
+$(window).scroll(function(){
+	var scrollTop = $(document).scrollTop();
+	if(scrollTop >= 500){
+		$(".qq_bottom").css({display:"block"});
+	}else{
+		$(".qq_bottom").css({display:"none"});
+	}
+});
+$(".qq_tel").mouseover(function(){
+  $(".qq_tanchuang_tel").attr("style","display:block");
+});
+$(".qq_tel").mouseout(function(){
+  $(".qq_tanchuang_tel").attr("style","display:none");
+});
+$(".qq_feedback").mouseover(function(){
+  $(".qq_weixin").attr("style","display:block");
+});
+$(".qq_feedback").mouseout(function(){
+  $(".qq_weixin").attr("style","display:none");
+});
+$(".qq_tanchuang_tel").mouseover(function(){
+  $(".qq_tanchuang_tel").attr("style","display:block");
+});
+$(".qq_tanchuang_tel").mouseout(function(){
+  $(".qq_tanchuang_tel").attr("style","display:none");
+});
+$(".qq_weixin").mouseover(function(){
+  $(".qq_weixin").attr("style","display:block");
+});
+$(".qq_weixin").mouseout(function(){
+  $(".qq_weixin").attr("style","display:none");
+});
+$(".qq_feedback").mouseover(function(){
+  $(".qq_tanchuang_kefu").attr("style","display:block");
+});
+$(".qq_feedback").mouseout(function(){
+  $(".qq_tanchuang_kefu").attr("style","display:none");
+});
+$(".qq_tanchuang_kefu").mouseover(function(){
+  $(".qq_tanchuang_kefu").attr("style","display:block");
+});
+$(".qq_tanchuang_kefu").mouseout(function(){
+  $(".qq_tanchuang_kefu").attr("style","display:none");
+});
+$(".sjtc_ad_close").click(function(){
+ $(".sjtc_ad").css("display","none");
+});
+</script>
+<script type="text/javascript">BizQQWPA.addCustom({aty: '2', a: '7', nameAccount: 800135999, selector: 'BizQQWPA'});</script>
+
+
+<script type="text/javascript">
+playercode = "%3Cscript+src%3D%27http%3A%2F%2Fplayer.polyv.net%2Fscript%2Fpolyvplayer.min.js%27%3E%3C%2Fscript%3E%0D%0A%3Cdiv+id%3D%27plv_6fdf1970faff8555a549c73a3f4a37e4_6%27%3E%3C%2Fdiv%3E%0D%0A%3Cscript%3E%0D%0Avar+player+%3D+polyvObject%28%27%23plv_6fdf1970faff8555a549c73a3f4a37e4_6%27%29.videoPlayer%28%7B%0D%0A%09%27width%27%3A%271024%27%2C%0D%0A%09%27height%27%3A%27576%27%2C%0D%0A%09%27vid%27+%3A+%276fdf1970faff8555a549c73a3f4a37e4_6%27%2C%0D%0A+%27forceH5%27%3Atrue+%0D%0A%7D%29%3B%0D%0A%3C%2Fscript%3E";
+</script>
+<script type="text/javascript">
+  var _talkHeight = $(".c_main .right").height() - 47;
+  $(".c_main .left .con_con").css("height",_talkHeight);
+</script><!--footer-->
+<div class="bottom">
+  <div class="bottom_kuan bottom02">
+    <div class="bottom_left" >
+      <ul>
+        <li>新手指南
+          <dl>
+            <dd><a href="http://www.qinxue.com/help/5-4.html#help01" target="_blank">注册成为会员</a></dd>
+            <dd><a href="http://www.qinxue.com/help/5-4.html#help03" target="_blank">如何购买课程</a></dd>
+            <dd><a href="http://www.qinxue.com/help/5-4.html#help04" target="_blank">支付方式</a></dd>
+            <dd><a href="http://www.qinxue.com/help/" target="_self">帮助中心</a></dd>
+            <!-- <dd><a href="http://www.qinxue.com/help/38-0.html" target="_blank">15天退款保障</a></dd> -->
+          </dl>
+        </li>
+        <li>关于我们
+          <dl>
+            <dd><a href="http://www.qinxue.com/about/job.html" target="_blank">诚征英才</a></dd>
+            <dd><a href="http://www.qinxue.com/about/contact.html" target="_blank">联系我们</a></dd>
+            <dd><a href="http://www.qinxue.com/feedback.html" target="_blank">意见反馈</a></dd>
+            <dd><a href="http://www.qinxue.com/about/map.html" target="_blank">网站地图</a></dd>
+            <dd><a href="http://www.qinxue.com/index.php?r=about/state" target="_blank">版权声明</a></dd>
+          </dl>
+        </li>
+        <li>老师招募
+          <dl>
+            <dd><a href="http://www.qinxue.com/laoshi/" target="_blank">申请成为老师</a></dd>
+            <dd><a style="font-size:12px;">我是名师</a></dd>
+            <dd><a href="http://www.qinxue.com/teacher/" target="_blank">师资团队</a></dd>
+          </dl>
+        </li>
+        <li>合作加盟
+          <dl>
+            <dd><a target="_blank" href="http://u.qinxue.com">推广联盟</a></dd>
+            <dd><a target="_blank" href="http://www.qinxue.com/index.php?r=proxyApply/index">学习卡代理</a></dd>
+            <dd><a target="_blank" href="http://www.qinxue.com/index.php?r=studycardPurchase/index">批量购买</a></dd>
+            <!-- <dd><a target="_blank" href="#">学习卡送礼</a></dd> -->
+            <!-- <dd><a target="_blank" href="#">学习卡订单查询</a></dd> -->
+          </dl>
+        </li>
+           
+      </ul>
+    </div>
+    <div class="bottom_weixinkefu">
+      微信客服
+      <img src="http://sta.qinxue.com/images/weixinkefu.jpg?v=20191121709" />
+      微信号：qinxue7899
+    </div>
+    <div class="bottom_right">
+      <div style="display:block; width:92px; height:22px; float:left;"><iframe src="/index.php?r=entQq/index" frameborder="0" height="30" scrolling="no" allowTransparency="true" ></iframe></div><div style="height:22px; line-height:22px; padding:0px 15px; color:#999999; background:#333333; float:left;">800135999</div>
+      <img src="http://sta.qinxue.com/images/bottom_tel.jpg" style="margin-top:16px;"/>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <div class="copyright_copy bottom02">
+    <div class="copyright_copyright" >
+    	Copyright © 2013 qinxue.com, <a target="_blank" href="http://www.beian.miit.gov.cn" style="color: #666666;">湘ICP备13012319号-1</a>
+           	
+    	    	<span id="jqTongJi" style="display:none;">
+    		<script type="text/javascript">
+    			$(function () {
+			      var cnzzScript = document.createElement("script");
+			      cnzzScript.src = "//s22.cnzz.com/z_stat.php?id=1000372489";
+			      document.getElementsByTagName('body')[0].appendChild(cnzzScript);
+			    });
+    		</script>
+    	</span>
+    	    </div>
+    <div class="bottom_right_version"><a  onclick="javascript:$.cookie('dev','pc',{expires:1,domain:'qinxue.com'});" href="http://www.qinxue.com" class="pc_version version_xz">PC版</a><a onclick="javascript:$.cookie('dev','m',{expires:1,domain:'qinxue.com'});" href="http://m.qinxue.com" class="mobile_version">触屏版</a></div>
+    <div class="copytight_logo"><img src="http://sta.qinxue.com/images/copyright_logo.jpg" /></div>
+  </div>
+</div>
+<a name="gobottom"></a>
+<div></div>
+<script type="text/javascript" language="javascript">
+function closeDialog(){
+	//$.DialogBox.close();
+	location.reload();
+}
+</script>
+
+<script>
+    var ACTIVITY_CHECK_URL = 'http://www.qinxue.com/index.php?r=activity/check';
+    var objActivity = {
+        check: function(basn) {
+            ajax.init()
+                .setUrl( ACTIVITY_CHECK_URL )
+                .setData( {'basn':basn} )
+                .setCbSuccess("objActivity.getCheckCbSuccess(data)")
+                .setCbError("objActivity.getCheckCbError(data)")
+                .setIsTip(false)
+                .preRun()
+                .run();
+        },
+        getQueryString:function(q_name){
+            var reg = new RegExp("(^|&)"+ q_name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        },
+        getCheckCbSuccess: function( data )
+        {
+            var jsonRetData = data.DATA;
+            if(jsonRetData.basn=="004"){
+                if(jsonRetData.showTip_004==true){
+                    if (!$.cookie('show_coupon_popup_004')) {
+                        $(".coupon_popup_min").hide();
+                        $(".coupon_popup").show();
+                        $.cookie('show_coupon_popup_004', 1, { expires: 1,path:'/' });
+                        $("#jqTimeOver").attr("_attr_time",jsonRetData.overTime);
+                        $("#jqTimeOverHour").html(jsonRetData.overHour);
+                        $("#jqTimeOver").each(function(){
+                            new yhtCount(this, false);
+                        });
+
+
+                        if(jsonRetData.cookie_impact_004==true){
+                            $.cookie('cookie_impact_004', 1, { expires: 1,path:'/' });
+                        }
+                    } else if($.cookie('show_coupon_popup_004')==1){
+                        $("#jqTimeOverHour").html(jsonRetData.overHour);
+                        $(".coupon_popup_min").show()
+                    }
+
+                } else {
+                    if(jsonRetData.cookie_impact_004==true){
+                        $.cookie('cookie_impact_004', 1, { expires: 1,path:'/' });
+                    }
+                }
+            }
+            /*
+             else if(jsonRetData.basn=="005"){
+             if(jsonRetData.showTip_005==true){
+             if (!$.cookie('show_coupon_popup_005')) {
+             $(".index_slide_04").hide();
+             $(".coupon_popup02").show();
+             $("#jqTimeOver_005").attr("_attr_time",jsonRetData.overTime);
+             $("#jqTimeOverHour_005").html(jsonRetData.overHour);
+             $("#jqTimeOver_005").each(function(){
+             new yhtCount(this, false);
+             });
+
+             $.cookie('show_coupon_popup_005', 1, { expires: 1 });
+             if(jsonRetData.cookie_impact_005==true){
+             $.cookie('cookie_impact_005', 1, { expires: 1 });
+             }
+             } else if($.cookie('show_coupon_popup_005')==1){
+             $("#jqTimeOverHour_005").html(jsonRetData.overHour);
+             $(".index_slide_04").show()
+             }
+
+             } else {
+             if(jsonRetData.cookie_impact_005==true){
+             $.cookie('cookie_impact_005', 1, { expires: 1 });
+             }
+             }
+             }*/
+            else if(jsonRetData.basn=="006"){
+                var expiresDate= new Date();
+                expiresDate.setTime(expiresDate.getTime() + (5 * 60 * 1000));
+                if(jsonRetData.showTip_006==true){
+                    if (!$.cookie('show_coupon_popup_006')) {
+                        $(".coupon_popup_min").hide();
+                        $(".coupon_popup").show();
+                        $.cookie('show_coupon_popup_006', 1, { expires:1,path:'/' });
+                        $("#jqTimeOver").attr("_attr_time",jsonRetData.overTime);
+                        $("#jqTimeOverHour").html(jsonRetData.overHour);
+                        $("#jqTimeOver").each(function(){
+                            new yhtCount(this, false);
+                        });
+
+
+                        if(jsonRetData.cookie_impact_006==true){
+                            $.cookie('cookie_impact_006', 1, { expires : expiresDate,path:'/' });
+                        }
+                    } else if($.cookie('show_coupon_popup_006')==1){
+                        var r = this.getQueryString("r");
+                        if(r !=null && r.toString()=="order/service")
+                        {
+                            return true;
+                        } else {
+                            $("#jqTimeOverHour").html(jsonRetData.overHour);
+                            $(".coupon_popup_min").show()
+                            // 弹出加粉
+                            if($.cookie('need_jqFirstLogin_cookie')==1){
+                                $("#jqFirstLogin").show();
+                                $.removeCookie('need_jqFirstLogin_cookie', { path: '/' });
+
+                            }
+
+                        }
+                    }
+
+                } else {
+                    if(jsonRetData.cookie_impact_006==true){
+                        $.cookie('cookie_impact_006', 1, { expires : expiresDate,path:'/' });
+                    }
+                    // 弹出加粉
+                    if($.cookie('need_jqFirstLogin_cookie')==1){
+                        $("#jqFirstLogin").show();
+                        $.removeCookie('need_jqFirstLogin_cookie', { path: '/' });
+
+                    }
+                }
+            }
+
+        },
+        getCheckCbError: function( data )
+        {
+        }
+    };
+
+    $(function() {
+        var intUserId = "";
+        if (intUserId > 0) {
+            //objNotice.getBonus();
+
+            if( $.cookie('hd_pg_tip') == '1' )
+            {
+                //console.log('ok1');
+//                if (!$.cookie('hd_pg_tip_nums_new_1')) {
+//                    $.cookie('hd_pg_tip_nums_new_1', 0, { expires: 7 });
+//                }
+//                if (objUserInfo.myInfo.usertype == 1 && $.cookie('hd_pg_tip_nums_new_1') < 3) {
+//
+//                    // showPgTip();
+//                    // $.cookie('hd_pg_tip_nums_new_1', parseInt($.cookie('hd_pg_tip_nums_new_1'))+1, { expires: 7 });
+//                }
+            }
+            /*
+             if (!$.cookie('cookie_impact_004')) {
+             objActivity.check("004");
+             }
+
+             if (!$.cookie('cookie_impact_005')) {
+             objActivity.check("005");
+             }
+
+             */
+//            if (!$.cookie('cookie_impact_006')) {
+//                //console.log($.cookie('cookie_impact_006'));
+//                objActivity.check("006");
+//            }
+        }
+
+        $(".coupon_popup_close").click(function(){
+            $(".coupon_popup_min").css("display","block");
+            $(".coupon_popup").css("display","none");
+        });
+
+        $(".coupon_popup02_close").click(function(){
+            $(".index_slide_04").css("display","block");
+            $(".coupon_popup02").css("display","none");
+        });
+
+    });
+</script></body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <title>花海书香 - 同步课堂在线自学平台</title>
+    <link rel="stylesheet" href="mobile/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="mobile/css/index.css">
+    <link rel="stylesheet" href="mobile/css/xueyuan.css">
+    <link rel="stylesheet" href="mobile/css/kecheng.css">
+    <link rel="stylesheet" href="mobile/css/member.css">
+    <link rel="stylesheet" href="mobile/css/ganyan.css">
+    <link rel="stylesheet" href="mobile/css/order.css">
+    <link rel="stylesheet" href="mobile/css/extend.css">
+
+    <script src="http://m.qinxue.com/index.php?r=index/loadSySinfo"></script>
+    <script src="http://m.qinxue.com/index.php?r=index/loadUserInfo"></script>
+    <script src="mobile/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="mobile/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy_min.js"></script>
+    <script src="mobile/dist/js/bootstrap.js"></script>
+    <script src="mobile/js/jquery.lazy.js"></script>
+    <script src="mobile/js/common.js"></script>
+
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script type="text/javascript">
+        $(function(){
+            // 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+            $('img').lazy();
+        });
+    </script>
+</head>
+<!--******************************************复制1****************************************-->
+<body>
+
+<div class="i_top">
+    <div class="i_top_return">
+        <a href="javascript:history.go(-1);"><img src="http://sta.qinxue.com/mobile/images/tubiao_arr02.png" height="50" /></a>
+    </div>
+
+    <div class="i_top_logo"><a href="index.html"><img src="mobile/images/logo.png" height="30" /></a></div>
+    <div class="i_top_more"><a href="javascript:void(0);" id="headerLogin"><img src="mobile/images/more_arr01.png" height="24" /></a></div>
+    <div class="i_top_search"><a href="http://m.qinxue.com/index.php?r=search/index"><img src="mobile/images/search_arr01.png" height="24" /></a></div>
+
+</div>
+
+
+<div class="container-fluid member_bottom">
+    <div class="row">
+        <div class="col-xs-3 member_bottom_menu01"><a href="index.html" class="current">首页</a></div>
+        <div class="col-xs-3 member_bottom_menu02">
+            <a class="member_bottom_xiala ">课程</a>
+            <div class="member_bottom_box" style="display:none;">
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2&tcid=0&lid=0" class="">小学同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3&tcid=0&lid=0" class="">初中同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1&tcid=0&lid=0" class="">高中同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5&tcid=0&lid=0" class="">思维逻辑训练</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4&tcid=0&lid=0" class="">课外兴趣启发</a>
+            </div>
+        </div>
+        <div class="col-xs-3 member_bottom_menu03"><a href="会员页面.html" class="">VIP</a></div>
+        <div class="col-xs-3 member_bottom_menu04"><a href="http://m.qinxue.com/index.php?r=member/index" class="">我的</a></div>
+    </div>
+</div>
+
+<div class="container-fluid i_top_xl">
+    <div class="row">
+        <div class="col-xs-12 xl_01" id="headHtml" style="padding-bottom:15px; border-bottom:1px solid #eeeeee;">
+            <div style="color:#999;text-align:center;height:50px;line-height:50px;">loading...</div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>课程设置</strong></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2"><button type="button" class="btn btn-default">小学同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1"><button type="button" class="btn btn-default">初中同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3"><button type="button" class="btn btn-default">高中同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5"><button type="button" class="btn btn-default">思维逻辑训练</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4"><button type="button" class="btn btn-default">课外知识启发</button></a></div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left; margin-left:10px;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>快速导航</strong></div>
+            <div class="xl_menu_li"><a href="index.html"><button type="button" class="btn btn-default">网站首页</button></a></div>
+            <div class="xl_menu_li" style="display: none;"><a href="http://m.qinxue.com/ganyan/?ob=2"><button type="button" class="btn btn-default">学员感言</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/teacher/"><button type="button" class="btn btn-default">师资团队</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/about.html"><button type="button" class="btn btn-default">关于我们</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/help/"><button type="button" class="btn btn-default">帮助中心</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=app/index"><button type="button" class="btn btn-default">APP下载</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=onlineCustomer/index"><button type="button" class="btn btn-default">联系客服</button></a></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="i_top_xl_bj">&nbsp;</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_top_more").click(function(){
+            $(".i_top_xl").animate({right:"0px"});
+            $(".i_top_xl_bj").show();
+        });
+        $(".i_top_xl_bj").click(function(){
+            $(".i_top_xl").animate({right:"-300px"});
+            $(".i_top_xl_bj").hide();
+        });
+    });
+</script>
+<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+    $(document).ready(function(){
+        $(".member_bottom_xiala").click(function(){
+            $(".member_bottom_box").slideToggle();
+        });
+    });
+</script>
+<script >
+    var PLAY_TUID = "30";
+    var PLAY_TUCID = "9";
+    var URL_LOADPLAY ="http://m.qinxue.com/index.php?r=chapter/loadplay";
+    var PREV_CHAPTER = "";
+    var NEXT_CHAPTER = "http://m.qinxue.com/30-10.html";
+    function qxplayerLast() {
+        var strVideoUrlLastTime = "http://m.qinxue.com/index.php?r=video/setLastVideoTime&tuid=30&tucid=9";
+        ajax.init()
+            .setUrl( strVideoUrlLastTime )
+            .setData({})
+            .setIsTip( false )
+            .setCbSuccess(  )
+            .setCbError(  )
+            .preRun()
+            .run();
+    }
+</script>
+<style>
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        background-color: #000000;
+        z-index:10003;
+        overflow:hidden;
+        text-align:center;
+        margin:0px auto;
+    }
+    #playercode{margin:0px auto;text-align:center;}
+    .i_top{ position: relative; left: 0px !important;}
+</style>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var Kmenu = $("#kecheng_menuTop").offset().top
+        var ILeft = $(window).width() / 2 - $("body").width() / 2;
+        var scrollTop = $(this).scrollTop();
+        if(scrollTop >= Kmenu){
+            $("#kecheng_menu").css({position:"fixed",top:0,left:ILeft});
+        }else{
+            $("#kecheng_menu").css({position:'',top:'',left:''});
+        }
+    });
+</script>
+
+<div id="" class="kecheng_img">
+    <div id="jqPlayerSetup" class="newplay_play">
+        <div id="jqPlayerLoading">
+            <video controls="controls" autoplay="autoplay" id="video"　src="" poster="" width="100%" />
+            <div class="kecheng_img_play">
+                <a onclick="window.location.href = 'http://m.qinxue.com/index.php?r=jump/index&pos=50&go=http%3A%2F%2Fm.qinxue.com%2Flogin.html'" href="javascript:;">&nbsp;</a>
+            </div>
+        </div>
+        <div id="myPlayer" style="display:none;">
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#jqBtnPlayOragian_play").click(function () {
+            $("#jqPlayerLoading").css("display","none");
+            $("#myPlayer").css("display","");
+        });
+    </script>
+    <!--    <img src="--><!--" />-->
+    <!--    <div class="kecheng_img_play">-->
+    <!--        <a href="#kecheng_tishi">&nbsp;</a>-->
+    <!--    </div>-->
+</div>
+
+<div class="container-fluid">
+    <div class="row kecheng_menu">
+        <div class="col-xs-12 kecheng_menu_sx">
+            <a href="javascript:void(0);" class="on_section" id="on_section" style="float: left;">上一节</a>
+            <a href="javascript:void(0);" class="next_section" id="next_section" style="float: right;">下一节</a>
+        </div>
+    </div>
+</div>
+
+<!--***************************以上部分可以复制************************************-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 kecheng_jieshao" style="border-bottom: 1px solid #eeeeee; margin-bottom: 0px;">
+            <div style="font-size: 18px;">《小学教材全解》伴你学语文一年级（下册）</div>
+
+
+            <div class="col-xs-12" style="padding: 0px; color: #999999; " >
+                <span class="span01"> </span>
+                <span class="span01">小学	一年级	语文
+</span>
+                <span class="span01" onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='block';"></span>
+            </div>
+
+            <div class="col-xs-12" style="padding: 0px; margin: 8px 0px 15px;">
+                <div class="col-xs-4" style="padding: 0px;">
+                    <a href="#http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dorder%2Ftutorials%26tu_id%3D30%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-default btn-block">
+                        <em style='font-family:Arial;font-style:normal;'>&yen</em>130 单买
+                    </a>
+                </div>
+                <div class="col-xs-8" style="padding-right: 0px;">
+                    <a href="#http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dvip%2Findex%26catid%3D3%26type%3D1%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-success btn-block">
+                        <em style='font-family:Arial;font-style:normal;'>&yen</em>499 开通会员免费学
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="jqPopTeacherInfo" class="play_teacher_pop_bj" style="display:none;">
+    <div class="play_teacher_pop">
+        <a onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='none';" class="play_teacher_pop_x"><img src="http://sta.qinxue.com/mobile/images/x.gif" /></a>
+        <div class="teacher_list" style="height:auto;">
+            <div class="teacher_list_left"><img src="http://img.qinxue.com/teacher/85/head-85.jpg" /></div>
+            <div class="teacher_list_right">
+                <span><strong>老师</strong></span>
+                主攻： <br />
+            </div>
+        </div>
+        <div class="teacher_list_jj">简介：</div>    </div>
+</div>
+<div id="kecheng_menuTop" style="height: 0px;"></div>
+<div class="container-fluid" id="kecheng_menu">
+    <div class="row kecheng_menu">
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/30-0.html" ><span class="span01">课程</span>介绍</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30"  class="dangqian"><span class="span01">课程</span>目录</a></div>
+        <!-- <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/jietu&tuid=30" ><span class="span01">课程</span>截图</a></div>  -->
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">课程</span>素材</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/pingjia&tuid=30" ><span class="span01">学员</span>评价</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">学员</span>笔记</a></div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row kecheng_mulu">
+        <div class="col-xs-12 kecheng_mulu_list">
+            <dl>
+
+
+
+
+
+                <dd ><li value="	http://vv.taozhi.cn/3f6a0c60c3514ba1b42f6dd5940e432a/69448f9c48c24ac18d43be1d16fb07e3-9796760dd49ccd688c2606c9c03dad40-ld.mp4	" ><div>	课程介绍	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/f2ece956a5b3497dbf3b8e7022a5a399/4101dc7ee40c4117bc3b38b62862d2d5-d248926af4e1cc8bc1d93024ca15bddc-ld.mp4	" ><div>	1.1 春夏秋冬 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/35bb607a485342c6a43c03857f208552/9797945908e24cb5bf680916d91679bb-0621d2bb9681d6ae43cc8e7be52dde23-ld.mp4	" ><div>	1.1 春夏秋冬 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/4dea9ba1d64c48048bb4b10875337e33/3ee926c069b24e3585d155b5a9dc2a98-3d32abddc687fbf4e5516dc1084de06b-ld.mp4	" ><div>	1.2 姓氏歌 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/9de4ca6152a3488dbb3e6487796683ad/eada8535142447bbb3c3cb921c18d460-326a8a484bbd08a2b7c23d902dd0a3c7-ld.mp4	" ><div>	1.2 姓氏歌 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/e067b33e91f1494a954c2837f244f7e5/cdf5c045149a4a4191f7429a268811b4-db0d3c4e7f9fc383c7efcc91e8ea384b-ld.mp4	" ><div>	1.3 小青蛙 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/492147db252d42c6848023303fdee366/d09903a61c424eddad220e59a945c2cf-39ec9cd1ab92bf97201aa8d3cc207b62-ld.mp4	" ><div>	1.3 小青蛙 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/9041bdf6359c424a9cd03c7468acef4f/d14f2cce5fa64a5ab619833343a75456-d90744ba4a621197031c3d15af167dc3-ld.mp4	" ><div>	1.4 猜字谜 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/8645091f2728469b893419300b9cf7c5/be743bed46c84ccab9e728233fee1314-8c85d93ec29e40844a7b78a1264b9dc9-ld.mp4	" ><div>	1.4 猜字谜 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/8ccdbe72a35b4160b9c4da1b61e52853/b43b4c091d3949879c22bf0222d2fd7c-966a9f9322dbdd275f96c6b9e1640466-ld.mp4	" ><div>	1.5 语文园地一 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/5cd461bb9380474b9dddc7f8dd5417c0/63e8cadd1e024fbe81b60e179af3f128-8d2c56274b3806fbd4eafa1d09936a20-ld.mp4	" ><div>	1.5 语文园地一 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/75e12b8a508443ff93eaec49d1f3f830/ad538a1e3b7841c5acbfbc97ccf22334-3fa547746cc09126d2ee4a336223b0ea-ld.mp4	" ><div>	2.1 吃水不忘挖井人 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/5ebf0fef1f904827bfc9805b5f9a195a/19b67dd48766444a9c153bb372ddb332-8486f9ca50f186c34af8484a660144e6-ld.mp4	" ><div>	2.1 吃水不忘挖井人 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/bace8959fc9d44058e2e7278e02d6e97/5708d8a403b44e06955e2d6ee1131ba4-6c3b2ba3167423a65378568fb3261bc5-ld.mp4	" ><div>	2.2 我多想去看看 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/ee78481d36974f258c27988dfc0c1d23/07fe0839c1bb4e319be53b29469fa15e-16c482913716a3e139ff1b1f7a50f3e9-ld.mp4	" ><div>	2.2 我多想去看看 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/001564b066b0413790386c1b9a99dfc4/6d0dbcdda14149e0a11549fc55f45a2e-50c2080132ff29b7fc8c327fc46d7fd8-ld.mp4	" ><div>	2.3 一个接一个 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/b3cc876c805e4136aa4cc4d605b462d3/fbd3eff268dd42aa962bfcc64217b78d-7179083c27afa7b01c21ef0fc35f596d-ld.mp4	" ><div>	2.3 一个接一个 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/535950f027804b56b2089340ecc26c28/cc93f542f349422e9322ff76d67325ac-daca3a14cc085880c919a5dc3c4ce841-ld.mp4	" ><div>	2.4 四个太阳 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/21e305b0798947f39e80683ea6765432/7b4efb4b222b4a518f4145acad05a248-468223d93ea8f6111d5c3e523d986fe4-ld.mp4	" ><div>	2.4 四个太阳 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/f62b1fbb331b453a81e544dca3a8f5ce/d6a7a696467144e1b9cd10ae006d37a9-8f9c46e038a16688eea9183c0f86d2c3-ld.mp4	" ><div>	语文园地二	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/db2588d19cd045e18976a21204599ab0/79a7b89f11a64b37b95b036499ac1622-13d1351e53ce8d0db11e73dd2163273d-ld.mp4	" ><div>	3.1 小公鸡和小鸭子 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/8a9f2a66446e4ada831ee4ef75528533/5b99d4b7387e49bb88d44d5ed38ed8b9-55ad2efc2aeb298b54cd5071335ca8ce-ld.mp4	" ><div>	3.1 小公鸡和小鸭子 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/3aa27750d9c74316aad7ef3122ccdf3d/07a665757be54499a989be0c1e41b137-9dd16fdf274c8225b94e499d5d41f25e-ld.mp4	" ><div>	3.2 树和喜鹊 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/6c240ce1d95c4550bccf63592429c520/93712754ba8b4a119a835ec3a0ff69b4-5f38092fd89be9d8c2a6115cb916b20d-ld.mp4	" ><div>	3.2 树和喜鹊 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/d763267932c24d3196a85c8dc27c5983/103317ab0c8e4c628c57267a76c03b06-1ecd0a4f4b145d793f9c4cc4749329d7-ld.mp4	" ><div>	3.3 怎么都快乐 第1节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/0ef7ae3ed12e46a4b5498b2d810ccbdd/b8a2a15545534d54acc66947985e19c9-9c9ef5a7fd41e1b6c0421a0c003af58b-ld.mp4	" ><div>	3.3 怎么都快乐 第2节	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/71bc5c42be94466286c5f64296071435/ae2cdf0f10c24aeb8bb83fce6f3fdd0e-aa529f6a17b25586613fc7a999f989e2-ld.mp4	" ><div>	语文园地三	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/65f502da829f46c1a7d366266e68ee2b/45c660714aaa4d52bf4f7a33670315a6-4f678b7e0adee98494582da304329aa4-ld.mp4	" ><div>	4.1 静夜思	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/b3998148e99b4e28be6e8ce157b1ae95/f90bee93a97642d9aa1979555f4b7eb6-3fb6ab4f92301fe45e77793bcaebfdce-ld.mp4	" ><div>	4.2 夜色	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/2cbff1991a5343668274c43ff6f76f5d/25eba09ddb9d4a8e88050ba2b525b63d-bc99fdb70118d50ebc778af6a47fe14c-ld.mp4	" ><div>	4.3 端午粽	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/98b5dddebc3443219d6ca60909c1ca46/0812c26625714ffe852871ff5afd4c21-716cef09e4c59eecb45f4226bd3f5677-ld.mp4	" ><div>	4.4 彩虹	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/42867677caa245488c271ddd9c082762/4b87514415e94f30bc6982975f7a53dc-1f35482888c2fb654e816aca5763d609-ld.mp4	" ><div>	语文园地四	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/df9a166936414a558d7e76abe3f42a35/44c43736a11c408ebe36830a39f7ada8-58f16a5f4041c77acf116805d295208f-ld.mp4	" ><div>	5.1 动物儿歌	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/dab2e542662c4815908a7a36f647d679/dde1fd06408e412eb34b6901afd7de7d-82d4de8fabbe4906d6439d5629f0f916-ld.mp4	" ><div>	5.2 古对今	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/fd0276aa660e4030956d335116e481cc/ac6d8828d7cd4456b7c0d12fa20a803c-6725c97ae99436e5b0cb0b95099c6bba-ld.mp4	" ><div>	5.3 操场上	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/97ec737a4e624f2484773ee39a9fc828/760b3e1a5c974de2a6d398d7a2c9277c-5a26f0d771e84f097a8ab00231aab896-ld.mp4	" ><div>	5.4 人之初	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/9bdb169d786048739e681cf8a6d9f040/a5de6dca124e415f81fbf3ac3415a482-5335d3416b525b610dda0439dc5ed15d-ld.mp4	" ><div>	语文园地五	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/97769a28f570482f9eb18f90b7456bd0/f68810df56de44bbb6744c0ebddb456a-a06c4c3265f60e755ed943a490d80d28-ld.mp4	" ><div>	6.1 古诗二首	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/b7cbf704ed844381a051266f4d8c57e4/0f0d650b2e28443fa8c4caf51f99f6aa-4b484004f1ae1a4837140dce2b4ffb54-ld.mp4	" ><div>	6.2 荷叶圆圆	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/2cb3999321784923b62abeba3d732b12/4702ed867b4c481da3778d3a5236d5bd-38100f91b14365326509bdf5408a60ee-ld.mp4	" ><div>	6.3 要下雨了	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/f7330d22747b4c6e881e39723ebd12e0/4030304178004fd29bacc4a8ca98a821-b27a024b28a0b383c06eda541ea826e4-ld.mp4	" ><div>	6.4 语文园地六	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/a683243e39a34218984c34b4fb742fa1/206e79ee24ef49ef8fa7141a2225407a-964ca9fea0c493559b1de92a37466a42-ld.mp4	" ><div>	7.1 文具的家	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/94be8bb8f4644d6fa065100da2b4277d/05b2e2cf0c4d4529bc953f88b9180591-40135100b186a989426d1c3938b12cf7-ld.mp4	" ><div>	7.2 一分钟	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/05402ff053fc42d9bf91b776a8d371a7/cb65b0afd6cd4d0eb4d446d84e5321cb-ccb14499793fbf63ff2f3c19414c11d2-ld.mp4	" ><div>	7.3 动物王国开大会	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/3c4af2c9142f4374b34a08fb4a26a971/ec1cd6772f85445eb19c68eb55baaee1-3419d7d608ddfd03a9ac55f8170a9de6-ld.mp4	" ><div>	7.4 小猴子下山	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/77df3a1dde6a4d36a2d6d2952dca3bb3/ec47b2ccf3624d8486198391c7805daa-8448c1b32d0ab723be9489d9af7c9fae-ld.mp4	" ><div>	语文园地七	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/d121c73fab8a4a31af7cb15a3471bdd7/10a6af2b10064889b2fd465462496618-5e0e34176d3e85d5d27f96bf7be57fee-ld.mp4	" ><div>	8.1 棉花姑娘	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/6b1263be1feb43079c753cea15febf42/d2763fdee361401d959ae49712042fb6-a10a635dbd37c0dd4dc0be1046896106-ld.mp4	" ><div>	8.2 咕咚	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/e0feef084864434493b72970eed727a7/9198775106b64da6b117a698189e0af5-c4289d32098d4babcec3a384fbc8524d-ld.mp4	" ><div>	8.3 小壁虎借尾巴	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+                <dd ><li value="	http://vv.taozhi.cn/c4b731fe9f2a4795b1c9a14dae6dd4eb/877893bce1d442c48b1b4ebd0c947725-7c3dea1db8fe00e1c9d417deab058aa9-ld.mp4	" ><div>	语文园地八	</div><span>课程归类：	小学	一年级	语文	</span><span>	《小学教材全解》伴你学语文一年级（下册）	</span></li></dd>
+
+
+
+            </dl>
+        </div>
+    </div>
+
+    <button title="收起播放列表" id="playList-hidden">  </button>
+    <button title="展开播放列表" id="playList-show1">  </button>
+    <!--<div class="container-fluid">-->
+    <!--<div class="row kecheng_jieshao">-->
+    <!--	<div class="col-xs-12 kecheng_jieshao_con">-->
+    <!--        <div style="height:auto; overflow:hidden;">-->
+    <!--	        <p><strong>--><!--</strong></p>-->
+    <!--	        <p>--><!--</p>-->
+    <!--	        <img id="jqImgStudyNav" src="" style="display:none;"/>-->
+    <!--        </div>-->
+    <!--        <div class="kecheng_tishi" style="margin-top:15px;">学习方式：<br />1.用电脑打开勤学网学习<br />2.安装勤学网APP,用手机或平板学习</div>-->
+    <!--        <div class="col-xs-12" style="background:#ffffff; margin:15px 0px; padding:0px;">-->
+    <!--        <div class="col-xs-12" style="margin-top:15px;"><strong>移动APP下载</strong></div>-->
+    <!--		<div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnApkDownload"><img src="--><!--/mobile/images/app_android.png"/></a></div>-->
+    <!--        <div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnIosDownload"><img src="--><!--/mobile/images/app_iphone.png"/></a></div>-->
+    <!--        </div>-->
+    <!--        -->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="light03" class="white_content04_x" style="display:none;"><a href="javascript:;" onclick = "closewindow02()" title="关闭"><img src="http://sta.qinxue.com/images/white_content_x02.png" onmouseout="this.src='http://sta.qinxue.com/images/white_content_x02.png'" onmouseover="this.src='http://sta.qinxue.com/images/white_content_x02_02.png'"  /></a></div>
+    <div id="light02" class="white_content" style="display:none;text-align: center;">
+
+        <div id="playercode" >
+
+            <div id='plv_6fdf1970faff8555a549c73a3f4a37e4_6'></div>
+            <script>
+                var player = polyvObject('#plv_6fdf1970faff8555a549c73a3f4a37e4_6').videoPlayer({
+                    'width':'100%',
+                    'height':'576',
+                    'vid' : '6fdf1970faff8555a549c73a3f4a37e4_6',
+                    'forceH5':true
+                });
+            </script>  </div>
+    </div>
+
+    <script type="text/javascript">
+        var URL_APP_DOWNLOAD = "http://m.qinxue.com/index.php?r=app/download";
+        var URL_APP_DOWNLOADURL = "http://dlapp.qinxue.com/qinxue_android_v1.0.apk";
+    </script>
+
+
+
+    <script type="text/javascript">
+    </script>
+    <div style="height:80px;"></div>
+
+    <div id="jqAjaxLoadingTipFooter" class="ajaxLoadingFooter">处理中...</div>
+    <div class="go_top" style="display:none;"><a href="#">&nbsp;</a></div>
+    <div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254537038'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254537038' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    <script type="text/javascript">
+        $(function(){
+            objSysRegist.evalResizeEvent();
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scrollTop = $(this).scrollTop();
+            if(scrollTop >= 460){
+                $(".go_top").css("display","block");
+            }else{
+                $(".go_top").css("display","none");
+            }
+        });
+    </script>
+
+</body>
+</html>

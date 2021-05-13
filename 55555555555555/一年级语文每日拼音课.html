@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+	<title>花海书香 - 同步课堂在线自学平台</title>
+	<link rel="stylesheet" href="mobile/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="mobile/css/index.css">
+	<link rel="stylesheet" href="mobile/css/xueyuan.css">
+	<link rel="stylesheet" href="mobile/css/kecheng.css">
+	<link rel="stylesheet" href="mobile/css/member.css">
+	<link rel="stylesheet" href="mobile/css/ganyan.css">
+	<link rel="stylesheet" href="mobile/css/order.css">
+	<link rel="stylesheet" href="mobile/css/extend.css">
+
+	<script src="http://m.qinxue.com/index.php?r=index/loadSySinfo"></script>
+	<script src="http://m.qinxue.com/index.php?r=index/loadUserInfo"></script>
+	<script src="mobile/js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="mobile/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.lazy_min.js"></script>
+	<script src="mobile/dist/js/bootstrap.js"></script>
+	<script src="mobile/js/jquery.lazy.js"></script>
+	<script src="mobile/js/common.js"></script>
+
+	<script type="text/javascript" src="js/main.js" ></script>
+	<script type="text/javascript">
+		$(function(){
+			// 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+			$('img').lazy();
+		});
+	</script>
+</head>
+<!--******************************************复制1****************************************-->
+<body>
+
+<div class="i_top">
+	<div class="i_top_return">
+		<a href="javascript:history.go(-1);"><img src="http://sta.qinxue.com/mobile/images/tubiao_arr02.png" height="50" /></a>
+	</div>
+
+	<div class="i_top_logo"><a href="index.html"><img src="mobile/images/logo.png" height="30" /></a></div>
+	<div class="i_top_more"><a href="javascript:void(0);" id="headerLogin"><img src="mobile/images/more_arr01.png" height="24" /></a></div>
+	<div class="i_top_search"><a href="http://m.qinxue.com/index.php?r=search/index"><img src="mobile/images/search_arr01.png" height="24" /></a></div>
+
+</div>
+
+
+<div class="container-fluid member_bottom">
+	<div class="row">
+		<div class="col-xs-3 member_bottom_menu01"><a href="index.html" class="current">首页</a></div>
+		<div class="col-xs-3 member_bottom_menu02">
+			<a class="member_bottom_xiala ">课程</a>
+			<div class="member_bottom_box" style="display:none;">
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2&tcid=0&lid=0" class="">小学同步课程</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3&tcid=0&lid=0" class="">初中同步课程</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1&tcid=0&lid=0" class="">高中同步课程</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5&tcid=0&lid=0" class="">思维逻辑训练</a>
+				<a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4&tcid=0&lid=0" class="">课外兴趣启发</a>
+			</div>
+		</div>
+		<div class="col-xs-3 member_bottom_menu03"><a href="会员页面.html" class="">VIP</a></div>
+		<div class="col-xs-3 member_bottom_menu04"><a href="http://m.qinxue.com/index.php?r=member/index" class="">我的</a></div>
+	</div>
+</div>
+
+<div class="container-fluid i_top_xl">
+	<div class="row">
+		<div class="col-xs-12 xl_01" id="headHtml" style="padding-bottom:15px; border-bottom:1px solid #eeeeee;">
+			<div style="color:#999;text-align:center;height:50px;line-height:50px;">loading...</div>
+		</div>
+		<div class="xl_02" style="padding-top:15px; width:120px; float:left;">
+			<div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>课程设置</strong></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2"><button type="button" class="btn btn-default">小学同步课堂</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1"><button type="button" class="btn btn-default">初中同步课堂</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3"><button type="button" class="btn btn-default">高中同步课堂</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5"><button type="button" class="btn btn-default">思维逻辑训练</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4"><button type="button" class="btn btn-default">课外知识启发</button></a></div>
+		</div>
+		<div class="xl_02" style="padding-top:15px; width:120px; float:left; margin-left:10px;">
+			<div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>快速导航</strong></div>
+			<div class="xl_menu_li"><a href="index.html"><button type="button" class="btn btn-default">网站首页</button></a></div>
+			<div class="xl_menu_li" style="display: none;"><a href="http://m.qinxue.com/ganyan/?ob=2"><button type="button" class="btn btn-default">学员感言</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/teacher/"><button type="button" class="btn btn-default">师资团队</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/about.html"><button type="button" class="btn btn-default">关于我们</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/help/"><button type="button" class="btn btn-default">帮助中心</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=app/index"><button type="button" class="btn btn-default">APP下载</button></a></div>
+			<div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=onlineCustomer/index"><button type="button" class="btn btn-default">联系客服</button></a></div>
+		</div>
+	</div>
+</div>
+
+
+<div class="i_top_xl_bj">&nbsp;</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".i_top_more").click(function(){
+			$(".i_top_xl").animate({right:"0px"});
+			$(".i_top_xl_bj").show();
+		});
+		$(".i_top_xl_bj").click(function(){
+			$(".i_top_xl").animate({right:"-300px"});
+			$(".i_top_xl_bj").hide();
+		});
+	});
+</script>
+<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+	$(document).ready(function(){
+		$(".member_bottom_xiala").click(function(){
+			$(".member_bottom_box").slideToggle();
+		});
+	});
+</script>
+<script >
+	var PLAY_TUID = "30";
+	var PLAY_TUCID = "9";
+	var URL_LOADPLAY ="http://m.qinxue.com/index.php?r=chapter/loadplay";
+	var PREV_CHAPTER = "";
+	var NEXT_CHAPTER = "http://m.qinxue.com/30-10.html";
+	function qxplayerLast() {
+		var strVideoUrlLastTime = "http://m.qinxue.com/index.php?r=video/setLastVideoTime&tuid=30&tucid=9";
+		ajax.init()
+				.setUrl( strVideoUrlLastTime )
+				.setData({})
+				.setIsTip( false )
+				.setCbSuccess(  )
+				.setCbError(  )
+				.preRun()
+				.run();
+	}
+</script>
+<style>
+	.white_content {
+		display: none;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width:100%;
+		height:100%;
+		background-color: #000000;
+		z-index:10003;
+		overflow:hidden;
+		text-align:center;
+		margin:0px auto;
+	}
+	#playercode{margin:0px auto;text-align:center;}
+	.i_top{ position: relative; left: 0px !important;}
+</style>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		var Kmenu = $("#kecheng_menuTop").offset().top
+		var ILeft = $(window).width() / 2 - $("body").width() / 2;
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop >= Kmenu){
+			$("#kecheng_menu").css({position:"fixed",top:0,left:ILeft});
+		}else{
+			$("#kecheng_menu").css({position:'',top:'',left:''});
+		}
+	});
+</script>
+
+<div id="" class="kecheng_img">
+	<div id="jqPlayerSetup" class="newplay_play">
+		<div id="jqPlayerLoading">
+			<video controls="controls" autoplay="autoplay" id="video"　src="" poster="" width="100%" />
+			<div class="kecheng_img_play">
+				<a onclick="window.location.href = 'http://m.qinxue.com/index.php?r=jump/index&pos=50&go=http%3A%2F%2Fm.qinxue.com%2Flogin.html'" href="javascript:;">&nbsp;</a>
+			</div>
+		</div>
+		<div id="myPlayer" style="display:none;">
+
+
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#jqBtnPlayOragian_play").click(function () {
+			$("#jqPlayerLoading").css("display","none");
+			$("#myPlayer").css("display","");
+		});
+	</script>
+	<!--    <img src="--><!--" />-->
+	<!--    <div class="kecheng_img_play">-->
+	<!--        <a href="#kecheng_tishi">&nbsp;</a>-->
+	<!--    </div>-->
+</div>
+
+<div class="container-fluid">
+	<div class="row kecheng_menu">
+		<div class="col-xs-12 kecheng_menu_sx">
+			<a href="javascript:void(0);" class="on_section" id="on_section" style="float: left;">上一节</a>
+			<a href="javascript:void(0);" class="next_section" id="next_section" style="float: right;">下一节</a>
+		</div>
+	</div>
+</div>
+
+<!--***************************以上部分可以复制************************************-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 kecheng_jieshao" style="border-bottom: 1px solid #eeeeee; margin-bottom: 0px;">
+            <div style="font-size: 18px;">每日拼音课（初级</div>
+
+                
+                <div class="col-xs-12" style="padding: 0px; color: #999999; " >
+                    <span class="span01">20课时</span>
+                    <span class="span01">每日拼音课（初级）</span>
+                    <span class="span01" onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='block';"></span>
+                </div>
+				
+				                <div class="col-xs-12" style="padding: 0px; margin: 8px 0px 15px;">
+                    <div class="col-xs-4" style="padding: 0px;">
+                                                <a href="http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dorder%2Ftutorials%26tu_id%3D30%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-default btn-block">
+                        	   								<em style='font-family:Arial;font-style:normal;'>&yen</em>130 单买
+                                                     </a>
+                    </div>
+                                        <div class="col-xs-8" style="padding-right: 0px;">
+                        <a href="http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dvip%2Findex%26catid%3D3%26type%3D1%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-success btn-block">
+                            <em style='font-family:Arial;font-style:normal;'>&yen</em>499 开通会员免费学
+                        </a>
+                    </div>
+                </div>
+				        </div>
+    </div>
+</div>
+
+<div id="jqPopTeacherInfo" class="play_teacher_pop_bj" style="display:none;">
+    <div class="play_teacher_pop">
+        <a onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='none';" class="play_teacher_pop_x"><img src="http://sta.qinxue.com/mobile/images/x.gif" /></a>
+        <div class="teacher_list" style="height:auto;">
+	<div class="teacher_list_left"><img src="http://img.qinxue.com/teacher/85/head-85.jpg" /></div>
+	<div class="teacher_list_right">
+		<span><strong>赵清宇</strong></span>
+		主攻：vegas <br />	
+	</div>
+</div>
+<div class="teacher_list_jj">简介：在河北电视台担任栏目责任编辑，主要负责栏目日常播出的节目，同时也参与其他广告项目的制作，有着10的丰富工作经验，擅长vegas以及其他专业非编剪辑软件。</div>    </div>
+</div>
+<div id="kecheng_menuTop" style="height: 0px;"></div>
+<div class="container-fluid" id="kecheng_menu">
+    <div class="row kecheng_menu">
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/30-0.html" ><span class="span01">课程</span>介绍</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30"  class="dangqian"><span class="span01">课程</span>目录</a></div>
+        <!-- <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/jietu&tuid=30" ><span class="span01">课程</span>截图</a></div>  -->
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">课程</span>素材</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/pingjia&tuid=30" ><span class="span01">学员</span>评价</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">学员</span>笔记</a></div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row kecheng_mulu">
+<div class="col-xs-12 kecheng_mulu_list">
+<dl>
+
+
+
+
+
+	<dd ><li value="	http://vv.taozhi.cn/fa08cd58ae10450b986f983b9121aaa0/02be47d114fd476db1958059cdfe5ad4-8026a7ab80bd353294c3364778b1908a-ld.mp4	" ><div>	1.第一课【a o e】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/73d4473409af42d2aa97087a2be7fe2a/061de87c6c4145278a863d41ac1376d1-77ed842529b274081a456a4a44cd850f-ld.mp4	" ><div>	2.第二课【i u u】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/a13781339db74c7cb4f615a16de85f59/d6096ef2c40543bfa4cb2fa278b96666-abde0b8fc1b648cb83a1e40dc92c2041-ld.mp4	" ><div>	3.第三课【b p m f】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/330c9907db0a40b1934d4561c466dd27/cd562d131a2c4b4ea01c303944f4a059-b0c20726abb437c9008f4ff4f8a50760-ld.mp4	" ><div>	4.第四课【d t n l】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/7cd314d3b1cc40bb9e0aaf1d24c9b48d/c3e6ea1d176f4f4aa375a55cdc4b8cc6-a4a4583df6d7edcdc16020c1ed951424-ld.mp4	" ><div>	5.第五课【g k h】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/c12b203fed504c81886d6162c86fe07d/e1db54be03b94400977b83eb1f1e0254-7689fac0756e2d5b2053bfabcaa8d300-ld.mp4	" ><div>	6.第六课【j q x】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/84ddde5106284207a5b0fc2e82cf3e20/b5b4764dd692408d939f95c7f4e9b544-61cec7fa4daa5a222fe0d10be7cd1061-ld.mp4	" ><div>	7.第七课【zh ch sh r】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/86564f2aee07437482238ab66b1d1ead/98b5b00699464b8a8913da918efb444a-5fc5da82aa15101cb7f31c36b904a986-ld.mp4	" ><div>	8.第八课【z c s y w】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/6c27d4f33238408fb61a1388f0bef1c6/55cfaf905ac34ed98bec83ee9007db5a-441ebb870436a3bdc1740b4f4e756639-ld.mp4	" ><div>	9.第九课【ai ei ui 】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/deb7c0d362f74e49a0541079edbfce43/e4f71b386d0f4cacbeed5a0879c9244f-722a30f3b9a158cade4c6c162fc5ea85-ld.mp4	" ><div>	10.第十课【ao ou iu】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/40b2f0c4314d45e3bff9cc1c983afd56/3ed8da465cd646e1bcb4c95ec06b8a65-410dff99613e0746a3b8af2bfc5ed4eb-ld.mp4	" ><div>	11第十一课【ie ve er】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/b39a099f68f9452590cda0b9245949d0/db871fb81b63490292a11a4955f2e57d-343ae38fc53b22288416cb0d34692425-ld.mp4	" ><div>	12.第十二课【an en in】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/e78daac2b05e4183b2c6775c8a54f8a1/ee0d993719254052940c751e5d97bda0-874752ab8bd5113fbdb07bc61a4f370e-ld.mp4	" ><div>	13.第十三课【un uv】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/b3122255d9a7484486119b0bea9ef8d9/99b3793962c84a028551f47e87fb8d2e-5b7dcbd5a11e1300e39e670ea49c2d0e-ld.mp4	" ><div>	14.第十四课【ang eng ing ong】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/fb8c04d910b1471296fd5ebbaba41eb6/93774805d5da4d57a0a6b661f1400324-3c89b2ec450bb6664410a3d705edd52c-ld.mp4	" ><div>	15.第十五课【zhi chi shi ri】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/27230662f8b1419383eb619e3ec07079/ed7fdc9ae43642f0b3a17b2119dbd9b7-b38431183b6c22f4cf178dd0bc099c6f-ld.mp4	" ><div>	16.第十六课【zi ci si】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/383465f0953a4acc81aff5e8e5abaab1/8115d0f11ae544439dc53c16f5808462-5b2103850f37a255cde28ebdc06271d8-ld.mp4	" ><div>	17.第十七课【yi wu yu】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/e15e117977904cd4a6238c9bd230df9a/b7ac7b2ad1a74f47895296fe080ccc66-baa57d8bb514af3fb39be4ea889ddf4e-ld.mp4	" ><div>	18.第十八课【ye yue yuan】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/495abc9d6bf44a82a4e47af6105a8379/2daa98d8d0354dce8c7be391fb9fcab9-2190210727728ae5ff98ea2ce80d45ae-ld.mp4	" ><div>	19.第十九课【yin yun ying】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+	<dd ><li value="	http://vv.taozhi.cn/73167d31b0ec4d3485f7c13acde9c969/96c4b05d72e24534916e40c3c27053c8-5ffcf593d02b0f038e13c5ff33e72e09-ld.mp4	" ><div>	20.第二十课【拼音大闯关】	</div><span>课程归类：	小学	一年级	语文	</span><span>	每日拼音课（初级）	</span></li></dd>
+
+
+
+	      	</dl>
+</div>
+</div>
+
+	<button title="收起播放列表" id="playList-hidden">  </button>
+	<button title="展开播放列表" id="playList-show1">  </button>
+<!--<div class="container-fluid">-->
+<!--<div class="row kecheng_jieshao">-->
+<!--	<div class="col-xs-12 kecheng_jieshao_con">-->
+<!--        <div style="height:auto; overflow:hidden;">-->
+<!--	        <p><strong>--><!--</strong></p>-->
+<!--	        <p>--><!--</p>-->
+<!--	        <img id="jqImgStudyNav" src="" style="display:none;"/>-->
+<!--        </div>-->
+<!--        <div class="kecheng_tishi" style="margin-top:15px;">学习方式：<br />1.用电脑打开勤学网学习<br />2.安装勤学网APP,用手机或平板学习</div>-->
+<!--        <div class="col-xs-12" style="background:#ffffff; margin:15px 0px; padding:0px;">-->
+<!--        <div class="col-xs-12" style="margin-top:15px;"><strong>移动APP下载</strong></div>-->
+<!--		<div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnApkDownload"><img src="--><!--/mobile/images/app_android.png"/></a></div>-->
+<!--        <div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnIosDownload"><img src="--><!--/mobile/images/app_iphone.png"/></a></div>-->
+<!--        </div>-->
+<!--        -->
+<!--    </div>-->
+<!--</div>-->
+<!--</div>-->
+
+<div id="light03" class="white_content04_x" style="display:none;"><a href="javascript:;" onclick = "closewindow02()" title="关闭"><img src="http://sta.qinxue.com/images/white_content_x02.png" onmouseout="this.src='http://sta.qinxue.com/images/white_content_x02.png'" onmouseover="this.src='http://sta.qinxue.com/images/white_content_x02_02.png'"  /></a></div>
+<div id="light02" class="white_content" style="display:none;text-align: center;">
+  
+  <div id="playercode" >	
+
+<div id='plv_6fdf1970faff8555a549c73a3f4a37e4_6'></div>
+<script>
+var player = polyvObject('#plv_6fdf1970faff8555a549c73a3f4a37e4_6').videoPlayer({
+	'width':'100%',
+	'height':'576',
+	'vid' : '6fdf1970faff8555a549c73a3f4a37e4_6',
+ 'forceH5':true 
+});
+</script>  </div>
+</div>
+
+<script type="text/javascript">
+var URL_APP_DOWNLOAD = "http://m.qinxue.com/index.php?r=app/download";
+var URL_APP_DOWNLOADURL = "http://dlapp.qinxue.com/qinxue_android_v1.0.apk";
+</script>
+
+
+
+<script type="text/javascript">
+    </script>
+	<div style="height:80px;"></div>
+
+<div id="jqAjaxLoadingTipFooter" class="ajaxLoadingFooter">处理中...</div>
+<div class="go_top" style="display:none;"><a href="#">&nbsp;</a></div>
+<div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254537038'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254537038' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<script type="text/javascript">		
+	$(function(){
+		objSysRegist.evalResizeEvent();
+	});
+</script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		var scrollTop = $(this).scrollTop();
+		if(scrollTop >= 460){
+			$(".go_top").css("display","block");
+		}else{
+			$(".go_top").css("display","none");
+		}
+	});
+</script>
+
+</body>
+</html>
