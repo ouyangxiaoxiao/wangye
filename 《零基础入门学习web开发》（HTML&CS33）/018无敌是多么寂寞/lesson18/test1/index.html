@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>input实现按钮样式</title>
+</head>
+<body>
+<form action="welcome.php" method="post">
+    <lable for="name" >名字：</lable>
+    <input type="text" value="ee"> <br><br>
+
+    邮箱：<input type="text" name="email"><br><br>
+    <input type="submit" value="提交">
+    <input type="reset" value="重写">
+    <input type="button" onclick="msg()" value="点我！">
+</form>
+<script>
+    function msg() {
+        alert("I love FishC.com!");
+    }
+</script>
+</body>
+</html>

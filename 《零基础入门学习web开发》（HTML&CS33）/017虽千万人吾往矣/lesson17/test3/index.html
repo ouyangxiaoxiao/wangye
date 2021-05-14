@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>调查问卷</title>
+</head>
+<body>
+<form action="https://ilovefishc.com/html5/html5/lesson17/test1/welcome.php" method="post">
+    <!-- 使用fieldset划分不同类型的表单元素 -->
+    <fieldset>
+        <legend>基本信息</legend>
+        <label for="name">姓名：</label><input type="text" name="name" id="name"><br><br>
+        <label for="sex">性别：
+            <select>
+                <option value="male">男</option>
+                <option value="female">女</option>
+            </select>
+
+        </label><br><br>
+        <label for="age">年龄：</label><input type="text" name="age" id="age">
+    </fieldset>
+    <p>为了给您提供更好的服务，希望您能抽出几分钟时间，将您的感受和建议告诉我们，我们非常重视每位用户的宝贵意见，期待您的参与！现在我们就马上开始吧！</p>
+    <fieldset>
+        <legend>调查问卷</legend>
+        <label for="q1">您是否使用过鱼C论坛：</label><input type="text" name="age" id="q1"><br><br>
+        <label for="q2">您使用鱼C论坛的目的是：</label><input type="text" name="age" id="q2"><br><br>
+        <label for="q3">您使用鱼C论坛的频率是：</label><input type="text" name="age" id="q3">
+    </fieldset>
+    <!--带多层的下拉菜单-->
+
+    <fieldset>
+        <legend>询问过往</legend>
+        <label>小甲鱼近期更新的课程
+            <select>
+                <optgroup label="《零基础入门学习Web开发》">
+                    <option value="h5017">第017讲</option>
+                    <option value="h5016">第016讲</option>
+                    <option value="h5015">第015讲</option>
+                    <option value="h5000">……</option>
+                </optgroup>
+                <optgroup label="《零基础入门学习Scratch》">
+                    <option value="sc008">第008讲</option>
+                    <option value="sc007">第007讲</option>
+                    <option value="sc006">第006讲</option>
+                    <option value="sc000">……</option>
+                </optgroup>
+                <optgroup label="《极客Python之效率革命》">
+                    <option value="gp002">绘图篇</option>
+                    <option value="gp001">办公篇</option>
+                    <option value="gp000">爬虫篇</option>
+                </optgroup>
+            </select>
+        </label>
+    </fieldset>
+
+
+    <br>
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>

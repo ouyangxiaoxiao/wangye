@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="https://ilovefishc.com/html5/html5/lesson22/test1/welcome.php" method="post">
+    <label>邮箱:<input type="email" name="email" pattern="\w[-\w.+]*@(163.com|126.com)" placeholder="仅限126和163邮箱" required></label>
+    <br>
+    <br>
+    <label>电话：<input type="tel" name="tel" pattern="(\(\d{3,4}\)|\d{3,4}-|\s)?\d{8}" placeholder="仅限座机号码" required ></label>
+    <br>
+    <br>
+    <label>网址:<input type="url" name="url" pattern="^(http|https)?:\/\/[^\s]+" placeholder="仅限以http和https开头的网址" required size="30" maxlength="22"></label>
+    <br>
+    <br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

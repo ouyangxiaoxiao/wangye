@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取邮箱电话和网址</title>
+</head>
+<body>
+<form action="https://ilovefishc.com/html5/html5/lesson21/test4/welcome.php" method="post" enctype="multipart/form-data">
+    <label>邮箱：<input type="email" name="email" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"></label>
+    <br>
+    <br>
+<!--    <label>电话: <input type="tel" name="tel" pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$"></label>-->
+    <label>电话: <input type="tel" name="tel" pattern="{\(\d{3,4}\)|\d{3,4-|s}?\d{8}"></label>
+    <br>
+    <br>
+    <label>网址：<input type="url" name="url" pattern="^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$"></label>
+    <br>
+    <br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

@@ -2,6 +2,7 @@
 ********github 公用域名
 https://ouyangxiaoxiao.github.io/wangye/
 https://fishc.com.cn/鱼c工作室
+https://ilovefishc.com/html5/ 查询案例
 *********为网页注入灵魂javaScrip
 延时执行脚本 defer
 
@@ -163,3 +164,88 @@ ul.a{list-style-type: xxx;} 表示的样式 详见：https://man.ilovefishc.com/
 
 
     <td rowspan="3">2</td><!--占用2列-->
+--------------015你说hello 我说hei
+登录页面 用户名 密码
+form 表单
+<form action="网址" method="post">
+<input type="text" name="name"> <br> <br>
+text 是明文 一般用名字
+pwassd 是密码的*表示
+文本框 名称=名称 换行 换行
+
+<button type="submit">提交</button>
+<button type="reset">重写</button>
+get 和post 不同的提交方法
+
+自动填充/不自动填充/指定目标显示位置/新页面跳转target="_blank"/默认值value="女"
+自动对焦autofocus/禁用元素disabled
+***********17虽千万人吾往矣********
+label 自动点击对焦 需要id配合
+<label for="name">你叫什么名字：</label>
+fieldset 元素 在表格多的时候 区分划分
+select元素--下拉框
+option元素
+optgroup--下拉框 分组
+*************18无敌是多么的寂寞********
+input元素的type属性
+摁钮：submit,button 和rest
+-------改单选框*************
+用input 改写button，
+type 值 设置radio
+
+<form action="welcome.php" method="post">
+    <label><input type="radio" name="sex" value="male">男</label>
+    <label><input type="radio" name="sex" value="female">女</label>
+</form>
+---------复选框：checkboox
+
+
+时间 日期
+
+
+***************搜索框
+图片当搜索 会显示坐标
+隐藏input元素 type="hidden"
+
+无敌是多么的寂寞（三）20---图片上传
+accept="image/*"
+mime类型
+限制文件大小<input type="hidden" name="MAX_FILE_SIZE" value="1024">
+多数的文件 multiple
+
+输入数字，如果负数怎么处理 type="number" name="age" min="1" max="100"
+
+滚动条 初始值 大小 步长
+<label>你问我爱你有多深？我爱你爱有<input type="range" name="love" value="1" min="1" max="10000" step="100" >分 </label>
+
+邮箱 电话 和网址：email，tel，url
+
+限制类型 ，正则表达式
+placeholder 占位提示文本
+required 属性 限制不能为空
+size="30" maxlength="22" 设置单元格长度 限制内容长度
+
+list属性和datalist元素
+id值关联
+--------------------023好戏在后头---------
+ouinput 输出
+textarea 接收多行输入
+rows属性 cols属性 是字符不是像素
+一个中文字符 按照2个英文字符算
+wrap="hard" 换行
+wrap="off" 不自动换行，会有进度条
+
+****************024-旧的不去新的不来
+除去div 应该学会新的语义
+****************025********
+强调语义部分
+---------026回眸一笑百媚生
+根据大小 调整
+figure 和figcaption 元素
+---------027-
+自动播放 播放控件 预加载  但是可以加载视频数据 封面 poster设置封面
+循环loop
+------音频播放
+track 为音轨添加文字 就是字幕 webvvt
+***********
+28

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+    <meta name="keywords" content="网站关键字|可以写多个">
+    <meta name="description" content="关于网站的描述">
+    <meta name="author" content="网站作者或者是版权">
+    <title>网页标题</title>
+    <link href="css/fishc.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="topic">
+        <h2>鱼c调查问卷</h2>
+        <div class="info clearfix" style="height: 30px">
+            <span>发布者：<a rel="nofollow" style="color:#999!important" class="color-blue">小甲鱼</a></span>
+            <span>有效答卷：<a href="https://ilovefishc.com/" target="_blank" class="color-blue">666份</a></span>
+            <span>剩余答卷数66份</span>
+        </div>
+    </div>
+
+    <div>
+        本问卷适合：热爱编程的鱼油使用
+    </div>
+
+    <form id="questionaryform" action="https://ilovefishc.com/html5/html5/lesson23/final/questionnaire.php"
+          method="post">
+        <div id="questionsDiv" class="questions">
+            <div class="question">
+                <div class="header">
+                    <div class="title" id="1">
+                        <strong><span style="font-size:medium;">1,基础信息</span></strong>
+                        <span class="type">[必填]</span>
+                    </div>
+                    <br>
+                    <label id="upLabel">上传头像：<input type="file" accept="image/*" id="upFile"
+                                                    onchange="upShow(this)"></label>
+                    <div id="showZone">
+                        <img id="imgShowimg">
+                    </div>
+                    <fieldset>
+                        <legend>基础信息</legend>
+                        <label>账号：<input type="text" name="userName" required></label> <br>
+                        <label>密码：<input type="password" name="password" required></label> <br>
+                        <label>邮箱：<input type="email" name="email" pattern=".*?@163.com" placeholder="仅限163邮箱"
+                                         required></label> <br>
+                        <label>电话：<input type="tel" name="tel" pattern="[\d]{11}" placeholder="11位手机号" required>
+                        </label>
+                        <br>
+                        <label>主页：<input type="url" name="url" pattern="http.*?|https.*?"
+                                         placeholder="请输入以http或者以https开头的网址" required></label> <br>
+                        <label>年龄：<input type="number" min="1" max="100" required></label> <br>
+                        <label>生日：<input type="date"></label> <br>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="question">
+                <div class="header">
+                    <div class="title" id="2">
+                        <strong><span style="font-size: medium">2,正在学习哪门课程</span></strong>
+                        <span class="type">[单选]</span>
+                    </div>
+                </div>
+
+                <select>
+                    <option>《带你学C带你飞》</option>
+                    <option>《数据结构和算法》</option>
+                    <option>《零基础入门学习Web开发》</option>
+                    <option>《零基础入门学习Python》</option>
+                    <option>《极客Python之效率革命》</option>
+                    <option>《零基础入门学习Scratch》</option>
+                    <option>《零基础入门学习Delphi》</option>
+                    <option>《零基础入门学习汇编语言》</option>
+                    <option>《解密系列》</option>
+                    <option>《Windows程序设计》</option>
+                    <option>《C++快速入门》</option>
+                </select>
+            </div>
+            <div class="question">
+                <div class="header">
+                    <div class="title" id="3">
+                        <strong><span>3,请问你是否购买会员</span></strong>
+                        <span>[单选]</span>
+                    </div>
+                </div>
+                <label> <input type="radio" name="radioChoose">是</label>
+                <label> <input type="radio" name="radioChoose">否</label>
+                <label> <input type="radio" name="radioChoose">暂时不买</label>
+            </div>
+        </div>
+        <div class="question">
+            <div class="header">
+                <div class="title" id="4">
+                    <strong><span>3，您是从哪些途径了解到我们的</span></strong>
+                    <span class="type">[多选]</span>
+                </div>
+                <label><input type="checkbox" name="checkboxChoose" value="">bilibili</label>
+                <label><input type="checkbox" name="checkboxChoose" value="">网易</label>
+                <label><input type="checkbox" name="checkboxChoose" value="">线下</label>
+                <label><input type="checkbox" name="checkboxChoose" value="">大学图书馆</label>
+                <label><input type="checkbox" name="checkboxChoose" value="">其它（请在下面选项中填写）</label>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <strong><span style="font-size: medium">4,其它选项</span></strong>
+                        <span class="type">[建议]</span>
+                    </div>
+                </div>
+                <div class="blank"><textarea cols="30" rows="2"></textarea></div>
+            </div>
+
+            <div class="question">
+                <div class="header">
+                    <div class="title" id="7">
+                        <strong><span style="font-size:medium;">5、对小甲鱼的喜爱</span></strong>
+                        <span class="type">[必填]</span>
+                    </div>
+                </div>
+                程度：<input id="snrPollInterval" type="range" value="50" min="0" max="100" oninput="changeNum()"/>
+                <span id="rangNum">50</span>
+            </div>
+            <div class="question">
+                <div class="header">
+                    <div class="title" id="8">
+                        <strong><span style="font-size:medium;">6、视频教程评分及反馈</span></strong>
+                        <span class="type">[必填]</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz">
+                <h3>谢谢支持(｡◕∀◕｡)</h3>
+                <div class="quiz_content">
+                    <div class="goods-comm">
+                        <div class="goods-comm-stars">
+                            <span class="star_l">满意度：</span>
+                            <div id="rate-comm-1" class="rate-comm"></div>
+                        </div>
+                    </div>
+
+                    <div class="l_text">
+                        <label class="m_flo">反 馈：</label>
+                        <textarea name="" id="" class="text"></textarea>
+                        <span class="tr">字数限制为5-200个</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+<div class="submit">
+    <input type="submit" class="btnSubmit" value="提交">
+    <input type="reset" value="手动重置" class="btnRest">
+    <input type="button" value="千万不要点我 " class="btnBuy" onclick="loveFishc()">
+</div>
+</form>
+<div id="tip">
+    <div id="tip-bg"></div>
+    <div id="tip-content">
+        <span>鱼油的页面将在：<span id='timeBox'>3</span>秒后跳转到一个神奇的地方</span>
+    </div>
+</div>
+
+<div class="copyright">
+    <div> Copyright 2010-2018 版权所有<a href="https://ilovefishc.com/" target="_blank" class="color-blue">鱼C工作室</a>
+    </div>
+
+</div>
+
+
+</body>
+<script src="js/fishc.js"></script>
+</html>
+
+
