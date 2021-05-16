@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*设置在范围内与不在范围内 这两种情况对应的css*/
+        input:in-range{
+            border: 2px solid green;
+        }
+        input:out-of-range{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <input type="number" name="number" min="0" max="99" value="66">
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态伪类选择器</title>
+    <style>
+        /*请在此处定制a元素的不同状态*/
+
+        /*连接未被访问的时候*/
+        a:link{
+            color: pink;
+        }
+        /*连接被访问过的时候*/
+        a:visited{
+            color: red;
+        }
+        /*鼠标悬停的时候*/
+        a:hover{
+            color: black;
+        }
+        /*鼠标摁下的那一刻*/
+        a:active{
+            color: greenyellow;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<a href="http://www.baidu.com" target="_blank">百度一下，你就知道</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置默认元素的样式</title>
+    <style>
+        /*设置默认元素的样式*/
+        :default{
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <p>
+        <label for="requirde">必填:</label>
+        <input type="text" name="required" required>
+    </p>
+    <p>
+        <label for="potional">可选：</label>
+        <input type="text" name="potional">
+        <button type="submit"> 提交</button>
+    </p>
+</form>
+</body>
+</html>

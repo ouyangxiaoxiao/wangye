@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置表但元素的选项被选中的样式</title>
+    <style>
+        /*:checked{*/
+        /*    height: 50px;*/
+        /*    width: 50px;*/
+        /*}*/
+        :checked + span{
+            background-color: red;
+            color: #f56307;
+        }
+    </style>
+</head>
+<body>
+<input type="radio" name="gender" value="male"> <span>男人</span> <br>
+<input type="radio" name="gender" value="female"> <span>女人</span> <br>
+<hr>
+<input type="checkbox" name="fruit" value="sugarcane"><span>甘蔗</span>
+<input type="checkbox" name="fruit" value="banana"><span>香蕉</span>
+<input type="checkbox" name="fruit" value="egg"><span>鸡蛋</span>
+<input type="checkbox" name="fruit" value="mango"><span>芒果</span>
+<input type="checkbox" name="fruit" value="peach"><span>水蜜桃</span>
+</body>
+</html>

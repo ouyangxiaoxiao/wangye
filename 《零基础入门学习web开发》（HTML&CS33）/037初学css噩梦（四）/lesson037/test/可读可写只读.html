@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置输入在只读 与可读可写属性对应的样式</title>
+    <style>
+        /*设置输入在只读与可读可写数学对应的样式*/
+        input:read-only{
+            background-color: red;
+        }
+        input:read-write{
+            background-color: yellow;
+        }
+        /*兼容特殊浏览器用的代码*/
+        input:-moz-read-only{
+            background-color: red;
+        }
+        /*兼容特殊浏览器用的代码*/
+        input:-moz-read-write{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<p>普通的input 输入框：<input type="text"></p>
+<p>只读的input 输入框：<input type="text" readonly></p>
+</body>
+</html>

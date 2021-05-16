@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角边距</title>
+    <style>
+        /*p{*/
+        /*    !*border: 2px solid red;!*边框 粗度，实线，颜色*!*!*/
+        /*    border-style: solid solid dotted ;!*设置四周边框，上实线，左右一对实线，下面是虚线*!*/
+        /*    border-bottom-color: red;!*单独指定下面的为红色*!*/
+        /*    border-top-left-radius: 15px;*/
+        /*    border-top-right-radius: 15px;*/
+        /*    border-bottom-left-radius: 15px;*/
+        /*    border-bottom-right-radius: 15px;*/
+        /*}*/
+        p {
+            border: 30px solid red; /*边框粗2像素，实线，红色*/
+            /*border-radius: 30px/15px;!*简写 水平半径是30，垂直半径是15*!*/
+            border-radius: 30px 50% 3em 15px/15px 20% 3em 30px; /*简写 水平半径是30，垂直半径是15*/
+            padding: 15px;
+            border-image-source: url("img/border.png");
+            border-image-slice: 30;/*切边框背景图*/
+            border-image-repeat: round;/*拉伸图像的方式*/
+            /*border-image-width: 90px;!*设置边框图片的宽度*!*/
+        }
+
+
+    </style>
+</head>
+
+<body>
+<P>我们是优雅生活的实践者，卓越生活的缔造者，和美生活的捍卫者。</P>
+
+</body>
+</html>

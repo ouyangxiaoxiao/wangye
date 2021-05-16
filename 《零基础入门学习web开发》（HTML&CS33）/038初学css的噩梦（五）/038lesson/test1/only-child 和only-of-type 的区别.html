@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>only-child 和only-of-type 的区别</title>
+    <style>
+        /*strong:only-of-type {*/
+        /*    border: 2px solid green;*/
+        /*}*/
+
+        /*strong:only-child {*/
+        /*    border: 2px solid red;*/
+        /*}*/
+        p:first-child {
+            border: 2px solid green;
+        }
+
+        p:first-of-type {
+            border: 2px solid green;
+        }
+
+        p:last-of-type {
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+<span> DEMO</span>
+<p>I <strong>love</strong> <span>python</span></p>
+<p> I love ps</p>
+<p> I LOVE YOU</p>
+</body>
+</html>

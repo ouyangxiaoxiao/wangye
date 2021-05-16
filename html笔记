@@ -3,6 +3,7 @@
 https://ouyangxiaoxiao.github.io/wangye/
 https://fishc.com.cn/鱼c工作室
 https://ilovefishc.com/html5/ 查询案例
+https://man.ilovefishc.com/ 速查手册
 *********为网页注入灵魂javaScrip
 延时执行脚本 defer
 
@@ -249,3 +250,216 @@ figure 和figcaption 元素
 track 为音轨添加文字 就是字幕 webvvt
 ***********
 28
+
+---------032 朋友，你会ollie吗，css selector
+*代表通用选择
+class类选择器 选择器里面 加.
+id选择器 id  选择器前面 加 #
+
+----------033 还可以这么玩
+交集选择器---元素选择器.类选择器|元素选择器#id选择器 {}
+并集选择器/分组选择器/群组选择器 ，选择器1，选择器2，选择器3，....{}
+后代选择器，要用空格分开 包含选择器{先应用选择器1...空格...后应用选择器2......再次应用选择器3}
+子元素选择器，选择器1>选择器2  body > .content
+相邻兄弟选择器 ，选择器1+选择器2{.....}，要有共同父元素
+通用兄弟选择器，选择器1~选择器2{.....}
+
+------------034-css初学者的噩梦（1）-------
+伪元素选择器--  ::first-line选择器 --匹配文本块的第一行内容，可以在冒号前面加元素
+乱数假文 lorem ipsum
+::firsr-letter 选择器，用来选中文本块的第一个字符
+::befoer 和::after 选择器，会生成新的内容 content：
+::selection 选择器 它用于匹配用户的部分文本
+-------------035-css初学者的噩梦（2）-------------
+伪类选择器：
+
+动态伪类选择器：
+:ink,:visited,:hover,:active---用在a标签
+未被访问，访问过，鼠标悬停，鼠标摁下的那一刻
+:focus
+
+UI伪类选择器：
+:enabled,:disabled,:chewcked,:required,:optional,
+:default,:valid,:invalid,:in-range,:out-of-range,
+:read-ony,:read-wirte<:indeterminate
+
+结构伪类选择器：
+:root,:nth-child,:nth-last-child,:nth-of-type,
+:nth-last-of-type,:firsh-child,:last-child,:first-of-type,
+:last-of-type,:only-child,:only-of-type,:empt
+
+其它伪类选择器：
+:target ,:lang 和not(selector)
+
+如何区分伪类选择器和伪元素选择器呢？
+替换以前的类选择器
+如无必要，勿增实体
+
+属性选择器
+-----------------040金木水火土---------
+^开头的意思
+$结尾的意思
+
+-----------041翩若惊鸿，婉若游龙-----
+前景色
+h1 {
+            color:rgb(255,99,77);
+        }
+鼠标悬浮
+h1:hover{
+            color: rgba(255,99,71,0.5);
+        }
+-----------042道可道非常道-----------------
+背景色
+style="background-color:Dodgerblue"
+内联
+指定图像
+2张图像 用英文逗号分隔
+图像会覆盖背景颜色
+可以同时设置2种
+
+body{
+            /*插入2张图片，分先后层级*/
+            /*background-image: url("img/bg.jpg");*/
+            background-image: url("img/cover.png"),url("img/bg.jpg");
+            background-repeat: no-repeat;/*不平铺*/
+            /*background-repeat: repeat-x;!*水平方向重复*!*/
+            /*background-repeat: repeat-y;!*垂直方向重复*!*/
+            /*background-repeat: repeat;!*满屏铺满*!*/
+            /*background-repeat: inherit;!*从父元素继承 background-repeat 属性*!*/
+            padding: 80px 0 50px 360px;
+
+        }
+body{
+            background-image: url("img/610.jpg");
+            background-repeat: repeat-x;/*水平拓展*/
+            background-size: 60px 60px;/*设置宽 高*/
+            /*padding: 60px 0 180px 30px;!*内边距*!*/
+            background-position: 10px 50px;/*背景位置，第一个数是控制图像原水平距离，第二个是控制垂直距离*/
+            background-attachment: fixed;/*图片悬浮*/
+        }
+
+        <textarea> 这个标签 显示的文本域才会圈起来
+
+
+边框---------044我们是优雅生活的践行者（上）-------
+
+none	定义无边框。
+hidden	与 “none” 相同。不过应用于表时除外，对于表，hidden 用于解决边框冲突。
+dotted	定义点状边框。在大多数浏览器中呈现为实线。
+dashed	定义虚线。在大多数浏览器中呈现为实线。
+solid	定义实线。
+double	定义双线。双线的宽度等于 border-width 的值。
+groove	定义 3D 凹槽边框。其效果取决于 border-color 的值。
+ridge	定义 3D 垄状边框。其效果取决于 border-color 的值。
+inset	定义 3D inset 边框。其效果取决于 border-color 的值。
+outset	定义 3D outset 边框。其效果取决于 border-color 的值。
+inherit	规定应该从父元素继承边框样式。
+border-width: 30px;/*设置边框粗*/
+设置每一条边框的样式
+p{
+            border-style: dotted solid dotted solid;/*简写上右下左，必须要带style*/
+        }
+还可以单独设置左右
+-----内边距
+顺序 ：
+4个值是上右下左。
+3个值是上，然后左右，最后下。
+2个值的话是先上下后左右。
+----外边距
+祖传技能：
+1.对象必须是块级元素
+2.必须制定元素的宽度
+
+
+----外边距塌陷
+边界折叠
+嵌套
+
+-------
+box-s
+this is the life
+overflow-x: visible|hidden|scroll|auto|no-display|no-content;
+visible	不裁剪内容，可能会显示在内容框之外。
+hidden	裁剪内容 - 不提供滚动机制。
+scroll	裁剪内容 - 提供滚动机制。
+auto	如果溢出框，则应该提供滚动机制。
+no-display	如果内容不适合内容框，则删除整个框。
+no-content	如果内容不适合内容框，则隐藏整个内容。
+----调整内容
+resize: none|both|horizontal|vertical:
+none	用户无法调整元素的尺寸。
+both	用户可调整元素的高度和宽度。
+horizontal	用户可调整元素的宽度。
+vertical	用户可调整元素的高度。
+-----元素的轮廓outline
+
+
+---为元素添加阴影---
+box-shadow: 0 4px 8px #bcbcbc;
+
+内外同时又阴影
+-------49看山不是山---
+display 显示
+display: block;块级元素显示
+inline	默认。此元素会被显示为内联元素，元素前后没有换行符。
+block	此元素将显示为块级元素。
+content	盒子文本正常绘制，而围绕在盒子中的框并不会生成。
+flex	此元素将显示为弹性盒容器。
+grid	此元素将显示为栅格容器。
+inline-block	此元素将显示为行内块元素。
+inline-flex	此元素将显示为行内弹性盒容器。
+inline-grid	此元素将显示为行内栅格容器。
+inline-table	此元素会作为内联表格来显示（类似 ），表格前后没有换行符。
+list-item	此元素会作为列表显示。
+run-in	此元素会根据上下文作为块级元素或内联元素显示。
+table	此元素会作为块级表格来显示（类似 table元素），表格前后带有换行符。
+table-caption	此元素会作为一个表格标题显示（类似 caption 元素）。
+table-column-group	此元素会作为一个或多个列的分组来显示（类似 colgroup 元素）。
+table-header-group	此元素会作为一个或多个行的分组来显示（类似 thead 元素）。
+table-footer-group	此元素会作为一个或多个行的分组来显示（类似 tfoot 元素）。
+table-row-group	此元素会作为一个或多个行的分组来显示（类似 tbody 元素）。
+table-cell	此元素会作为一个表格单元格显示（类似 td 元素）
+table-column	此元素会作为一个单元格列显示（类似 col 元素）
+table-row	此元素会作为一个表格行显示（类似 tr 元素）。
+none	此元素不会被显示。
+initial	设置该属性为默认元素。
+inherit	规定应该从父元素继承 display 属性的值。
+
+css全称
+Cascading Style Sheets 层叠样式表
+5层
+内部css样式表
+外部css样式表
+内嵌css样式表
+浏览器用户自定义css样式表
+浏览器默认是css样式表
+
+-------行内块 inline-block
+
+visibiliy
+
+----------51总为浮云遮蔽日，长安不见使人愁--- 布局
+float属性--
+允许你去修改元素的显示样式
+
+脱离文档流
+某部分浮动，其它部分顶上来
+浮动对于文本和行内元素采取的做法是被环绕
+而对于块级元素的话呢就是覆盖
+内边距padding
+
+------你的定位决定你的地位
+定位-position
+static-默认，普通布局，top，bottom，left，right属性将不生效
+relative--相对默认的位置重新定位
+absolute--相对于最近一个设置了position属性值的祖先元素重新定位
+fixed--相对于计算机窗口重新定位
+stick--粘滞定位（结合了absolute 和fixed的定位方式）
+
+可以广告
+-----BFC
+块级格式化上下文
+
+
+

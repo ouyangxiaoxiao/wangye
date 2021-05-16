@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--设置必填和可选的样式-->
+    <style>
+        :required{
+            outline: 1px solid red;
+        }
+        :optional{
+            outline: 1px solid green;
+        }
+    </style>
+
+
+</head>
+<body>
+
+</body>
+<form action="">
+    <p>
+        <label for="required">必填:</label>
+        <input type="text" name="required" required>
+    </p>
+    <p>
+        <label for="potinol">可选：</label>
+        <input type="text" name="potionl">
+    </p>
+    <button type="submit">提交</button>
+</form>
+</html>

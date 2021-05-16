@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        /*演示属性选择器 */
+        /*[class="Wood"] {*/
+        /*    background-color: red;*/
+        /*}*/
+        /*[class^="Wood"]{*/
+        /*    background-color: red;*/
+        /*}*/
+
+        /*li[class^="Wood"] {*/
+        /*    background-color: red;*/
+        /*}*/
+        /*模糊匹配*/
+        /*[class*="Woo"] {*/
+        /*    background-color: red;*/
+        /*}*/
+        /*匹配值*/
+        /*[class~="Wood"] {*/
+        /*    background-color: red;*/
+        /*}*/
+
+        [class|="Wood"] {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<p>五行学说最早在道家学说中出现。它强调整体概念，描绘了事物的结构关系和运动形式。</p>
+<p>五行相生：金生水，水生<span class="Wood">木</span>，<span class="Wood">木</span>生火，火生土，土生金</p>
+<ul>
+    <li class="Wood-Fire"><span class="Wood">木</span>生火：因为火以<span class="Wood">木</span>料作燃料的材料，<span
+            class="Wood">木</span>烧尽，则火会自动熄灭
+    </li>
+    <li class="Fire-Earth">火生土：因为火燃烧物体后，物体化为灰烬而灰烬便是土</li>
+    <li class="Earth-Metal">土生金：因为金蕴藏于泥土石块之中，经冶炼后才提取黄金</li>
+    <li class="Metal-Water">金生水：因为金若被烈火燃烧，便溶为液体，液体属水；水要依靠铁器来开导疏通</li>
+    <li class="Water-Wood">水生<span class="Wood">木</span>：因为水灌溉树<span class="Wood">木</span>，树<span class="Wood">木</span>便能欣欣向荣
+    </li>
+</ul>
+<p>五行相克：金克<span class="Wood">木</span>，<span class="Wood">木</span>克土，土克水，水克火，火克金</p>
+<ul>
+    <li class="Water-Fire">水克火：因为火遇水便熄灭</li>
+    <li class="Fire-Metal">火克金：因为烈火能溶解金属</li>
+    <li class="Metal-Wood">金克<span class="Wood">木</span>：因为金属铸造的割切工具可锯毁树<span class="Wood">木</span></li>
+    <li class="Wood-Earth"><span class="Wood">木</span>克土：因为树根苗的力量强大，能突破土的障碍</li>
+    <li class="Earth-Water">土克水：因为土能防水</li>
+</ul>
+</body>
+</html>

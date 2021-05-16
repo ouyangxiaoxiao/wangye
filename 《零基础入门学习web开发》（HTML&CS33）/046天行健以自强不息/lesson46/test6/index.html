@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套塌陷</title>
+
+    <style>
+        div.box1 {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /*margin-bottom: 100px;*/
+        }
+
+        div.box2 {
+            width: 100px;
+            height: 100px;
+            background: #bce8f1;
+            /*margin-bottom: 500px;*/
+            margin-top: 50px;/*外边距上*/
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2"></div>
+</div>
+
+</body>
+</html>

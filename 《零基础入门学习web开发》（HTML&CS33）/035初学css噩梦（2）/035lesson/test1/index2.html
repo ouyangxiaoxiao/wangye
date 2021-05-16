@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div也能出彩</title>
+    <style>
+        /*div {*/
+        /*    background-color: red;*/
+        /*    color: white;*/
+        /*    padding: 25px;*/
+        /*    text-align: center;*/
+        /*}*/
+
+        /*定义用户鼠标悬停在div 上的样式*/
+        /*div:hover{*/
+        /*    background-color: green;*/
+        /*}*/
+        /*:active {*/
+        /*    background-color: green;*/
+        /*}*/
+        input#boy:focus{
+            background-color: cyan;
+        }
+        input#girl:focus{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div>来，把鼠标移过来</div>
+<form action="">
+    <label>他的名字：</label>
+    <input type="text" name="name" id="boy" >
+    <br>
+    <br>
+    <label>她的名字：</label>
+    <input type="text" name="name" id="girl">
+
+
+</form>
+</body>
+</html>
