@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>容纳浮动元素</title>
+    <style>
+        .container {
+
+            background: pink;
+            /*float: left;*/
+            overflow: hidden;/*创建了一个新的BFC*/
+
+        }
+        .clear {
+            clear: both;
+        }
+        p{
+            float: left;
+            background-color: #b6c2d2;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p> I LOVE FISHC</p>
+    <p> I LONE FISHC</p>
+</div>
+</body>
+</html>

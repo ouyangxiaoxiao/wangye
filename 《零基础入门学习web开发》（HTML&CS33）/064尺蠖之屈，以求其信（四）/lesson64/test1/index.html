@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂轴上的对齐</title>
+    <style>
+        .flex-container{
+            display: flex;/*显示为弹性方式*/
+            height: 500px;/*高度500*/
+            /*flex-direction: row;!*主轴横向*!*/
+            /*justify-content: space-between;!*对齐方式*!*/
+            flex-wrap: wrap;/*换行处理方式*/
+            align-content: center;
+            background-color: #b7189b;
+        }
+        .flex-container>div{
+            /*width: 400px;*/
+            /*right: 400px;*/
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+    <div>six</div>
+    <div>seven</div>
+    <div>eight</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局演示-绝对定位法</title>
+    <style>
+        .left{
+            width:200px;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: pink;
+        }
+        .right{
+            width: 200px;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: lightblue;
+
+        }
+        .center{
+            height: 500px;
+            margin: 0 200px;
+            background-color: #788eff;
+        }
+        .container{
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>

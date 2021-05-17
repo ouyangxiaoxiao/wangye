@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现多列布局</title>
+    <style>
+        /*请将p元素的文本拆分成5列显示*/
+        div.columus{
+            column-count: 5;
+            column-width: 200px;
+        }
+        h2{
+        column-span: all;/*不被拆分*/
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<div class="columus">
+    <h2>下面的文本你想拆分成多少列</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis commodi corporis deleniti, deserunt
+        dicta doloribus, eius est eveniet facere ipsa praesentium repellat vitae, voluptas voluptatem. Eaque eligendi
+        perferendis quo!lorme
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eius inventore pariatur perspiciatis recusandae
+        repudiandae temporibus velit. Aperiam at aut, consectetur corporis dolores doloribus illo ipsam nam qui quo
+        tenetur.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet architecto dolor dolorem dolores impedit,
+        maiores nihil recusandae tempora voluptates. Adipisci deserunt fugiat, incidunt iusto mollitia omnis quibusdam
+        suscipit tempora.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, impedit officia omnis perspiciatis quia
+        tempora tenetur. Cupiditate delectus enim fugiat? Accusantium cumque eius esse ipsam maiores nobis sit ullam?
+        Labore.
+    </p>
+</div>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局</title>
+    <style>
+        body {
+            min-width: 600px;
+        }
+
+        main {
+            padding: 0 200px;
+        }
+
+        .column {
+            float: left;
+        }
+
+        #conter {
+            width: 100%;
+            height: 500px;
+            background-color: #91acff;
+        }
+
+        #left {
+            width: 200px;
+            height: 500px;
+            margin-left: -100%;
+            position: relative;
+            right: 200px;
+            background-color: pink;
+        }
+
+        #right {
+            width: 200px;
+            height: 500px;
+            margin-right: -200px;
+            background-color: #e642d0;
+        }
+
+        header {
+            height: 30px;
+            background-color: red;
+        }
+
+        footer {
+            height: 30px;
+            background-color: red;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<header></header>
+<main>
+    <div id="conter" class="column"></div>
+    <div id="left" class="column"></div>
+    <div id="right" class="column"></div>
+</main>
+<footer></footer>
+
+</body>
+</html>

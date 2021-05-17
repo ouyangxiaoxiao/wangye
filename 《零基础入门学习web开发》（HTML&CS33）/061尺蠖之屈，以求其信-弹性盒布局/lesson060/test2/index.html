@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>将横向导航栏变为纵向</title>
+<style type="text/css">
+        .navigation {
+            display: inline-flex;/*负责横向竖向*/
+            /*flex-direction: column;*/
+            flex-direction: column;
+            border-right: 1px solid pink;
+        }
+
+        a {
+            margin: 5px;
+            padding: 5px 15px;
+            color: white;
+            background-color: lightblue;
+        }
+
+        a:hover {
+            color: lightblue;
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+<nav class="navigation">
+<a href="https://ilovefishc.com" target="_blank">视频</a>
+<a href="https://fishc.com.cn" target="_blank">论坛</a>
+<a href="https://man.ilovefishc.com" target="_blank">宝典</a>
+<a href="https://fishc.taobao.com" target="_blank">起飞</a>
+</nav>
+</body>
+</html>

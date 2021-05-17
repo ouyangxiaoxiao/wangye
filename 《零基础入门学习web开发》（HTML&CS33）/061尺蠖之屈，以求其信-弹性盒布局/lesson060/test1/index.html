@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性盒布局</title>
+    <style>
+        /*没有css 的代码是缺少灵魂的*/
+        .flex-container{
+            display: flex;/*弹性容器以块级形式存在*/
+
+            flex-wrap:wrap-reverse;/*反转*/
+            background-color: pink;
+        }
+        .flex-container>div{
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            background-color: lightblue;
+        }
+        .inline-container{
+            display: inline-flex;/*弹性容器以块级形式存在*/
+            /*display: inline-block;!*弹性容器以竖排式列存在*!*/
+            background-color: pink;
+        }
+
+
+
+        .inline-container{
+            /*display: flex;!*弹性容器以块级形式存在*!*/
+            display: inline-flex;/*弹性容器以块级形式存在*/
+            /*display: inline-block;!*弹性容器以竖排式列存在*!*/
+            background-color: pink;
+        }
+        .inline-container>div{
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            background-color: lightblue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<!--皮之不存，毛将焉附-->
+<div class="flex-container">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+</div>
+<div class="inline-container">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+</div>
+
+</body>
+</html>

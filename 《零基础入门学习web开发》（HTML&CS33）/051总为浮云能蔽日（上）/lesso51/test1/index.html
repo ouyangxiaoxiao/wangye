@@ -3,26 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>实现多列布局</title>
+    <!--    <style>-->
+    <!--        div.left {-->
+    <!--            background-color: pink;-->
+    <!--            width: 50%; /*填满半个body*/-->
+    <!--            /*display: inline-block;*/-->
+    <!--            float: left; /*浮动向左*/-->
+    <!--        }-->
+
+    <!--        div.right {-->
+    <!--            background-color: #bbccdd;-->
+    <!--            width: 50%;-->
+    <!--            /*display: inline-block;*/-->
+    <!--            float: right; /*像右*/-->
+    <!--        }-->
+
+    <!--    </style>-->
     <style>
-        div.left{
+        div.left {
             background-color: pink;
-            width: 50%;/*填满半个body*/
-            /*display: inline-block;*/
-            float: left;/*浮动向左*/
+            padding: 20px;
+            box-sizing: border-box;
         }
 
-        div.right{
-            background-color: #bbccdd;
-            width: 50%;
-            /*display: inline-block;*/
-            float: right;/*像右*/
+        div.right {
+            background-color: #bce8f1;
+            padding: 20px;
+            box-sizing: border-box;
         }
-
+        div.two{
+            column-count: 2;/*设置2列*/
+            column-gap: 20px;/*列与列之间的间隙为0*/
+            column-rule-color: black;
+            column-rule-style: solid;
+            column-rule-width: 5px;
+        }
     </style>
 </head>
 <body>
-<div class="left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores blanditiis commodi, consectetur cum dicta eligendi, ipsa ipsam minus mollitia optio ut voluptas? Ab autem culpa enim fuga nihil quasi.</div>
-<div class="right"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores blanditiis commodi, consectetur cum dicta eligendi, ipsa ipsam minus mollitia optio ut voluptas? Ab autem culpa enim fuga nihil quasi.</div>
-
+<h1>实现两列布局</h1>
+<div class="two">
+    <div class="left">
+        <h2>左侧标签</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores blanditiis commodi,
+            consectetur cum dicta eligendi, ipsa ipsam minus mollitia optio ut voluptas? Ab autem culpa enim fuga nihil
+            quasi.
+        </p>
+    </div>
+    <div class="right">
+        <h2>右侧标签</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores blanditiis commodi,
+            consectetur cum dicta eligendi, ipsa ipsam minus mollitia optio ut voluptas? Ab autem culpa enim fuga nihil
+            quasi.
+        </p>
+    </div>
+</div>
 </body>
 </html>

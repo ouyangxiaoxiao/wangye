@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>margin塌陷</title>
+    <style type="text/css">
+        .container {
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        .newBFC {
+            overflow: hidden;
+        }
+
+        p {
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>I love FishC</p>
+    <div class="newBFC">
+        <p>I love FishC</p>
+    </div>
+</div>
+</body>
+</html>

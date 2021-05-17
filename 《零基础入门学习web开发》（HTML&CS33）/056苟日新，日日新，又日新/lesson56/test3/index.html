@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实现多列布局</title>
+    <style>
+        .balance{
+            column-count:3 ;
+            column-fill: balance;
+            background-color: pink;
+            height: 200px;
+        }
+        .auto{
+            column-count:3 ;
+            /*column-fill:balance;*//*均匀填充*/
+            column-fill:auto;/*先填充左侧*/
+            background-color: #447e9b;
+            height: 200px;
+        }
+        h2{
+            -webkit-column-span: all;
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+<div class="balance">
+    <h2>下面是 colimn-fill:balance 的演示</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos explicabo, iure? Accusamus consectetur cum
+        cumque dolorum impedit inventore iure minima neque, nihil, numquam officiis praesentium quas reiciendis
+        repellendus sequi vero.</p>
+</div>
+<div class="auto">
+    <h2>下面是 column-fill:auto 的演示</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cupiditate delectus deserunt
+        dignissimos, harum impedit ipsa labore nam officia porro quis? Aliquam aperiam distinctio iusto libero, minus
+        sunt!</p>
+</div >
+</body>
+</html>

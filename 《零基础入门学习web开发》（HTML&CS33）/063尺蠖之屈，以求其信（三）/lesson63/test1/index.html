@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主轴上的对齐</title>
+    <style>
+    .flex-container{
+        display: flex;/*显示方式为伸缩盒子*/
+        /*flex-direction: column;!*控制主轴方向为 列*!*/
+        flex-direction: row;/*控制主轴方向为 横向 行*/
+        justify-content: space-between;/*设置弹性盒子在主轴上的对齐方式*/
+        background-color: #ff7d94;/*弹性盒子 背景色*/
+        border: 2px solid yellow;/*弹性盒子边框*/
+    }
+        .flex-container div{
+            margin: 20px;/*外边距--以边框为界，四周向外延展20px*/
+            padding: 20px;/*内边距--以边框为界，四周向内收缩20px*/
+            color:white; /*内容文字的颜色*/
+            background-color: lightblue;/*区域的背景颜色*/
+            /*border: 1px dashed black;!*边框 1像素 实线 黑色*!*/
+            /*width: 50px;!*宽度*!*/
+            /*height: 50px;!*高度*!*/
+            /*box-shadow: #2e3cb7;*/
+            /*position: center;!*定位居中*!*/
+            /*position: static;!*定位居中*!*/
+            overflow-x: hidden;/*超出部分隐藏，编程滚动条*/
+        }
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>four</div>
+    <div>five</div>
+</div>
+</body>
+
+</html>
