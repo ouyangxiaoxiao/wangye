@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //案例2
+        var num = 10;
+
+        function fn() {
+            console.log(num);
+            var num = 20;
+            console.log(num);
+        }
+
+        fn();
+
+        // 相当于
+        // var num
+        //
+        // function fn() {
+        //     var num;
+        //     console.log(num);
+        //     num = 20;
+        //     console.log(num);
+        // }
+        //num = 10
+        // fn();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

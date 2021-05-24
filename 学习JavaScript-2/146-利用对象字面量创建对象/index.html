@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>146-利用对象字面量创建对象</title>
+    <script>
+        //在javascript中，现结单我们可以采用三种方式创建对象（object）;
+        // 1利用字面量创建对象
+        //2利用new Object 创建对象
+        //3利用构造函数创建对象
+
+        // 对象字面量就是括号{}里面包含了表达这个具体事务（对象）的属性和方、法
+        // var obj = {};
+        var obj = {
+            uname: '张三疯',
+            age: 18,
+            sex: '男',
+            sayHi: function () {
+                console.log('hi!')
+            }
+
+        };
+        //(1)里面的属性或者方法我们采取键值对的方法 键 属性名：值 （属性值）
+        //（2） 多个属性或者方法中级用逗号隔开的
+        //（3）方法冒号后面跟的是一个匿名函数
+        //2.使用对象
+        //（1）调用对象对应的属性；我们采取 对象名.属性名
+        console.log(obj.uname);
+        //调用属性还有一种方法 对象名['属性名']
+        console.log(obj['age']);
+        //调用对象的方法 saHi 对象名.方法名  千万别忘记添加小括号
+        obj.sayHi()
+    </script>
+</head>
+<body>
+146-利用对象字面量创建对象
+</body>
+</html>

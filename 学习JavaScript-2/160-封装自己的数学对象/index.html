@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>160-封装自己的数学对象</title>
+    <script>
+        var myMath = {
+            PI: 3.141592653,
+            max: function () {
+                var max = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i]
+                    }
+
+                }
+                return max
+            },
+            min: function () {
+                var min = arguments[0];
+                for (i = 1; i < arguments.length; i++) {
+                    if (min > arguments[i]) {
+                        min = arguments[i]
+                    }
+
+                }
+                return min
+
+            }
+        };
+
+        console.log(myMath.PI);
+        console.log(myMath.max(5, 68, 56, 554, 5));
+        console.log(myMath.min(5, 68, 56, 554, 5));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

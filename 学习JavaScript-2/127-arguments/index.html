@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>127-argumeents</title>
+    <script>
+        //当我们不确定有多少个参数的时候，可以使用arguments来获取，
+        // 在javascript中，arguments实际上他是当前函数的一个内置对象。
+        // 所有函数都内置了一个arguments对象，arguments对象中存储了传递的实参
+        // arguments的使用 只有函数才有 arguments对象，而且是没个函数都内置好了 arguments
+
+
+
+        function fn() {
+            console.log(arguments);
+            console.log(arguments.length);
+            console.log(arguments[2]);
+            //我们可以按照数组遍历
+            for (i = 0; i < arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+
+        fn(1, 2, 3, 'dfre', 'frsf');//里面存储了所有传递过来的实参
+        //伪数组 并不是真正意义上的数组
+        //1.具有数组的length属性
+        //2.按照索引的方式存储
+        //3.它没有真正数组的一些方法pop（） push（）等等
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

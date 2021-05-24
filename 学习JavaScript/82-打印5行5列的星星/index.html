@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>82-打印5行5列的星星</title>
+    <script>
+        //打印五行五列的星星
+        var str = '';
+        for (i = 1; i <= 5; i++) {//外层循环负责打印5行
+            for (j = 1; j <= 5; j++) {//里层一行负责打印5个星星
+                str = str + '*';
+
+            }
+            //如果一行打印完毕5个星星就灵气一行 加/n
+            str = str + '\n'
+
+        }
+        console.log(str)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

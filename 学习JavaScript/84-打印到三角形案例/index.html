@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>84-打印到三角形案例</title>
+    <script>
+        //1.一共有10行，但是每行的星星个数不一样，因此需要用到双重for循环
+        //2.外层控制的行数
+        //3.内层控制列数
+        //打印倒三角案例
+        var str = '';
+        for (var i = 1; i <= 10; i++) {//外层循环控制循环
+            console.log(i);
+            for (var j = i; j <= 10; j++) {//里层循环打印的个数不一样 j=i
+                str = str + '*'
+            }
+            str = str + '\n'
+        }
+        console.log(str)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

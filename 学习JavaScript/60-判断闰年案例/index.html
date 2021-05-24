@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>60-判断闰年案例</title>
+    <script>
+        //算法①能被4整除且不能整除100的为闰年（如2004年就是闰年，1901年不是闰年）或者能够被400整除的就是闰年
+        //置闰法则4年一润，百年不润，四百年在润
+        var year = prompt('请您输入年份');
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            alert('您输入的年份是闰年')
+        } else {
+            alert('您输入的年份是平年')
+        }
+        // console.log();
+        // prompt();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

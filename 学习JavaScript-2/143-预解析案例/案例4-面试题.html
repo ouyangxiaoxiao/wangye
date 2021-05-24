@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        ////正确答案是99999报错；
+        // f1();
+        // console.log(c);
+        // console.log(b);
+        // console.log(a);
+        //
+        // function f1() {
+        //     var a = b = c = 9;
+        ////相当于 var = 9; b=9;c=9;
+        ////集体声明 应该这样写 用逗号分隔 var a=9,b=9,c=9
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+
+        // 相当于
+
+
+        function f1() {
+            var a;
+            a = 9;
+            b = 9;
+            c = 9;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

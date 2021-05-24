@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>154-遍历对象</title>
+    <script>
+        //遍历对象
+        var obj = {
+            name: 'pink',
+            age: 18,
+            sex: '男',
+            fn:function () {
+                
+            }
+        };
+
+        //for... in 语句用于对数组或者对象的属性进行循环操作
+        // for (in变量) {
+        //
+        // }
+        for(var k in obj){
+            console.log(k);// k 变量 输出 得到的是变量名
+            console.log(obj[k]);// 得到里面的属性 值
+
+        }
+        // 我们使用 for in 里面的变量 我们喜欢写k或者key
+    </script>
+</head>
+<body>
+
+</body>
+</html>

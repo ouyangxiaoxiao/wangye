@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>129-利用函数反转数组</title>
+    <script>
+        //案例1 利用函数封装方式，翻转任意一个数组
+        // function reorder() { // arguments = [1,2,3]
+        //     var str = [];
+        //     for (i = arguments.length; i > 0; i--) {
+        //
+        //         for (j = 0; j <= 3; j++) {
+        //             str[j] = arguments[i - 1];
+        //             console.log(j);
+        //         }
+        //
+        //
+        //     }
+        //
+        //     // console.log(str);
+        //     return arguments
+        // }
+        //
+        // reorder(11, 22, 33)
+
+
+        // var max = [];
+        // arguments = [11, 22, 33,88,964,644];
+        // for (i = arguments.length - 1; i >= 0; i--) {
+        //     console.log(i);
+        //     console.log(max.length);
+        //     max[max.length] = arguments[i];
+        // }
+        // console.log(max);
+
+
+        function reverse(arr) {//arguments = [11, 22, 33];
+            var newArr = [];
+            for (i = arr.length - 1; i >= 0; i--) {
+                newArr[newArr.length] = arr[i];
+            }
+            // console.log(newArr);
+            return newArr;
+        }
+
+        var arr1 = reverse([11, 22, 33, 454]);
+        console.log(arr1);
+        var arr2 = reverse([95, 3, 33, 55561]);
+        console.log(arr2);
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

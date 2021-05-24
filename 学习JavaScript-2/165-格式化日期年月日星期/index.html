@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>165-格式化日期年月日星期</title>
+    <script>
+        //格式化日期 年月日
+        var date = new Date();
+        console.log(date.getFullYear());//返回当前年
+        console.log(date.getMonth() + 1);//返回 比当前月少一个月
+        console.log(date.getDate());// 当前日期
+        console.log(date.getDay());// 当前星期几//周一返回1周六返回6周日返回0
+        console.log(date.getHours());// 当前小时
+        console.log(date.getMinutes());// 当前分
+        console.log(date.getSeconds());// 当前秒
+
+        //我们写一个2019年5月1日 星期三
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        var day = date.getDay();
+        arr = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+console.log('今天是 '+year+'年'+month+'月'+dates+'日 '+arr[day])
+    </script>
+</head>
+<body>
+
+</body>
+</html>

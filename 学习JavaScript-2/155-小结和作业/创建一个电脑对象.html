@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建一个电脑对象</title>
+    <script>
+        //1.创建一个电脑Computer对象，改对象有颜色color，重量weight，
+        // 品牌brand，型号model，role可以看电影，听音乐，打游戏和敲代码
+        function Computer(color, weight, brand, model, role) {
+            this.color = color;//颜色
+            this.weight = weight;//重量
+            this.brand = brand;//品牌
+            this.model = model;//型号
+            this.role = function (roles) {//功能
+                console.log(roles)
+            }
+
+        }
+
+        var lxdn = new Computer('颜色', '10千克', '联想','G460');//调用函数返回的是一个对象
+        console.log(lxdn);
+        lxdn.role('看电影');
+
+        for(var k in lxdn) {
+            console.log(k);// k 变量 输出 得到的是变量名
+            console.log(lxdn[k]);// 得到里面的属性 值
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

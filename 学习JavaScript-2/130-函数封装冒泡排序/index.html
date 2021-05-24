@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>130-函数封装冒泡排序</title>
+    <script>
+        function sort(arr) {
+            for (var i = 0; i < arr.length - 1; i++) {
+                for (var j = 0; j < arr.length - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+
+                    }
+                }
+
+            }
+            return arr;
+        }
+
+        var arr1 = sort([88, 4, 2, 9]);
+        console.log(arr1);
+        var arr2 = sort([888, 22, 33, 6669]);
+        console.log(arr2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

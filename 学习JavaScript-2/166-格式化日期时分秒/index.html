@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>166-格式化日期时分秒</title>
+    <script>
+        //格式化日期 年月日
+        var date = new Date();
+        var year = date.getFullYear();//年
+        var month = date.getMonth() + 1;//月
+        var dates = date.getDate();//日期
+        var day = date.getDay();//星期
+        var hours = date.getHours();//小时
+        var minutes = date.getMinutes();//分钟
+        var seconds = date.getSeconds();//秒
+
+
+
+
+
+        arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        console.log('今天是 ' + year + '年' + month + '月' + dates + '日 ' + arr[day]);
+        console.log('现在时间是'+hours+':'+minutes+':'+seconds);
+
+        function time() {
+            var hours = date.getHours();//小时
+            var minutes = date.getMinutes();//分钟
+            var seconds = date.getSeconds();//秒
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

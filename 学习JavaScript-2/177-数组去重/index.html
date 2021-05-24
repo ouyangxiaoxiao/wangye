@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>177-数组去重</title>
+    <script>
+
+
+        function unique(arr) {
+            var newArr = [];
+            for (i = 0; i < arr.length; i++) {
+
+                if (newArr.indexOf(arr[i]) === -1) {
+                    newArr.push(arr[i]);//把旧数组需要添加到newArr
+                }
+
+
+            }
+            return newArr;
+        }
+
+        var demo = unique(['a', 'b', 'c', 'c', 'd','a']);
+        console.log(demo)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

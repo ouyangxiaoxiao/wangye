@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证账号密码</title>
+    <script>
+        usname = prompt('请输入账户名');
+        paswd = prompt('请输入密码');
+        // if(usname != 'admin' && paswd !='123456'){
+        //     console.log('登录失败重新输入')
+        // }
+        while (usname != 'admin' && paswd != '123456') {
+            alert('账号或密码错误，请重新输入');
+            usname = prompt('请输入账户名');
+            paswd = prompt('请输入密码');
+        }
+        alert('恭喜登录成功')
+    </script>
+</head>
+<body>
+
+</body>
+</html>

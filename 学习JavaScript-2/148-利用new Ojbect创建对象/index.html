@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>148-利用new Ojbect创建对象</title>
+    <script>
+        //利用 new Object 创建对象
+        var obj = new Object();//创建了一个空的对象
+        obj.name = '张三疯';
+        obj.age = '18';
+        obj.sex = '男';
+        obj.sayHi = function () {
+            console.log('hi~')
+        };
+        //(1)我们是利用 等会 赋值的方法 添加对象的属性和方法
+        //（2）每个属性和方法之间 用 分好隔开
+
+        //调用
+        console.log(obj.name);
+        console.log(obj['age']);
+        obj.sayHi();
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

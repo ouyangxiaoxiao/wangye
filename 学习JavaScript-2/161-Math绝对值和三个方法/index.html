@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>161-Math绝对值和三个方法</title>
+    <script>
+        //1.绝对值方法
+        console.log(Math.abs(1));//1
+        console.log(Math.abs(-1));//1
+        console.log(Math.abs('-1'));//1,隐式转换
+        console.log(Math.abs('pink老师'));// NaN ，Not a Number
+        //2.三个取值方法
+        //（1）Mach.floor() 地板 向下取整 往最小取值
+        console.log(Math.floor(1.1));// 1
+        console.log(Math.floor(1.9));// 1
+        // （1）Mach.ceil() 天花板 向上取整 往最大取值
+        console.log(Math.ceil(1.1));// 2
+        console.log(Math.ceil(1.9));// 2
+        //（3）Math.round() 四舍五入 其它数字都是四舍五入 但是5特殊 它往大了取
+        console.log(Math.round(1.1));// 1
+        console.log(Math.round(1.5));// 2
+        console.log(Math.round(1.9));// 2
+        console.log(Math.round(-1.5));// -1 这个
+    </script>
+</head>
+<body>
+
+</body>
+</html>

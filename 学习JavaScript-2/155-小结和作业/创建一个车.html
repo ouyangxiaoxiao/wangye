@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建一个car</title>
+    <script>
+        function Cars(weight, long, brand) {
+            this.weight = weight;//重量
+            this.long = long;//颜色
+            this.brand = brand;//牌子
+            this.type = function (fig) {
+                console.log(fig)
+            }
+        }
+
+        var hongda = new Cars('1000kg', 'back', 'honda');
+        console.log(hongda);
+        hongda.type('拉人');
+
+        for (var k in hongda) {
+        //     console.log(k);
+            console.log(hongda[k]);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

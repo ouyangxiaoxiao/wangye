@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>120-函数形参和实参匹配问题</title>
+    <script>
+        function getSum(num1, num2) {
+            console.log(num1 + num2)
+        }
+
+        //1.实参个数跟形参个数一样
+        getSum(2, 3,);
+        //2.实参比形参多
+        getSum(2, 3, 4);
+        //3.实参比形参少
+        getSum(2);//NaN，任意数字+undefined 就是NaN
+        //建议尽量让实参的个数跟形参相匹配
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

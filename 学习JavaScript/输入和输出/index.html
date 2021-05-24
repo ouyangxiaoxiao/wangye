@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script>
-        /*这是一个输入框*/
-        prompt('请输入您的年龄：');
-        /*弹出警示框*/
-        alert('计算的结果是：');
-        /*控制台输出*/
-        console.log('这是程序员能看到的');
-    </script>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
 
+<p> x=5,返回x==8 的比较结果</p>
+<button onclick="myFunction()">尝试一下</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+        var x= 5;
+        document.getElementById('demo').innerText = x == 8;
+
+    }
+</script>
 </body>
 </html>

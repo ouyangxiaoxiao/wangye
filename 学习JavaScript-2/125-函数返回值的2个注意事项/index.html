@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>125-函数返回值的2个注意事项</title>
+    <script>
+
+
+        //4.我们的函数如果有return 则返回的是 return 后面的值，如果函数 没有return则返回undefined
+        function fun1() {
+            return 666
+        }
+
+        console.log(fun1());
+
+
+        function fun2() {
+
+        }
+
+        console.log(fun2());//  没有return 就返回 undefined
+
+    </script>
+</head>
+<body>
+<p>
+    break ：结束当前的循环体（如 for，while）
+    continue ：跳出本次循环，继续执行下次的循环（如，for，while）
+    return；不仅可以退出循环，还能够 返回return语句中的值，同时还可以结束当前函数体内的代码
+</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>140-作用域链案例</title>
+    <script>
+
+        //案例1；结果是几？
+        //
+        function f1() {
+            var num = 123;
+
+            function f2() {
+                console.log(num);
+            }
+
+            f2()
+        }
+
+        var num = 456;
+        f1();
+
+        //案例2
+        var a = 1;
+
+        function fn1() {
+            var a = 2;
+            var b = '222';
+            fn2();
+
+            function fn2() {
+                var a = 3;
+                fn3();
+
+                function fn3() {
+                    var a = 4;
+                    console.log(a);//a 的值？
+                    console.log(b);//b 的值？
+                }
+            }
+        }
+
+        fn1()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

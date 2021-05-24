@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>77-for循环案例</title>
+    <script>
+        // 1.求1-100之间所有数的平均值
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     sum = sum + i
+        // }
+        // console.log(sum /100);
+        // console.log(sum /(i-1));
+
+        //2.求1-100之间所有偶数 和 奇数 的和
+        // var even = 0;//偶数
+        // var odd = 0;//奇数
+        // for (var i = 1; i <= 100; i++) {
+        //     if (i % 2 == 0) { // 如果取余是0那么就执行 这个数+次数
+        //         even = even + i
+        //     } else {
+        //         odd = odd + i;
+        //     }
+        //
+        // }
+        // console.log('1~100之间偶数的和是'+even);
+        // console.log('1~100之间奇数的和是'+odd);
+
+
+        //3. 求1-100之间所有能被3整除的数字的和
+        var result = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                result = result + i;
+                console.log(i)
+            }
+
+        }
+        console.log('1~100之间能被3整除的数字的和是：' + result)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

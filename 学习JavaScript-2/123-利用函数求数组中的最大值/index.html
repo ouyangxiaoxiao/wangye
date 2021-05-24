@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>123-利用函数求数组中的最大值</title>
+    <script>
+        //自己写
+        // arr = [2, 3, 4, 5, 4, 3, 5, 6, 400, 401, 200, 401, 402, 200, 300, 200, 58];
+        // var max = arr[0];//取arr列表里面的第一个值 给max
+        // for (var i = 1; i <= arr.length; i++) {//循环 计数器初始值i=1，计数器停驶值是列表元素的长度，每次初始值+1
+        //     if (arr[i] > max) {//假如arr列表的第1个大于max
+        //         max = arr[i];//，就给max，否则不做什么
+        //     }
+        // }
+        // console.log(max);
+
+
+        //老师版
+        function gatArrMax(arr) {
+            var max = arr[0];
+            for (var i = 1; i <= arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+
+        var re = gatArrMax([2, 3,4,5,4,3,5,6,400,401,200,401,402,200,300 ,200, 58]);
+        console.log(re);
+
+
+        // //自己写
+        // function maxsum(str) {
+        //     // str = [34, 52, 56464, 22, 844, 5454, 5, 489];
+        //     max = str[0];
+        //     for (i = 1; i < 5; i++) {
+        //         if (str[i] > max) {
+        //
+        //             max = str[i];
+        //         }
+        //     }
+        //     return max
+        //
+        // }
+        //
+        // huhu = maxsum([34, 52, 56464, 22, 844, 5454, 5, 489]);
+        // console.log(huhu)
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

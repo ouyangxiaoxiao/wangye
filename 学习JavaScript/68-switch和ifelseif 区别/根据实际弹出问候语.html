@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+    <script>
+
+        //1.判断时间阶段，比如用户输入12弹出中午好，用户输入18点弹出傍晚好，用户输入23点弹出深夜好
+        var time = prompt('请问您现在几点钟了？');
+        if (time >= 0 && time < 5) {
+            alert('深夜好')
+        } else if (time >= 5 && time < 8) {
+            alert('早上好！')
+        } else if (time >= 8 && time < 12) {
+            alert('上午好')
+        } else if (time >= 12 && time < 13) {
+            alert('中午好！')
+        } else if (time >= 13 && time < 17) {
+            alert('下午好！')
+        } else if (time >= 17 && time < 19) {
+            alert('傍晚好！')
+        } else if (time >= 19 && time < 23) {
+            alert('晚上好！')
+        }else if (time >= 23 && time <= 24) {
+            alert('深夜好！')
+        } else {
+            alert('请输入正确的时间 ')
+        }
+
+
+        //2.比较两个数的最大值（用户一次输入2个值，最后弹出最大的那个值）
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

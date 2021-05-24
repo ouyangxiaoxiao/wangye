@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>108-删除数组指定元素（数组去重）</title>
+    <script>
+        //要求将数组['2','0','6','1','77','0','52','0','25','7'] 中的0去除
+        newArr = [];
+        var arr = ['2', '0', '6', '1', '77', '0', '52', '0', '25', '7'];
+        for (i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+            if (arr[i] != 0) {
+                newArr[newArr.length] = arr[i];
+            }
+        }
+        console.log(newArr)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

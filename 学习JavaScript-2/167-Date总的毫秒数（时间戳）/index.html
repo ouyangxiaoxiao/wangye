@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>167-Date总的毫秒数（时间戳）</title>
+    <script>
+        //获得Date总的毫秒数 不是当前时间的毫秒数 而是距离1970年1月1号 过了多少毫秒
+        //1.通过valueof() geiTime()
+        var date = new Date();
+        console.log(date.valueOf());//1970.1.1
+        console.log(date.getTime());
+
+        //2.简单的写法（简单的写法）
+        var date1 = +new Date();//返回的总毫秒数
+        console.log(date1);
+        //3.H5 新的 获得的总毫秒数
+        console.log(Date.now());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

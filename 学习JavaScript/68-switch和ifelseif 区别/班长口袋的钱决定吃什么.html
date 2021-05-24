@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>班长口袋的钱决定吃什么</title>
+    <script>
+        var money = prompt('请班长输入口袋钱的金额')
+        //班长的钱若大于等于200，请大家吃西餐
+        // 若小于2000大于1500，请大家吃快餐
+        //若小于1500，大于1000请大家喝饮料
+        //若小于1000大于等于500，请大家吃棒棒糖，否则提示班长下次把钱带够
+        if (money >= 2000) {
+            alert('去吃西餐吧')
+        } else if (money < 2000 && money >= 1500) {
+            alert('吃快餐吧')
+        } else if (money < 1500 && money >= 1000) {
+            alert('喝饮料吧')
+        } else if (money < 1000 && money >= 500) {
+            alert('吃棒棒糖吧')
+        } else {
+            alert('下次把钱带够把')
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

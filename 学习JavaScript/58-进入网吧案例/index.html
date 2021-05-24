@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>58-进入网吧案例</title>
+    <script>
+        //网吧规定满18周岁才可进入，请输入您的年龄，判断是否可以进入网吧
+        age = prompt('根据网吧管理规定，要求年龄满18周岁才可以进入网吧，希望您配合，请输入您的年龄')
+        var num = 18 - parseInt(age);
+        console.log(num);
+        if (age >= 18) {
+            alert('您可以进入网吧');
+            console.log('您可以进入网吧')
+        } else  {
+            alert('对不起！您还不满18周岁！您不可以进入网吧，在等' + num + '年才能进入');
+            console.log('对不起！您还不满18周岁！您不可以进入网吧，在等' + num + '年才能进入');
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

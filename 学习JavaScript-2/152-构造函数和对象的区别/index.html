@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>152-构造函数和对象的区别</title>
+    <script>
+        //构造函数和对象
+        // 1.构造函数 明星 泛指某一大类 类似java中的类
+        function Star(uname, age, sex) {
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function (sang) {
+                console.log(sang)
+            }
+        }
+
+        //2.对象 是一个具体事务 刘德华
+        var ldh = new Star('刘德华', 1, '男');//调用函数返回的是一个对象
+        console.log(ldh);
+
+        //3.我们利用构造函数创建对象的过程我们也称为对象的实例化
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

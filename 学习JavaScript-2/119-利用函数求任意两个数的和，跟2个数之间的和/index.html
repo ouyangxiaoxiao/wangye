@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>119-利用函数求任意两个数的和，跟2个数之间的和</title>
+    <script>
+        //1.利用函数求任意两个数的和
+
+        function getSum(num1, num2) {
+
+            console.log(num1 + num2)
+
+        }
+
+        getSum(2, 6);
+        getSum(9, 15);
+
+        //2.利用函数求任意两个数之间的和
+        function getSums(start, end) {
+            var sum = 0;
+            for (i = start; i <= end; i++) {
+                sum = sum + i;
+            }
+            console.log(sum)
+        }
+
+        getSums(0, 100);
+        //多个参数之间用逗号隔开，
+        //形参可以看做是不用声明的变量
+    </script>
+</head>
+<body>
+
+</body>
+</html>

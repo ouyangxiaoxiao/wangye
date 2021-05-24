@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>143-预解析案例</title>
+    <script>
+        //预解析案例
+        //案例1 //undefined
+        var num = 10;
+        fun();
+
+        function fun() {
+            console.log(num);
+            var num = 20;
+        }
+
+        // //相当于执行了 以下操作
+        // var num;
+        //
+        // function fun() {
+        //     //相当于
+        //      var num;
+        //
+        //
+        //     //结束
+        //
+        //     console.log(num);
+        //     num = 20;
+        // }
+        //
+        // num = 10;
+        // fun();
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

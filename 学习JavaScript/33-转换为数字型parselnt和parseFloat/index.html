@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>33-转换为数字型parselnt和parseFloat</title>
+    <script>
+        var age = prompt('请输入您的年龄');
+        console.log(age);//'15'字符串型
+        console.log(typeof age);//string 字符串型
+        //1.parseInt(变量)可以把字符串型编程数字型，但是只是取整数
+        console.log(parseInt(age));// 数字 数字型
+        console.log(parseInt(typeof age));//NaN
+        console.log(parseInt('3.1415926'));// 3 只取整数
+        console.log(parseInt('120px'));//120 整数型 会去掉px
+        console.log(parseInt( 'nuh120px'));//NaN
+        //2.parseFloat(变量)可以把 字符串类型转换为浮点型
+        console.log(parseFloat('3.1415926'));//3.1415926 浮点型
+        console.log(parseFloat( 'nuh120px'));//NaN
+    </script>
+</head>
+<body>
+
+</body>
+</html>

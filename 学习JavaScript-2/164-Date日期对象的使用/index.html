@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>164-Date日期对象的使用</title>
+    <script>
+
+        //1.使用Date 如果没有参数 返回当前系统的当前时间
+
+        // var date = new Date();
+        var date = new Date();
+
+        console.log(date);
+        // 2.参数常用的写法 数字型 2019,10,01 或者是字符串型的 ‘2019-10-1 8:8:8’
+        var date1 = new Date(2019, 10, 1);
+        console.log(date1);//返回的是 11月 不是10月
+
+
+        var date2 = new Date('2021-10-1 8:8:8');
+        console.log(date2);// 字符串 返回的是正常的
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

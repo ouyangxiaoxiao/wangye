@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>109-反转数组</title>
+    <script>
+        // // 要求；将数组['red','green','blue','pink','purple']
+        // newArr = [];
+        //
+        // // var str = ['red', 'green', 'blue', 'pink', 'purple','ff ','fffew','exex','ecec'];
+        // var str = ['1', '2', '3', '4', '5','6 ','7','8','9'];
+        // dd = str.length;
+        // for (i = 0; i < str.length; i++) {
+        //     console.log(str[i]);
+        //     newArr[newArr.length] = str[dd-1];
+        //     // console.log(str.length);
+        //     dd = dd-1
+        // }
+        // console.log(newArr);
+
+
+        // 要求；将数组['red','green','blue','pink','purple']
+
+
+        // var arr = ['red', 'green', 'blue', 'pink', 'purple','ff ','fffew','exex','ecec'];
+        // // var arr = ['1', '2', '3', '4', '5', '6 ', '7', '8', '9'];
+        // newArr = [];
+        // for (i = arr.length - 1; i >= 0; i--) {
+        //     console.log(arr[i]);
+        //     newArr[newArr.length] = arr[i];
+        //     // console.log(str.length);
+        // }
+        // console.log(newArr);
+
+        var arr = ['red', 'green', 'blue', 'pink', 'purple', 'ff ', 'fffew', 'exex', 'ecec'];
+        console.log(arr.length);
+        newArr = [];
+        for (i = arr.length-1; i >= 0; i--) {
+            // console.log(i);
+            newArr[newArr.length] = arr[i];
+        }
+        console.log(newArr)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

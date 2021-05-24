@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>133-输出2月份天数</title>
+    <script>
+        function backDay() {
+            var year = prompt('请输入您要查询的年份');
+            if (isRunYear(year)) {
+                alert('当前年份是闰年，2月份有29天')
+            }else {
+                alert('当前年份是平年，2月份有28天')
+            }
+
+        }
+
+        backDay();
+
+
+        //判断闰年的函数
+
+        function isRunYear(year) {
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            }
+            return flag;
+        }
+        //
+        // console.log(isRunYear(1999));
+    </script>
+</head>
+<body>
+</body>
+</html>

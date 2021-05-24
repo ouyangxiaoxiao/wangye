@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>151-构造函数创建对象（下）</title>
+    <script>
+        //方法1
+        // function Super_hero(uname,type,blood,attack) {
+        //     this.name = uname;
+        //     this.type = type;
+        //     this.blood = blood;
+        //     this.attack = attack;
+        //
+        //
+        // }
+        //
+        // var lp = new Super_hero('廉颇','力量型','500血量','近战');
+        // var hy = new Super_hero('后裔','射手型','100血量','远战');
+        //
+        // console.log(lp);
+        // console.log(hy);
+
+        //方法2
+        function Super_hero(uname, type, blood, attack) {
+            this.name = uname;
+            this.type = type;
+            this.blood = blood;
+            this.attack = function (fig) {
+                console.log(fig)
+            }
+
+
+        }
+
+        var lp = new Super_hero('廉颇', '力量型', '500血量');
+        var hy = new Super_hero('后裔', '射手型', '100血量');
+
+        console.log(lp);
+        lp.attack('近战');
+        console.log(hy);
+        hy.attack('远战');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

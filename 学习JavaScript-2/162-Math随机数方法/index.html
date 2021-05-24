@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>162-Math随机数方法</title>
+    <script>
+        // 1.Math.random() 函数返回一个浮点数
+        //2.语法 这个方法不跟参数
+        //3. 验证
+        console.log(Math.random(1,100));//
+        //4.我们想要得到两个数之间的随机数 并且 包含这2个整数
+        //Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+        function getRandom(max,min) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        getRandom();
+        console.log(getRandom(1,50));
+        //5.随机点名
+        var arr = ['张三','张三疯','张三疯子','李四','李思思'];
+        console.log(arr[0]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+        console.log(arr[getRandom(0,4)]);
+
+        console.log(arr[getRandom(0,arr.length-1)]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function getimer() {
+            var time = new Date();
+            var h = time.getHours();//小时
+            h = h < 10 ? '0' + h : h;//补0
+            var m = time.getMinutes();//分钟
+            m = m < 10 ? '0' + m : m;//补0
+            var s = time.getSeconds();//秒
+            s = s < 10 ? '0' + s : s;//补0
+            return h + ':' + m + ':' + s;
+
+        }
+
+        getimer();
+        console.log(getime());
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

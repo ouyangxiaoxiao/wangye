@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为什么需要函数</title>
+    <script>
+        // 多个程序 可以用同一个函数
+
+        //2.求10~50 的累加和
+        var sum = 0;
+        for (i = 0; i <= 100; i++) {
+            sum = sum + i;
+        }
+        console.log(sum);
+
+        //3.函数就是一段被封装了可以重复使用的代码块，就是让大量代码重复使用
+        function getSum(num1, num2) {
+
+            var sum = 0;
+            for (i = num1; i <= num2; i++) {
+                sum = sum + i;
+            }
+            console.log(sum);
+
+        }
+
+        getSum(1, 100);
+        getSum(1, 50);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

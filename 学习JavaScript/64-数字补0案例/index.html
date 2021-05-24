@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>64-数字补0案例</title>
+    <script>
+        //案例分析
+        //1.如果用户输入0~59直接的一个数字
+        var time = prompt('请您输入一个0~59之前就的数字');
+
+        // 2.用书输入小于10，则在这个数字前面补0，（加0）否则不做操作
+         // 3.用一个变量接收这个返回值
+        var result = time < 10 ? '0' + time:time;//字符串形的0+time
+        alert(result);
+        console.log(result)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

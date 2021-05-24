@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>29-boolean以及undefined和null</title>
+    <script>
+        var flag = true;//布尔型
+        var flag1 = false;//布尔型
+        console.log(flag + 1); // 2 true是真的 看做数字1
+        console.log(flag1 + 1);// 1 false 是假，看做数字0
+        //如果一个变量声明未给值， 就是undefined 未定义数据类型
+        var str;
+        console.log(str);// undefined
+        var variable = undefined;
+        console.log(variable + 'pink');// undefinedpink
+        console.log(variable + 1); //NaN  undefined 和数字相加 最后的机构就是NaN；
+        var space = null;
+        console.log(space+'pink');//nullpink
+        console.log(space + 1)// 1 因为null是空 所以加1 等于1
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

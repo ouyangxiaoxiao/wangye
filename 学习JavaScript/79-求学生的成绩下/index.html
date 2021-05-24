@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>78-求学生的成绩案例（上）</title>
+<!--    <script>-->
+<!--        //要求用户输入班级人数，之后一次输入每个学生的成绩。最后打印班级从成绩和平均分-->
+<!--        var num = prompt('请输入班级总人数');//班级总人数-->
+<!--        var sum = 0;//求和的变量-->
+<!--        var average = 0;//平均分-->
+<!--        var score = 0;//单人成绩-->
+
+<!--        for (i = 1; i <= num; i++) {-->
+<!--            // console.log(i);-->
+<!--            //把单个学生的成绩存入score-->
+<!--            score = parseFloat(prompt('请输入第' + i + '个人的分数'));-->
+<!--            //把本次学生的成绩+之前所有学生的成绩-->
+<!--            sum = parseFloat(sum) + parseFloat(score);-->
+<!--            console.log('此时成绩' + sum + '分');-->
+<!--        }-->
+<!--        average = sum / num;-->
+<!--        console.log('你们班的总成绩是' + sum + '分');-->
+<!--        console.log('你们班的平均分是' + average);-->
+<!--    </script>-->
+
+
+            <script>
+                //要求用户输入班级人数，之后一次输入每个学生的成绩。最后打印班级从成绩和平均分
+                var num = prompt('请输入班级总人数');//班级总人数
+                var sum = 0;//求和的变量
+                var average = 0;//平均分
+                var score = 0;//单人成绩
+                for (i = 1; i <= num; i++) {
+                    console.log(i);
+                    score = Number(prompt('请输入第' + i + '个人的分数'));
+                    sum = parseFloat(sum) + parseFloat(score);
+                }
+                average = sum / num;
+                console.log('你们班的总成绩是' + sum + '分');
+                console.log('你们班的平均分是' + average);
+                alert('你们班的总成绩是' + sum + '分');
+                alert('你们班的平均分是' + average);
+            </script>
+</head>
+<body>
+
+</body>
+</html>

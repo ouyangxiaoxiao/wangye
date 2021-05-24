@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用函数判断闰年</title>
+    <script>
+
+        // function isRunYear(year) {
+        //     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        //         data = (year+'这个是闰年');
+        //     } else {
+        //         data = (year+'这个是平年');
+        //     }
+        //     return data;
+        // }
+        //
+        // data1 = isRunYear(2020);
+        // console.log(data1)
+
+
+        function isRunYear(year) {
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            }
+            return flag;
+        }
+
+        console.log(isRunYear(1999));
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

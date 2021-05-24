@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>52-逻辑中断逻辑或</title>
+    <script>
+        //4.逻辑或短路运算 如果表达式1 结果为真，则返回表达式1
+                        //如果表达式结果为假，则返回表达式2
+        console.log(123||456);//123
+        console.log(123||456||789);//123
+        console.log(0||456);//456
+        console.log(456||123);//456
+        console.log(0||456||456+123);//456
+        console.log(0||0||456+123);//456
+        //5.逻辑中断（短路操作）
+        var num = 0;
+        console.log(123||num++);//123
+        console.log(num);//0 逻辑中断很重要，他会影响我们程序的运行结果
+
+    </script>
+</head>
+<body>
+<p>
+
+</p>
+
+</body>
+</html>

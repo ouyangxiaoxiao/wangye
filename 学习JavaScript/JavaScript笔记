@@ -1,3 +1,38 @@
 alert(msg) -- 浏览器弹出警示框
 console.log(msg)--浏览器控制打印台输出信息
 prompt(info)--浏览器弹出输入框，用户可以输入
+parseFloat转浮点数
+浮点数不能运算 需要特殊处理
+reverse 反向-翻转数组
+
+-----函数内不用 var 的声明即为全局变量
+
+prompt 打印
+
+到报错的下面的代码不在执行
+
+-----可以在摁钮上显示 ，也可以在p上显示
+<button onclick="getElementById('demo').innerHTML=Date()">现在的时间是?</button>
+<p id="demo"></p
+******
+<button onclick="this.innerHTML=Date()">现在的时间是?</button>
+-----事件
+
+事件	描述
+onchange	HTML 元素改变
+<button onchange="displayDate()">点这里</button>
+onclick	用户点击 HTML 元素
+<button onclick="displayDate()">点这里</button>
+onmouseover	用户在一个HTML元素上移动鼠标
+<button onmouseover="displayDate()">点这里</button>
+onmouseout	用户从一个HTML元素上移开鼠标
+<button onmouseout="displayDate()">点这里</button>
+onkeydown	用户按下键盘按键
+<button onkeydown="displayDate()">点这里</button>
+onload	浏览器已完成页面的加载
+<button onload="displayDate()">点这里</button>
+
+---
+=== 为绝对相等，即数据类型与值都必须相等。
+
+遍历对象 new 对象，不熟悉
