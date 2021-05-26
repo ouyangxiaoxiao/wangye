@@ -1,56 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>计时器</title>
-  </head>
-
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
 <body>
-  <button id="none">停止计时器</button>
-  <button id="start">开始计时器</button>
-  <script>
-    // 有两个计时器
-    // setTimeout();
-    // 延迟一段时间 执行 执行一次
-    // setInterval();
-    // 循环执行
-    var stoptime=document.getElementById('none');//默认从零开始自加 获取开始按钮
-    var starttime=document.getElementById('start');//获取停止按钮
-    var count=0;
-    var timecount;
-    // 第一种
-    /*showtime();
-    function showtime(){
-      count++;
-      console.log(count);
-      timecount=setTimeout('showtime()',1000);//延时一秒
-    }//利用递归来实现循环时间
-    stoptime.onclick=function(){//停止计时器
-      clearTimeout(timecount);//将计时器清除，即停止自加
-    }
-    starttime.onclick=function(){//开始计时器
-      timecount=setTimeout('showtime()',1000);//继续开始自加
-    }*/
-//优点：重启计时器简单，由于是原本是单次执行，只需将之前的递归函数重新复制即可 缺点：需要递归调用
-    // 第二种
-    showtime();
-    function showtime(){//封装函数
-      timecount=setInterval(function(){
-        count++;
-        console.log(count);
-      },1000)
-    }
-    stoptime.onclick=function(){
-      clearInterval(timecount);
-    }
-    starttime.onclick=function(){
-      showtime();
-    }
-//优点：不需要递归调用，直接实现循环。缺点：重启较复杂，需要调用所有函数，建议封装函数。
-  </script>
-</body>
+<p id = 'btn_next'> 下一曲 </p>
+<audio controls="controls" autoplay="autoplay" id="audio"
+       src="http://m801.music.126.net/20210526184441/97623e18044ce61cd92aecca9386f473/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8662410581/3cf1/6a96/c0ca/6e66481ac98d157713acfbe11b515700.mp3"
+       style="width:500px;"></audio>
 
+<script type="text/javascript">
+    var i = 0;
+    var audios = [
+        "http://m801.music.126.net/20210526184441/97623e18044ce61cd92aecca9386f473/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8662410581/3cf1/6a96/c0ca/6e66481ac98d157713acfbe11b515700.mp3",
+        "http://m801.music.126.net/20210526184441/97623e18044ce61cd92aecca9386f473/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8662410581/3cf1/6a96/c0ca/6e66481ac98d157713acfbe11b515700.mp3",
+        "http://so1.111ttt.com:8282/2016/1/12m/10/205101007238.m4a?tflag=1491890978&pin=6ae41be616c20b7e1224e935de8c2c2d&ip=180.173.30.102#.mp3"
+    ];
+
+    var audio = document.getElementById("audio");
+    audio.onended = function () {
+        if (audios[i]) {
+            this.setAttribute('src', audios[i]);
+            i++;
+        } else {
+            alert('没有音乐了');
+        }
+
+
+    };
+    // document.getElementById('next').click() function f() {
+    //
+    // }
+</script>
+</body>
 </html>

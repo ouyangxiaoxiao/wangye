@@ -36,9 +36,10 @@
         }
         #audio{
             position: absolute;
-            top : 500px;
-            right: 300px;
-            width: 5px;
+            top : 400px;
+            right: 30px;
+            /*width: 50px;*/
+            /*text-align: center;*/
         }
     </style>
 </head>
@@ -72,9 +73,14 @@
 
 </div>
 
-<div id="audio">
-    <audio controls autoplay src="http://m701.music.126.net/20210526183506/646e84fc06d2c3a8e00052446374309a/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8662410581/3cf1/6a96/c0ca/6e66481ac98d157713acfbe11b515700.mp3c98d157713acfbe11b515700.mp3"></audio>
-</div>
+<audio controls id="audio">
+
+  <source src="2.mp3" type="audio/mpeg">
+您的浏览器不支持 audio 元素。
+</audio>
+
+
+
 <script>
 
     var hello = document.getElementById('hello');
