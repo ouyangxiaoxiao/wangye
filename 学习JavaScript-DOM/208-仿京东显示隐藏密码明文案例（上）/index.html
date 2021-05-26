@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>208-仿京东显示隐藏密码明文案例（上）</title>
+    <script>
+        //核心思路：点击眼睛摁钮，把密码框类型改为文本框就可以看见里面的密码
+        //2.一个摁钮两个状态，点击一次，切换为文本框，继续点击一次切换为密码框
+        //3.算法；利用一个flag变量，来判断flag 的值，如果是1就切换为文本框，flag设置为0，如果是0就切换为密码框，flag设置为1
+
+    </script>
+    <style>
+        .box {
+            position: relative;
+            width: 400px;
+            /*border: 1px solid red;*/
+            border-bottom: 2px solid #c1c6d7;
+            margin: 100px auto;
+        }
+
+        .box input {
+            width: 370px;
+            height: 30px;
+            border: 0;
+            outline: none;
+        }
+
+        .box img {
+            position: absolute;
+            top: 15px;
+            right: 2px;
+            width: 24px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <label for="">
+
+        <img src="睁眼.jpg" alt="" id="eye">
+    </label>
+    <input type="password" name="" id="pwd">
+</div>
+<script>
+    //1. 获取元素
+    var eye = document.getElementById('eye');
+    var pwd = document.getElementById('pwd');
+    //2.注册事件 处理程序
+    var flag = 0;
+    eye.onclick = function () {
+        //点击一次后 flag 一定要变化
+        if (flag == 0) {
+            pwd.type = 'text';
+            flag = 1;//赋值操作
+            eye.src = '睁眼.jpg';
+        } else {
+            pwd.type = 'password';
+            eye.src = '闭眼.jpg';
+            flag = 0;//赋值操作
+        }
+
+    }
+</script>
+</body>
+</html>

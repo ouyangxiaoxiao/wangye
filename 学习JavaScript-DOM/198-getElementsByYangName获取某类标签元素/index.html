@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+    </script>
+</head>
+<body>
+<!--使用getElementsByTagName()方法可以范湖带有指定标签名的对象集合-->
+<ul>
+    <li> 百日依山尽</li>
+    <li> 黄河入海流</li>
+    <li> 欲穷千里目</li>
+    <li> 更上一层楼</li>
+</ul>
+<ol id="ol">
+    <li> 百日依山尽</li>
+    <li> 黄河入海流</li>
+    <li> 欲穷千里目</li>
+    <li> 更上一层楼</li>
+</ol>
+<script>
+    //返回的是 获取过来元素对象的集合 以伪数组的形式存储的
+    var lis = document.getElementsByTagName('li');//父元素必须指定是单个元素
+    var lis1 = document.getElementsByTagName('ul');
+    console.log(lis);
+    console.log(lis[1]);
+
+    //2.我们想要依次打印里面元素对象 我们可以用循环
+    for (i = 0; i < lis.length; i++) {
+        console.log(lis[i]);
+    }
+    //3.如果页面中的只有一个li，返回的还是伪数组
+    //4.如果页面中没有这个元素 ，返回的还是伪数组，但是是空的length 是0
+    //5.element.getElementsBYTangName('标签名');
+    var ol = document.getElementsByTagName('ol');//
+    // console.log(ol.getElementsByTagName('li'));//报错 因为即便是一个元素 这种用名字的方法也要指定第几个
+    console.log(ol[0].getElementsByTagName('li'));
+    // var ol = document.getElementById('ol');
+    //
+    // console.log(ol)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <!--    <link rel="stylesheet" href="css/style.css"/>-->
+    <title></title>
+</head>
+<body>
+<div id="cans">
+    <video controls autoplay id="video" src="" poster="" height="500px" width="500px">
+
+    </video>
+    <aside id="playList">
+        <header>
+            <h4>播放列表</h4>
+        </header>
+        <ul>
+            <li value="22.mp4" title="进球瞬间">进球瞬间
+            </li>
+            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"
+                title="胜利庆祝">胜利庆祝
+            </li>
+            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"
+                title="进球瞬间">进球瞬间
+            </li>
+            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"
+                title="胜利庆祝">胜利庆祝
+            </li>
+            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"
+                title="进球瞬间">进球瞬间
+            </li>
+            <li value="video/VID_20170323_215451.mp4" title="胜利庆祝">胜利庆祝</li>
+        </ul>
+        <!--<button title="展开播放列表" id="playList-show"> > </button>-->
+        <button title="收起播放列表" id="playList-hidden"> <</button>
+    </aside>
+    <button title="展开播放列表" id="playList-show1"> ></button>
+
+</div>
+<script>
+    
+
+    
+    
+    var video = document.getElementById('video');
+    var lis = document.querySelectorAll('li');
+    console.log(lis.length);
+    j = 0;
+    for(i=0;i<lis.length;i++){
+        console.log(i);
+        lis[j].onclick = function () {
+            console.log(j);
+        // alert('播放这个');
+        // console.log(lis[0].innerHTML);
+        console.log(lis[j].title);
+        lis_url = (lis[j].getAttribute("value"));/*获取li 地址*/
+        // console.log(lis_url);
+
+        video_url = video.setAttribute("src", this.getAttribute("value"));
+
+        video_url = lis_url;
+        console.log(video_url);
+
+        if(video.ended == false){
+            j++;
+        }
+
+
+        return lis_url
+
+    };
+    }
+
+
+
+    // // var md = document.getElementsByTagName("video")[0];
+    // video.addEventListener("ended", function () {
+    //     alert("播放结束");
+    //     i = i + 1;
+    //     return i
+    // });
+    // console.log(i)
+</script>
+</body>
+</html>

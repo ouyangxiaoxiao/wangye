@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>178-数组转换成字符串</title>
+    <script>
+        //数组转换成字符串
+        //1.将我们的数组转换为字符串
+        var arr = [1, 2, 3];
+        console.log(arr.toString());
+        //2.join()
+        var arr1 = ['green', 'b','blue'];
+        console.log(arr1.join());
+        console.log(arr1.join('-'));
+        console.log(arr1.join('&'));
+        //3.连接2个数组
+        console.log(arr.concat(arr1));
+        //4.数组截取slice（begin，end）
+        console.log(arr.slice(0,2));
+        //5.splice() 数组删除（从哪个开始，删除几个数）;
+        console.log(arr.slice(1,5));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

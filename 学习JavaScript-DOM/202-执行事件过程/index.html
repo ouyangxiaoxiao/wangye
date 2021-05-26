@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>202-执行事件过程</title>
+    <script>
+
+    </script>
+</head>
+<body>
+<div>123</div>
+<p>
+    1.获取事件
+    2.注册事件（绑定事件）
+    3.添加事件处理程序（采取函数赋值形式）
+</p>
+
+<script>
+    //执行事件步骤
+    //点击 div 控制台输出 我们被选中了
+    //1.获取事件源
+    var div = document.querySelector('div');//这样写 是能获得满足的一个元素
+    //2.绑定事件 注册事件
+    //div.onclick
+    //3.添加事件处理程序
+    div.onclick = function () {//鼠标点击
+        console.log('我被选中了');
+    };
+    div.onmouseover = function () {//鼠标经过
+        console.log('我来过');
+    }
+</script>
+</body>
+</html>

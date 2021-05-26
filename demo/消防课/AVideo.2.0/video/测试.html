@@ -30,18 +30,22 @@
 <body>
 
 <script>
+
     window.onload = function () {
 
         var video = document.getElementById("video");
-
         var lis = document.getElementsByTagName("li");
-        video.src = "30min告别消防小白 爆炸极限.mp4";
-        console.log(lis.ownerDocument);
+        var vLen = lis.length; // 播放列表的长度
+        var url = [];
+        var ctrl = document.getElementById("playList-hidden");
+        var ctrl_show = document.getElementById('playList-show1');
+        var aside = document.getElementById("playList");
         var curr = 1; // 当前播放的视频
 
         for (var i = 0; i < lis.length; i++) {
 
             url[i] = lis[i].getAttribute("value");
+            console.log(url[i]+'888')
 
         }
 
@@ -63,10 +67,44 @@
                 }
 
 
-//			console.log(this.getAttribute("value"));  //调试代码
+			console.log(this.getAttribute("value")+'555555');  //调试代码
             }
 
         }
+
+
+
+
+
+        video.setAttribute('src', url[0]);
+        lis[0].innerHTML = '播放 ' + lis[0].innerHTML;
+        lis[0].className = "select";
+
+
+        video.addEventListener('ended', play);
+
+        play();
+
+        function play() {
+            video.src = url[curr];
+            video.load(); // 如果短的话，可以加载完成之后再播放，监听 canplaythrough 事件即可
+            video.play();
+
+            for (var j = 0; j < lis.length; j++) {
+                if (j == curr) {
+                    video.setAttribute("src", lis[j].getAttribute("value"));
+                    video.setAttribute('autoplay', 'autoplay');
+                    lis[j].innerHTML = 'palying ' + lis[j].innerHTML;
+                    lis[j].className = "select";
+                } else {
+                    lis[j].innerHTML = lis[j].getAttribute("title");
+                    lis[j].className = "";
+                }
+            }
+            curr++;
+            if (curr >= vLen) curr = 0; // 播放完了，重新播放
+        }
+
     };
 
 

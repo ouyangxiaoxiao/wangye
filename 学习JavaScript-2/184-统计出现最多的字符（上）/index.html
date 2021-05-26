@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>184-统计出现最多的字符（上）</title>
+    <script>
+        //有个对象 来判断是否有要查询的对象
+        // var str = {
+        //     age: 18,
+        //
+        // };
+        // if (str['sex']) {
+        //     console.log('里面有')
+        // } else {
+        //     console.log('里面没有')
+        // }
+
+        var str = 'abcooefooyozzopp555';
+        var o = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);//chars 是每一个字符串
+            if (o[chars]) { // 得到的是属性值
+                o[chars]++;
+            } else {
+                o[chars] = 1;
+            }
+        }
+
+        console.log(o);
+        max = 0;
+        var ch = '';
+        //2.遍历对象
+        for (var k in o) {
+            //k 得到的是 属性名
+            //o[k] 得到的是属性值
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log(ch);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

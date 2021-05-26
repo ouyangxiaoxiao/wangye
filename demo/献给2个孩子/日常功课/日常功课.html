@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日常功课</title>
+    <script>
+        //根据不同的时间，页面显示不同图片，同时显示不同的问候语
+        //     如果上午时间打开页面，显示上午好的图片
+        //     如果下午时间打开页面，显示下午好的图片
+        //     如果晚上时间打开页面，显示晚上好的图片
+    </script>
+    <style>
+        #wb {
+            text-align: center;
+        }
+
+        ruby {
+            margin: 50px;
+            font-size: 40px;
+        }
+
+        #hello {
+            top: 50px;
+            right: 60px;
+            position: absolute;
+        }
+
+        button {
+            position: absolute;
+            /*position: relative;*/
+            top: 95px;
+            right: 40px;
+            /*background: url("");*/
+            /*order: 1px;b*/
+
+        }
+    </style>
+</head>
+<body>
+<div id='wb'>
+    <h1>今天的作业</h1>
+    <hr>
+    <p>认识文字</p>
+    <ruby>
+
+        gǎo &emsp;&emsp; hàn &emsp;&emsp; zāo &emsp;&emsp; shū &emsp;&emsp;xù
+        <br>
+        稿 &emsp;&emsp; 翰 &emsp;&emsp; 遭 &emsp;&emsp; 抒 &emsp;&emsp;序
+        <br>
+
+    </ruby>
+</div>
+<div id='hello'>
+    hi，你好！
+    現在是2021年5月26日 星期三
+</div>
+
+<div id='timer'>
+    <button>'
+
+        点击开始计时“
+        <br>
+        看看你今天用了多久写完作业
+        <br>功能未开放
+    </button>
+
+</div>
+
+
+<script>
+
+    var hello = document.getElementById('hello');
+
+    function getDate() {
+        //格式化日期 年月日
+        var date = new Date();
+        //我们写一个2019年5月1日 星期三
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var dates = date.getDate();
+        var day = date.getDay();
+        arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        return 'hi，你好！高子轩，今天是 ' + year + '年' + month + '月' + dates + '日 ' + arr[day]
+    }
+
+
+    hello.innerHTML = getDate();
+</script>
+</body>
+
+</html>

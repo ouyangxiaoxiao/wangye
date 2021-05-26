@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>计时器</title>
+  </head>
+
+<body>
+  <button id="none">停止计时器</button>
+  <button id="start">开始计时器</button>
+  <script>
+    // 有两个计时器
+    // setTimeout();
+    // 延迟一段时间 执行 执行一次
+    // setInterval();
+    // 循环执行
+    var stoptime=document.getElementById('none');//默认从零开始自加 获取开始按钮
+    var starttime=document.getElementById('start');//获取停止按钮
+    var count=0;
+    var timecount;
+    // 第一种
+    /*showtime();
+    function showtime(){
+      count++;
+      console.log(count);
+      timecount=setTimeout('showtime()',1000);//延时一秒
+    }//利用递归来实现循环时间
+    stoptime.onclick=function(){//停止计时器
+      clearTimeout(timecount);//将计时器清除，即停止自加
+    }
+    starttime.onclick=function(){//开始计时器
+      timecount=setTimeout('showtime()',1000);//继续开始自加
+    }*/
+//优点：重启计时器简单，由于是原本是单次执行，只需将之前的递归函数重新复制即可 缺点：需要递归调用
+    // 第二种
+    showtime();
+    function showtime(){//封装函数
+      timecount=setInterval(function(){
+        count++;
+        console.log(count);
+      },1000)
+    }
+    stoptime.onclick=function(){
+      clearInterval(timecount);
+    }
+    starttime.onclick=function(){
+      showtime();
+    }
+//优点：不需要递归调用，直接实现循环。缺点：重启较复杂，需要调用所有函数，建议封装函数。
+  </script>
+</body>
+
+</html>

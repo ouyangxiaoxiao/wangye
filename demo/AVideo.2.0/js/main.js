@@ -11,7 +11,7 @@ window.onload = function(){
 	// var pi=3.14;
 	//  document.write(pi);
 	//  document.write(" 岁.")
-	;
+	// ;
 	for(var i=0;i<lis.length;i++){
 
 			url[i] = lis[i].getAttribute("value");
