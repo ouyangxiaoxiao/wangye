@@ -1,95 +1,85 @@
-window.onload = function(){
 
-    var video = document.getElementById("video");
+
+window.onload = function () {
     var lis = document.getElementsByTagName("li");
-    var vLen = lis.length; // 播放列表的长度
-    var url = [];
-    var ctrl = document.getElementById("playList-hidden");
-    var ctrl_show = document.getElementById('playList-show1');
-    var aside = document.getElementById("playList");
-    var curr = 1; // 当前播放的视频
+    var ul = document.getElementsByTagName("ul");
 
-    for(var i=0;i<lis.length;i++){
+    list = [];
 
-        url[i] = lis[i].getAttribute("value");
+    for (var i = 0; i < lis.length; i++) {
+
+        list[i] = lis[i].getAttribute("value");
+
 
     }
 
-    //绑定单击事件
-    for(var i=0;i<lis.length;i++){
+    i = 0;
+    var x = document.getElementById("video");
+    x.src = list[0];/*这是默认播放*/
+    var len = list.length - 1;
 
-        lis[i].onclick = function(){
-            for(var j=0;j<lis.length;j++){
-                if(lis[j] == this){
-                    video.setAttribute("src",this.getAttribute("value"));
-                    video.setAttribute('autoplay','autoplay');
-                    this.innerHTML = this.innerHTML+'已观看 ';
-                    this.className = "select";
-                    curr = j+1;
-                }else{
-                    this.innerHTML = this.innerHTML;
-                    lis[j].className = "";
-                }
-            }
+    /*这是摁钮*/
+    function next_section() {
 
+        if (i == list.length - 1) {
+            i = 0;
+            console.log('elseif工作' + i);
+            x.src = list[i];
 
-//			console.log(this.getAttribute("value"));  //调试代码
+        } else {
+            i++;
+            console.log(i + 'else生效');
+            x.src = list[i];
+
         }
 
     }
-//收起播放列表
-    ctrl.onclick = function(){
 
-        aside.style.transition = "1s";
-        aside.style.transform = "translateX(-10vw)";
-        setTimeout(function(){
-            aside.style.display = "none";
-            ctrl_show.style.visibility= 'visible';
-        },"1000");
+    function on_section() {
 
-    }
+        if (i == 0) {
+            i = list.length - 1;
+            console.log('elseif工作' + i);
+            x.src = list[i];
 
-    //展开播放列表
-    ctrl_show.onclick = function(){
-        aside.style.display = "block";
-        ctrl_show.style.visibility= 'hidden';
-        setTimeout(function(){
-            aside.style.transform = "translateX(0vw)";
-        },"0");
+        } else {
+            //最后的语句
+            i = i - 1;
+            console.log('else工作' + i);
+            x.src = list[i];
 
-    }
-
-    video.setAttribute('src',url[0]);
-    lis[0].innerHTML = lis[j].innerHTML+'正在播放 ';
-    lis[0].className = "select";
-
-
-
-    video.addEventListener('ended', play);
-    //play();
-    function play() {
-        video.src = url[curr];
-        video.load(); // 如果短的话，可以加载完成之后再播放，监听 canplaythrough 事件即可
-        video.play();
-
-        for(var j=0;j<lis.length;j++){
-            if(j == curr){
-                video.setAttribute("src",lis[j].getAttribute("value"));
-                video.setAttribute('autoplay','autoplay');
-                lis[j].innerHTML = lis[j].innerHTML+'正在播放 ';
-                lis[j].className = "select";
-            }else{
-                lis[j].innerHTML = lis[j].getAttribute("title");
-                lis[j].className = "";
-            }
         }
-        curr++;
-        if (curr >= vLen) curr = 0; // 播放完了，重新播放
+
     }
 
-}
 
+    x.onended = function () {
+        if (i == list.length - 1) {
+            i = 0;
+            console.log('elseif工作' + i);
+            x.src = list[i];
 
+        } else {
+            i++;
+            console.log(i + 'else生效');
+            x.src = list[i];
 
+        }
+    };
+
+    /*排他 选颜色*/
+    var lir = document.getElementsByTagName('li');
+    for (var a = 0; a < lir.length; a++) {
+        lir[a].onclick = function () {
+            for (var i = 0; i < lir.length; i++) {
+                lir[i].style.backgroundColor = '';
+            }
+            this.style.backgroundColor = 'pink';
+            x.setAttribute("src", this.getAttribute("value"));
+            console.log(this.getAttribute("value"))
+        };
+
+    }
+};
 
 

@@ -1,0 +1,102 @@
+﻿.ganyan_top_return{ position:fixed; top:10px; right:10px; z-index:1;}
+.ganyan_top_return a{ display:block; font-size:16px; color:#ffffff; background:#000000; padding:6px 15px; opacity: 0.5; filter: alpha(opacity=50); text-decoration:none;}
+.ganyan_top_return a:active{ display:block; font-size:16px; color:#ffffff; background:#000000; padding:6px 15px; opacity: 0.6; filter: alpha(opacity=60);text-decoration:none;}
+.ganyan_top_return a:hover{ display:block; font-size:16px; color:#ffffff; background:#000000; padding:6px 15px; opacity: 0.6; filter: alpha(opacity=60);text-decoration:none;}
+
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:80px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 411px 80px;}
+.ganyan_banner img{ width:100%;}
+@media (min-width: 420px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:100px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 514px 100px;}
+}
+@media (min-width: 520px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:120px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 617px 120px;}
+}
+@media (min-width: 620px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:140px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 720px 140px;}
+}
+@media (min-width: 720px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:160px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 823px 160px;}
+}
+@media (min-width: 820px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:180px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 926px 180px;}
+}
+@media (min-width: 920px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:200px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 1029px 200px;}
+}
+@media (min-width: 1020px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:220px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 1131px 220px;}
+}
+@media (min-width: 1120px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:240px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 1234px 240px;}
+}
+@media (min-width: 1220px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:260px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 1337px 260px;}
+}
+@media (min-width: 1320px) {
+.ganyan_banner{ width:100%; height:auto; overflow:hidden; border-top:1px solid #659301; height:280px; background: url(/mobile/images/gy_banner02.jpg) no-repeat center; background-size: 1440px 280px;}
+}
+
+.ganyan{ margin:0px -15px 15px -15px; }
+.ganyan_list{ padding:15px 15px 0px 15px; font-size:14px;}
+.ganyan_list .pic{ width:100%; margin:0px auto; height:auto; overflow:hidden; border:5px solid #ffffff; background:#ffffff; text-align:center;}
+.ganyan_list .pic img{ width:100%;}
+.ganyan_list .content{ overflow:hidden; font-size:18px; height:auto; line-height:1.8; background:#ffffff; padding:15px 15px 0px 15px;}
+.ganyan_list .content span{ font-weight:bold; color:#70a400;}
+.ganyan_list .content a:link{ color: #333333; font-size:14px; text-decoration:none;}
+.ganyan_list .content a:visited{ color: #333333; font-size:14px; text-decoration:none;}
+.ganyan_list .content a:active{ color: #70a400; font-size:14px; text-decoration:none;}
+.ganyan_list .content a:hover{ color: #70a400; font-size:14px; text-decoration:none;}
+.ganyan_list .bottom{ background:#ffffff; height:15px;}
+@media (min-width: 480px) {
+.ganyan_list .pic img{ width:320px;}
+}
+
+.ganyan02{ margin:0px -15px 15px -15px; }
+.ganyan02_list{ font-size:14px;}
+.ganyan02_list .pic{ width:100%; margin:0px auto; height:auto; overflow:hidden; border:10px solid #ffffff; background:#ffffff; text-align:center;}
+.ganyan02_list .pic img{ width:50%;}
+.ganyan02_list .content{ overflow:hidden; font-size:14px; height:auto; line-height:1.8; background:#ffffff; padding:15px 15px 0px 15px;}
+.ganyan02_list .content span{ font-weight:bold; color:#70a400;}
+.ganyan02_list .content a:link{ color: #333333; font-size:14px; text-decoration:none;}
+.ganyan02_list .content a:visited{ color: #333333; font-size:14px; text-decoration:none;}
+.ganyan02_list .content a:active{ color: #70a400; font-size:14px; text-decoration:none;}
+.ganyan02_list .content a:hover{ color: #70a400; font-size:14px; text-decoration:none;}
+.ganyan02_list .bottom{ background:#ffffff; height:15px;}
+
+.ganyan .huanyizu a { display:block; width:100%; background:#ffffff; border: 1px solid #eeeeee; font-size: 14px; text-decoration: none; color: #70a400; text-align:center; margin-top:15px; height:34px; line-height:34px;}
+
+.ganyan_detailed{ margin:0px -15px 15px -15px;}
+.ganyan_list_detailed{ padding:15px 15px 0px 15px; font-size:14px;}
+.ganyan_list_detailed .pic{ width:100%; margin:0px auto; height:auto; overflow:hidden; border:5px solid #ffffff; background-color:#ffffff; text-align:center;}
+.ganyan_list_detailed .pic img{ width:100%;}
+.ganyan_list_detailed .content{ overflow:hidden; font-size:14px; background:#ffffff; padding:15px 15px 0px 15px;}
+.ganyan_list_detailed .content span{ font-weight:bold; color:#70a400;}
+.ganyan_list_detailed .content a:link{ color: #333333; font-size:14px; text-decoration:none;}
+.ganyan_list_detailed .content a:visited{ color: #333333; font-size:14px; text-decoration:none;}
+.ganyan_list_detailed .content a:active{ color: #70a400; font-size:14px; text-decoration:none;}
+.ganyan_list_detailed .content a:hover{ color: #70a400; font-size:14px; text-decoration:none;}
+.ganyan_list_detailed .bottom{ background:#ffffff; height:15px;}
+@media (min-width: 480px) {
+.ganyan_list_detailed .pic img{ width:320px;}
+}
+
+.we_are_all{ width:auto; height:auto; overflow:hidden; padding-top:20px;}
+.we_are_all_title{ width:auto; height:30px; line-height:30px; overflow:hidden; background:url(/mobile/images/line_arr01.png) repeat-x center; margin:0px 10px 20px;}
+.we_are_all_title .title{ display:block; width:138px; height:30px; line-height:30px; overflow:hidden; background:#eeeeee; font-size:18px;}
+.we_are_all_title .huanyizu{ display:block; width:110px; background:#eeeeee;float:right;}
+.we_are_all_title .huanyizu a { display:block; margin-left:10px; background: url(/mobile/images/weareall_change_02.png) no-repeat 15px #ffffff; background-size: 18px 18px; border: 1px solid #eeeeee; font-size: 14px; text-decoration: none; color: #70a400; text-align:left; text-indent:40px; margin-bottom:15px; height:30px; line-height:30px;}
+
+.we_ganyan_list{ padding:0px 10px 0px 10px; font-size:14px; margin-bottom:20px; line-height:1.5;}
+.we_ganyan_list .pic{ width:100%; margin:0px auto; height:auto; overflow:hidden; border:5px solid #ffffff; background:#ffffff; text-align:center;}
+.we_ganyan_list .pic img{ width:100%;}
+.we_ganyan_list .content{ overflow:hidden; font-size:14px; height:auto; background:#ffffff; padding:15px 15px 0px 15px; height:75px;}
+.we_ganyan_list .content span{ font-weight:bold; color:#70a400;}
+.we_ganyan_list .content a:link{ color: #333333; font-size:14px; text-decoration:none;}
+.we_ganyan_list .content a:visited{ color: #333333; font-size:14px; text-decoration:none;}
+.we_ganyan_list .content a:active{ color: #70a400; font-size:14px; text-decoration:none;}
+.we_ganyan_list .content a:hover{ color: #70a400; font-size:14px; text-decoration:none;}
+.we_ganyan_list .bottom{ background:#ffffff; height:15px;}
+
+@media (max-width: 480px) {
+.we_ganyan_list .content{ height:115px;}
+}

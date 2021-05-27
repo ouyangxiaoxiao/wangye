@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<video id="myVideo" controls src=" " width="400" autoplay>
+    您的浏览器不支持 video 标签。
+</video>
+<button onclick="back()">上一曲</button>
+<button onclick="next()">下一曲</button>
+<script>
+    list = [
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+        'https://ouyangxiaoxiao.github.io/wangye/demo/AVideo.2.0/video/22.mp4',
+    ];
+    i = 0;
+    var x = document.getElementById("myVideo");
+    x.src = list[0];/*这是默认播放*/
+    var len = list.length - 1;
+
+    /*这是摁钮*/
+    function next() {
+
+        if (i == list.length - 1) {
+            i = 0;
+            console.log('elseif工作' + i);
+            x.src = list[i];
+        } else {
+            i++;
+            console.log(i + 'else生效');
+            x.src = list[i];
+        }
+
+    }
+
+    function back() {
+
+        if (i == 0) {
+            i = list.length - 1;
+            console.log('elseif工作' + i);
+            x.src = list[i];
+        } else {
+            //最后的语句
+            i = i - 1;
+            console.log('else工作' + i);
+            x.src = list[i];
+        }
+
+    }
+
+
+    x.onended = function () {
+        if (i == list.length - 1) {
+            i = 0;
+            console.log('elseif工作' + i);
+            x.src = list[i];
+        } else {
+            i++;
+            console.log(i + 'else生效');
+            x.src = list[i];
+        }
+    }
+
+
+</script>
+</body>
+</html>

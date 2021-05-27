@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <title>花海书香 - 同步课堂在线自学平台</title>
+    <link rel="stylesheet" href="mobile/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="mobile/css/index.css">
+    <link rel="stylesheet" href="mobile/css/xueyuan.css">
+    <link rel="stylesheet" href="mobile/css/kecheng.css">
+    <link rel="stylesheet" href="mobile/css/member.css">
+    <link rel="stylesheet" href="mobile/css/ganyan.css">
+    <link rel="stylesheet" href="mobile/css/order.css">
+    <link rel="stylesheet" href="mobile/css/extend.css">
+
+    <script src="http://m.qinxue.com/index.php?r=index/loadSySinfo"></script>
+    <script src="http://m.qinxue.com/index.php?r=index/loadUserInfo"></script>
+    <script src="mobile/js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="mobile/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy_min.js"></script>
+    <script src="mobile/dist/js/bootstrap.js"></script>
+    <script src="mobile/js/jquery.lazy.js"></script>
+    <script src="mobile/js/common.js"></script>
+
+    <script type="text/javascript" src="js/main.js" ></script>
+    <script type="text/javascript">
+        $(function(){
+            // 默认属性载入方式: <img>标记必需定义'_src'的属性来保存图片地址
+            $('img').lazy();
+        });
+    </script>
+</head>
+<!--******************************************复制1****************************************-->
+<body>
+
+<div class="i_top">
+    <div class="i_top_return">
+        <a href="javascript:history.go(-1);"><img src="http://sta.qinxue.com/mobile/images/tubiao_arr02.png" height="50" /></a>
+    </div>
+
+    <div class="i_top_logo"><a href="index.html"><img src="mobile/images/logo.png" height="30" /></a></div>
+    <div class="i_top_more"><a href="javascript:void(0);" id="headerLogin"><img src="mobile/images/more_arr01.png" height="24" /></a></div>
+    <div class="i_top_search"><a href="http://m.qinxue.com/index.php?r=search/index"><img src="mobile/images/search_arr01.png" height="24" /></a></div>
+
+</div>
+
+
+<div class="container-fluid member_bottom">
+    <div class="row">
+        <div class="col-xs-3 member_bottom_menu01"><a href="index.html" class="current">首页</a></div>
+        <div class="col-xs-3 member_bottom_menu02">
+            <a class="member_bottom_xiala ">课程</a>
+            <div class="member_bottom_box" style="display:none;">
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2&tcid=0&lid=0" class="">小学同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3&tcid=0&lid=0" class="">初中同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1&tcid=0&lid=0" class="">高中同步课程</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5&tcid=0&lid=0" class="">思维逻辑训练</a>
+                <a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4&tcid=0&lid=0" class="">课外兴趣启发</a>
+            </div>
+        </div>
+        <div class="col-xs-3 member_bottom_menu03"><a href="会员页面.html" class="">VIP</a></div>
+        <div class="col-xs-3 member_bottom_menu04"><a href="http://m.qinxue.com/index.php?r=member/index" class="">我的</a></div>
+    </div>
+</div>
+
+<div class="container-fluid i_top_xl">
+    <div class="row">
+        <div class="col-xs-12 xl_01" id="headHtml" style="padding-bottom:15px; border-bottom:1px solid #eeeeee;">
+            <div style="color:#999;text-align:center;height:50px;line-height:50px;">loading...</div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>课程设置</strong></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=2"><button type="button" class="btn btn-default">小学同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=1"><button type="button" class="btn btn-default">初中同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=3"><button type="button" class="btn btn-default">高中同步课堂</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=5"><button type="button" class="btn btn-default">思维逻辑训练</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=channel/list&ptcid=4"><button type="button" class="btn btn-default">课外知识启发</button></a></div>
+        </div>
+        <div class="xl_02" style="padding-top:15px; width:120px; float:left; margin-left:10px;">
+            <div style="width:120px; text-align:center; margin-left:5px; color:#666666;"><strong>快速导航</strong></div>
+            <div class="xl_menu_li"><a href="index.html"><button type="button" class="btn btn-default">网站首页</button></a></div>
+            <div class="xl_menu_li" style="display: none;"><a href="http://m.qinxue.com/ganyan/?ob=2"><button type="button" class="btn btn-default">学员感言</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/teacher/"><button type="button" class="btn btn-default">师资团队</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/about.html"><button type="button" class="btn btn-default">关于我们</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/help/"><button type="button" class="btn btn-default">帮助中心</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=app/index"><button type="button" class="btn btn-default">APP下载</button></a></div>
+            <div class="xl_menu_li"><a href="http://m.qinxue.com/index.php?r=onlineCustomer/index"><button type="button" class="btn btn-default">联系客服</button></a></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="i_top_xl_bj">&nbsp;</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_top_more").click(function(){
+            $(".i_top_xl").animate({right:"0px"});
+            $(".i_top_xl_bj").show();
+        });
+        $(".i_top_xl_bj").click(function(){
+            $(".i_top_xl").animate({right:"-300px"});
+            $(".i_top_xl_bj").hide();
+        });
+    });
+</script>
+<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+    $(document).ready(function(){
+        $(".member_bottom_xiala").click(function(){
+            $(".member_bottom_box").slideToggle();
+        });
+    });
+</script>
+<script >
+    var PLAY_TUID = "30";
+    var PLAY_TUCID = "9";
+    var URL_LOADPLAY ="http://m.qinxue.com/index.php?r=chapter/loadplay";
+    var PREV_CHAPTER = "";
+    var NEXT_CHAPTER = "http://m.qinxue.com/30-10.html";
+    function qxplayerLast() {
+        var strVideoUrlLastTime = "http://m.qinxue.com/index.php?r=video/setLastVideoTime&tuid=30&tucid=9";
+        ajax.init()
+            .setUrl( strVideoUrlLastTime )
+            .setData({})
+            .setIsTip( false )
+            .setCbSuccess(  )
+            .setCbError(  )
+            .preRun()
+            .run();
+    }
+</script>
+<style>
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width:100%;
+        height:100%;
+        background-color: #000000;
+        z-index:10003;
+        overflow:hidden;
+        text-align:center;
+        margin:0px auto;
+    }
+    #playercode{margin:0px auto;text-align:center;}
+    .i_top{ position: relative; left: 0px !important;}
+</style>
+<script type="text/javascript">
+    $(window).scroll(function(){
+        var Kmenu = $("#kecheng_menuTop").offset().top
+        var ILeft = $(window).width() / 2 - $("body").width() / 2;
+        var scrollTop = $(this).scrollTop();
+        if(scrollTop >= Kmenu){
+            $("#kecheng_menu").css({position:"fixed",top:0,left:ILeft});
+        }else{
+            $("#kecheng_menu").css({position:'',top:'',left:''});
+        }
+    });
+</script>
+
+<div id="" class="kecheng_img">
+    <div id="jqPlayerSetup" class="newplay_play">
+        <div id="jqPlayerLoading">
+            <video controls="controls" autoplay="autoplay" id="video"　src="" poster="" width="100%" />
+            <div class="kecheng_img_play">
+                <a onclick="window.location.href = 'http://m.qinxue.com/index.php?r=jump/index&pos=50&go=http%3A%2F%2Fm.qinxue.com%2Flogin.html'" href="javascript:;">&nbsp;</a>
+            </div>
+        </div>
+        <div id="myPlayer" style="display:none;">
+
+
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#jqBtnPlayOragian_play").click(function () {
+            $("#jqPlayerLoading").css("display","none");
+            $("#myPlayer").css("display","");
+        });
+    </script>
+    <!--    <img src="--><!--" />-->
+    <!--    <div class="kecheng_img_play">-->
+    <!--        <a href="#kecheng_tishi">&nbsp;</a>-->
+    <!--    </div>-->
+</div>
+
+<div class="container-fluid">
+    <div class="row kecheng_menu">
+        <div class="col-xs-12 kecheng_menu_sx">
+            <a href="javascript:void(0);" class="on_section" id="on_section" style="float: left;">上一节</a>
+            <a href="javascript:void(0);" class="next_section" id="next_section" style="float: right;">下一节</a>
+        </div>
+    </div>
+</div>
+
+<!--***************************以上部分可以复制************************************-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 kecheng_jieshao" style="border-bottom: 1px solid #eeeeee; margin-bottom: 0px;">
+            <div style="font-size: 18px;">四年级下册数学教材全解熊猫老师</div>
+
+
+            <div class="col-xs-12" style="padding: 0px; color: #999999; " >
+                <span class="span01"> </span>
+                <span class="span01">小学	四年级	数学
+</span>
+                <span class="span01" onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='block';"></span>
+            </div>
+
+            <div class="col-xs-12" style="padding: 0px; margin: 8px 0px 15px;">
+                <div class="col-xs-4" style="padding: 0px;">
+                    <a href="#http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dorder%2Ftutorials%26tu_id%3D30%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-default btn-block">
+                        <em style='font-family:Arial;font-style:normal;'>&yen</em>130 单买
+                    </a>
+                </div>
+                <div class="col-xs-8" style="padding-right: 0px;">
+                    <a href="#http://m.qinxue.com/index.php?r=jump/index&pos=10&go=http%3A%2F%2Fm.qinxue.com%2Findex.php%3Fr%3Dvip%2Findex%26catid%3D3%26type%3D1%26gourl%3D%252Findex.php%253Fr%253Dchapter%252Fmulu%2526tuid%253D30" class="btn btn-success btn-block">
+                        <em style='font-family:Arial;font-style:normal;'>&yen</em>499 开通会员免费学
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="jqPopTeacherInfo" class="play_teacher_pop_bj" style="display:none;">
+    <div class="play_teacher_pop">
+        <a onclick="javascript:document.getElementById('jqPopTeacherInfo').style.display='none';" class="play_teacher_pop_x"><img src="http://sta.qinxue.com/mobile/images/x.gif" /></a>
+        <div class="teacher_list" style="height:auto;">
+            <div class="teacher_list_left"><img src="http://img.qinxue.com/teacher/85/head-85.jpg" /></div>
+            <div class="teacher_list_right">
+                <span><strong>老师熊猫</strong></span>
+                主攻： <br />
+            </div>
+        </div>
+        <div class="teacher_list_jj">简介：</div>    </div>
+</div>
+<div id="kecheng_menuTop" style="height: 0px;"></div>
+<div class="container-fluid" id="kecheng_menu">
+    <div class="row kecheng_menu">
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/30-0.html" ><span class="span01">课程</span>介绍</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/mulu&tuid=30"  class="dangqian"><span class="span01">课程</span>目录</a></div>
+        <!-- <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/jietu&tuid=30" ><span class="span01">课程</span>截图</a></div>  -->
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">课程</span>素材</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href="http://m.qinxue.com/index.php?r=chapter/pingjia&tuid=30" ><span class="span01">学员</span>评价</a></div>
+        <div class="col-xs-2 kecheng_menu_li"><a href=# ><span class="span01">学员</span>笔记</a></div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+    <div class="row kecheng_mulu">
+        <div class="col-xs-12 kecheng_mulu_list">
+            <dl>
+
+
+
+
+
+                <dd ><li value="	http://v.taozhi.cn/fc7734a6ab334e7fb008a17e3ab3c055/280000fcf6af4aa3b5af6d175a4bd0fd-4839685198cfa2ae8f24cd8ca81989d9-ld.mp4	" ><div>	课程介绍	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/2d5611faff204a4fae02f89866e53592/dbc01bfee4a2483bb49fc315439ab00c-693502dea4795f8d9ac28dea1c73afa9-ld.mp4	" ><div>	自我介绍	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/1fe556c7c9764ee0865ff76239ffd4d5/4edda4a5ccb34d7aaef8947e4b72700b-7afcf2539f7a6516621f816323e6a6f1-ld.mp4	" ><div>	1.1 加、减法的意义和各部分间的关系（1）第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/e720957098f943a4a8bee77d727a395c/3e9cc032afa74e219ddd466651076523-4a5fc51087e7f7b8531e7e19d39fb81c-ld.mp4	" ><div>	1.1 加、减法的意义和各部分间的关系（1）第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/61fbdda5d34e4630bb48f146b4e05951/de0be03d389141eab1a27df537a777a8-03d09bdc17014cf2438fbb28e4cb2579-ld.mp4	" ><div>	1.1 加、减法的意义和各部分间的关系（2）第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/8a67f9d473eb4d9196c949b560b4bf00/a0d8bcde092442cc9723534d7bbb76a3-891f1b9c8d67df70917ef9e52d1d3360-ld.mp4	" ><div>	1.1 加、减法的意义和各部分间的关系（2）第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/3276683069c2432aadbc665766d376d6/1e5aff1da21049e0a6868cb3c87b357a-9780d4fd50ddee00b4f1abe129806640-ld.mp4	" ><div>	1.2 乘、除法的意义和各部分间的关系（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/60872e14ec5b4a18b525f529569307c0/d65903c51ec34767bfd747986f5c50ce-78c487d927e98dd044523bf4ac838a72-ld.mp4	" ><div>	1.2 乘、除法的意义和各部分间的关系（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/c82784d3fc7e4cc4832bc58dfd101df7/7953e498b1b44456a882fae2f8f5ddac-cd12c20ca424d466bd45d6a02129ddc8-ld.mp4	" ><div>	1.3 括号（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/34befbc3847d4921bf2a0d0bba20d54d/47513ab52db046e0b9bd77a2e1d426f4-697f3e7189ddb6c2f58488bbc28463e2-ld.mp4	" ><div>	1.3 括号（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/89dd73ad1bc2467388861cfcd6aaed32/38fa39a43a784b2fb3f663a699ea9c41-ea2996cc32281e6717baaffe98aebfb7-ld.mp4	" ><div>	1.4 解决问题（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/a8b6ee66d0be4d3eaef55c18c526e891/53f80121a6c84173b1d68c87eb70ae92-a54863040f31fafbefa11e91009675dd-ld.mp4	" ><div>	1.4 解决问题（2） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/3773d63a738e4cbdbb22d68faf77391b/3edab2ad577943a29ccb082300e7323b-ea2c8e506a56a334898c394abaf9683e-ld.mp4	" ><div>	1.4 解决问题（2） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/a1506c25480c4e038dc7f39a38f35161/d915e2311e674abdb7801211b08214b3-665913e114a115b471b146d80b2acc91-ld.mp4	" ><div>	2.1 观察物体（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/e28a7c58f36b4d17b1f8358737ef1820/f06d982ee4bc44bc98a5a9613d881793-07ca4d0e6975c9a4b02bf8490c1a24f2-ld.mp4	" ><div>	2.1 观察物体（2） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/85d4b7d0497248b79ab37fac4dac3d7c/b5a70932f16c435d856e19b0a21a9b88-c8bb8b2aa7cab52592b1b480180f985e-ld.mp4	" ><div>	2.1 观察物体（2） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/9bec994c79004c65af753d0de0b14352/93199674d11449eb8e4cbd3a10d35fdf-c9625293718a4cdffa411104c19c37d9-ld.mp4	" ><div>	3.1 加法运算定律（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/ab107014fc93417d962e4a50cda25e3c/227fc8915a854d0a99556a5709404ab8-1112ede689e596468c1f869d6b59200a-ld.mp4	" ><div>	3.1 加法运算定律（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/c771dea96703434d902baae19fc60e58/8dc938a278a14e3482fe51a3fd5af6d3-24627d37a22a03701f4ac12bb8597fe1-ld.mp4	" ><div>	3.2 加、减法的简便运算（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/9837731cc1244b2095ddde3024b70f44/3ed30e63115b4aa593024bd45efdbe2d-7a0202b0596d8a6678ea7db012b99c1e-ld.mp4	" ><div>	3.2 加、减法的简便运算（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/5c4f8ab4d139452aa11d1baa1f627d69/d03c0b07a9c74bab9368ad0e25074fb6-56579ee9423a5dd877f2b274a53947ee-ld.mp4	" ><div>	3.3 乘法运算定律（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/b37fbf8e35be4440ae8fb8cbecd5cbbc/d94241ccc4424c039e540292a3a15c42-8ce4f872a1aa53eafaa0bb32ea504974-ld.mp4	" ><div>	3.3 乘法运算定律（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/21737d6f5ab3427582a4e36d30cbfcec/d7b44e59baa2494a81a4016314fe3a18-90611bd6a0ced066915471a18291e0e4-ld.mp4	" ><div>	3.4 乘法分配律（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/2cf69909d1f5430e853ad114a2406f32/b9cd760cfc43416aa0487624f0b324b2-a5765b4e8c1242e079dc3259ed9ae8a0-ld.mp4	" ><div>	3.4 乘法分配律（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/73f39842ef9a44b0b0a05039af9bf23c/cbd6fee1eeb9420e85f780c0050b9e6d-006803e5f468713a4c1a204cff77aee1-ld.mp4	" ><div>	3.5 乘、除法的简便运算（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/ec7e141eeeb64cc1be76c952b7e463c4/85d0fe63129141f2a4b7d0cdbb60898c-5c3c5cb5dcf17fb4292393e1925fb9ef-ld.mp4	" ><div>	3.5 乘、除法的简便运算（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/c1855024826741dc9aad3d32af56b689/bfb6903f47fd43bc80eec36f49510631-a9345bc4930935c9f5295debff332465-ld.mp4	" ><div>	4.1 小数的意义（1） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/4843536ad72642b8b8e3d09150d26405/384fdc8e7d1e4719ad86392cd588fdbb-f3eec6a2b56462f761bd7041622fdc5c-ld.mp4	" ><div>	4.1 小数的意义（1） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/79ed57e3a40f42a2be81eb351f5a4028/fa108692c9b3465f995441ffc2411a38-58ae5680d498d91d500c1d1121153b39-ld.mp4	" ><div>	4.1 小数的意义（2） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/33d30b2b060349ba9b872581cf931532/57e5269d209747158ffa999631560e9b-f0a039fa0b13c0b1784bdfd1303b1fd8-ld.mp4	" ><div>	4.1 小数的意义（2） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/ff3dad73c8ae45b7ae924bdeae4c05bc/859c3d93c3be4dbabc53d5f88eaa1fc1-4afa270d655930dec9d89c2e246d3b2d-ld.mp4	" ><div>	4.2 小数的读法和写法（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/d8a92537ecc84a89ad3b5e972d8bc806/53a18d9139f840f7ac9f09e45d7884f8-675e894897eff6c4a127bb70a2b2fdbf-ld.mp4	" ><div>	4.2 小数的读法与写法（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/869e20556e3e4d409858c9f4447e155a/8cc8466bca4c4e23bdf84c5eaf81dee3-09dc72a88726dbe672c89d7f0902b090-ld.mp4	" ><div>	4.3 小数的性质（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/277af404bc294e02be395a9a0951f83f/cfdd7a668e7b4e51a46ddc73a132ca9f-422e5b139378602cded5d8d822f24a76-ld.mp4	" ><div>	4.3 小数的性质（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/992d221a186e4e7eaa9bcfb61ffeb2e6/aecd171566f647b9a510d6527bae43f2-90b416549c4a9835e285a8d1600b420f-ld.mp4	" ><div>	4.4 小数的大小比较（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/94796ad4fb534f34b62110068d662aa1/41d614c3edc545e98ff2e5de277fce90-9380478faa221b214ec7df809e55ac2c-ld.mp4	" ><div>	4.4 小数的大小比较（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/63468e82cadd47beb6af36555c9ecb14/5a13d67ccfae479eba7ad02e496600fb-6f726b5361dfc25e2026a1dd9542f634-ld.mp4	" ><div>	4.5 小数点移动引起小数大小的变化（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/5a32f59f85be42049417cf034621b0de/bb5b93a5accc485d8756497ff4ac8e21-23a7f155b246b87f12a8dd7b69c9cbd6-ld.mp4	" ><div>	4.5 小数点移动引起小数大小的变化（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/2e51d8f94f534b82abaf30f1cf1ca2c6/1beca3183c7b4e67afb04ff03443df25-678eb3f41baede6c4481b8eb7801d220-ld.mp4	" ><div>	4.5 小数点移动引起小数大小的变化（3）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/6f903c7c14ff428a8cfca9d8ef7d9cf9/4ddabe446f444de19fd149590cdcf74d-2f6b5df79296b2e4579282d7e6bfe5db-ld.mp4	" ><div>	4.6 小数与单位换算（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/dd7f8d16348d495eaf4273ba97ee3fb4/0c51083bd7d84309a55d153c3946ae82-0803a9b50354deccbd63dcbbeb59fcad-ld.mp4	" ><div>	4.6 小数与单位换算（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/d71f3d9fc51e48cb893aa3e75cedd70f/628b356acd594d17856f6504364fa015-ac0c5d63eef347c6fe81c59c05800079-ld.mp4	" ><div>	4.7 小数的近似数（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/d642298aa5044d0e8b02dcc2f5f27627/d7cb6923ed5f4ed18bea1051fe51b3bf-022d59564ebafca3005ddb68084c136f-ld.mp4	" ><div>	4.7 小数的近似数（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/846b370f95a84a8a83c422a166e21ef1/3393602a678e43f5a506369436dc18cf-01a9a46d5141a28eed11fc543a38759a-ld.mp4	" ><div>	5.1 三角形的特性（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/5e072b3a5ce2441a8e054e520af28885/39d95d949269474c8de2eadadb02ecd3-135400416be6d5be59c766c644e40881-ld.mp4	" ><div>	5.1 三角形的特性（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/3256d639139d4583be4aee0ce1f4e68a/f9b57df57bf14d2ca585236f387a7985-f4a536466791f09677a61aa7a119bd36-ld.mp4	" ><div>	5.1 三角形的特性（3）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/2ad53464007749b48b520d39701baeaf/02f0d3d4635f4e2791a6b9afc6205fe7-4618390ec5ed73d5949f729b69943298-ld.mp4	" ><div>	5.2 三角形3条边的关系（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/b8defddc94c7446f93cefc57e8462a09/9413f646868c41a78280a8b7ded9b526-47f2877e244ac835ef57ea20e222bba3-ld.mp4	" ><div>	5.2 三角形3条边的关系（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/85c5f5b5e2b944df8a64f2c239fcd87e/ebf499a47bf5474cb922c0d1bbdd3879-ea99ccf2b76bcecfaf5fcd6001242cb3-ld.mp4	" ><div>	5.3 三角形的分类（1）第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/c280ae1153fe4933918afa3530e9a933/1e0f142ae5784ad0affe43c6e31f52c4-c0979a367f83e6771d650072893b1321-ld.mp4	" ><div>	5.3 三角形的分类（1）第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/c3870115447f43e1aff7e61460b5e4d5/11e7d88a1bf64173aa85b685d603826b-b1612e9ca5bc39f40ea62ad08ea59433-ld.mp4	" ><div>	5.3 三角形的分类（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/ed191eea2a0b4644b514ea7ec3d6b7d5/34d144f2bba3443fb0d3a1d9b3dfc542-9a916a205207d7ac5469fc941c075ee3-ld.mp4	" ><div>	5.4 三角形的内角和（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/ca91d1c525724e4880745ea42c9c8a14/3438b3efe5584c63b699874c0f15568c-933bfdee147285130095410c91bcd045-ld.mp4	" ><div>	5.4 三角形的内角和（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/34a3f8620c904482a752dd36b8534a9e/a44ddeb6ab0147f39047365ed39b0f81-c9fec1fefdf7e7e9aee700a6b95f7862-ld.mp4	" ><div>	6.1 小数加减法（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/bc971e76117a42aba59863c754087108/1203cf9f47354ec292dd0e16853ae4dd-b8bbe2f1220a99b9b765552e7893386c-ld.mp4	" ><div>	6.1 小数加减法（2） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/f305ef375674425da9208b4b51c19726/7b53d9f4805a4090a72dfe2e693ef92e-50ea8a01b09d2bc93ecb4635d0f999d7-ld.mp4	" ><div>	6.1 小数加减法（2） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/7a8e6ba197d341368d94f0b19468e0a1/84dff8569a394c0bbcb9b4f09f1116a2-d9a589bbd7413f25d99d3b8c9af1f660-ld.mp4	" ><div>	6.2 小数加减混合运算（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/36f2d9aeb27a448784e3eb27885351e9/3212ddc413934e73992914ae2833f26b-ffe10b17fd857a356651b2ad3e47ace7-ld.mp4	" ><div>	6.2 小数加减混合运算（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/11aeedcb9b7a4916aef92e05cda91d5b/cf6377c886e34fd6a4c73a5cdff78b2e-baca49525a51ef8d924e3b5b5f9b3d8b-ld.mp4	" ><div>	6.3 整数加法运算定律推广到小数（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/1966ccb02a064dcc92858a975794a174/f17d84b61a184ce89d08e5d882f2bfd0-2be2c2b885b6bf148666b2dd141f31c3-ld.mp4	" ><div>	6.3 整数加法运算定律推广到小数（2） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/9dd093114c114a48bd00e8fe3faff46b/b6cd0f8d8d474a6c9aa56e88ffeeaa23-217ce698ce33c1828603cd26b4a6e9fe-ld.mp4	" ><div>	6.3 整数加法运算定律推广到小数（2） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/7f16308d379c4cd2b1661ed4795584ae/82fc926a104b48388df30f00b707bf56-5a2cc2af8ee298997e6b7f4a09ef2e35-ld.mp4	" ><div>	7.1 轴对称（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/83730f651d7e4223a518bcf0837cd14d/c55ab61792c246d38c39b0dfe1ce7b7e-584d90a8af04c977e27beaddac40cc2f-ld.mp4	" ><div>	7.1 轴对称（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/7005332b84474c549b9434c1eb510dd0/3f41a80447e14ef38ae1bcc9f8b9499f-d2d9991947a86ec5f698301617d528f9-ld.mp4	" ><div>	7.2 平移（1） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/0b294726c6924caa8984bc94d951892b/f412957d90be4d95a8f0539d6c20d7a5-9d07e6d5eb5bb0bd2bf1efca4b6d98b8-ld.mp4	" ><div>	7.2 平移（1） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/fe99e2d9e91d44d18f123104eb5224c6/85d2e3bba7ef4de49764cd83c3e13823-bc249598b63d4ab3b4012fe471d8e2c4-ld.mp4	" ><div>	7.2 平移（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/7a055b1a536e4598a9ee745f26cc2bfb/4a04be22c9af4b3d831c8f0672241399-35b95b6829835d9781d20522cfb5fc6b-ld.mp4	" ><div>	8.1 平均数（1） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/7efc759a484e4c4d9876b7c8c95ab937/d1fa7060153143d9bc2e4ccee05973b7-e0be8e38a04908229441b4666f2b1286-ld.mp4	" ><div>	8.1 平均数（1） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/cbb2dedb69b64a38952c03cc58cc31be/bc9d02c2ad484266b83488060b8f679f-3e76af8f8f441b428b7a6ec285b574b1-ld.mp4	" ><div>	8.1 平均数（2）第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/efe2c9ff0a1e43a1a097e1d86cf7c487/2ce3899247fa4352b33ac0aec45483d5-bbf33f45c36942706392f252291e44d7-ld.mp4	" ><div>	8.1 平均数（2）第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/3acc994cfafa4de1926812069bbd5d62/202fc5684fb54829845f9286985ad7fd-d930e7921cc73106f8ec630d19a5ab88-ld.mp4	" ><div>	8.2 复式条形统计图（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/b0d7d433907b45b893d3b447aa934fe5/9062a6a8b63545258503ec090d10ce2d-94d99748bd67fb64a991ad173b45ab46-ld.mp4	" ><div>	8.2 复式条形统计图（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/8ba5a2c0000543738cf86af5a8603762/e115ff0165f24e4b8a0e2a06540b2d0b-d6c91543ab9b97225b76f11622ac90f8-ld.mp4	" ><div>	9.1 数学广角——鸡兔同笼（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/5e0ff9a4861d48dbba0b1ad2f7bd2635/f2d8cdbe376f4f55abb23f38ce69857f-b7cb46ffe18feeea1222dfab34d6b3c7-ld.mp4	" ><div>	9.1 数学广角——鸡兔同笼（2） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/9c3b00f34b7641038a077a2b22c12b66/d629a46081454cce9b252957b3ef9b0f-eec9add2737e5f2ada6c6a7148b4f0e1-ld.mp4	" ><div>	9.1 数学广角——鸡兔同笼（2） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/337f3710e00d4ab88681a02f192c0a50/e9370e0a4e834b8a909c972d7ce3983b-43181cabb090b9733721eb1c88ee6fa3-ld.mp4	" ><div>	10.1 总复习--数与代数（1） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/736e843645fd43aa82bf215759af5b0a/4e27e23a0a8c4839aa137e8f1273806c-d925202afc927436729158fa9ef31c97-ld.mp4	" ><div>	10.1 总复习--数与代数（1） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/16e71d5c1524452ea01d0c4bfb5105c7/8afb71bec0724eba8c470ae0f727b71d-02b0c6b7df36305f243f39b3e6a454c8-ld.mp4	" ><div>	10.1 总复习--数与代数（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/3b1e3acc3e5d4312843d58f36721de61/ecdc509ff7234004bfe3e18e59e60331-0bb86cd68fc6f6366c9475e66fd8442c-ld.mp4	" ><div>	10.2 总复习--图形与几何（1） 第1节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/bfb1bd9918234c6f99cc0f1cf096926f/f705c2eb8365415b849c81d2a8f4b15d-7242165ba8addf37edcc3c7f281f1721-ld.mp4	" ><div>	10.2 总复习--图形与几何（1） 第2节	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/2429db32f0e14acf8a2289214bd7ad9b/840fdd66d1804b0eb855dfa9850623ec-a5221521ce4d10e6caedc12023f4cb92-ld.mp4	" ><div>	10.2 总复习--图形与几何（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/66a27eb9f34b44fdbad24424524c1171/ed04a62909ce430f975b5fb9d54f82f7-b84c8f791d2e08773be22dbb2d66fd57-ld.mp4	" ><div>	10.3 总复习--统计与概率（1）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/aa5746b4c49c46a3a1471b0e4a767228/5540d7a244e2458fa42b2f84dcd056bc-e2dceec4272b38c412c091868182ecc2-ld.mp4	" ><div>	10.3 总复习--统计与概率（2）	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/fc7734a6ab334e7fb008a17e3ab3c055/280000fcf6af4aa3b5af6d175a4bd0fd-4839685198cfa2ae8f24cd8ca81989d9-ld.mp4	" ><div>	课程介绍	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+                <dd ><li value="	http://v.taozhi.cn/2d5611faff204a4fae02f89866e53592/dbc01bfee4a2483bb49fc315439ab00c-693502dea4795f8d9ac28dea1c73afa9-ld.mp4	" ><div>	自我介绍	</div><span>	同步课堂	</span><span>	小学 四年级 数学 熊猫老师	</span></li></dd>
+
+
+
+
+
+
+
+
+
+
+
+            </dl>
+        </div>
+    </div>
+
+    <button title="收起播放列表" id="playList-hidden">  </button>
+    <button title="展开播放列表" id="playList-show1">  </button>
+    <!--<div class="container-fluid">-->
+    <!--<div class="row kecheng_jieshao">-->
+    <!--	<div class="col-xs-12 kecheng_jieshao_con">-->
+    <!--        <div style="height:auto; overflow:hidden;">-->
+    <!--	        <p><strong>--><!--</strong></p>-->
+    <!--	        <p>--><!--</p>-->
+    <!--	        <img id="jqImgStudyNav" src="" style="display:none;"/>-->
+    <!--        </div>-->
+    <!--        <div class="kecheng_tishi" style="margin-top:15px;">学习方式：<br />1.用电脑打开勤学网学习<br />2.安装勤学网APP,用手机或平板学习</div>-->
+    <!--        <div class="col-xs-12" style="background:#ffffff; margin:15px 0px; padding:0px;">-->
+    <!--        <div class="col-xs-12" style="margin-top:15px;"><strong>移动APP下载</strong></div>-->
+    <!--		<div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnApkDownload"><img src="--><!--/mobile/images/app_android.png"/></a></div>-->
+    <!--        <div class="col-xs-6 col-sm-6s" style="padding:15px;"><a href="javascript:void(0)" id="jqBtnIosDownload"><img src="--><!--/mobile/images/app_iphone.png"/></a></div>-->
+    <!--        </div>-->
+    <!--        -->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div id="light03" class="white_content04_x" style="display:none;"><a href="javascript:;" onclick = "closewindow02()" title="关闭"><img src="http://sta.qinxue.com/images/white_content_x02.png" onmouseout="this.src='http://sta.qinxue.com/images/white_content_x02.png'" onmouseover="this.src='http://sta.qinxue.com/images/white_content_x02_02.png'"  /></a></div>
+    <div id="light02" class="white_content" style="display:none;text-align: center;">
+
+        <div id="playercode" >
+
+            <div id='plv_6fdf1970faff8555a549c73a3f4a37e4_6'></div>
+            <script>
+                var player = polyvObject('#plv_6fdf1970faff8555a549c73a3f4a37e4_6').videoPlayer({
+                    'width':'100%',
+                    'height':'576',
+                    'vid' : '6fdf1970faff8555a549c73a3f4a37e4_6',
+                    'forceH5':true
+                });
+            </script>  </div>
+    </div>
+
+    <script type="text/javascript">
+        var URL_APP_DOWNLOAD = "http://m.qinxue.com/index.php?r=app/download";
+        var URL_APP_DOWNLOADURL = "http://dlapp.qinxue.com/qinxue_android_v1.0.apk";
+    </script>
+
+
+
+    <script type="text/javascript">
+    </script>
+    <div style="height:80px;"></div>
+
+    <div id="jqAjaxLoadingTipFooter" class="ajaxLoadingFooter">处理中...</div>
+    <div class="go_top" style="display:none;"><a href="#">&nbsp;</a></div>
+    <div style="display:none;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254537038'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1254537038' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    <script type="text/javascript">
+        $(function(){
+            objSysRegist.evalResizeEvent();
+        });
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scrollTop = $(this).scrollTop();
+            if(scrollTop >= 460){
+                $(".go_top").css("display","block");
+            }else{
+                $(".go_top").css("display","none");
+            }
+        });
+    </script>
+
+</body>
+</html>
