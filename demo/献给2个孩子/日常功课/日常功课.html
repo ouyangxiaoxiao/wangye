@@ -34,13 +34,45 @@
             /*order: 1px;b*/
 
         }
-        #audio{
+
+        #audio {
             position: absolute;
-            top : 400px;
+            top: 400px;
             right: 30px;
             /*width: 50px;*/
             /*text-align: center;*/
             float: right;
+        }
+
+        #num {
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            border: 2px solid hotpink;
+            padding: 20px;
+            border-radius: 60px 60px;
+        }
+
+        #yuwen {
+            position: absolute;
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            border: 2px solid hotpink;
+            padding: 20px;
+            border-radius: 60px 60px;
+            top: 320px;
+        }
+
+        #yingyuke {
+            position: absolute;
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            border: 2px solid hotpink;
+            padding: 20px;
+            border-radius: 60px 60px;
+            top: 415px;
         }
     </style>
 </head>
@@ -63,8 +95,14 @@
     現在是2021年5月26日 星期三
 </div>
 <div>
-    <a id="num" href="http://localhost:63342/python/wangye/55555555555555/%E6%9F%9A%E5%AD%90%E8%80%81%E5%B8%88%E6%95%B0%E5%AD%A6%E8%AF%BE.html?_ijt=7q6gqd8jq7fk9u3ov1c8rr0o4t"> 数学课</a>
+    <a id="num"
+       href="https://ouyangxiaoxiao.github.io/wangye/55555555555555/%E6%9F%9A%E5%AD%90%E8%80%81%E5%B8%88%E6%95%B0%E5%AD%A6%E8%AF%BE.html">
+        数学课</a>
+    <br>
+    <a id="yuwen" href="语文课">语文课</a>
+    <a id="yingyuke" href="英语课">英语课</a>
 </div>
+
 <div id='timer'>
     <button>'
 
@@ -78,10 +116,9 @@
 
 <audio controls id="audio" autoplay>
 
-  <source src="2.mp3" type="audio/mpeg" >
-您的浏览器不支持 audio 元素。
+    <source src="http://m801.music.126.net/20210527221808/d29b5a13d29a59a5b3a5c1c53038c45b/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8662410581/3cf1/6a96/c0ca/6e66481ac98d157713acfbe11b515700.mp3" type="audio/mpeg">
+    您的浏览器不支持 audio 元素。
 </audio>
-
 
 
 <script>
