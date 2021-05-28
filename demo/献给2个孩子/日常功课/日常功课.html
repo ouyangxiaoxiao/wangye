@@ -42,7 +42,13 @@
             /*width: 50px;*/
             /*text-align: center;*/
             float: right;
+            border: 2px solid grey;
+            border-radius: 10px;
+            background-color: #c1c6d7;
+            color: #cccccc;
         }
+
+
 
         #num {
             font-size: 30px;
@@ -51,6 +57,8 @@
             border: 2px solid hotpink;
             padding: 20px;
             border-radius: 60px 60px;
+            top: 220px;
+            position: absolute;
         }
 
         #yuwen {
@@ -74,9 +82,27 @@
             border-radius: 60px 60px;
             top: 415px;
         }
+        nav{
+            float: top;
+            flex-flow: wrap;
+        }
+        html{
+            background-image: url("//img95.699pic.com/photo/40100/4855.gif_wh860.gif");
+        }
     </style>
 </head>
+
 <body>
+
+<nav>
+<a href="https://www.baidu.com/" target="_blank">百度</a>
+<a href="https://www.chazidian.com/r_zi_zd9ad8/bishun/" target="_blank">查文字</a>
+<a href="http://xhy.5156edu.com/page/18382.html" target="_blank">歇后语</a>
+<a href="https://www.dxsbb.com/news/list_1237.html" target="_blank" >大学</a>
+</nav>
+
+<input class= "placeholder" id="s" name="s" placeholder="搜索……" autocomplete="off" >
+
 <div id='wb'>
     <h1>今天的作业</h1>
     <hr>
@@ -96,11 +122,12 @@
 </div>
 <div>
     <a id="num"
-       href="https://ouyangxiaoxiao.github.io/wangye/55555555555555/%E6%9F%9A%E5%AD%90%E8%80%81%E5%B8%88%E6%95%B0%E5%AD%A6%E8%AF%BE.html">
+       href="https://www.bilibili.com/video/BV1G4411Q7B2?from=search&seid=17665132885942147454" target="_blank">
         数学课</a>
     <br>
-    <a id="yuwen" href="语文课">语文课</a>
-    <a id="yingyuke" href="英语课">英语课</a>
+    <a id= "yuwen" href= "https://www.bilibili.com/video/BV1bb411v7xo?from=search&seid=4797301480241395912"  target="_blank" > 语文课   </a>
+    <a id="yingyuke" href="https://www.bilibili.com/video/BV12h411S71p?from=search&seid=814016541057070228" target="_blank">英语课 </a>
+
 </div>
 
 <div id='timer'>
@@ -113,12 +140,14 @@
     </button>
 
 </div>
+<div id="au">
+  <audio controls id="audio" autoplay>
 
-<audio controls id="audio" autoplay>
-
-    <source src="http://m801.music.126.net/20210527221808/d29b5a13d29a59a5b3a5c1c53038c45b/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/8662410581/3cf1/6a96/c0ca/6e66481ac98d157713acfbe11b515700.mp3" type="audio/mpeg">
+    <source src="http://antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_21763866&response=res&type=convert_url&" type="audio/mpeg">
     您的浏览器不支持 audio 元素。
 </audio>
+</div>
+
 
 
 <script>
