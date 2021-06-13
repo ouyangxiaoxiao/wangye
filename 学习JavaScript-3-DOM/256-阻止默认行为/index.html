@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>123</div>
+<a href="http://www.baidu.com"> 百度</a>
+<form action="http://www.baidu.com">
+    <input value="提交" type="submit" name="sub">
+</form>
+
+<script>
+    var div = document.querySelector('div');
+    div.addEventListener('click',fn);
+    div.addEventListener('mouseover',fn);
+    div.addEventListener('mouseout',fn);
+    div.addEventListener('mouseup',fn);
+    div.addEventListener('mousedown',fn);
+    div.addEventListener('onmousemove',fn);
+    function fn(e) {
+        // console.log(e);
+        console.log(e.type);
+    }
+
+    //2.阻止默认行为事件，让连接不跳转或者让提交摁钮不起作用
+    var a = document.querySelector('a');
+    a.addEventListener('click',function (e) {
+        e.preventDefault();//DOM 标准写法
+    });
+
+    //3.
+    a.onclick = function (e) {
+        //普通浏览器 能支持的  方法
+        e.preventDefault();
+        //低版本浏览器 ie678 returnValue 属性
+        e.returnValue;
+        //
+        return false;//没有兼容性问题 但是后面还有代码 下面的代码就没办法执行了而且只限于传统的注册方式
+        alert('哈哈哈');
+    }
+</script>
+</body>
+</html>

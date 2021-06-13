@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>215-密码框验证信息</title>
+    <script>
+
+    </script>
+    <style>
+        .message{
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url("mess.png")no-repeat left center ;
+            /*background-image: url("reg_ico.png") ;*/
+            padding-left: 20px;
+        }
+        .wrong{
+            color: red;
+            background-image: url("wrong.png") ;
+        }
+        .right{
+            color: green;
+            background-image: url("right.png") ;
+        }
+    </style>
+</head>
+<body>
+<div class="register">
+    <input type="password" class="ipt">
+    <p class="message">请输入6~16位密码</p>
+    <script>
+
+        //通过多类名方法修改表单样式
+        //1.获取元素
+        var ipt = document.querySelector('.ipt');
+        var message = document.querySelector('.message');
+        //2.注册事件
+        ipt.onblur = function () {
+            /*根据表单里面只的长度 ipt.value.length的长度 判断是否符合要求*/
+            if(this.value.length<6||this.value.length >16){
+                // console.log('错误');
+                message.className = 'message wrong';
+                message.innerHTML = '您输入的位数不对,要求6~16位';
+            }else {
+                message.className = 'message right';
+                message.innerHTML = '您输入的正确';
+            }
+        }
+        
+    </script>
+</div>
+</body>
+</html>

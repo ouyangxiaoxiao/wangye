@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>214-使用className修改样式属性</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+       .change{
+            /*点击 这个文档 的背景颜色变成 紫色*/
+            background-color: purple;
+        /*这个文档风格的颜色 变成 白色*/
+            color: #ffff;
+        /*这个文档的字体大小 变化为 25像素*/
+        font-size: 25px;
+        /*距离上面边距100像素*/
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<div class="first">文本</div>
+<script>
+    /*1.使用element.style 获得修改元素样式 如果样式比较少 或者功能比较简单的情况下使用*/
+    /*定义文档 选择器 选择div*/
+    var test = document.querySelector('div');
+    // /*test 的摁钮 = 这个功能*/
+    test.onclick = function () {
+    //     /*点击 这个文档 的背景颜色变成 紫色*/
+    //     this.style.backgroundColor = 'purple';
+    //     /*这个文档风格的颜色 变成 白色*/
+    //     this.style.color = '#ffff';
+    //     /*这个文档的字体大小 变化为 25像素*/
+    //     this.style.fontSize='25px';
+    //     /*距离上面边距100像素*/
+    //     this.style.marginTop = '100px';
+
+    /*2.使用className选择器 变化类的名称*/
+
+        this.className = 'change';
+
+        /*如果我们想要保留原先的类名，我们可以这么做*/
+        this.className = 'first change';
+    };
+
+
+
+</script>
+</body>
+</html>

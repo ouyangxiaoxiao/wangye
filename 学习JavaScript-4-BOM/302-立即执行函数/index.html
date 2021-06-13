@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<script>
+    //立即执行函数：不需要声明，立马能够自己执行的函数
+    function f() {
+        console.log(1)
+    }
+
+    f();
+    // 2.写法 也可以写参数
+    (function (a) {
+       console.log(a)
+    })(1);
+
+    (function f1(a, b) {
+        console.log(a + b)
+    })(1, 2);
+
+    (function f1(a) {
+        console.log(a)
+    }(999))
+
+</script>
+</body>
+</html>

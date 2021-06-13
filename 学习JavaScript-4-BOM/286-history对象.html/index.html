@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        tr, td ,th{
+            border: 1px black solid;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+<a href="list.html">点击我去往列表页</a>
+<button>前进</button>
+
+
+<h4>7.history</h4>
+<p>window对象给我们提供一个history对象，与浏览器历史记录进行交互，该对象包含用户（在浏览器窗口中）访问过的URL。</p>
+<table>
+    <thead>
+    <tr>
+        <th>history对象</th>
+        <th>作用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>back()</td>
+        <td>前进功能</td>
+    </tr>
+    <tr>
+        <td>forward()</td>
+        <td>前进功能</td>
+    </tr>
+    <tr>
+        <td>go(参数)</td>
+        <td>前进后退功能 参数如果是1前进1个页面 如果是-1后退一个页面</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<script>
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', function () {
+        // history.forward();
+        history.go(1);
+    })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>212-循环精灵图</title>
+    <script>
+        //1首先精灵图图片排列有规律的
+        //2.核心思路；利用for循环修改精灵图的背景位置background-position
+        //3剩下的就是考验你的数学功底了
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type:none;
+        }
+
+        .box {
+            width: 250px;
+            margin: 100px auto;
+        }
+
+        .box li {
+            float: left;
+            width: 24px;
+            height: 24px;
+            background-color: pink;
+            margin: 15px;
+            background: url("sprite.png");
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+<script>
+    //1.获取元素 所有的小li
+    var lis = document.querySelectorAll('li');
+    var index = 0;
+    for (var i = 0; i < lis.length; i++) {
+        index = index+44;
+        /*代表背景图片位置的坐标开始展现的位置*/
+        lis[i].style.backgroundPosition = '0px -'+index+'px';
+    }
+</script>
+</html>

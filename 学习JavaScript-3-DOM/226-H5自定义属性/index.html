@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>226-H5自定义属性</title>
+
+</head>
+<body>
+<div data-getTime="20" data-list-name="andy"></div>
+<script>
+    var div = document.querySelector('div');
+    console.log(div.getAttribute('data-getTime'));
+    //添加
+    div.setAttribute('data-time',30);
+    console.log(div.getAttribute('data-time'));
+    //h5新的获取属性方法 获取自定义集合
+    console.log(div.dataset);
+    //H5 获取自定义集合中的某个属性值
+    console.log(div.dataset.time);
+    //多个-- 获取 需要用驼峰命名法
+    console.log(div.dataset.listName);
+    console.log(div.dataset['listName']);
+
+</script>
+</body>
+</html>

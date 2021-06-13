@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button>删除</button>
+<ul>
+    <li>熊大</li>
+    <li>熊二</li>
+    <li>光头强</li>
+</ul>
+</body>
+<script>
+    var btn = document.querySelector('button');
+    var ul = document.querySelector('ul');
+    // ul.removeChild(ul.children[0]);//删除子节点 第一个
+    btn.onclick = function () {
+        if (ul.children.length == 0) {
+
+            this.disabled = true;//禁用摁钮
+        } else {
+            // ul.removeChild(ul.children[0]);//子节点 第一个
+            ul.removeChild(ul.children[ul.children.length-1]);//子节点 第最后一个
+        }
+
+    }
+</script>
+</html>

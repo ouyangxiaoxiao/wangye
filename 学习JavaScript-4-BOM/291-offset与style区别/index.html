@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box" style="width: 300px"></div>
+<script>
+    //offset 和 style的区别
+    var box = document.querySelector('.box');
+    console.log(box.offsetWidth);//可以获取任意位置的style元素 数字型
+    console.log(box.style.width);//只能获取元素代码样式表 带px 不带padding
+</script>
+</body>
+</html>

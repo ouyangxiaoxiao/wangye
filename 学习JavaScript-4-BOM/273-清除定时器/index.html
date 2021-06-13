@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<img src="ad.jpg" alt="" class="ad">
+<button>点击关闭</button>
+<!--<script>-->
+<!--    var btn = document.querySelector('button');-->
+<!--    var ad = document.querySelector('.ad');-->
+
+<!--    function f() {-->
+<!--        ad.style.display = 'none';-->
+<!--        console.log('爆炸了');-->
+
+<!--    }-->
+
+<!--    setTimeout(f, 8000);-->
+
+<!--    btn.onclick = function () {-->
+<!--        clearTimeout(f);-->
+<!--        console.log('暂停了')-->
+<!--        //     ad.style.display = 'none';-->
+<!--        //     btn.style.display = 'none';-->
+<!--    };-->
+
+
+<!--</script>-->
+
+<script>
+    var btn = document.querySelector('button');
+    var timer = setTimeout(function () {
+        console.log('爆炸了');
+    },5000);
+
+    btn.onclick = function () {
+        clearTimeout(timer);
+        console.log('暂停了')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<script>
+    //常用键盘事件
+    //1.keyup 弹起来的时候触发
+    document.addEventListener('keyup',function () {
+        console.log('我弹起了---onkeyup');
+    });
+
+
+    //2.keydown 按键按下的时候触发
+    document.onkeydown = function () {
+        console.log('我按下了--keydown');
+    };
+    //3.onkeypress 按键按下的时候触发--这个不监测箭头和部分按键
+    document.onkeypress = function () {
+        console.log('我按下了--onkeypress');
+    }
+</script>
+</body>
+
+</html>

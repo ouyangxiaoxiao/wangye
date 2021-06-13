@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            border: 10px red solid;
+            padding: 10px;
+            overflow: auto;/*内容超出盒子 自动显示滚动条*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+    我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容
+</div>
+<script>
+    //scroll 系列
+    var div = document.querySelector('div');
+    console.log(div.scrollHeight);//盒子里面内容的高度
+    console.log(div.clientHeight);//盒子的高度
+    div.addEventListener('scroll',function () {
+        console.log(div.scrollTop);//盒子下沿到被卷头部的距离
+    });
+
+</script>
+</body>
+</html>

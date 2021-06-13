@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            position: relative; /*相对定位*/
+            padding-top: 44px;
+            overflow: hidden;
+            width: 600px;
+            border: 1px black solid;
+        }
+
+        div ol {
+            position: absolute; /*绝对定位*/
+            bottom: 5px; /*底*/
+            right: 5px;
+            margin: 0;
+        }
+
+        div ol li {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background-color: #5a2aff;
+            list-style: none;
+            border-radius: 2px;
+            transition: all .3s;
+        }
+
+        .focus ol li.current {
+            width: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="focus">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ol>
+        <li class="current"></li>
+        <li></li>
+        <li></li>
+    </ol>
+</div>
+</body>
+</html>

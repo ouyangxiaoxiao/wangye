@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>217-排他思想（算法）</title>
+    <script>
+
+    </script>
+</head>
+<body>
+<button>摁钮1</button>
+<button>摁钮2</button>
+<button>摁钮3</button>
+<button>摁钮4</button>
+<button>摁钮5</button>
+</body>
+<script>
+    /*文档 获得杨素标签名称*/
+    var buns = document.getElementsByTagName('button');
+    /*循环注册每个摁钮事件,注意是小于不是小于等于*/
+    for (var i = 0; i < buns.length; i++) {
+        /*定义每个摁钮的事件内容*/
+        buns[i].onclick = function () {
+
+            /*1.先去掉所有元素的样式*/
+            for ( var i = 0; i < buns.length; i++) {
+                buns[i].style.backgroundColor = '';
+            }
+            /*当前这个元素的样式 的背景颜色设置为粉色*/
+            this.style.backgroundColor = 'pink';
+        }
+
+    }
+//    2.首先排除其他人，然后才设置自己的样式 这当中排除其他人的思想我们称为排他思想
+</script>
+
+</html>

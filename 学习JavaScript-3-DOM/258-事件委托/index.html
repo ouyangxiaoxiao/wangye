@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<ul>
+    <li>知否知否，点我应有弹框在手！</li>
+    <li>知否知否，点我应有弹框在手！</li>
+    <li>知否知否，点我应有弹框在手！</li>
+    <li>知否知否，点我应有弹框在手！</li>
+    <li>知否知否，点我应有弹框在手！</li>
+</ul>
+
+
+<hr>
+<h4>6.事件委托(代理、委派)</h4>
+<h5>事件委托</h5>
+<p>事件委托也称为事件代理，在jQuery里面称为事件委派</p>
+<h5>事件委派原来</h5>
+<p class="red">不是每个子节点单独设置监听器，而是事件监听器设置在其父节点上，然后利用冒泡原理影响设置的每个子节点。</p>
+<P>以上案例：给ul注册点击事件，然后利用事件对象的target来找到当前的li，因为li，事件会冒泡到ul上，ul有注册事件，就会触发事件监听器</P>
+<script>
+    // 事件委托的核心原理：给父节点添加侦听器， 利用事件冒泡影响每一个子节点
+    var ul = document.querySelector('ul');
+    var li = document.querySelectorAll('li');
+    ul.onclick = function (e) {
+        alert('点击了ul');
+        console.log(e.target);
+        for (i = 0; i < li.length; i++) {
+            li[i].style.backgroundColor = '';
+        }
+        e.target.style.backgroundColor = 'pink';
+    };
+
+    //利用孩子们的特性写法
+    ul.onclick = function (e) {
+        alert('点击了ul');
+        console.log(e.target);
+        for (i = 0; i < ul.children.length; i++) {
+            ul.children[i].style.backgroundColor = '';
+        }
+        e.target.style.backgroundColor = 'pink';
+    }
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<p></p>
+<div class="inner"></div>
+<br>
+<hr>
+<div class="create"></div>
+<button>摁钮</button>
+</body>
+<script>
+    var btn = document.querySelector('button');
+
+    btn.onclick = function () {
+        document.write('<p>123<p>');
+    };
+    /**************第二种********************/
+    var inner = document.querySelector('.inner');
+    for (i = 0; i < 100; i++) {
+        inner.innerHTML += '<a href="#"> 百度</a>';
+    }
+    /*----------第三种----------*/
+
+    var create = document.querySelector('.create');
+    for (i = 0; i < 100; i++) {
+        create.innerHTML += '<a href="#">练习</a>'
+    }
+
+
+
+
+
+    /*最快的*/
+    var d1 = new Date();
+    var inner = document.querySelector('.inner');
+    var arr = [];
+    for (i = 0; i < 100; i++) {
+        arr.push('<a href="#"> 哈哈哈哈</a>');
+    }
+    console.log(arr);
+    create.innerHTML = arr.join('');//数组转回字符串
+    var d2 = new Date();
+    console.log(d2 - d1);
+</script>
+</html>

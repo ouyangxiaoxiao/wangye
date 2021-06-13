@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>123</div>
+    <ul>
+        <li>abc</li>
+        <li>abc</li>
+        <li>abc</li>
+    </ul>
+
+<script>
+    var div = document.querySelector('div');
+    div.addEventListener('click',function (e) {
+        console.log(e.target);//返回的是触发事件的对象
+        console.log(this);//返回的是触发绑定事件的对象
+
+    });
+    var ul = document.querySelector('ul');
+    ul.addEventListener('click',function (e) {
+        console.log(this);//打印是哪个调用这个函数的元素
+        console.log(e.target);//打印点击的那个元素
+    });
+
+
+    /*以下是兼容ie 6,7,8 的写法*/
+    div.onclick = function (e) {
+        e  = e||window.event;
+        var target = e.target || e.srcElement;//失效了的
+        console.log(target)
+    }
+    //了解 跟this 有个非常相似的 currentTarget ,ie678不认识
+</script>
+</body>
+</html>

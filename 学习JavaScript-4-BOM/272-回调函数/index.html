@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<img src="ad.jpg" alt="" class="ad">
+
+
+<script>
+    //1.获取元素
+    var ad = document.querySelector('.ad');
+
+    //2.生成函数
+    function bb() {
+        console.log('我要关闭了');
+        ad.style.display = 'none'
+    }
+
+    //3.调用函数
+    setTimeout(bb, 5000);
+</script>
+</body>
+</html>

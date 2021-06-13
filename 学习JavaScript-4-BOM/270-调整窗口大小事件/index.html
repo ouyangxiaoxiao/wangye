@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<!--<script>-->
+<!--    window.onload = function () {-->
+<!--        var div = document.querySelector('div');-->
+<!--        window.addEventListener('resize', function () {-->
+<!--            console.log('窗口发生变化了');-->
+<!--            console.log(window.innerWidth);-->
+<!--            if (window.innerWidth < 800) {-->
+<!--                div.style.display = 'none';-->
+<!--            } else {-->
+<!--                div.style.display = 'block';-->
+<!--            }-->
+
+<!--        })-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+    window.addEventListener('load', function () {
+        var div = document.querySelector('div');
+        window.addEventListener('resize', function () {
+            console.log('窗口发生变化了');
+            console.log(window.innerWidth);
+            if (window.innerWidth < 800) {
+                div.style.display = 'none';
+            } else {
+                div.style.display = 'block';
+            }
+
+        })
+    })
+</script>
+<div>
+    测试窗口
+</div>
+
+<!--<script>-->
+<!--    // window.onresize = function () {-->
+<!--    //     console.log(window.innerWidth);-->
+<!--    //     console.log('窗口变化了');-->
+<!--    // };-->
+<!--    var div = document.querySelector('div');-->
+<!--    window.addEventListener('resize', function () {-->
+<!--        console.log('窗口发生变化了');-->
+<!--        console.log(window.innerWidth);-->
+<!--        if (window.innerWidth < 800) {-->
+<!--            div.style.display = 'none';-->
+<!--        }else {-->
+<!--            div.style.display ='block';-->
+<!--        }-->
+
+<!--    })-->
+<!--</script>-->
+</body>
+</html>

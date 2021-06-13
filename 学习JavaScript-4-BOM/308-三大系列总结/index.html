@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td,th{
+            border: 1px black solid;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        table{
+            /*border-radius: revert;*/
+            border-collapse: collapse;
+            /*text-align: center;*/
+        }
+        code{
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>三大系列</th>
+        <th>作用</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>element.offsetWidth</td>
+        <td>返回自身包括padding,边框,内容区的宽度，返回数据不带单位</td>
+    </tr>
+    <tr>
+        <td>element.clientWidth</td>
+        <td>返回自身包括padding,内容区的宽度，不含边框，返回数值不带单位</td>
+    </tr>
+    <tr>
+        <td>element.scrollWidth</td>
+        <td>返回自身实际的宽度，不含边框，返回数值不带单位</td>
+    </tr>
+
+
+    </tbody>
+</table>
+
+ <h4>三大系列总结</h4>
+<p>他们的主要用法:</p>
+<ol>
+    <li>offset系列经常用于获得元素位置 <code>offsetLeft offsetTop</code></li>
+    <li>client系列经常用于获取元素大小 <code>clientWidth clientHeight</code></li>
+    <li>scroll经常用于获取滚动距离 <code> scrollTop scrollLeft</code></li>
+    <li><code>注意页面滚动的距离通过</code> window.pageXOffset 获得</li>
+</ol>
+</body>
+</html>

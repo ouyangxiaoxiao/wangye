@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html {
+            background-color: #447e9b;
+        }
+
+        tr, td {
+            border: 1px black solid;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        thead {
+            border: 1px black solid;
+            margin-left: 20px;
+
+
+        }
+
+        table {
+            border: 1px black solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>鼠标经过事件</td>
+        <td>触发条件</td>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr>
+        <td>onclick</td>
+        <td>鼠标点击左键触发</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    var datas = [{event: 'onmouseover', conditions: '鼠标经过触发'},
+        {event: 'onmouseout', conditions: '鼠标离开触发'},
+        {event: 'onfocus', conditions: '获得鼠标焦点触发'},
+        {event: 'onblur', conditions: '失去鼠标焦点触发'},
+        {event: 'onmousemove', conditions: '鼠标移动触发'},
+        {event: 'onmouseup', conditions: '鼠标弹起触发'},
+        {event: 'onmousedown', conditions: '鼠标按下触发'},
+    ];
+    var tbody = document.querySelector('tbody');
+    for (i = 0; i < datas.length; i++) {
+        var tr = document.createElement('tr');
+        tbody.appendChild(tr);
+        for(k in datas[i]){
+            var td = document.createElement('td');
+            td.innerHTML = datas[i][k];
+            tr.appendChild(td)
+        }
+    }
+
+</script>
+</body>
+</html>

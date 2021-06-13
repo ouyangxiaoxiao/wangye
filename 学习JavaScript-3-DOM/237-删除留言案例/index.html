@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            border: 1px black solid;
+
+        }
+
+        textarea {
+            width: 400px;
+            height: 50px;
+            border: 1px black solid;
+            margin-top: 20px;
+        }
+
+        ul li {
+            color: purple;
+            background-color: pink;
+            margin-top: 5px;
+
+        }
+
+        li a {
+            float: right;
+        }
+
+    </style>
+
+</head>
+<body>
+<div>
+    <ul>
+        <!--        <li > <a href="javaScript: ">删除</a>  哈哈</li>-->
+        <li>哈哈 <a href="javaScript:;">删除</a></li>
+
+    </ul>
+</div>
+<textarea></textarea>
+<br>
+<button>发布留言</button>
+</body>
+
+<script>
+    var text = document.querySelector('textarea');
+    var btn = document.querySelector('button');
+    var ul = document.querySelector('ul');
+    btn.onclick = function () {
+        if (text.value == '') {
+            alert('您没有输入内容！')
+        } else {
+            //创建li元素
+            var li = document.createElement('li');
+
+            // ul.appendChild(li);//下面追加
+            //把输入框的内容赋值给li
+
+            li.innerHTML = text.value + "<a href='javascript:;'>删除</a>"; //阻止跳转的新写法
+            //在ul里面插入li，位置是第一个孩子的位置
+            ul.insertBefore(li, ul.children[0]);//前面插入，谁？li，插入位置，ul的孩子 第一个位置
+            //删除元素 删除当前这个li
+
+            var as = document.querySelectorAll('a');
+            for (var i = 0; i < as.length; i++) {
+                as[i].onclick = function () {
+                    //删除  ul下面的 这个a 的父亲 也就是删除当前li
+                    ul.removeChild(this.parentNode)
+                }
+            }
+
+
+        }
+
+
+    }
+</script>
+</html>

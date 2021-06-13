@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button>点击探访神秘网站</button>
+<div></div>
+
+
+<script>
+    var btn = document.querySelector('button');
+    var div = document.querySelector('div');
+    btn.addEventListener('click', function () {
+        location.href = 'http://www.baidu.com';
+    });
+    // //简单计时器
+    // setTimeout(function () {
+    //     location.href = 'http://www.baidu.com'
+    // }, 5000);
+    //倒计时效果
+    var timer = 4;
+    setInterval(function () {
+        if (timer == 0) {
+            // location.href = 'http://www.baidu.com';
+        }else {
+            div.innerHTML = '您将在' + timer + '秒后跳转到百度';
+            timer--;
+        }
+
+    }, 1000)
+</script>
+</body>
+</html>

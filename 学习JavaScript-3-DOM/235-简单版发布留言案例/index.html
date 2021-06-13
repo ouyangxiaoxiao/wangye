@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        div {
+            width: 400px;
+            height: 300px;
+            border: 1px black solid;
+            /*margin: 20px;*/
+            text-align: center;
+        }
+
+        textarea {
+            width: 400px;
+            height: 50px;
+            /*text-align: center;*/
+            /*padding: 20px;*/
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+
+    </ul>
+</div>
+
+
+<textarea data-disable-with="400px"> 留言板</textarea>
+<br>
+<button> 发表留言</button>
+
+<script>
+    var btn = document.querySelector('button');
+    var text = document.querySelector('textarea');
+    var ul = document.querySelector('ul');
+    // var div = document.querySelector('div');
+    btn.onclick = function () {
+        var li = document.createElement('li');//创建li
+        // ul.appendChild(li);//后面追加
+        ul.insertBefore(li, ul.children[0]);//前面插入
+        li.innerHTML = text.value;
+    }
+</script>
+</body>
+</html>

@@ -89,11 +89,15 @@
         html{
             background-image: url("//img95.699pic.com/photo/40100/4855.gif_wh860.gif");
         }
+        img {
+            position: absolute; /*绝对定位*/
+
+        }
     </style>
 </head>
 
 <body>
-
+<img src="angel.gif" alt="">
 <nav>
 <a href="https://www.baidu.com/" target="_blank">百度</a>
 <a href="https://www.chazidian.com/r_zi_zd9ad8/bishun/" target="_blank">查文字</a>
@@ -168,6 +172,19 @@
 
 
     hello.innerHTML = getDate();
+
+    var pic = document.querySelector('img');
+    // document.onmousemove = function () {
+    //     console.log('移动了')
+    // };
+    document.addEventListener('mousemove', function (e) {
+        //1.mousemove 只要我们鼠标移动1px 就会触发这个事件
+        console.log('移动了');
+        var x = e.pageX;
+        var y = e.pageY;
+        pic.style.left = x +'px';
+        pic.style.top = y+'px';
+    })
 </script>
 </body>
 

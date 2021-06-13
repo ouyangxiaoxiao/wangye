@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button>点击</button>
+<script>
+    var btn = document.querySelector('button');
+    btn.addEventListener('click',function () {
+        // location.assign('http://www.baidu.com')//记录浏览历史，后退功能
+        // location.replace('http://www.baidu.com');//不记录浏览历史，没有后退功能
+        // location.reload();//刷新的意思
+        location.reload(true);//强制刷新的意思 类似ctrl+f5
+    })
+</script>
+</body>
+</html>

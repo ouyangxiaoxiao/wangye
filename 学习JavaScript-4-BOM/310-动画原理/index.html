@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        code {
+            color: red;
+            font-size: 14px;
+        }
+
+        div {
+            position: absolute; /*/定位/*/
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<h3>4.动画函数封装</h3>
+<h4>4.1动画实现原理</h4>
+<p><code><strong>动画原理:</strong></code> 通过定时器setInterval()不断移动盒子位置。</p>
+<p>实现步骤:</p>
+<ol>
+    <li>获得盒子当前位置</li>
+    <li>让盒子的当前位置加上1个移动距离</li>
+    <li>利用定时器不断重复这个动作</li>
+    <li>加一个结束定时器的条件</li>
+    <li>注意此元素需要添加定位，才能使用element.style.left</li>
+</ol>
+
+<div></div>
+
+<script>
+    var div = document.querySelector('div');
+    var timer = setInterval(function () {
+        if (div.offsetLeft >= 400) {
+            //停止定时器
+            clearInterval(timer)
+        }
+        div.style.left = div.offsetLeft + 1 + 'px';
+    }, 30);
+
+
+</script>
+</body>
+</html>

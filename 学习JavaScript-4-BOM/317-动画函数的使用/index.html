@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        code {
+            color: red;
+            font-size: 14px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+        }
+
+        span {
+            /*top: 30px;*/
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-color: purple;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<button class="btn500">点击夏雨荷才走到500</button>
+<button class="btn800">点击夏雨荷才走到800</button>
+<h3>4.动画函数的封装</h3>
+<h4>4.4缓动效果原理</h4>
+<p>缓动动画就是让元素运动速度有所变化，最常见的就是让速度慢慢停下来，<code></code><code></code></p>
+<p>思路:</p>
+<ol>
+    <li>让盒子每次移动的距离慢慢变小，速度就会慢慢落下来</li>
+    <li>核心算法:(目标值-现在的值)/10 作为每次移动的距离步长</li>
+</ol>
+<div></div>
+<span>夏雨荷</span>
+<script>
+
+
+    var div = document.querySelector('div');
+    var span = document.querySelector('span');
+    var btn500 = document.querySelector('.btn500');
+    var btn800 = document.querySelector('.btn800');
+    //调用函数
+    animate(div, 500);
+    btn500.addEventListener('click', function () {
+        animate(span, 500);
+    });
+    btn800.addEventListener('click', function () {
+        animate(span, 800, function () {
+
+        })
+    });
+
+
+    //匀速动画 就是 盒子是当前的位置+固定的值10
+    //欢动画就是 盒子当前的位置+变化的值(目标值-现在的位置)/10 也就是步长
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bg {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<button>开关灯</button>
+<div class="one tow"></div>
+<script>
+    //classList返回元素的类名
+    var div = document.querySelector('div');
+    //1.添加类名 是在后面追加类名 不会覆盖以前的类名 主要前面不要加点
+    div.classList.add('three');
+    //2.删除类名
+    div.classList.remove('one');
+    //3.切换类名
+    var btn = document.querySelector('button');
+    btn.addEventListener('click',function () {
+        //自己切换类名，如果切换到类名 就变成已经设置类名的样式
+        document.body.classList.toggle('bg');
+    });
+    console.log(div.classList);
+</script>
+</body>
+</html>

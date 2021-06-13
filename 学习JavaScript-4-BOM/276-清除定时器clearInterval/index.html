@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button class="begin">开启定时器</button>
+<button class="stop">关闭定时器</button>
+
+<script>
+    var begin = document.querySelector('.begin');
+    var stop = document.querySelector('.stop');
+    var timer = null;
+    begin.addEventListener('click', function () {
+        timer = setInterval(function () {
+            console.log('ni  hao ma ')
+        }, 1000);
+    });
+    stop.addEventListener('click', function () {
+        clearTimeout(timer);
+        console.log('暂停了');
+    })
+
+
+</script>
+</body>
+</html>
