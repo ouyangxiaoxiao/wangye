@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ts{
+            font-size: 18px;
+            background-color: #bce8f1;
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<h4>2.移动端常见特效</h4>
+<h5>2.2 click延时解决方案</h5>
+<p>移动端click事件会有300ms的延时，原因是移动端屏幕双击会缩放（double tap to zoom） 页面。</p>
+<p>解决方案:</p>
+<ol>
+    <li>禁用缩放。浏览器禁用默认的双击缩放行为且去掉300ms的点击延迟</li>
+
+    <li class="ts">
+        <xmp><meta name='viewport' content="user-scalable = no"></xmp>
+    </li>
+</ol>
+</body>
+</html>

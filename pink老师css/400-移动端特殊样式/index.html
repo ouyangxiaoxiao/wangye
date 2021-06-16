@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*第一个div-传统盒子模型*/
+        div:nth-child(1){
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 10px;
+            border: 10px solid black;
+        }
+        div:nth-child(2){
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background-color: purple;
+            box-sizing: border-box;
+        }
+        a{
+            -webkit-tap-highlight-color: transparent;/*去除高亮*/
+        }
+        input{
+            -webkit-appearance: none;/*去除按钮默认样式*/
+            -webkit-touch-callout: none;/*去除长时间点击摁钮不放 弹出右键*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<a href="http://www.baidu.com"> 百度</a>
+<input type="button" value="按钮">
+</body>
+</html>
