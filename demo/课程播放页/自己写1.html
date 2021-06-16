@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer"/>
+    <title>Document</title>
+    <!--    <script src="备份.js"></script>-->
+
+
+</head>
+
+<style>
+    body {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 750px;
+        min-width: 240px;
+    }
+
+    .top {
+        height: 45px;
+        background-color: pink;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .top-r {
+        float: right;
+        line-height: 10px;
+
+
+    }
+
+    .video {
+        width: 100%;
+        border: 2px pink solid;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: pink;
+    }
+
+    video {
+        width: 100%;
+        /*border-top-right-radius: 15px;*/
+        border-radius: 15px;
+        border: 5px pink solid;
+        box-sizing: border-box;
+    }
+
+    .list ol {
+        /*list-style: none;*/
+        margin: 0;
+        border: 1px black solid;
+        border-radius: 15px;
+        height: 500px;
+        background-color: pink;
+        padding: 15px;
+    }
+
+    .list ol li {
+        margin: 15px;
+        list-style: none;
+        padding: 5px;
+        /*border-bottom: 2px black solid;*/
+        border: 1px black solid;
+        border-radius: 0 20px 0 20px;
+        /*background-color: white;*/
+
+    }
+</style>
+<body>
+
+
+<div class="top">
+    <div class="top-l">左上角</div>
+    <div class="top-r">右上角</div>
+
+</div>
+<div class="video">
+    <video src="22" controls id="video" autoplay></video>
+</div>
+<div class="list">
+    <ol>
+        <li value="https://v.taozhi.online/5d4325c04a5f4a85b9258ec533574824/eb8a165587874d69972698b7bfb03bc9-d47a7261e077dc12d1f56d2e6809d727-ld.mp4">
+            1-【横版】粗缯大布裹生涯，腹有诗书气自华。—— 苏轼《和董传留别》
+        </li>
+        <li value="https://v.taozhi.online/5d4325c04a5f4a85b9258ec533574824/eb8a165587874d69972698b7bfb03bc9-d47a7261e077dc12d1f56d2e6809d727-ld.mp4">
+            2-【横版】粗缯大布裹生涯，腹有诗书气自华。—— 苏轼《和董传留别》
+        </li>
+        <li value="https://v.taozhi.online/5d4325c04a5f4a85b9258ec533574824/eb8a165587874d69972698b7bfb03bc9-d47a7261e077dc12d1f56d2e6809d727-ld.mp4">
+            3-【横版】粗缯大布裹生涯，腹有诗书气自华。—— 苏轼《和董传留别》
+        </li>
+        <li value="https://v.taozhi.online/5d4325c04a5f4a85b9258ec533574824/eb8a165587874d69972698b7bfb03bc9-d47a7261e077dc12d1f56d2e6809d727-ld.mp4">
+            4-【横版】粗缯大布裹生涯，腹有诗书气自华。—— 苏轼《和董传留别》
+        </li>
+        <li value="https://v.taozhi.online/5d4325c04a5f4a85b9258ec533574824/eb8a165587874d69972698b7bfb03bc9-d47a7261e077dc12d1f56d2e6809d727-ld.mp4">
+            5-【横版】粗缯大布裹生涯，腹有诗书气自华。—— 苏轼《和董传留别》
+        </li>
+    </ol>
+</div>
+<script>
+    window.addEventListener('load', function () {
+        var video = document.getElementById('video');
+        var lis = document.getElementsByTagName('li');
+        var url = [];
+        for (var i = 0; i < lis.length; i++) {
+
+            url[i] = lis[i].getAttribute("value");
+
+        }
+        console.log('5566');
+        console.log(video.src);
+        video.src = url[0];
+        for (i = 0; i < lis.length; i++) {
+            lis[i].onclick = function () {
+                console.log('点击了');
+                video.src = this.getAttribute("value");
+                console.log(this.getAttribute("value"));
+
+                /*1.先去掉所有元素的样式*/
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].style.backgroundColor = '';
+                }
+                /*当前这个元素的样式 的背景颜色设置为粉色*/
+                this.style.backgroundColor = 'white';
+                this.style.backgroundColor = "white";
+
+
+            }
+        }
+    })
+
+
+</script>
+
+<!--<div id="cans">-->
+<!--    <video controls autoplay id="video" src="" poster="" height="500px" width="500px">-->
+
+<!--    </video>-->
+<!--    <aside id="playList">-->
+<!--        <header>-->
+<!--            <h4>播放列表</h4>-->
+<!--        </header>-->
+<!--        <ul>-->
+<!--            <li value="22.mp4" title="进球瞬间">进球瞬间-->
+<!--            </li>-->
+<!--            <li value="22.mp4"-->
+<!--                title="胜利庆祝">胜利庆祝-->
+<!--            </li>-->
+<!--            <li value="22.mp4"-->
+<!--                title="进球瞬间">进球瞬间-->
+<!--            </li>-->
+<!--            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"-->
+<!--                title="胜利庆祝">胜利庆祝-->
+<!--            </li>-->
+<!--            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"-->
+<!--                title="进球瞬间">进球瞬间-->
+<!--            </li>-->
+<!--            <li value="video/VID_20170323_215451.mp4" title="胜利庆祝">胜利庆祝</li>-->
+<!--        </ul>-->
+
+<!--        &lt;!&ndash;<button title="展开播放列表" id="playList-show"> > </button>&ndash;&gt;-->
+<!--        <button title="收起播放列表" id="playList-hidden"> <</button>-->
+<!--    </aside>-->
+<!--    <button title="展开播放列表" id="playList-show1"> ></button>-->
+
+<!--</div>-->
+</body>
+</html>
