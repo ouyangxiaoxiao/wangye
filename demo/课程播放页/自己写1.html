@@ -21,15 +21,18 @@
     }
 
     .top {
+        /*display: none;*/
         height: 45px;
         background-color: pink;
         display: block;
         /*border-radius: 15px;*/
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        display: none;
     }
 
     .top-r {
+        display: none;
         float: right;
         line-height: 10px;
 
@@ -37,11 +40,14 @@
     }
 
     .video {
+        /*display: none;*/
         width: 100%;
-        border: 2px pink solid;
+        /*border: 2px pink solid;*/
         border-radius: 15px;
         box-sizing: border-box;
-        /*background-color: pink;*/
+        overflow: hidden;
+        background-color: pink;
+        border: 1px black solid;
     }
 
     video {
@@ -51,8 +57,10 @@
         border: 5px pink solid;
         box-sizing: border-box;
         background-color: pink;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        /*border-bottom-left-radius: 15px;*/
+        /*border-bottom-right-radius: 15px;*/
+        border-radius: 15px;
+        padding: 5px;
     }
 
     .list ol {
@@ -163,37 +171,6 @@
 
 </script>
 
-<!--<div id="cans">-->
-<!--    <video controls autoplay id="video" src="" poster="" height="500px" width="500px">-->
 
-<!--    </video>-->
-<!--    <aside id="playList">-->
-<!--        <header>-->
-<!--            <h4>播放列表</h4>-->
-<!--        </header>-->
-<!--        <ul>-->
-<!--            <li value="22.mp4" title="进球瞬间">进球瞬间-->
-<!--            </li>-->
-<!--            <li value="22.mp4"-->
-<!--                title="胜利庆祝">胜利庆祝-->
-<!--            </li>-->
-<!--            <li value="22.mp4"-->
-<!--                title="进球瞬间">进球瞬间-->
-<!--            </li>-->
-<!--            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"-->
-<!--                title="胜利庆祝">胜利庆祝-->
-<!--            </li>-->
-<!--            <li value="http://v.taozhi.online/967b4d7ece8842d1818d9509e273f986/5192f604b9b04edb89651daf53fefbe5-ef157f4c7cda87fa8fae2d5efae76876-ld.mp4"-->
-<!--                title="进球瞬间">进球瞬间-->
-<!--            </li>-->
-<!--            <li value="video/VID_20170323_215451.mp4" title="胜利庆祝">胜利庆祝</li>-->
-<!--        </ul>-->
-
-<!--        &lt;!&ndash;<button title="展开播放列表" id="playList-show"> > </button>&ndash;&gt;-->
-<!--        <button title="收起播放列表" id="playList-hidden"> <</button>-->
-<!--    </aside>-->
-<!--    <button title="展开播放列表" id="playList-show1"> ></button>-->
-
-<!--</div>-->
 </body>
 </html>
