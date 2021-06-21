@@ -23,13 +23,17 @@ window.addEventListener('load', function () {
 
             /*1.先去掉所有元素的样式*/
             for (var i = 0; i < lis.length; i++) {
-                lis[i].style.backgroundColor = '';
+                lis[i].style.backgroundColor = "";
             }
+
             /*当前这个元素的样式 的背景颜色设置为粉色*/
             // this.style.backgroundImage= "url('https://csdnimg.cn/release/blogv2/dist/pc/img/translate.png')";
             // this.style.backgroundColor = "pink";
-            this.style.backgroundColor = "#70a401";
-            this.style.color = "white";
+            // this.style.color = "white";
+            this.style.backgroundColor = "#f5f5f5";
+
+
+
 
 
         }
