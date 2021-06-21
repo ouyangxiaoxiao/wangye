@@ -16,7 +16,7 @@ body{ background:#ffffff; max-width: 600px; margin: auto; position: relative;}
 	.i_top_title{ width:25%;}
 	}
 .i_top_search{ width:44px; height:auto; padding-top:13px; padding-right:20px; float:right;}
-.i_top_member{ width:44x; height:auto; padding-top:13px; padding-right:20px; float:right;}
+.i_top_member{ width:44px; height:auto; padding-top:13px; padding-right:20px; float:right;}
 .i_top_more{ width:34px; height:auto; padding-top:13px; padding-right:10px; float:right;}
 .i_top a{ display:block;}
 .i_top_xl{ position:fixed; top:0px; height:100%; overflow-y:auto; right:-280px; background:#ffffff; width:280px; text-align:left; z-index:1002; padding:15px;}
