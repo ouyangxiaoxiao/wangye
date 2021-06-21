@@ -80,7 +80,7 @@ video {
 }
 
 .btn-1{
-    width: 25%;
+    width: 120px;
     height: 35px;
     background-color: #e4e4e4;
     float: left;
@@ -96,7 +96,7 @@ video {
 
 
 .btn-2{
-    width: 25%;
+    width: 120px;
     height: 35px;
     background-color: #e4e4e4;
     float: right;
