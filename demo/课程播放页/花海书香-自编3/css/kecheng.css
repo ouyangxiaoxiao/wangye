@@ -253,7 +253,6 @@ video {
 
 }
 
-/*鼠标经过li 文字颜色会变*/
 .kcxq ul li:hover {
     color: #70a401;
 }
