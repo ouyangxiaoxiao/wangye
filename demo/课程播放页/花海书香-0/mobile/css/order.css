@@ -1,0 +1,33 @@
+﻿.order{ margin:50px 0px 15px 0px; font-size:14px;}
+.order_list{ background:#ffffff; border:1px solid #eeeeee; margin-top:15px; border-bottom:none;}
+.order_list a:link{ display:block; color: #333333; text-decoration:none;}
+.order_list a:visited{ display:block; color: #333333; text-decoration:none;}
+.order_list a:active{ display:block; color: #70a400; text-decoration:none;}
+.order_list a:hover{ display:block; color: #70a400; text-decoration:none;}
+.order_list .title{ font-weight:bold; border-bottom:1px solid #eeeeee; padding:10px; color:#333333;}
+.order_list .title02{ font-weight:bold; border-bottom:1px solid #eeeeee; padding:10px; color:#ff9900;}
+.order_list .list{ padding:10px; border-bottom:1px solid #eeeeee;}
+.order_list .paylist{ padding:10px; border-bottom:1px solid #eeeeee;}
+.order_list .span01{ color:#70a400; font-weight:bold; font-size:16px;}
+.order_list .span05{ color:#ff9900; font-weight:bold; font-size:16px;}
+.order_list .span02{ color:#999999; text-decoration: line-through;}
+.order_list .current{ background: url(/mobile/images/arr_xz.png) no-repeat right 11px #fbffe9; background-size: 30px 20px;}
+.order_list .span03{ color:#999999;}
+.order_list .span04{ display:block; font-size:12px; padding:10px 0px;}
+.order_list .title span{ color:#999999; font-weight:100; display:block;}
+.order .button_btn{ width:100%; margin-top:15px;}
+.order .button_btn button{ width:100%; font-size:16px;}
+.order .button_btn button a:link{ display:block; color: #ffffff; text-decoration:none;}
+.order .button_btn button a:visited{ display:block; color: #ffffff; text-decoration:none;}
+.order .button_btn button a:active{ display:block; color: #ffffff; text-decoration:none;}
+.order .button_btn buttont a:hover{ display:block; color: #ffffff; text-decoration:none;}
+
+.order_success{ margin-top:15px; padding:50px 15px; text-align:center; font-size: 20px; background: #fbffe9; color: #70a401; border: 1px solid #dfeba6;}
+.order_failure{ margin-top:15px; padding:50px 15px; text-align:center; font-size: 20px; background: #fff7eb; color: #ff9900; border: 1px solid #f0dab9;}
+
+.order_list_coupon{ height:auto; overflow:hidden; -moz-border-radius:10px 10px 0px 0px; -webkit-border-radius:10px 10px 0px 0px;; background: url(/mobile/images/coupon_bj.jpg) repeat-x bottom #ff9900; background-size: 13px 6px; color:#ffffff; margin-bottom:10px;}
+.order_list_coupon .coupon_number{ width:50%; float:left; font-size:12px; overflow:hidden; text-align:left; height:34px; line-height:34px; white-space:nowrap; padding-left:10px;}
+.order_list_coupon .coupon_money{ font-size:36px; text-align:center;}
+.order_list_coupon .coupon_time{ width:50%; float:right; font-size:12px; text-align:right; overflow:hidden;  height:34px; line-height:34px; padding-right:10px;}
+.order_list_coupon .coupon_explain{ text-align:center; margin-bottom:20px;}
+.order_list .coupon_current{background: url(/mobile/images/coupon_bj02.jpg) repeat-x bottom #70a400; background-size: 13px 6px;}

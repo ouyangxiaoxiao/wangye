@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+
+</head>
+<body>
+<h3>3.window.localStorage</h3>
+<ol>
+    <li>声明周期永久生效，除非手动删除否则关闭页面也会存在</li>
+    <li>可以多窗口（页面）共享（同一个浏览器可以共享）</li>
+    <li>以键值对的形式存储使用</li>
+</ol>
+
+
+<input type="text">
+<button class="set">存储数据</button>
+<button class="get">获取数据</button>
+<button class="remove">删除数据</button>
+<button class="del">清空所有数据</button>
+
+<script>
+    var input = document.querySelector('input');
+    var set = document.querySelector('.set');
+    var get = document.querySelector('.get');
+    var remove = document.querySelector('.remove');
+    var del = document.querySelector('.del');
+
+
+    /*点击存储按钮之后会存储一个名字为uname 的数据，而客户输入的值就赋值给这个名字*/
+    set.addEventListener('click',function () {
+        var val = input.value;
+        localStorage.setItem('username',val);
+        localStorage.setItem('password',val);
+    });
+
+    /*点击获取uname 的值*/
+    get.addEventListener('click',function () {
+
+        localStorage.getItem('username');
+        console.log(localStorage.getItem('username'));
+    });
+    /*点击删除一个数据*/
+    remove.addEventListener('click',function () {
+        localStorage.removeItem('username')
+    });
+    /*点击清除所有数据*/
+    del.addEventListener('click',function () {
+        localStorage.clear();
+    })
+
+</script>
+</body>
+</html>

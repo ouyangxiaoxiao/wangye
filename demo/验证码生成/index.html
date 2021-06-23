@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <style>
+        .validation {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+
+        .validation p {
+            font-size: 20px;
+            background-color: #e4e4e4;
+            width: 80px;
+            text-align: center;
+            padding: 4px;
+            margin-bottom: 0;
+        }
+
+        .validation span {
+            /*height: 40px;*/
+            color: #e4e4e4;
+            padding-top: 0;
+            margin-top: 0;
+            padding-bottom: 15px;
+            position: absolute;
+        }
+
+        .validation img {
+            display: none;
+            position: absolute;
+            margin-top: -8px;
+        }
+
+        .validation input {
+            width: 80px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="validation">
+    <img src="未标题-1.png" alt="">
+    <p id="nub">RD4528</p>
+    <span>看不清点击刷新</span>
+    <br>
+    验证码<input type="text" id="input">
+
+    <br>
+    <button>确认</button>
+</div>
+</body>
+<script>
+    var nub = document.querySelector('#nub');
+    var ipt = document.querySelector('#input');
+    var btn = document.querySelector('button');
+    var span = document.querySelector('span');
+
+    var dist = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'k', 'o', 'p', 'q', 'r', 's', 't'];
+    var str = '';
+    for (i = 0; i < 6; i++) {
+
+        rdo = parseInt(Math.random() * (24 - 1 + 1) + 1);
+        // console.log(dist[rdo]);
+        str = str + dist[rdo];
+    }
+    nub.innerHTML = str;
+    console.log(str);
+    btn.addEventListener('click', function () {
+        console.log(str);
+        console.log(ipt.value);
+        if (ipt.value === str) {
+            location.href="http://www.mahaixiang.cn/";
+        } else {
+            alert('您输入的不正确');
+
+
+
+        }
+
+    });
+    span.addEventListener('click', function () {
+        str = '';
+
+        for (i = 0; i < 6; i++) {
+
+            rdo = parseInt(Math.random() * (24 - 1 + 1) + 1);
+            // console.log(dist[rdo]);
+            str = str + dist[rdo];
+        }
+        nub.innerHTML = str;
+        console.log(str)
+    })
+
+
+</script>
+</html>
