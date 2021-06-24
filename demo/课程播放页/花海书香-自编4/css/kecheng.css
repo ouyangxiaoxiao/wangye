@@ -309,7 +309,7 @@ margin-bottom: 45px;
     list-style: none;
     padding: 0;
     margin: 0;
-    line-height: 45px;
+    line-height: 35px;
     position: relative;
 
 
@@ -345,7 +345,6 @@ margin-bottom: 45px;
 }
 
 #di li:nth-child(4) {
-
     width: 25%;
     float: left;
     left: 0;
