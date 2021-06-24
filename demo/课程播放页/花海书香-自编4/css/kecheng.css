@@ -233,7 +233,7 @@ video {
 }
 
 .kcxq {
-
+margin-bottom: 45px;
 }
 
 .kcxq ul {
@@ -294,17 +294,30 @@ video {
     font-size: 10px;
 }
 
+
+#di{
+    width: 100%;
+    /*height: 45px;*/
+    bottom: 0;
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    background-color: #fff;
+}
+
 #di ul {
     list-style: none;
     padding: 0;
     margin: 0;
     line-height: 45px;
+    position: relative;
+
 
 }
 
 #di li {
     width: 100%;
-    height: 45px;
+    /*height: 55px;*/
     padding-bottom: 0;
 }
 
@@ -312,6 +325,7 @@ video {
     width: 25%;
     float: left;
     left: 0;
+
 }
 
 #di li:nth-child(2) {
@@ -319,6 +333,7 @@ video {
     float: left;
     left: 0;
     text-align: center;
+
 }
 
 #di li:nth-child(3) {
@@ -326,11 +341,14 @@ video {
     float: left;
     left: 0;
     text-align: center;
+
 }
 
 #di li:nth-child(4) {
+
     width: 25%;
     float: left;
     left: 0;
     text-align: right;
+
 }

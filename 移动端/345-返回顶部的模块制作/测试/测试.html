@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+
+    <style>
+        body {
+            max-width: 640px;
+            min-width: 320px;
+            margin: 0 auto;
+
+        }
+
+        .video {
+            display: flex;
+            /* 固定定位跟父级没有关系 它以屏幕为准 */
+            position: fixed;
+            top: 0;
+            left: 50%;
+            z-index: 999;
+            /* 固定的盒子应该有宽度 */
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 100%;
+            min-width: 320px;
+            max-width: 640px;
+
+
+        }
+
+        .video video {
+            position: relative;
+            /*height: 26px;*/
+            width: 100%;
+            /*line-height: 24px;*/
+            border: 1px solid #ccc;
+            flex: 1;
+            font-size: 12px;
+            color: #666;
+            /*margin: 7px 10px;*/
+            /*padding-left: 25px;*/
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+        }
+
+        .one {
+            height: 800px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin-top: 211px;
+            /*position: absolute;*/
+        }
+
+        .tow {
+            height: 800px;
+            width: 100%;
+            background-color: pink;
+        }
+
+        .three {
+            height: 800px;
+            width: 100%;
+            background-color: blue;
+            color: #ff2c1d;
+        }
+    </style>
+
+</head>
+<body>
+<div class="video">
+    <video src="https://vv.taozhi.online/9463d2562f2e492f8d97fffb7cff8238/35846cff1cf04518b210a9aff2c6f8b0-feae46406db9564a3828aa3908e1d7f9-ld.mp4"></video>
+</div>
+<div class="one"  >1 </div>
+<div class="tow">2</div>
+<div class="three">3</div>
+<script>
+    var video = document.querySelector('video');
+    var one = document.querySelector('.one');
+    var tow = document.querySelector('.tow');
+    var three = document.querySelector('.three');
+    one.style.marginTop=video.scrollHeight;
+    window.addEventListener('scroll', function () {
+        console.log(video.offsetTop);
+        console.log(video.scrollHeight+'video');
+        console.log(one.offsetTop);
+        console.log(tow.offsetTop);
+        console.log(three.offsetTop);
+    });
+    three.addEventListener('click', function () {
+        console.log(tow.offsetTop);
+        window.scroll(800, tow.offsetTop+video.offsetTop);
+        console.log(tow.offsetTop)
+    })
+</script>
+</body>
+</html>

@@ -20,14 +20,18 @@
 </ol>
 
 
-<input type="text">
+<input type="text" id="username">账号
+<br>
+<input type="password" id="password">密码
+<br>
 <button class="set">存储数据</button>
 <button class="get">获取数据</button>
 <button class="remove">删除数据</button>
 <button class="del">清空所有数据</button>
 
 <script>
-    var input = document.querySelector('input');
+    var username = document.querySelector('#username');
+    var password = document.querySelector('#password');
     var set = document.querySelector('.set');
     var get = document.querySelector('.get');
     var remove = document.querySelector('.remove');
@@ -36,9 +40,11 @@
 
     /*点击存储按钮之后会存储一个名字为uname 的数据，而客户输入的值就赋值给这个名字*/
     set.addEventListener('click',function () {
-        var val = input.value;
-        localStorage.setItem('username',val);
-        localStorage.setItem('password',val);
+        // var username = username.value;
+        // var password = password.value;
+
+        localStorage.setItem('username',username.value);
+        localStorage.setItem('password',password.value);
     });
 
     /*点击获取uname 的值*/
@@ -49,7 +55,8 @@
     });
     /*点击删除一个数据*/
     remove.addEventListener('click',function () {
-        localStorage.removeItem('username')
+        localStorage.removeItem('username');
+        localStorage.removeItem('password');
     });
     /*点击清除所有数据*/
     del.addEventListener('click',function () {

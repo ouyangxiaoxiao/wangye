@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     index = 0;
     // 默认播放第一条
     video.src = lis[index].getAttribute("value");
-    lis[index].style.backgroundColor = "#f5f5f5";
+    lis[index].style.backgroundColor = "#f8ffe9";
     lis[index].style.color = '#70a401';
     /*给每条li绑定点击事件*/
     for (i = 0; i < lis.length; i++) {
@@ -33,10 +33,12 @@ window.addEventListener('load', function () {
             }
             /*留下当前li 设置选中样式*/
 
-            this.style.backgroundColor = "#f5f5f5";
+            this.style.backgroundColor = "#f8ffe9";
             this.style.color = '#70a401';
             /*获得当前这个li 的索引号给index*/
             index = Number(this.getAttribute('index'));
+
+            // window.scroll(800, this.offsetTop);
 
 
         }
@@ -56,7 +58,7 @@ window.addEventListener('load', function () {
                 lis[i].style.color = '';
             }
 
-            lis[index].style.backgroundColor = "#f5f5f5";
+            lis[index].style.backgroundColor = "#f8ffe9";
             lis[index].style.color = '#70a401';
 
         } else {
@@ -68,7 +70,7 @@ window.addEventListener('load', function () {
                 lis[i].style.color = '';
             }
 
-            lis[index].style.backgroundColor = "#f5f5f5";
+            lis[index].style.backgroundColor = "#f8ffe9";
             lis[index].style.color = '#70a401';
         }
 
@@ -86,7 +88,7 @@ window.addEventListener('load', function () {
                 lis[i].style.color = '';
             }
 
-            lis[index].style.backgroundColor = "#f5f5f5";
+            lis[index].style.backgroundColor = "#f8ffe9";
             lis[index].style.color = '#70a401';
 
         } else {
@@ -98,7 +100,7 @@ window.addEventListener('load', function () {
                 lis[i].style.color = '';
             }
 
-            lis[index].style.backgroundColor = "#f5f5f5";
+            lis[index].style.backgroundColor = "#f8ffe9";
             lis[index].style.color = '#70a401';
         }
 
@@ -117,7 +119,7 @@ window.addEventListener('load', function () {
                 lis[i].style.color = '';
             }
 
-            lis[index].style.backgroundColor = "#f5f5f5";
+            lis[index].style.backgroundColor = "#f8ffe9";
             lis[index].style.color = '#70a401';
 
         } else {
@@ -129,7 +131,7 @@ window.addEventListener('load', function () {
                 lis[i].style.color = '';
             }
 
-            lis[index].style.backgroundColor = "#f5f5f5";
+            lis[index].style.backgroundColor = "#f8ffe9";
             lis[index].style.color = '#70a401';
         }
     })

@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-    alert('哈喽');
+    // alert('哈喽');
     //1.获取元素
     var focus = document.querySelector('.focus');
     var ul = focus.children[0];
@@ -91,17 +91,24 @@ window.addEventListener('load', function () {
 //返回顶部模块制作
     var goBack = document.querySelector('.goBack');
     var nav = document.querySelector('nav');
+
     window.addEventListener('scroll', function () {
         if (window.pageYOffset >= nav.offsetTop) {
+            console.log(window.pageYOffset);
+
+            console.log(window.pageYOffset + 'aa');
+            console.log(nav.offsetTop + 'bb');
+            console.log(nav.event.clientY + 'cc');
+
             goBack.style.display = 'block';
-            alert('显示返回顶部')
+            // alert('显示返回顶部')
 
         } else {
             goBack.style.display = 'none';
         }
     });
     //返回顶部
-    goBack.addEventListener('click',function () {
-        window.scroll(0,0);
+    goBack.addEventListener('click', function () {
+        window.scroll(0, 0);
     })
 });
