@@ -1,0 +1,32 @@
+body {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+div {
+    /* css3 盒子模型 */
+    box-sizing: border-box;
+}
+
+.show ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    box-sizing: border-box;
+}
+
+.show ul li {
+    float: left;
+    height: 150px;
+    width: 45%;
+    border: 1px #70a401 solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    /*display: block;*/
+    box-sizing: border-box;
+
+}

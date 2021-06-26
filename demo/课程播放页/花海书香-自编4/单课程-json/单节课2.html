@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+<!--    <script src="单节课1.js"></script>-->
+<!--    <script src="单节课程.js"></script>-->
+<script src="../js/play.js"></script>
+    <link rel="stylesheet" href="../css/kecheng.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<!--顶栏-->
+<header>
+    <div class="jtz"></div>
+    <div class="log"></div>
+    <div class="sou"></div>
+    <div class="more"></div>
+</header>
+<!--播放器-->
+<div class="video">
+    <video id="video" controls autoplay src="https://vv.taozhi.online/14f8fcfe8d2a4e9585c9bc822cc6e7f7/36e368b0f3814e76baba29b4f4e06b3e-a1551e2578647377b65c5092a1da7f22-ld.mp4 "></video>
+</div>
+
+
+<!--上下节-->
+<div class="btn">
+    <p class="btn-1">
+        <img src="../images/on_section_01.png" alt="">
+        上 一 课&nbsp;&nbsp;&nbsp;</p>
+    <p class="btn-2">&nbsp;&nbsp;&nbsp;下 一 课
+        <img src="../images/next_section_01.png" alt="">
+    </p>
+</div>
+<!--课程名称-->
+<div class="kcjs">
+    <div class="kcjs-name">
+        <span>小学科学课</span>
+        <span>小学</span>
+        <span>语文</span>
+        <span>五年级</span>
+
+    </div>
+
+    <div class="kcjs-jg">
+        <a href="#" id="dm"> 原 价 ¥ 130</a>
+        <a href="#" id="vip"> 拼 课 价 ¥ 29</a>
+    </div>
+</div>
+
+
+<div class="tab">
+    <ul>
+        <li>介绍</li>
+        <li>目录</li>
+        <li>素材</li>
+        <li>评价</li>
+        <li>笔记</li>
+    </ul>
+</div>
+<div class="kcxq">
+
+
+    <ul>
+<!--        <li value="	https://vv.taozhi.online/14f8fcfe8d2a4e9585c9bc822cc6e7f7/36e368b0f3814e76baba29b4f4e06b3e-a1551e2578647377b65c5092a1da7f22-ld.mp4	"><span>	PS01-神奇的倒车雷达	</span><span>	小学科学课	</span><span>	小学	五年级	兴趣爱好	</span></li>-->
+
+
+    </ul>
+</div>
+
+
+<div id="di">
+
+    <ul>
+        <li>首页</li>
+        <li>课程</li>
+        <li>VIP</li>
+        <li>我的</li>
+    </ul>
+
+</div>
+
+
+<script>
+var html = "";
+    $.ajax({
+        type: "get",
+        // traditional:"false",
+        // cache :"false",
+        // url: "test01.php",
+        // async:false,
+        // async:true,
+        // url: "https://api.cloud.taozhi.online/album-management/client//content/allOrFree/resalb2020080404543p8agkxw?page=1&size=999&menuId=0&isQueryFree=false",
+        url:"https://api.cloud.taozhi.online/album-management/client//content/allOrFree/resalb202011180346x00hkk51?page=1&size=999&menuId=0&isQueryFree=false",
+        success: function (data) {
+            // console.log(data);
+            data2 = (data.data);
+            // console.log(data.length);
+
+            for (i=0;i< data2.length;i++) {
+                vid = ((data2[i]).vid);
+
+
+                // console.log((data[i]).title+"https://api.cloud.taozhi.cn/common/aliVod/common//play/getPlayInfo?videoId=" + vid);
+
+
+                $.ajax({
+                    type: "get",
+                    // traditional:"false",
+                    // cache :"false",
+                    async:false,
+                    url: "https://api.cloud.taozhi.cn/common/aliVod/common//play/getPlayInfo?videoId=" + vid,
+                    success: function (data2) {
+                        // console.log(data2);
+                        title =(data2.data.videoBase.title);
+                        playURL =(data2.data.playInfoList[1].playURL);
+
+                            html+= `<li value="${playURL}"><span>	${title}	</span><span>	小学科学课	</span><span>	小学	五年级	兴趣爱好	</span></li>`;
+                            $(".kcxq ul").html(html);
+                        }
+
+
+                })}
+
+            }
+
+
+
+    });
+</script>
+
+
+
+</body>
+</html>
