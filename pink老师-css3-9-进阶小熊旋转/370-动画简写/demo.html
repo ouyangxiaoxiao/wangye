@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*我们想一打开页面，一个盒子就从左边走到右边*/
+        /*1.定义动画-动画序列*/
+        @keyframes move {
+            /*开始状态*/
+            0% {
+                /*穿丝否目：穿丝利特*/
+                transform: translate(0, 0);
+            }
+            /*结束状态*/
+            100% {
+                transform: translate(1000px, 0);
+            }
+        }
+
+
+        /*div {*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: pink;*/
+        /*    !*2.调用动画 爱呢美神-内姆*!*/
+        /*    animation-name: move;*/
+        /*    !*!*持续时间-爱呢美神-迪瑞神  秒是s 毫秒是ms*!*!*/
+        /*    animation-duration: 2s;*/
+        /*    !*运动曲线-爱呢迷神-胎明-方可什*!*/
+        /*    animation-timing-function: ease;*/
+        /*    !*何时开始-爱呢迷神-砥砺*!*/
+        /*    animation-delay: 1s;*/
+        /*    !*重复次数 爱呢迷神-因特瑞申-抗特:因菲尼特无限*!*/
+        /*    animation-iteration-count:infinite;*/
+        /*    !*是否反向播放 默认的是肉某normal 如果想要反方向 奥特内特*!*/
+        /*    animation-direction:alternate;*/
+        /*    !*动画结束后的状态 保持forwards-否沃斯-回到起始backwards-百特热死*!*/
+        /*    animation-fill-mode: forwards; !*爱呢美神-菲欧猫豆*!*/
+
+        /*}*/
+
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /**/
+            /*animation: move 5s linear 1s infinite alternate forwards;*/
+            /*前面2个属性必须写 move 5s */
+            animation: move 5s linear 1s infinite alternate forwards;
+        }
+
+        div:hover {
+            /*鼠标经过就停下，鼠标离开继续动画*/
+            animation-play-state: paused;/*爱呢美神-破类似-得特*/
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

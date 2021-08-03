@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>2.css3的新特性</h1>
+<h2>2.3 结构伪类选择器</h2>
+<p>结构伪类选择器主要根据文档结构来选择器元素，常用语父级选择器里面的子元素</p>
+<table>
+    <thead>
+    <tr>
+        <th>选择符</th>
+        <th>简介</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>E:first-child</td>
+        <td>匹配父元素中第一个子元素E</td>
+    </tr>
+    <tr>
+        <td>E:list-child</td>
+        <td>匹配父元素中最后一个子元素E</td>
+    </tr>
+    <tr>
+        <td>E:nth-child(n)</td>
+        <td>匹配父元素中第n个子元素E</td>
+    </tr>
+    <tr>
+        <td>E:first-of-type</td>
+        <td>指定类型的第一个</td>
+    </tr>
+    <tr>
+        <td>E:list-of-type</td>
+        <td>指定类型的最后一个</td>
+    </tr>
+    <tr>
+        <td>E:nth-of-type(n)</td>
+        <td>指定类型E的第n个</td>
+    </tr>
+    </tbody>
+</table>
+<h1>2.css的新特性</h1>
+<h2>2.3伪类选择器</h2>
+nth-child(n)选择父元素的一个或者多个特定的子元素
+n可以是数字
+n，如果是数字，就是选择第n个字元素，里面数字从1开始
+
+小结：
+结构伪类选择器一般用于选择父级里面的第几个孩子
+nth-child对父元素里面所有孩子排序选择(序号是固定的)先找到第n个孩子，然后看看是否和E匹配
+nth-of-type对父元素里面子元素进行排序选择。先去匹配E，然后在根据E找到第n个孩子
+关于nth-child(n)我们知道n是从0开始计算的，要记住常用的公式
+如果是无序列表，我们肯定用nth-child更多
+类选择器、属性选择器、伪类选择器，权重为0
+</body>
+</html>

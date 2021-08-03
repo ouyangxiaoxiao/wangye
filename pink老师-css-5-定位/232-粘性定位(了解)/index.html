@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.定位</h1>
+<h2>1.5绝对定位absolute(重要)</h2>
+绝对定位是元素在移动位置的时候，相对于他祖先元素来说的(拼爹型)
+语法:
+选择器{position:absolute;}
+绝对定位的特点:(务必记住)
+1.如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位(Document文档)。
+2.如果祖先元素有定位(相对，绝对，固定定位)，则是以最近一级的有定位祖先元素为参考点移动位置。
+3.绝对定位不在占有原先位置。（脱标）
+
+<h2>1.7固定定位fixed(重要)</h2>
+<p>
+    固定定位是元素固定于浏览器可视区的位置。主要使用场景;可以在浏览页面滚动时元素的位置不变。
+</p>
+语法：
+选择器{position:fixed}
+固定定位的特点：（务必记住）
+1.以浏览器的可是窗口为为参照点移动元素。
+跟父元素没有任何关系
+不随滚动条而滚动
+2.固定定位不在占有原先的位置
+固定定位也是脱标的，其实固定定位也可以看做是一种特殊的绝对定位。
+固定定位的小技巧:固定在版心右侧位置。
+小算法:
+1.让固定定位的盒子 left:50% 走到浏览器可视区(也可以可看做是版心)的一半位置。
+2.让固定定位的盒子 margin-left 版心宽度的一半距离，夺走版心宽度的一半位置，就
+可以让固定定位的盒子贴着版心右侧对齐了。
+<h2>1.8粘性定位sticky(了解)</h2>
+粘性定位可以被认为是相对定位和固定定位的混合。sticky粘性的
+语法：
+选择器{position:sticky;top:10px}
+粘性定位的特点：
+1.以浏览器的可是窗口为参照点移动元素(固定定位特点)
+2.粘性定位有占有原先的位置(相对定位特点)
+3.必须添加 top，left，right，bottom其中一个才有效。
+跟页面滚动搭配使用。兼容性较差，IE不支持。
+
+</body>
+</html>

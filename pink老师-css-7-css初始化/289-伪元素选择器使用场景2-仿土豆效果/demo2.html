@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+
+        .tudou {
+            position: relative;
+            width: 444px;
+            height: 320px;
+            background-color: pink;
+            margin: 30px auto;
+        }
+
+        .tudou img {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .tudou::before {
+            content: '';
+            display: none; /*隐藏遮罩层*/
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .4) url("arr.png") no-repeat center center;
+        }
+
+        /*    当鼠标经过土豆 这个盒子，这个盒子里面的遮罩层显示出来*/
+        .tudou:hover::before {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="tudou">
+    <img src="276.jpg" alt="">
+</div>
+<div class="tudou">
+    <img src="276.jpg" alt="">
+</div>
+<div class="tudou">
+    <img src="276.jpg" alt="">
+</div>
+<div class="tudou">
+    <img src="276.jpg" alt="">
+</div>
+
+</body>
+</html>

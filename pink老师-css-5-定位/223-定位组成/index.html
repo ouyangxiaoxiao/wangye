@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.定位</h1>
+<h2>1.2定位的组成</h2>
+<span>定位：</span>将盒子 <span>定</span>在某一个位置，所以定位也是在百合子，按照定位的方式移动盒子
+<p>定位=定位模式+边偏移</p>
+<p>定位模式用于指定一个元素在文档中的定位方式，边偏移则决定了该元素的最终位置。</p>
+<h3>1.定位模式</h3>
+<dl>
+    <dt>定位模式决定元素定位方式，他通过css的position属性来设置，其值可分为四个：</dt>
+    <dd>
+        <table>
+            <thead>
+            <tr>
+                <th>值</th>
+                <th>语义</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>static</td>
+                <td>静态定位</td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>相对定位</td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>绝对定位</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>固定定位</td>
+            </tr>
+            </tbody>
+        </table>
+    </dd>
+</dl>
+<h3>2.边偏移</h3>
+<p>边偏移就是定位的盒子移动到最终位置。有top，bottom，left和right4个属性</p>
+
+</body>
+</html>

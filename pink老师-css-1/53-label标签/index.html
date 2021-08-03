@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+<!--    <meta name="referrer" content="no-referrer"/>-->
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>3.表单标签</h1>
+<h2>3.4.2 &lt; label&gt;标签。发音 雷bou</h2>
+
+<p><span>&lt; label&gt; 标签为input定义的标注（<span>标签</span>）</span></p>
+<p><span> &lt; label&gt;</span> 标签用于绑定一个表单元素，当点击 &lt; label&gt;标签内的文本时，浏览器就会自动将焦点(光标)转到或者
+    <br> 选择对应的表单元素上用来增加用户体验。</p>
+
+<h3>语法：</h3>
+<label for="sex">男</label>
+<input type="radio" name="sex" id="sex">
+<p>核心：&lt; label &gt;标签的 <span> for属性</span>应当与相关元素的 <span>id属性相同。</span></p>
+<!--要带有name 才能提交-->
+<!--<form action="http://www.baidu.com" method="get">-->
+<form action="http://www.baidu.php" method="get" >
+    <label for="sex1">姓名：</label>
+    <input type="text" name="username" value="请输入用户名" maxlength="10" id="sex1">
+    <br>
+    密码：<input type="password" name="psw">
+    <br>
+    请输入手机号：<input type="text">
+<!--    <br>-->
+    <input type="button" value="获取验证码">
+    <br>
+    上传头像：<input type="file">
+    <br>
+    <br>
+    <input type="submit" value="免费注册">
+    <input type="reset" value="重新填写">
+</form>
+</body>
+</html>

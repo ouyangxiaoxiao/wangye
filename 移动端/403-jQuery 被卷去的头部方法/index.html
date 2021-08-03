@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        span {
+            color: red;
+        }
+
+        .container {
+            margin: 400px auto;
+            width: 900px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .back {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            bottom: 100px;
+            position: fixed;
+            display: none;
+            right: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>7. jQuery 尺寸、位置</h1>
+<h2>7.2 jQuery 位置</h2>
+<p>位置主要有三个：offset(),position(), <span> scrollTop()/scrollLeft()</span></p>
+<h3><strong>3.scrollTop()/scrollLeft()设置获取元素被卷去的头部和左侧 </strong></h3>
+
+
+<div class="back">返回顶部</div>
+<div class="container">
+
+</div>
+
+<script>
+    $(function () {
+        //每次打开页面显示的位置，而不是刷新
+         $(document).scrollTop(500);
+        //被卷去的头部 scrollTop/被卷曲的左侧scrollLeft
+        //页面滚动事件
+        var boxTop = $(".container").offset().top;
+        $(window).scroll(function () {
+            console.log($(document).scrollTop());
+            if ($(document).scrollTop() >= boxTop) {
+                $(".back").show();
+            } else {
+                $(".back").hide();
+            }
+
+        })
+    })
+</script>
+</body>
+</html>

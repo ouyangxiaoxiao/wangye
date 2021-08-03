@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        span{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<h2>2.2 行内元素</h2>
+常见的行内元素有 a 、strong、 b、rm、i、del、s、ins、u、span等，其中span标签是最典型的行内元素，有的地方也将行内元素叫内联元素。
+
+<p>行内元素的特点</p>
+<ul>
+    <li>①相邻行内元素在一行上，一行可以显示多个。</li>
+    <li>②高、宽 直接设置是无效的</li>
+    <li>③默认宽度就是本身内容的宽度</li>
+    <li>④行内元素只能容纳文本或其他行内元素</li>
+</ul>
+<p>注意：
+    <br>连接里面不能再放连接
+    <br>特殊情况 连接a可以放块级元素，但是给a转换一下块级元素最安全
+</p>
+
+
+
+<span>pink老师</span> <strong>品如的衣服</strong>
+<span>pink老师</span> <strong>品如的衣服</strong>
+</body>
+</html>

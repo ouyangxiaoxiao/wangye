@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            font-size: 20px;
+            width: 0;
+            height: 30px;
+            background-color: pink;
+            white-space: nowrap;/*强制一行显示*/
+            overflow: hidden;/*超出隐藏*/
+            /*animation: w 4s linear forwards;!*4秒 匀速停在结束状态*!*/
+            /*steps 就是分几步来完成我们的动画 steps 就不要写 ease或者linear了*/
+            animation: w 4s steps(10) forwards;/*4秒 10步 停在结束状态*/
+        }
+        @keyframes w {
+            0%{
+
+            }
+            100%{
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>世纪佳缘，我在里等你</div>
+</body>
+</html>

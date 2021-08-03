@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+        p{
+            white-space:pre-line;
+        }
+    </style>
+</head>
+<body>
+<h2>1.5 品优购项目搭建工作</h2>
+<h3>1.需要创建如下文件夹</h3>
+<table>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>项目文件夹</td>
+        <td>shoping</td>
+    </tr>
+    <tr>
+        <td>样式图片文件夹</td>
+        <td>images</td>
+    </tr>
+    <tr>
+        <td>样式文件夹</td>
+        <td>css</td>
+    </tr>
+    <tr>
+        <td>产品类图片文件夹</td>
+        <td>upload</td>
+    </tr>
+    <tr>
+        <td>字体类文件夹</td>
+        <td>fonts</td>
+    </tr>
+    <tr>
+        <td>脚本文件夹</td>
+        <td>js</td>
+    </tr>
+    </tbody>
+</table>
+<h3>2.需要创建如下文件：</h3>
+<table>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>首页</td>
+        <td>index.html</td>
+    </tr>
+    <tr>
+        <td>css初始化样式文件</td>
+        <td>base.css</td>
+    </tr>
+    <tr>
+        <td>css公共样式文件</td>
+        <td>common.css</td>
+    </tr>
+    </tbody>
+</table>
+<p>
+有些网站初始化的不太提倡*{margin:0;padding:0};
+比如新浪:
+html,body,ul,li,ol,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {margin:0;padding:0}
+</p>
+<h3>3.模块化开发</h3>
+<p>
+    有些样式和结构在很多页面都会出现，比如页面头部和底部，大部分页面都有，此时，可以把这些结构
+    和样式单独作为一个模块，然后重复使用
+    这里最典型的应用就是common.css公共样式。写好一个样式，其余的页面用到这些相同的样式。
+    模块化开发具有重复使用，修改方便等优点
+    靠门
+    common.css公共样式里面包含版心宽度、清除浮动、页面文字颜色等公共样式
+</p>
+<h2>1.6网站favicon-fai肯-图标</h2>
+<p>
+    一.制作favicon图标
+    1.把品优购图标切成png图片
+    2.把png图片转换成ico图标，这需要借助第三方转换网站，例如比特虫:http://www.bitbug.net/
+</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<h2>4.6 图像标签和路径（重点）</h2>
+<h3>2. 路径只相对路径</h3>
+<p><span>相对路径：以引用文件所在位置为参考基础，二建路出的目录路径</span></p>
+这里简单说：图片相当于HTML 页面的位置。
+
+<table>
+    <thead>
+    <tr>
+        <th>点对路径分类</th>
+        <th>符号</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>同一级路径</td>
+        <td></td>
+        <td>图像文件位于HTML文件同一级 如<img src="baidu.gif"/></td>
+    <tr>
+        <td>下一级路径</td>
+        <td>/</td>
+        <td>图像文件位于HTML文件下一级 如 <img src="images/baidu.gif" alt=""></td>
+    </tr>
+    <tr>
+        <td>上一级目录</td>
+        <td>../</td>
+        <td>图像文件位于HTML文件上一级  如 <img src="../baidu.gif" alt=""></td>
+    </tr>
+    </tr>
+    </tbody>
+</table>
+
+<img src="baidu.jpg" alt="" width="200px">
+<img src="images/2.jpg" alt="" width="200px">
+<img src="../19-图像标签(上)/1.jpg" alt="" width="200px">
+</body>
+</html>

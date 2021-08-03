@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*1.选择ul里面第一个孩子*/
+        ul li:first-child {
+            background-color: pink;
+        }
+        /*2.选择最后一个孩子*/
+        ul li:last-child {
+            background-color: pink;
+        }
+        /*3.选择第几个孩子*/
+        ul li:nth-child(6){
+            background-color: skyblue;
+        }
+        /*4.隔行变色-把所有的偶数even|奇数odd的孩子选出来*/
+        ul li:nth-child(odd){
+          background-color: purple;
+        }
+        /*5.公式 写n选择了所有孩子 只能是字母n*/
+        /*ol li:nth-child(n){*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*偶数*/
+        /*ol li:nth-child(2n){*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*奇数*/
+        /*ol li:nth-child(2n+1){*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*5的倍数的元素*/
+        /*ol li:nth-child(5n){*/
+        /*    background-color: pink;*/
+        /*}*/
+        /*从第5个开始选择，包含第5个*/
+        /*ol li:nth-child(n+5){*/
+        /*    background-color: pink;*/
+        /*}*/
+
+        /*选择前5个，包含第5个*/
+        ol li:nth-child(-n+5) {
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+</ul>
+<ol>
+    <li>我是第1个孩子</li>
+    <li>我是第2个孩子</li>
+    <li>我是第3个孩子</li>
+    <li>我是第4个孩子</li>
+    <li>我是第5个孩子</li>
+    <li>我是第6个孩子</li>
+    <li>我是第7个孩子</li>
+    <li>我是第8个孩子</li>
+</ol>
+<section>
+    <p>光头强</p>
+    <div>熊大</div>
+    <div>熊二</div>
+</section>
+</body>
+</html>

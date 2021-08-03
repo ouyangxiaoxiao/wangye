@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*<!--1.利用选择器就可以不借助类或者id选择器-->*/
+        /*必须是input 且同时具有value这个属性 选择这个元素*/
+        /*input[value] {*/
+        /*    color: pink;*/
+        /*}*/
+        /*<!--2.属性选择器还可以选择属性=值的某些元素,重点-->*/
+        /*input[type=text] {*/
+        /*    color: pink;*/
+        /*}*/
+        /*<!--3.属性选择器可以选择属性值开头的某些元素-->*/
+        /*div[class^=icon]{*/
+        /*    color: red;*/
+        /*}*/
+        /*<!--4.属性选择器可以选择属性值结尾的某些元素-->*/
+        /*section[class$=data]{*/
+        /*    color: red;*/
+        /*}*/
+        /*<!--5.属性选择器可以选择包含属性值的某些元素-->*/
+       a[class*=z]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--1.利用选择器就可以不借助类或者id选择器-->
+<!--<input type="text" value="请输入用户名">-->
+<!--<input type="text" >-->
+<!--2.属性选择器还可以选择属性=值的某些元素,重点-->
+<input type="text">
+<input type="password">
+<!--3.属性选择器可以选择属性值开头的某些元素-->
+<div class="icon1">小图标1</div>
+<div class="icon2">小图标2</div>
+<div class="icon3">小图标3</div>
+<div class="icon4">小图标4</div>
+<div >我是打酱油的</div>
+<!--4.属性选择器可以选择属性值结尾的某些元素-->
+<section class="icon1-data">我是安其拉</section>
+<section class="icon2-data">我是哥斯拉</section>
+<section class="icon3-data">那我是 谁</section>
+<!--5.属性选择器可以选择包含属性值的某些元素-->
+<a href="#" class="lianjie1 b">a1</a>
+<a href="#" class="lianjie1 yian">a2</a>
+<a href="#" class="lianjie1 zhang">a3</a>
+<a href="#" class="lianjie1 wang">a4</a>
+</body>
+</html>

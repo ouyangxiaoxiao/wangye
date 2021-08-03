@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 600px;
+            height: 100px;
+            border: 1px black solid;
+            line-height: 100px;
+            text-align: center;
+        }
+        .box span{
+            font-size: 50px;
+        }
+        .origin{
+            text-decoration: line-through;
+        }
+
+        .one {
+            position: relative;
+            width: 350px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .two {
+            position: absolute;
+            top: 0;
+            right: 0;
+            /*width: 0;*/
+            /*height: 0;*/
+            /*border-top: 100px transparent solid;*/
+            /*border-right: 100px white solid;*/
+            /*border-bottom: 0 pink solid;*/
+            /*border-left: 0 red solid;*/
+            width: 0;
+            height: 0;
+            border-color: transparent white transparent transparent;
+            border-style: solid;
+            border-width: 100px 50px 0 0;
+
+        }
+
+        .three {
+            height: 100%;
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="one">
+        <span>￥1260</span>
+        <div class="two"></div>
+    </div>
+
+    <div class="three">
+        <span class="origin">￥25666</span>
+    </div>
+</div>
+
+
+</body>
+</html>

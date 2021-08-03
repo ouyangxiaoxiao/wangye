@@ -13,9 +13,7 @@
 <!--    <script src="单节课程.js"></script>-->
 <script src="../js/play.js"></script>
     <link rel="stylesheet" href="../css/kecheng.css">
-     <script src="https://code.jquery.com/jquery-3.2.1.js"
-            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -45,10 +43,10 @@
 <!--课程名称-->
 <div class="kcjs">
     <div class="kcjs-name">
-        <span>小学科学课</span>
-        <span>小学</span>
-        <span>语文</span>
-        <span>五年级</span>
+<!--        <span></span>-->
+<!--        <span>小学</span>-->
+<!--        <span>语文</span>-->
+<!--        <span>五年级</span>-->
 
     </div>
 
@@ -72,7 +70,7 @@
 
 
     <ul>
-<!--        <li value="	https://vv.taozhi.online/14f8fcfe8d2a4e9585c9bc822cc6e7f7/36e368b0f3814e76baba29b4f4e06b3e-a1551e2578647377b65c5092a1da7f22-ld.mp4	"><span>	PS01-神奇的倒车雷达	</span><span>	小学科学课	</span><span>	小学	五年级	兴趣爱好	</span></li>-->
+        <li value="	https://vv.taozhi.online/14f8fcfe8d2a4e9585c9bc822cc6e7f7/36e368b0f3814e76baba29b4f4e06b3e-a1551e2578647377b65c5092a1da7f22-ld.mp4	"><span>	PS01-神奇的倒车雷达	</span><span>	小学科学课	</span><span>	小学	五年级	兴趣爱好	</span></li>
 
 
     </ul>
@@ -92,52 +90,57 @@
 
 
 <script>
-var html = "";
+    var html = "";
+    var kcjs="";
+
     $.ajax({
         type: "get",
         // traditional:"false",
         // cache :"false",
         // url: "test01.php",
-        // async:false,
+        // async: false,
         // async:true,
         // url: "https://api.cloud.taozhi.online/album-management/client//content/allOrFree/resalb2020080404543p8agkxw?page=1&size=999&menuId=0&isQueryFree=false",
-        url:"https://api.cloud.taozhi.online/album-management/client//content/allOrFree/resalb202011180346x00hkk51?page=1&size=999&menuId=0&isQueryFree=false",
+        url: "汉语趣味启蒙.txt",
+        // url: "汉语趣味启蒙.json",
         success: function (data) {
-            // console.log(data);
-            data2 = (data.data);
-            // console.log(data.length);
+            // console.log(data[1]);
 
-            for (i=0;i< data2.length;i++) {
-                vid = ((data2[i]).vid);
+            console.log(typeof (data));
+            var obj = eval('{' + data + '}');
+            console.log(obj);
+            console.log(typeof (obj));
+            console.log(obj.length);
+            for (i = 0; i < obj.length; i++) {
+                title = (obj[i]['title']);
+                mp4 = (obj[i]['mp4']);
+                dtitle=(obj[i]['dtitle']);
+                xdName = (obj[i]['xdName']);
+                gradeName = (obj[i]['gradeName']);
+                cname = (obj[i]['cname']);
 
-
-                // console.log((data[i]).title+"https://api.cloud.taozhi.cn/common/aliVod/common//play/getPlayInfo?videoId=" + vid);
-
-
-                $.ajax({
-                    type: "get",
-                    // traditional:"false",
-                    // cache :"false",
-                    async:false,
-                    url: "https://api.cloud.taozhi.cn/common/aliVod/common//play/getPlayInfo?videoId=" + vid,
-                    success: function (data2) {
-                        // console.log(data2);
-                        title =(data2.data.videoBase.title);
-                        playURL =(data2.data.playInfoList[1].playURL);
-
-                            html+= `<li value="${playURL}"><span>	${title}	</span><span>	小学科学课	</span><span>	小学	五年级	兴趣爱好	</span></li>`;
-                            $(".kcxq ul").html(html);
-                        }
+                    kcjs=`<div class="kcjs-name">
+                            <span>${dtitle}</span>
+                            <span>${xdName}</span>
+                            <span>${gradeName}</span>
+                            <span>${cname}</span>`;
 
 
-                })}
-
+                html += `
+                <li value="${mp4}"><span>${title}</span><span>小学科学课</span><span>小学五年级兴趣爱好</span></li>
+                `;
             }
+            $(".kcxq ul").html(html);
+            $(".kcjs .kcjs-name").html(kcjs);
+        }
 
 
+    })
+    // }
 
-    });
+
 </script>
+
 
 
 

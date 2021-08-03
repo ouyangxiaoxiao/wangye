@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, td, th {
+            border: 1px black solid;
+            padding: 5px 10px ;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>样式表</th>
+        <th>优点</th>
+        <th>缺点</th>
+        <th>使用情况</th>
+        <th>控制范围</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>行内样式表</td>
+        <td>书写方便，权重高</td>
+        <td>结构样式混写</td>
+        <td>较少</td>
+        <td>控制一个标签</td>
+    </tr>
+    <tr>
+        <td>内部样式表</td>
+        <td>部分结构和样式相分离</td>
+        <td>没有彻底分离</td>
+        <td>较多</td>
+        <td>控制一个页面</td>
+    </tr>
+    <tr>
+        <td>外部样式表</td>
+        <td>完全实现结构和样式分离</td>
+        <td>需要引入</td>
+        <td>最多，吐血推荐</td>
+        <td>控制多个页面</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

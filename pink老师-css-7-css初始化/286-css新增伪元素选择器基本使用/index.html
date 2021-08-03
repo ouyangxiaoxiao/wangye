@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>2.css3的新特性</h1>
+<h2>css新增选择器</h2>
+<p>
+    css3给我们新增了选择器，可以更加便捷，更加自由的选择目标元素。
+    1.属性选择器
+    2.结构伪类选择器
+    3.伪元素选择器
+    2.4伪元素选择器(重点)
+    伪元素选择器可以帮助我们利用css创建新的标签元素，而不需要HTML标签，从而简化HTML结构。
+</p>
+<table>
+    <thead>
+    <tr>
+        <th>选择符</th>
+        <th>简介</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>::before</td>
+        <td>在元素内部插入内容</td>
+    </tr>
+    <tr>
+        <td>::after</td>
+        <td>在元素内部后面插入内容</td>
+    </tr>
+    </tbody>
+</table>
+<h4><span>注意：</span></h4>
+<ul>
+    <li>before和after创建一个元素，但是属于行内元素</li>
+    <li>新创建的元素在文档中是找不到的，所以我们称为伪元素</li>
+    <li>语法：element::before{}</li>
+    <li>before和after必须有content属性</li>
+    <li>before在父元素前面创建元素，after在父元素内容后面插入元素</li>
+    <li>伪元素和标签选择器一样，权重都为1</li>
+</ul>
+</body>
+</html>

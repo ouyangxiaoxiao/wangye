@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*字体声明*/
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?hei04r');
+            src: url('fonts/icomoon.eot?hei04r#iefix') format('embedded-opentype'),
+            url('fonts/icomoon.ttf?hei04r') format('truetype'),
+            url('fonts/icomoon.woff?hei04r') format('woff'),
+            url('fonts/icomoon.svg?hei04r#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        div {
+            position: relative;
+            width: 200px;
+            height: 35px;
+            border: 1px black solid;
+        }
+        div:before{
+            position: absolute;
+            top: 8px;
+            right: 0;
+            content: '\e9d1';
+            font-family: 'icomoon';
+            font-size: 18px;
+            /*display: none;*/
+        }
+        /*鼠标经过*/
+        div:hover {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>

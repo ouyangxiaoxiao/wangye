@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>1.盒子模型</h1>
+<h2>1.7外边距离典型应用</h2>
+<dl>
+    <dt>外边距可以让块级盒子 水平居中，但是必须满足两个条件</dt>
+    <dd>①盒子必须指定宽度（width）</dd>
+    <dd>②盒子左右的外边距都设置为auto</dd>
+</dl>
+<p>
+    .header{
+            width: 960px;
+            margin: 0 auto;
+        }
+</p>
+<dl>
+    <dt>常见的写法，一下三种都可以</dt>
+    <dd>margin-left:auto;
+        margin-right:auto;
+
+    </dd>
+    <dd>
+        margin:auto;
+    </dd>
+    <dd>
+        margin:0 auto;
+    </dd>
+
+</dl>
+<p>注意：以上方法是让块级元素水平居中，行内元素或者行内块元素水平居中给其父亲添加 text-align:center即可</p>
+</body>
+</html>

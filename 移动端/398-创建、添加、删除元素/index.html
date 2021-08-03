@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        span{
+            color: red;
+        }
+        .p{
+            height: 30px;
+            background-color: #c1c6d7;
+            line-height: 30px;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+<h1>6. jQuery 元素操作</h1>
+<p>主要 是遍历、<span>创建</span>、添加、删除元素等</p>
+<h2>6.2创建元素</h2>
+<p>语法：</p>
+<p class="p">$("&lt li>&lt/li>");</p>
+
+<h2>6.3添加元素</h2>
+
+<p class="p">element.append("内容")</p>
+<p >把内容放入匹配元素内部最 <span> 后面</span>，类似原生appendChild。</p>
+<h2>2. 外部添加</h2>
+<p>element.after("内容") //把内容放入目标元素后面</p>
+<p>element.before("内容") //把内容放入目标元素前面</p>
+
+<h2>6.4 删除元素</h2>
+<p class="p"> element.remove()//删除匹配的元素（本身）</p>
+<p class="p"> element.empty()//删除匹配的元素集合中所有的子节点</p>
+<p class="p"> element.html("")//清空匹配元素内容</p>
+<ul>
+    <li>原先的li</li>
+</ul>
+<div class="test">我是原先的div</div>
+
+
+
+<script>
+    $(function () {
+        //1.创建元素
+        var li = $("<li>我是后来创建 的小li</li>");
+        //2.添加元素
+
+        //（1）内部添加
+        // $("ul").append(li); //内部添加并且放到内容的最后面
+        $("ul").prepend(li); //内部添加并且放到内容的最前面
+
+        //（2）外部添加
+        var div = $("<div>我是后妈生的</div>");
+        // $(".test").after(div);//在后面添加
+        $(".test").before(div);//在前面添加
+        //（3）删除元素
+        // $("ul").remove();//可以删除匹配的元素 自身
+        // $("ul").empty();//可以删除匹配的元素里面的子节点 孩子
+        $("ul").html("");//可以删除匹配元素的自己点 孩子
+    })
+</script>
+</body>
+</html>

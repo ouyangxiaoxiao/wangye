@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            color: pink;
+            /*font: 12px/24px 'monospace';!*字体大小，行高，字体名称*!*/
+            font: 14px/1.5 'monospace';/*字体大小，当前元素文字大小的1.5倍，字体名称*/
+        }
+        div{
+            font-size: 14px;/*子元素继承了父元素的1.5*/
+        }
+    </style>
+</head>
+<body>
+<h2>继承性</h2>
+行高继承性
+body{
+            font: 14px/1.5 'monospace';/*字体大小，当前元素文字大小的1.5倍，字体名称*/
+        }
+<ul>
+    <li>行高可以跟单位也可以不跟单位</li>
+    <li>如果子元素没有设置行高，则会继承父元素的行高1.5</li>
+    <li>此时子元素的行高是：当前子元素文字的1.5倍</li>
+    <li>body行高1.5这样写法最大的优势就是里面子元素可以根据自己文字大小自动调整行高</li>
+</ul>
+<div>分红色的回忆</div>
+<p>分红色的回忆</p>
+</body>
+</html>

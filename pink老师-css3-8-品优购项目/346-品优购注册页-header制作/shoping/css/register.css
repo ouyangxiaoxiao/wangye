@@ -1,0 +1,13 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px #c81523 solid;
+}
+
+.logo {
+    padding-top: 18px;
+}

@@ -1,0 +1,130 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px #e4e4e4 solid;
+
+}
+
+
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px #e4e4e4 dotted;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+}
+
+.news-hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+
+}
+.news-bd{
+    padding: 5px 15px 0;
+}
+.news-bd ul li{
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;/*①超出隐藏*/
+    white-space: nowrap;/*②强制换行*/
+    text-overflow: ellipsis;/*③文字超出的时候显示省略号*/
+
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    /*background-color: purple;*/
+    border: 1px #e4e4e4 solid;
+    border-top: 0;
+}
+.lifeservice ul{
+    width: 252px;
+}
+.lifeservice ul li{
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px #e4e4e4 solid;
+    border-bottom: 1px #e4e4e4 solid;
+    text-align: center;
+}
+.lifeservice ul li i{
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 12px;
+    background: url("../images/icons.png") no-repeat -17px -14px;
+}
+.lifeservice ul li img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bargain {
+    margin-top: 6px;
+}
+/*推荐模块*/
+.recom{
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+.recom-hd{
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+.recom-bd{
+    float: right;
+}
+.recom-bd ul li{
+    position: relative;
+    float: left;
+}
+.recom-bd ul li img{
+    width: 248px;
+    height: 163px;
+}
+.recom-bd ul li:nth-child(-n+3)::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}

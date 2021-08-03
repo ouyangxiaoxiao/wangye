@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .damao,.ermao{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+        .damao{
+            margin-bottom:100px ;
+        }
+        .ermao{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="damao">大毛</div>
+<div class="ermao">二毛</div>
+
+<h1>1.盒子模型</h1>
+<h2>1.8 外边距合并</h2>
+使用margin 定义块元素的垂直外边距时。可能会出现外边距的合并
+<h2>1.相邻块元素垂直外边距的合并</h2>
+<p>
+    当上下相邻的两个元素（兄弟元素）相遇时，如果上面的元素有下边距，下面的元素有 <br>
+    上边距，则他们之间的垂直距离不是 2个的和 ，而是取2个值中较大的，这种现象被称为相邻块元素垂直外边距的合并。
+</p>
+<h2>2.嵌套块元素垂直外边距的塌陷</h2>
+<p>对于两个嵌套关系(父子关系)的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值</p>
+<dl>
+    <dt><h2>解决方案：</h2></dt>
+    <dd>①可以为父元素定义上边框。</dd>
+    <dd>②可以为父元素定义上内边距</dd>
+    <dd>③可以为父元素添加 overflow:hidden</dd>
+</dl>
+
+</body>
+
+</html>

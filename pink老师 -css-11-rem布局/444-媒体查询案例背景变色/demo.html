@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*1.媒体查询一般按照从到大的顺序来 或者*/
+        /*这句话的意思是:在我们屏幕上 并且最大宽度是800像素 设置我们想要的样式*/
+        /*2.小于540 变为蓝色*/
+        @media screen and (max-width: 539px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        /*3.当540~970之间 页面颜色改为绿色*/
+        @media screen and (min-width:540px) and (max-width: 969px) {
+            body {
+                background-color: green;
+            }
+        }
+        /*大于等于970 我们就改为红色*/
+        @media screen and (min-width:970px){
+            body{
+                background-color: red;
+            }
+        }
+    /*   5. screen and 必须写 不能省略*/
+    /*   6. 数字后面单位 px 必须写 不能省略*/
+    </style>
+</head>
+<body>
+<div>
+    <p></p>
+</div>
+</body>
+</html>

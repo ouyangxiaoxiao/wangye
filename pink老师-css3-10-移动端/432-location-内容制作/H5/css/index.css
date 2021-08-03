@@ -1,0 +1,119 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/*顶部搜索*/
+.search-index {
+    display: flex;
+    /*固定跟父级没关系 以屏幕为主 margin无效*/
+    position: fixed; /*固定定位 要有宽度*/
+    /*固定定位居中对齐*/
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    height: 44px;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    background-color: #f6f6f6;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+
+}
+
+.search {
+    position: relative;
+    height: 26px;
+    line-height: 24px;
+    border: 1px #ccc solid;
+    flex: 1;
+    font-size: 12px;
+    color: #666;
+    margin: 7px 10px;
+    padding-left: 25px;
+    border-radius: 5px;
+    box-shadow:  0 2px 4px rgba(0,0,0,.2);
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url("../images/sprite.png") no-repeat -59px -279px;
+    -webkit-background-size: 104px;
+    background-size: 104px;
+    /*margin: 5px;*/
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+
+}
+
+.user:before {
+    display: block;
+    content: ' ';
+    width: 23px;
+    height: 23px;
+    background: url("../images/sprite.png") no-repeat -59px -194px;
+    -webkit-background-size: 104px;
+    background-size: 104px;
+    margin: 4px auto -2px;
+
+}
+/*focus*/
+.focus img{
+    width: 100%;
+    padding-top: 44px;
+}
+/*局部导航栏*/
+.local-nav{
+    display: flex;
+    height: 64px;
+    /*background-color: pink;*/
+    margin: 3px 4px;
+    border-radius: 8px;
+}
+.local-nav li{
+    flex: 1;
+}
+.local-nav a{
+    display: flex;
+    flex-direction: column;/*把主轴设为y轴*/
+    align-items: center;/*侧轴居中对齐-单行的*/
+    font-size: 12px;
+}
+.local-nav-icon{
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+    margin-top: 8px;
+    background: url("../images/localnav_bg.png") no-repeat 0 0;
+    background-size: 32px;
+}

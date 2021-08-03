@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .tab {
+            width: 978px;
+            margin: 100px auto;
+        }
+
+        .tab_list {
+            height: 39px;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab_list li {
+            float: left;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 20px;
+            text-align: center;
+            cursor: pointer; /*控制鼠标变小手*/
+        }
+
+        .tab_list .current {
+            background-color: #c81623;
+            color: #fff;
+        }
+
+        .item_info {
+            padding: 20px 0 0 20px;
+        }
+
+        .item {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="tab">
+    <div class="tab_list">
+        <ul>
+            <li class="current">商品介绍</li>
+            <li> 规格与包装</li>
+            <li>售后保障</li>
+            <li>商品评价(5000+)</li>
+            <li>手机社区</li>
+        </ul>
+    </div>
+    <div class="tab_con">
+        <div class="item" style="display: block">
+            商品介绍模块内容
+        </div>
+        <div class="item">
+            规格与包装内容
+        </div>
+        <div class="item">
+            售后保障模块内容
+        </div>
+        <div class="item">
+            商品评价模块内容
+        </div>
+        <div class="item">
+            手机社区模块内容
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        //1. 点击上部 的li，当前li 添加current类，其余兄弟移除类
+        $('.tab_list li').click(function () {
+            $(this).addClass('current').siblings().removeClass('current');
+            //2. 点击同时，得到当前li 的索引号
+            var index = $(this).index();
+            console.log(index);
+             //3.让下部里面相应索引号的item显示，其余的item隐藏
+            $('.tab_con .item').eq(index).show().siblings().hide();
+        });
+
+
+
+
+    })
+</script>
+</body>
+</html>

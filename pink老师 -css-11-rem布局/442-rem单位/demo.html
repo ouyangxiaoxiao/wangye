@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        div {
+            width: 15rem;
+            height: 15rem;
+            background-color: purple;
+        }
+
+        /*1.em根据父元素字体大小设置的*/
+        /*2.rem是根据html字体大小设置的，跟父元素没关系*/
+        p {
+            /*width: 10em;*/
+            /*height: 10em;*/
+            width: 10rem;
+            height: 10rem;
+            background-color: pink;
+            /*3.rem的优点就是可以通过修改html中文字的大小来改变页面中元素的大小可以整体调整*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p></p>
+</div>
+</body>
+</html>

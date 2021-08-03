@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        span {
+            color: red;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin-top: 10px;
+            line-height: 200px;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+<h1>6. jQuery 元素操作</h1>
+<p>主要是 <span>遍历</span>、创建、添加、删除元素操作。</p>
+<h4>6.1 遍历元素</h4>
+<p>jQuery隐式迭代是对同一类元素做了同样的操作。如果想要给同一类元素做不同操作，就需要用到遍历。</p>
+<h3>语法</h3>
+<p>$("div".each(function(index,domEle){xxx;}))</p>
+
+<ul>
+    <li>1.each()方法遍历匹配的每一个元素。主要用DOM处理。each每一个</li>
+    <li>2.里面的回调函数有2个参数:index是每个元素的索引号；demEle是每个 <span>DOM元素对象，不是jQuery对象</span></li>
+    <li><span>3.所以需要使用jQuery方法，需要给这个dom元素转换为jQuery对象$(domEle)</span>    </li>
+</ul>
+
+<div>1</div>
+<div>2</div>
+<div>3</div>
+
+<script>
+    $(function () {
+        // $("div").css("color","red");
+        //1. 如果针对于同一类元素做不同的操作，需要用到遍历元素（类似for、但是比for强大）
+        var sum = 0;
+        //1.each() 方法遍历元素
+        var arr = ["red","green","blue"];
+        $("div").each(function (i,domEle) {
+            //回调函数第一个参数一定是索引号,可以自己制定索引号名称
+            console.log(i);
+            //回调函数第二个参数一定是DOM元素对象
+            console.log(domEle);
+            // domEle.css("color","red");//这样写会报错 因为还需要转换为jQuery对象
+            $(domEle).css("color",arr[i]);//这样写才对
+            $(domEle).css("background",arr[i]);//这样写才对
+            sum += parseInt($(domEle).text());
+
+        });
+        console.log(sum);
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>1.3静态定位static(了解)</h3>
+静态定位是元素的默认定位方式，无定位的意思。
+语法：
+选择器{position:static}
+静态定位按照标准流特性摆放位置，他没有边偏移
+静态定位在布局时很少用到
+<h3>1.4相对定位 relative(重要)</h3>
+相对定位是元素在移动位置的时候，是相对于他原来的位置来说的(自恋型)：
+语法：
+选择器{position:relative}
+ 相对定位的特点:(务必记住)
+1.他是相对于自己原来的位置移动的（移动位置的时候参照点事自己原理的位置）
+2.原来在标准流的位置继续占用，后面的盒子仍然以标准流的方式对待他(不脱标，继续保留原来位置)
+因此，相对定位并没有脱标。他最典型的应用是给绝对定位当爹的。
+</body>
+</html>

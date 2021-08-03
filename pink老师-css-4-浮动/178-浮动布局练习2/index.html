@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box {
+            width: 1226px;
+            height: 285px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .box li {
+            width: 296px;
+            height: 285px;
+            background-color: purple;
+            float: left;
+            margin-right: 14px;
+        }
+
+        /*注意权重 也就是选择器约详细权重越大*/
+        .box li.last {
+            margin-right: 0; /*注意权重问题*/
+        }
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li class="last">4</li>
+</ul>
+</body>
+</html>

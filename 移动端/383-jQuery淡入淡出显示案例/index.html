@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button>淡入效果</button>
+<button>淡出效果</button>
+<button>淡出淡入切换</button>
+<button>修改透明度</button>
+<div></div>
+<script>
+    $(function () {
+        $('button').eq(0).click(function () {
+           //淡入 fadeIn()
+            $('div').fadeIn(1000);
+        });
+        $('button').eq(1).click(function () {
+           //淡出 fadeOut()
+            $('div').fadeOut(1000);
+        });
+        $('button').eq(2).click(function () {
+            //淡入淡出切换 fadeToggle()
+            $('div').fadeToggle(1000);
+        });
+        $('button').eq(3).click(function () {
+            //修改透明度 fadeTo()
+            $('div').fadeTo(1000,0.5);
+        });
+    })
+</script>
+</body>
+</html>

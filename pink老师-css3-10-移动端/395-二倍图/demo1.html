@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*把50*50的图片 放到手机中 就会被放大到100*100，就会显示不清晰*/
+        /*我们采取的是放一个100*100的图片 然后手动缩小50*50*/
+        /*我们准备的图片 比实际需要的尺寸大2倍 这方式是就是二倍图*/
+
+        /*img:nth-child(2) {*/
+        /*    width: 50px;*/
+        /*    height: 50px;*/
+        /*}*/
+
+        /*1.物理像素，就是我们说的分辨率 iphone8的物理像素是750**/
+        /*2.在iphone 1px 开发像素 =2个物理像素*/
+
+
+
+        img :nth-child(2) {
+            /*原始图片100*100*/
+            background-size: 50% 50%;
+        }
+
+    </style>
+</head>
+<body>
+<!--模糊的-->
+<img src="apple50(1).jpg" alt="">
+<!--我们采取2倍图-->
+<img src="apple100.jpg" alt="">
+</body>
+</html>

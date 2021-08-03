@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        ul li {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            border: 1px black solid;
+            float: left;
+            margin-left: -1px;
+            list-style: none;
+            line-height: 300px;
+            text-align: center;
+        }
+
+        ul li:hover {
+            /*1.如果盒子没有定位，则鼠标经过添加相对定位*/
+            position: relative; /*相对定位会压住其它盒子*/
+            /*如果有定位，则修改z-index*/
+            z-index: 1;
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>

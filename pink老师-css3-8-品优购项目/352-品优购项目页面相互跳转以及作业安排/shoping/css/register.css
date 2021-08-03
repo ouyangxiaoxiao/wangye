@@ -1,0 +1,142 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px #c81523 solid;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+/*主体*/
+.registrerarea {
+    height: 512px;
+    border: 1px #ccc solid;
+    margin-top: 20px;
+}
+
+.registrerarea h3 {
+    height: 42px;
+    border-bottom: 1px #ccc solid;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.loging {
+    float: right;
+    font-size: 14px;
+}
+
+.loging a {
+    color: #c81623;
+}
+
+.reg_from {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_from ul li {
+    margin-bottom: 20px;
+}
+
+.reg_from ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.reg_from ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px #ccc solid;
+}
+
+.reg_from ul li .error {
+    color: #df3033;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat;
+    margin-top: -2px;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    background: url("../images/success.png") no-repeat;
+
+}
+
+.safe {
+    padding-left: 164px;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.ruo {
+    background-color: #de1111;
+}
+
+.zhong {
+    background-color: #40b83f;
+}
+
+.qiang {
+    background-color: #f79100;
+}
+
+.agree {
+    padding-left: 95px;
+
+}
+
+.agree input {
+    vertical-align: middle; /*这里没有水平居中*/
+
+}
+
+.agree a {
+    color: #1ba1e6;
+
+}
+
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    margin: 30px 0 0 70px;
+}
+/*底部*/
+.mod_copyright{
+    text-align: center;
+    padding-top: 20px;
+}
+.link{
+    margin-bottom: 15px;
+}
+.link a{
+    margin: 0 3px;
+}
+.copyright{
+    line-height: 20px;
+}

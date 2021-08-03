@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*from 和 to 等同于 0% 和100%*/
+        /*@keyframes move{*/
+        /*    from{*/
+        /*        transform: translate(0,0);*/
+        /*    }*/
+        /*    to{*/
+        /*        transform: translate(1000px,0);*/
+        /*    }*/
+        /*}*/
+        /*动画序列*/
+        /*1.可以做多个状态的变化 keyframes-关键帧*/
+        /*2.里面的百分比是整数 */
+        /*3.总的时间是10秒 总时间划分 25%*10s=2.5s*/
+
+
+        @keyframes move {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(1000px,0);
+            }
+            50%{
+                transform: translate(1000px,500px);
+            }
+            75%{
+                transform: translate(0,500px);
+            }
+            100%{
+                transform: translate(0,0);
+            }
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: move;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

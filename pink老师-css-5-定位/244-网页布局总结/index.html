@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>3.网页布局总结</h1>
+<p>
+    通过盒子模型，清除知道大部分html标签是一个盒子。
+    通过css浮动，定位可以让每个盒子排列成位网页。
+
+    一个完整的网页，是标准流、浮动、定位一起完成布局的，每个都有自己的专门用法。
+    1.标准流
+    可以让盒子上下排列或者左右排列，垂直的块级盒子显示就用标准流布局。
+    2.浮动
+    可以让多个块级元素一行显示或者左右对齐盒子，多个块级盒子水平显示就用浮动布局。
+    3.定位
+    定位最大的特点是有层叠的概念，就是可以让多个盒子前后层叠来显示。如果元素自由在某个盒子内移动就用定位布局。
+</p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+<h1>2. jQuery的基本使用</h1>
+<h3>2.5  jQuery对象和DOM对象</h3>
+
+<p>DOM对象与jQuery之间是可以互相转换的</p>
+
+<p>因为原生js比jQuery更大，元素的一些属性和方法Jquery没有给我们封装，要想使用这些属性和方法需要把jQuery对象转换为DOM对象才可以使用</p>
+<ul>
+    <li></li>
+</ul>
+
+<video src="https://vv.taozhi.online/ce233e174454439ca4bf98232e297d4c/238083a87e09473b93e2fbf736e27efb-b2982136086effc89339c5f5104c4ca8-ld.mp4" ></video>
+<!--//muted 静音播放-->
+<!--<video src="https://vv.taozhi.online/ce233e174454439ca4bf98232e297d4c/238083a87e09473b93e2fbf736e27efb-b2982136086effc89339c5f5104c4ca8-ld.mp4" muted></video>-->
+<script>
+    //1. DOM对象转换为jQuery对象
+    // $('video');
+    //（2）我们已经使用原生js获取过来的DOM对象
+    var myVideo = document.querySelector('video');
+    // myVideo.play();
+
+    //2.jQuery对象转换为DOM对象
+    // $('video')[0].play();
+    $('video').get(0).play();
+
+
+</script>
+</body>
+</html>

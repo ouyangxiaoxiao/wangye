@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<h2>2.多行文本溢出显示省略号</h2>
+
+多行文本溢出显示省略号，有较大兼容性问题，适合于webkit浏览器或移动端(移动端大部分是webkit内核)
+
+
+        {   overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp:4;
+            -webkit-box-orient: vertical;
+        }
+更推荐后台人员来做这个效果，因为后台人员可以设置显示多少个字，操作更简单。
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: #57b4ff;
+        }
+        tbody{
+            background-color: skyblue;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>1.定位</h1>
+<h2>1.9定位的总结</h2>
+<table>
+    <thead>
+    <tr>
+        <td>定位模式</td>
+        <td>是否脱标</td>
+        <td>移动位置</td>
+        <td>是否常用</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>static静态定位</td>
+        <td>否</td>
+        <td>不能使用边偏移</td>
+        <td>很少</td>
+    </tr>
+    <tr>
+        <td><span>relative相对定位</span></td>
+        <td><span>否(占有位置)</span></td>
+        <td><span>相对于自身位置偏移</span></td>
+        <td><span>常用</span></td>
+    </tr>
+    <tr>
+        <td><span>absolute绝对定位</span></td>
+        <td><span>是(不占有位置)</span></td>
+        <td><span>带有定位的父级</span></td>
+        <td><span>常用</span></td>
+    </tr>
+    <tr>
+        <td><span>fixed固定定位</span></td>
+        <td><span>是(不占有位置)</span></td>
+        <td><span>浏览器可视区</span></td>
+        <td><span>常用</span></td>
+    </tr>
+    <tr>
+        <td>stick粘性定位</td>
+        <td>否(占有位置)</td>
+        <td>浏览器可视区</td>
+        <td>当前阶段较少</td>
+    </tr>
+    </tbody>
+</table>
+1.一定记住 相对定位 固定定位、绝对定位两个大的特点：
+1.是否占有位置(脱标否)，以谁为基准点移动位置
+2.学习定位重点学会子绝父相。
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .one{
+            width: 0;
+            height: 0;
+            border-top:100px black solid;
+            border-bottom:100px purple solid;
+            border-left:100px skyblue solid;
+            border-right:100px red solid;
+        }
+        .two {
+            width: 0;
+            height: 0;
+            line-height: 0;/*照顾低版本*/
+            font-size: 0;/*照顾低版本*/
+            border: 100px transparent solid;
+            border-left-color:green ;
+        }
+        .jd{
+            width: 120px;
+            height: 249px;
+            background-color: pink;
+        }
+        .jd{
+            position: relative;
+        }
+        .jd span{
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            width: 0;
+            height: 0;
+            /*为了照顾低版本*/
+            line-height: 0;
+            font-size: 0;
+            border: 5px transparent solid;
+            border-bottom-color:pink ;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="one"></div>
+<div class="two"></div>
+<div class="jd">
+    <span></span>
+</div>
+</body>
+</html>

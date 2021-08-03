@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        li {
+            width: 100px;
+            height: 25px;
+            background-color: pink;
+            text-align: right;
+            padding: 0 10px;
+
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>听课</li>
+    <li>阅读</li>
+    <li>听与看</li>
+    <li>示范/展示</li>
+    <li>小组讨论</li>
+    <li>实操演练</li>
+    <li>转教别人/立即应用</li>
+</ul>
+<script>
+    $(function () {
+        console.log($("li").length);
+        $("li").each(function (i, ele) {
+            console.log(i);
+            console.log(ele);
+            $(this).css({
+                width: 35 * (i+1)
+            })
+        });
+
+    })
+</script>
+</body>
+</html>

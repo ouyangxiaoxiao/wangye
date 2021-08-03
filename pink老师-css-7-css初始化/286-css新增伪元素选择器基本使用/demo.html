@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /*div::before 权重是2*/
+
+        div::before {
+            content: '我';
+            /*    行内元素不能直接加宽高，加浮动，加定位，转换成块行内元素*/
+            display: inline-block;
+            width: 20px;
+            height: 80px;
+            background-color: green;
+        }
+
+        div::after {
+            content: '小猪佩奇';
+        }
+    </style>
+</head>
+<body>
+<div>
+    是
+</div>
+</body>
+</html>

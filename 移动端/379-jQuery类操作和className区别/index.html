@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .tow{
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="one"></div>
+<h1>2. jQuery 样式操作</h1>
+<h3>2.3 类操作与className区别</h3>
+<p>原生js中className 会覆盖元素原先里面的类名</p>
+<p>jQuery里面操作只是对指定类进行操作，不影响原先类名</p>
+
+<script>
+    $(".one").addClass('tow');//这个是追加类名
+    $(".one").removeClass('tow');//这个是删除类名
+</script>
+</body>
+</html>

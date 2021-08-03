@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*任何元素都可以浮动，不管原先是什么模式的元素，添加浮动之后具有行内块元素的特性*/
+    span
+    ,div{
+        width: 200px;
+        height: 100px;/*行内块元素 设置宽高是无效的*/
+        background-color: pink;
+        float: left;
+    }
+        /*如果行内元素有了浮动，则不需要转换块级/行内块元素 就可以直接给高度和宽度*/
+    p{
+        height: 200px;
+        background-color: purple;
+        float: right;
+    }
+    </style>
+</head>
+<body>
+<span>1</span>
+<span>2</span>
+<div>div</div>
+<p>p</p>
+</body>
+</html>

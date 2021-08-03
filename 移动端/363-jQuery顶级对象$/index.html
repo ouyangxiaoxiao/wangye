@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<h1>2.  jQuery 的基本使用</h1>
+<h4>2.4 jQuery 的顶级对象$</h4>
+
+<ul>
+    <li>1.$是JQuery的别称，在代码中可以使用jQuery代替$，但是一般为了方便，通常直接使用$。</li>
+</ul>
+
+<script>
+    jQuery(function () {
+       alert(11);
+        jQuery('div').hide()
+    });
+
+
+    // $(function () {
+    //     alert(11)
+    // })
+</script>
+
+<div></div>
+</body>
+</html>

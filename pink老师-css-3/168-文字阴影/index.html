@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+        div{
+            font-size: 50px;
+            color: red;
+            font-weight: 700;
+            text-shadow: 5px 5px 6px rgba(0,0,0,.3);
+        }
+    </style>
+</head>
+<body>
+<h1>6.文字阴影</h1>
+在css中，我们可以使用text-shadow属性将阴影应用于文本。
+<h3>语法：</h3>
+<p>text-shadow: h-shadow v-shadow blur color</p>
+<table>
+    <thead>
+    <tr>
+        <th>值</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>h-shadow</td>
+        <td>必须。水平阴影的位置，允许负值。</td>
+    </tr>
+    <tr>
+        <td>v-shadow</td>
+        <td>必须。垂直阴影的位置，允许负值。</td>
+    </tr>
+    <tr>
+        <td>blur</td>
+        <td>可选，模糊的距离。</td>
+    </tr>
+    <tr>
+        <td>color</td>
+        <td>可选。阴影的颜色。参阅 <a href="#">css颜色值</a> </td>
+    </tr>
+    </tbody>
+</table>
+
+
+<div>你是阴影，我是火影</div>
+</body>
+</html>

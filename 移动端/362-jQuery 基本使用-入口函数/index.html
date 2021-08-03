@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        ol{
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<a href="http://www.jquery.com" target="_blank">jQuery官网</a>
+<p>引用</p>
+<p>https://code.jquery.com/jquery-3.6.0.min.js</p>
+<a href="https://code.jquery.com/jquery-3.6.0.min.js">https://code.jquery.com/jquery-3.6.0.min.js</a>
+<br>
+<br>
+<br>
+<!--<div></div>-->
+
+<script>
+    // $('div').hide();
+//以下的入口函数是等着DOM加载完成的入口函数
+//     $(document).ready(function () {
+//          $('div').hide();
+//     });
+    //2.简单写法
+    $(function () {
+        $('div').hide()
+    });
+</script>
+<ol>
+    <li>等着DOM结构渲染完毕即可执行内部代码，不必等所有资源加载完毕，jQuery帮我们完成了封装。</li>
+    <li>相当于原生js中的DOMContentLoaded</li>
+    <li>不同于原生js中的load事件是等页面文档、外部js文件、css文件、图片加载完毕才执行内部代码</li>
+</ol>
+
+<div></div>
+</body>
+</html>

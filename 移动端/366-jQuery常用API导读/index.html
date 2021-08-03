@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+<script>
+    // $('div').hide();
+    //1. 等着页面DOM 加载完毕再去执行JS代码
+    // $(document).ready(function () {
+    //     $('div').hide()
+    // });
+    //2.等着页面DOOM加载完毕再去执行代码
+    $(function () {
+        $('div').hide();
+    })
+</script>
+
+<div></div>
+<ul>
+    <li>入口函数
+    </li>
+    <li>1.等着DOM 结构渲染完毕既可以执行内部代码，不必等到所有外部资源加载完毕，jQuery 帮我们完成了封装。
+    </li>
+    <li>2.相当于原生js的 DOMContentLoaded。
+    </li>
+    <li>3.不同于原生js中的load事件是等页面文档，外部的js文件，css文件，图片加载完毕才执行的内部代码。
+    </li>
+</ul>
+
+<ul>
+    <li>能够写出常用的jQuery选择器</li>
+    <li>能够操作jQuery样式</li>
+    <li>能够写出常用的jQuery动画</li>
+    <li>能够操作jQuery属性</li>
+    <li>能够操作jQuery元素</li>
+    <li>能够操作jQuery元素尺寸、位置</li>
+</ul>
+
+
+<ul>
+    <li>jQuery选择器</li>
+    <li>jQuery样式选择</li>
+    <li>jQuery效果</li>
+    <li>jQuery属性操作</li>
+    <li>jQuery文本属性值</li>
+    <li>jQuery元素操作</li>
+    <li>jQuery尺寸、位置操作</li>
+</ul>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>5.动画</h1>
+动画(animation)是css3中最有颠覆性的特征之一，可通过精确节点来控制一个或一组动画，常用来实现复杂的动画效果
+相比过度，动画啊可以实现更多变化，更多控制，连续自动播放等效果
+<h2>5.1动画的基本使用</h2>
+制作动画分为两步
+1.先定义动画
+2.在使用(调用)动画
+<h4>1.用keyframes定义动画(类似定义选择器)</h4>
+
+@keyframes 动画名称
+{
+            /*开始状态*/
+            0% {
+                transform: translateX(0px);
+            }
+            /*结束状态*/
+            100% {
+                transform: translateX(1000px);
+            }
+        }
+</body>
+</html>

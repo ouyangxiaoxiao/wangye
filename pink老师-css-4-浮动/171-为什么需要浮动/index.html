@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        *{
+            /*margin: 0;*/
+            /*padding: 0;*/
+        }
+        div{
+            width: 100%;
+            height: 100px;
+            display: block;
+        }
+        div div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*display: inline-block;*/
+            float: left;
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>1.浮动</h1>
+<h2>1.3 为什么需要浮动</h2>
+<dl>
+    <dt>提问：我们用标准流能很方便的实现下面的效果吗？</dt>
+    <dd>1.如何让多个块级盒子(div)水平排列成一行？</dd>
+</dl>
+<br>
+<div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+<br>
+
+<p>比较难，虽然可以转换为行内块元素可以实现一行显示，但是他们之间会有大的空白缝隙，很难控制。</p>
+<p>总结:有很多的布局效果，标准流没有办法完成，此时就可以利用浮动完成布局，因为浮动可以改变元素标签默认的排列方式。</p>
+<p>浮动典型的应用:可以让多个元素一行内排列显示。
+<p>网页布局第一准则;多个会计元素纵向排列找标准流，多个块级元素横向排列找浮动</p>
+</body>
+</html>

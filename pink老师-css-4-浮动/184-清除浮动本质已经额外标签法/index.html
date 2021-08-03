@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: black 1px solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>3.清除浮动</h1>
+<h2>3.2清除浮动本质</h2>
+
+<ul>
+    <li>清除浮动的本质是清除浮动元素造成的影响</li>
+    <li>如果父盒子本身有高度，则不需要清除浮动</li>
+    <li>如果清除浮动之后，父级就会根据浮动的盒子自动检测高度，父级有了高度，就不会影响下面的标准流了</li>
+</ul>
+<dl>
+    <dt>语法：</dt>
+    <dd>选择器{clear:属性值；}</dd>
+</dl>
+<table>
+    <thead>
+    <tr>
+        <th>属性值</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>left</td>
+        <td>不允许左侧有浮动元素（清除左侧浮动的影响）</td>
+    </tr>
+    <tr>
+        <td>right</td>
+        <td>不允许右侧有浮动元素(清除右侧浮动的影响)</td>
+    </tr>
+    <tr>
+        <td>both</td>
+        <td>同时清除左右两侧浮动的影响</td>
+    </tr>
+    </tbody>
+</table>
+<p>我们实际工作中，几乎只用clear:both;</p>
+<p>清除浮动的策略是：闭合浮动</p>
+<h2>3.3清除浮动方法</h2>
+<ul>
+    <li>1.额外标签法也称为隔离法，是W3C推荐的做法</li>
+    <li>2.父级添加overflow属性</li>
+    <li>3.父级添加after伪元素</li>
+    <li>4.父级添加双伪元素</li>
+</ul>
+<dl>
+    <dt>额外标签法也称为隔墙法，是w3c推荐的做法</dt>
+    <dt>额外标签法会在浮动元素末尾添加一个空的标签，例如《div style="clear:both"》《/div》</dt>,或者其他标签
+    如（br等）
+</dl>
+<ul>
+    <li>优点：通俗易懂，书写方便</li>
+    <li>缺点：添加许多无意义的标签，结果话比较差</li>
+    <li>注意：添加的元素必须是块级元素</li>
+</ul>
+<dl>
+    <dt>总结：</dt>
+    <dt>1清除浮动的本质是？</dt>
+    <dd>清除浮动本质是清除浮动元素脱离标准流造成的影响</dd>
+    <dt>2.清除浮动策略是？</dt>
+    <dd>闭合浮动，只让浮动在父亲盒子内部影响，不影响父盒子外面的其它盒子</dd>
+    <dt>3.额外标签法？</dt>
+    <dd>隔墙法，就是在最后一个浮动的子元素后面添加一个额外标签，添加清除浮动样式，实际工作可能会遇到，但是不常用</dd>
+</dl>
+</body>
+</html>

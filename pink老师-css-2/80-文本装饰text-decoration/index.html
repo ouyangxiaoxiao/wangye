@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            text-decoration: underline;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 20px;
+        }
+        p{
+            text-decoration: overline;
+        }
+        span{
+            text-decoration: line-through;
+        }
+        h2{
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;/*带个雷神*/
+        }
+    </style>
+</head>
+<table>
+    <thead>
+    <tr>
+        <th>属性值</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>none</td>
+        <td>默认。没有装饰线（最常用）</td>
+    </tr>
+    <tr>
+        <td>underline</td>
+        <td>下划线。连接a自带下划线（常用）</td>
+    </tr>
+    <tr>
+        <td>overline</td>
+        <td>上划线（几乎不用）</td>
+    </tr>
+    <tr>
+        <td>line-through</td>
+        <td>删除线。（不常用）</td>
+    </tr>
+    </tbody>
+</table>
+<body>
+<h2>none</h2>
+<div>看我装饰的样式</div>
+<p>
+    overline 上划线
+</p>
+<a href="http://www.baidu.com">百度</a>
+<br>
+<span>line-through</span>
+</body>
+</html>

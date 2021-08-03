@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.定位</h1>
+<h2>1.5绝对定位absolute(重要)</h2>
+绝对定位是元素在移动位置的时候，相对于他祖先元素来说的(拼爹型)
+语法:
+选择器{position:absolute;}
+绝对定位的特点:(务必记住)
+1.如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位(Document文档)。
+2.如果祖先元素有定位(相对，绝对，固定定位)，则是以最近一级的有定位祖先元素为参考点移动位置。
+3.绝对定位不在占有原先位置。（脱标）
+</body>
+</html>

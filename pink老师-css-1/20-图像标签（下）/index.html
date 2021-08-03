@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        tr,td,th{
+            border: 1px black solid;
+            padding: 3px 10px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>4. HTML 常用标签</h1>
+<h2> 4.6 图像标签和路径（重点）</h2>
+<h3>1.图像标签</h3>
+<p>图像标签的其它属性</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>属性</th>
+        <th>属性值</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>src</td>
+        <td>图片路径</td>
+        <td>必须属性</td>
+    </tr>
+    <tr>
+        <td>alt</td>
+        <td>文本</td>
+        <td>替换文本，图像不能显示的时候的提示文本</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>文本</td>
+        <td>提示文本，鼠标放到图像上，提示的文字</td>
+    </tr>
+    <tr>
+        <td>width</td>
+        <td>像素</td>
+        <td>设置图像的宽度</td>
+    </tr>
+    <tr>
+        <td>height</td>
+        <td>高度</td>
+        <td>设置图像的高度</td>
+    </tr>
+    <tr>
+        <td>border</td>
+        <td>像素</td>
+        <td>设置图像的边框粗细</td>
+    </tr>
+    </tbody>
+</table>
+<img src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f75c69e081245051.jpg" alt="">
+<br>
+<img src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f75c69e081245051.jpg" alt="这是一个图片" title="温馨提示;这是一张图片" width="500px">
+<img src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f75c69e081245051.jpg" alt="这是一个图片" title="温馨提示;这是一张图片" height="500px" border="15">
+<img src="https://p1.ssl.qhimgs1.com/sdr/400__/t01f75c69e081245051.jpg" alt="这是一个图片" title="温馨提示;这是一张图片" width="500px" height="500px">
+<p>一般只设置宽或者高 ，让图像等比例缩放就可以了</p>
+<h4>会独占一行</h4>
+图像的使用：
+<img src="1.jpg" alt="这是图片">
+</body>
+</html>

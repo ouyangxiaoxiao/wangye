@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.w{
+    width: 1200px;
+    margin: auto;
+}
+li{
+    list-style: none;
+}
+.header{
+    height: 42px;
+    background-color: pink;
+    /*注意会层叠w的样式*/
+    margin: 30px auto;
+}
+.logo{
+    float: left;
+    width: 198px;
+    height: 42px;
+    /*background-color: purple;*/
+}
+.nav{
+    float: left;
+    margin-left: 60px;
+}

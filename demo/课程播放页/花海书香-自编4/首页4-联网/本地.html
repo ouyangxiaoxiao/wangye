@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <meta name="referrer" content="no-referrer"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            max-width: 640px;
+            min-width: 320px;
+            margin: 0 auto;
+        }
+
+        div {
+            /*css3 盒子模型 */
+            box-sizing: border-box;
+        }
+
+        #box {
+            width: 100%;
+            /*margin: 0 auto;*/
+            float: right;
+            box-sizing: border-box;
+        }
+
+        #box ul {
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #box ul li {
+            width: 46%;
+            float: left;
+            border: 1px black solid;
+            margin: 2%;
+            box-sizing: border-box;
+            padding: 0;
+            list-style: none;
+        }
+
+        #box ul li img {
+            width: 100%;
+        }
+
+        #box ul li p {
+            font-size: 14px;
+            padding: 0;
+            margin: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul></ul>
+
+
+</div>
+
+
+<script>
+    var html = "";
+    for (i = 0; i <= 1; i++) {
+        $.ajax({
+            type: "get",
+            // traditional:"false",
+            // cache :"false",
+            // url: "test01.php",
+            async: false,
+            // async:true,
+            // url: "https://api.cloud.taozhi.online/album-management/client//content/allOrFree/resalb2020080404543p8agkxw?page=1&size=999&menuId=0&isQueryFree=false",
+            url: "1.json",
+            success: function (data) {
+                console.log(data);
+                data2 = (data.data);
+                console.log(data2);
+
+
+                for (i = 0; i < data2.length; i++) {
+                    cover = "https://open.oss.taozhi.online/production/" + ((data2[i]).cover);
+                    title = ((data2[i]).title);
+                    console.log(cover);
+                    console.log(title);
+                    // console.log((data2[i]));
+                    console.log("https://api.cloud.taozhi.online/album-management/client//content/allOrFree/"+(data2[i]).openId+"?page=1&size=999&menuId=0&isQueryFree=false");
+                    // console.log((data2[i]).openId + "");
+
+
+                    html += `
+
+                <li value="../五年级/${title}.html">
+            <img src="${cover}"
+                 alt="">
+            <p>${title}</p>
+        </li>
+
+
+                `;
+                    $("#box ul").html(html);
+                }
+
+
+            }
+
+
+        });
+    }
+
+
+</script>
+<script>
+        /*控制点击图片跳转*/
+window.addEventListener('load',function () {
+        var box = document.getElementById('box');
+        var lis = box.getElementsByTagName('li');
+        // console.log(box);
+        console.log(lis);
+
+        for(i=0;i<lis.length;i++){
+            lis[i].addEventListener('click',function () {
+                console.log('点击了');
+                console.log(this.getAttribute("value"));
+                location.href = this.getAttribute("value");
+
+            })
+        }
+    });
+</script>
+</body>
+</html>

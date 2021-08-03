@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*这叫子孙后代选择器 后代选择器*/
+        .nav a{
+            /*color: red;*/
+        }
+        /*子元素选择器 只选择亲儿子*/
+        .nav > a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>1.css的复合选择器</h1>
+<h2>1.3 子选择器（重要）</h2>
+<p> <span>子元素选择器(子选择器) 只能选择作为某元素的最近一级子元素，简单理解就是选亲儿子元素。</span></p>
+
+
+
+
+<div class="nav">
+    <a href="">我是儿子</a>
+    <p>
+        <a href="">我是孙子</a>
+    </p>
+</div>
+</body>
+</html>

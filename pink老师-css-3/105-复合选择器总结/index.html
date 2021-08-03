@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.css复合选择器总结</h1>
+<table>
+    <thead>
+    <tr>
+        <th>选择器</th>
+        <th>作用</th>
+        <th>特征</th>
+        <th>使用情况</th>
+        <th>隔开符号及用法</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>后代选择器</td>
+        <td>用来选择后代元素</td>
+        <td>可以是子孙后代</td>
+        <td>较多</td>
+        <td>符号是空格 .nav a</td>
+    </tr>
+    <tr>
+        <td>子代选择器</td>
+        <td>选择最近一代元素</td>
+        <td>只选亲儿子</td>
+        <td>较少</td>
+        <td>符号是大于 .nav>p </td>
+    </tr>
+    <tr>
+        <td>并集选择器</td>
+        <td>选择某些相同样式的元素</td>
+        <td>可以用于集体声明</td>
+        <td>较多</td>
+        <td>符号是逗号 .nav ,header</td>
+    </tr>
+    <tr>
+        <td>连接伪类选择器</td>
+        <td>选择不同状态的连接</td>
+        <td>跟连接相关</td>
+        <td>较多</td>
+        <td>重点记住a{}和a:hover 实际开发写的多</td>
+    </tr>
+    <tr>
+        <td>:focus选择器</td>
+        <td>选择获得光标的表单</td>
+        <td>跟表单相关</td>
+        <td>较少</td>
+        <td>input:focus 记住这个写法</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

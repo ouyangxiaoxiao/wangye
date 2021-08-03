@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            /*水平阴影位置 垂直阴影位置 模糊距离 阴影尺寸 阴影颜色 改内阴影*/
+            /*box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .3) inset;*/
+            /*box-shadow: 6px 8px 8px 5px rgba(0, 0, 0, .3);*/
+        }
+        div:hover{
+            box-shadow: 6px 8px 8px -5px rgba(0, 0, 0, .3);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>5.盒子阴影（重点）</h1>
+css3中新增了盒子阴影，我们可以使用box-shadow属性为盒子添加阴影。
+<dl>
+    <dt>语法：</dt>
+    <dd></dd>
+</dl>
+<table>
+    <thead>
+    <tr>
+        <th>值</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>h-shadow</td>
+        <td>必须，水平阴影的位置，允许负值</td>
+    </tr>
+    <tr>
+        <td>v-shadow</td>
+        <td>必须，垂直阴影的位置，允许负值。</td>
+    </tr>
+    <tr>
+        <td>blur</td>
+        <td>可选，模糊距离。</td>
+    </tr>
+    <tr>
+        <td>spread</td>
+        <td>可选，阴影的尺寸。</td>
+    </tr>
+    <tr>
+        <td>color</td>
+        <td>可选，阴影的颜色，请参阅css颜色值。</td>
+    </tr>
+    <tr>
+        <td>inset</td>
+        <td>可选。将外部阴影(outset)改为内部阴影</td>
+    </tr>
+    </tbody>
+</table>
+<dl>
+    <dt><span>注意：</span></dt>
+    <dd>1.默认的是外阴影(outset),但是不可以写这个单词，否则导致阴影无效</dd>
+    <dd>2.盒子阴影不占用空间，不会影响其它盒子排列。</dd>
+</dl>
+<div></div>
+</body>
+</html>

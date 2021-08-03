@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Title</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>1. jQuery 选择器</h1>
+<h3>1.4 jQuery 筛选选择器</h3>
+<table>
+    <thead>
+    <tr>
+        <th>语法</th>
+        <th>用法</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>:first</td>
+        <td>$('li:first')</td>
+        <td>获取第一个li元素</td>
+    </tr>
+    <tr>
+        <td>:last</td>
+        <td>$('li:last')</td>
+        <td>获取最后一个li元素</td>
+    </tr>
+    <tr>
+        <td>:eq(index)</td>
+        <td>$("li:eq(2)")</td>
+        <td>获取到的li元素中，选择索引号为2的元素，索引号index从0开始</td>
+    </tr>
+    <tr>
+        <td>:odd</td>
+        <td>$("li:odd")</td>
+        <td>获取到的li元素中，选择索引号为奇数的元素</td>
+    </tr>
+    <tr>
+        <td>:even</td>
+        <td>$("li:even")</td>
+        <td>获取到li元素中，选择索引号为偶数的元素</td>
+    </tr>
+    </tbody>
+</table>
+
+<ul>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+</ul>
+<ol>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+    <li>多个里面筛选几个</li>
+</ol>
+
+
+<script>
+    $(function () {
+        $("ul li:first").css("color","pink");//ul下的第一个li
+        $("ul li:last").css("color","red");//ul下的最后一个li
+        $("ul li:eq(2)").css("color","blue");//ul 下的索引号为2的li
+        $("ol li:odd").css("color","skyblue");//ol下索引号为奇数数的改为黄色
+        $("ol li:even").css("color","pink");//ol下索引号为偶数的改为粉色
+    })
+</script>
+</body>
+</html>

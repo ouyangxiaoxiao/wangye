@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*给父级添加flex属性*/
+        div {
+            display: flex;
+            width: 800px;
+            height: 300px;
+            background-color: pink;
+            /*默认的主轴是x轴 ，行 row*/
+            /*我们的元素是跟着主轴来了排列的*/
+            /*flex-direction: row;*/
+            /*简单了解 翻转*/
+            /*flex-direction: row-reverse;*/
+            /*我们可以把我们的主轴可以设置y轴，x就成了侧轴*/
+            /*flex-direction: column;*/
+            /*默认的主轴是x轴 row*/
+            /*justify-content: flex-start;!*默认*!*/
+            /*justify-content: flex-end;!*贴着右边对齐*!*/
+            /*justify-content: center;!*居中对齐*!*/
+            /*justify-content: space-around;!*平均分配剩余空间*!*/
+            justify-content: space-between;/*先两边在平分*/
+
+
+
+        }
+
+        div span {
+
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+</div>
+</body>
+</html>

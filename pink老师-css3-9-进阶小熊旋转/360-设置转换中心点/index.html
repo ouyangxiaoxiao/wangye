@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1>4.1 2D转换</h1>
+<p>
+    转换（transform-川私服木）是css中具有颠覆性的特征之一，可以实现元素位移、旋转、缩放等效果
+    转换（transform你可以理解为变形）
+    移动：translate
+    旋转：rotate
+    缩放：scale
+</p>
+<h2>4.1二维坐标系</h2>
+2D转换是改变标签在二维平面上的位置和形状的一种技术，先来学习二维坐标系
+<h2>4.2 2D转换之移动 translate-窜斯雷特</h2>
+<p>2d移动2D转换里面一种功能，可以改变元素在页面中的位置，类似定位。
+1. 语法：
+transform:translate(x,y);或者分开写
+transform:translateX(n);
+transform:translateY(n);
+2. 重点
+定义2d中的移动，沿着x和y轴移动元素
+translate最大优点：不会影响其它元素位置
+translate中百分比单位是相对于自身元素的translate:(50%,50%);
+对行内标签没有效果
+</p>
+
+<h3>4.3 2D转换之旋转rotate</h3>
+<p>
+    2D旋转指的是让元素在2维平面内顺时针旋转或者逆时针旋转。
+1语法
+transform:rotate（度数）
+2.重点
+rotate里面跟度数，单位是deg 比如rotate(45deg) 戴个
+角度为正时，顺时针，负时，为逆时针
+默认旋转的中心点事元素中心点
+</p>
+<h3>4. 2D 转换中心点 transform-origin</h3>
+<p>
+    我们可以设置元素转换的中心点
+1. 语法：
+transform-origin:x y:
+2. 重点
+    注意后面的参数 x和y用空格隔开
+    x y 默认默认的转换中心点是元素的中心点（50% 50%）
+    还可以给x y 设置像素 或者方位名词（top bottom left right ，center）
+</p>
+
+
+</body>
+</html>

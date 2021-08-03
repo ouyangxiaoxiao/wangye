@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<button>快速</button>
+<script>
+    $(function () {
+        //1.隐式迭代
+        $('button').click(function () {
+            //2.当前元素变化背景颜色
+            $(this).css('background','pink');
+            //3.其余兄弟去除背景颜色 隐式迭代
+            $(this).siblings('button').css('background','');
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            text-align: center;
+        }
+
+        .box a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            border: 1px #ccc solid;
+            background-color: #f7f7f7;
+            text-align: center;
+            line-height: 36px;
+            text-decoration: none;
+            color: #333;
+            font-size: 4px;
+        }
+
+        .box .prev,
+        .box .next {
+            width: 85px;
+        }
+
+        .box .current,
+        .box .elp {
+            background-color: #fff;
+            border: none;
+        }
+
+        .box input {
+            width: 45px;
+            height: 36px;
+            border: 1px #ccc solid;
+            outline: none;
+        }
+
+        .box button {
+            width: 60px;
+            height: 36px;
+            border: 1px #ccc solid;
+            background-color: #f7f7f7;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <a href="#" class="prev">&lt;&lt;上一页</a>
+    <a href="#" class="current">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#" class="elp">...</a>
+    <a href="#" class="next">&gt;&gt;下一页</a>
+    到第
+    <input type="text">
+    页
+    <button>确定</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+//首页样式less样式
+//@import "common";
+//@import 导入的意思 可以把一个样式文件导入林割爱一个样式文件里面
+//link 是把一个样式文件 引入到html里面
+@import "common";
+
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+/*页面元素rem计算公式 页面元素px /html字体大小  50*/
+@basefont: 50;
+.search-content {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: (88rem / @basefont);
+  background-color: #ffc001;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="jQuery.min.js"></script>
+    <style>
+        table{
+            border: 1px black solid;
+            border-collapse:collapse;
+        }
+        tr,td,th{
+            /*margin: 20px;*/
+            padding: 5px 20px;
+            border: 1px black solid;
+
+        }
+    </style>
+
+
+</head>
+<body>
+<div></div>
+<div class="nav"> 我是nav div</div>
+<p> 我是p</p>
+<ol>
+    <li>我是ol 的</li>
+    <li>我是ol 的</li>
+    <li>我是ol 的</li>
+</ol>
+<ul>
+    <li>我是ul 的</li>
+    <li>我是ul 的</li>
+    <li>我是ul 的</li>
+    <li>我是ul 的</li>
+</ul>
+
+<h1>1. jQuery选择器</h1>
+<h3>1.1 jQuery基础选择器</h3>
+<p>原生js获取元素很多，很杂，而且兼容性情况不一致，因此jQuery给我们做了封装，是获取元素统一标准</p>
+<p>$("选择器")//里面选择器直接写css选择器即可，但是要加引号</p>
+
+<table>
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>用法</th>
+        <th>描述</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>ID选择器</td>
+        <td>$("#id")</td>
+        <td>获取指定ID元素</td>
+    </tr>
+    <tr>
+        <td>全选选择器</td>
+        <td>$("*")</td>
+        <td>匹配所有元素</td>
+    </tr>
+    <tr>
+        <td>类选择器</td>
+        <td>$(".class")</td>
+        <td>获取同一类class的元素</td>
+    </tr>
+    <tr>
+        <td>标签选择器</td>
+        <td>$("div")</td>
+        <td>获取同一类标签的所有元素</td>
+    </tr>
+    <tr>
+        <td>并集选择器</td>
+        <td>$("div,p,li")</td>
+        <td>选取多个元素</td>
+    </tr>
+    <tr>
+        <td>交集选择器</td>
+        <td>$("li.current")</td>
+        <td>交集元素</td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    $(function () {
+        // $('.nav');
+        console.log($(".nav"));
+        console.log($("ul li"));
+        console.log($("ul >li"));
+        console.log($("ol li"));
+        console.log($("ol >li"));
+    })
+</script>
+</body>
+</html>

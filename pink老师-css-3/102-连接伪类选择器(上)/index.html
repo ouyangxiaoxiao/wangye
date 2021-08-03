@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /*未访问的连接*/
+        a:link{
+            color: #333;
+            text-decoration: none;/*字体样式 去除下划线*/
+        }
+        /*已经访问过的*/
+        a:visited{
+            color: orange;
+        }
+        /*鼠标经过的*/
+        a:hover{
+            color: skyblue;
+        }
+        /*点击按下去没松开时候 活动链接*/
+        a:active{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<h1>102-伪类选择器</h1>
+<p><span>伪类选择器</span>用于向某些选择器添加特殊的效果。比如给连接添加特殊效果，或选择第1个，第n个元素。
+    <br>伪类选择器书写最大的特点是用冒号(:)表示，比如：hover、:first-child。
+    <br>因为伪类选择器很多，比如有连接伪类，结构伪类等，所以这里先给大家讲解常用的连接为了选择器</p>
+
+<h2>1.6连接伪类选择器</h2>
+<ul>
+    <li>a:link 选择所有未被访问的连接</li>
+    <li>a:Visited 选择所有已访问的链接</li>
+    <li>a:hover 选择鼠标指针位于其上的链接</li>
+    <li>a:active 选择活动链接（鼠标按下未弹起的连接）</li>
+</ul>
+
+<a href="#">小猪佩奇</a>
+</body>
+</html>

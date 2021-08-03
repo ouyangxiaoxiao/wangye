@@ -1,0 +1,85 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+    background-color: #ccc;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app {
+    height: 45px;
+}
+
+.app ul li {
+    float: left;
+    height: 45px;
+    background-color: #333;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: rgb(246, 53, 21);
+}
+/*搜索*/
+.search-wrap{
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+}
+.search-btn{
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: pink;
+    width: 40px;
+    height: 44px;
+}
+.search-login{
+    position:absolute;
+    top: 0;
+    right: 0;
+    background-color: purple;
+    width: 40px;
+    height: 44px;
+}
+.search{
+    height: 30px;
+    background-color: #fff;
+    margin: 0 50px;
+    border-radius: 15px;
+    margin-top: 7px;
+}

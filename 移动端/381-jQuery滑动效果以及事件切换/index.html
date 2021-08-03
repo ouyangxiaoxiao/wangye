@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>3. jQuery 效果</h1>
+<h3>3.3 事件切换</h3>
+<p>hove{[over,]out}</p>
+<ul>
+    <li>(1)over:鼠标移动到元素上要触发的函数（相当于mouseenter）</li>
+    <li>(2)out:鼠标移动出元素要触发的函数（相当于mouseleave）</li>
+</ul>
+<button>上滑动</button>
+<button>下滑动</button>
+<button>滑动切换</button>
+<div></div>
+<script>
+    $(function () {
+        $('button').eq(0).click(function () {
+            //上滑动
+            $('div').slideUp(500);
+        });
+        $('button').eq(1).click(function () {
+            //下滑动
+            $('div').slideDown(500);
+        });
+        $('button').eq(2).click(function () {
+            //滑动切换
+            $('div').slideToggle(400);
+        });
+    })
+</script>
+</body>
+</html>

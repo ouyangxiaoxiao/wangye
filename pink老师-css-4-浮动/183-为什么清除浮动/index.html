@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<h1>思考题：</h1>
+我们前面浮动元素有一个标准流的父元素。他们有一个共同的特点都是有高度的。
+理想中的状态，让子盒子撑开父亲，有多少孩子，我父盒子就有多高。
+但是我们不给父盒子会有问题吗？
+
+<h1>3.1为什么需要清除浮动</h1>
+由于父级盒子很多情况下，不方便给高度，但是盒子浮动又不占有位置，最后父级盒子高度为0时，就会影响下面的标准流盒子。
+
+由于浮动元素不在占有元文档流的位置，所以它会对后面的元素排版产生影响
+</body>
+</html>
+

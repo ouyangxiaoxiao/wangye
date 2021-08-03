@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+<body>
+<h1>2. jQuery 对象的基本使用</h1>
+<h3>2.5 jQuery 对象和DOM对象</h3>
+<ul>
+    <li>1.用原生js获取的对象就是DOM对象</li>
+
+</ul>
+<div></div>
+<script>
+    //1. DOM对象：用原生js获取过来的对象就是DOM对象
+    var myDIV = document.querySelector('div');
+    console.log(myDIV);
+    console.dir(myDIV);
+    //2.jQuery对象：用jQuery方式获取过来的对象就是jQuery对象：本质：通过$把DOM元素进行了包装
+    // $('div');
+    console.log($('div'));
+    //3.jQuery 对象只能使用jQuery 方法：DOM 对象则使用原生的 javaScript 属性和方法
+    // myDIV.style.display = 'none';
+    $('div').hide()
+
+</script>
+</body>
+</html>

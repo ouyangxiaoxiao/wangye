@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            width: 700px;
+        }
+
+        .box {
+            width: 700px;
+            height: 500px;
+            /*line-height: 500px;*/
+            overflow: hidden;
+        }
+
+        .box .box-left {
+            width: 48%;
+            height: 100%;
+            /*background-color: pink;*/
+            display: inline-block;
+            border-right: 1px black solid;
+
+        }
+
+        .box .box-right {
+            height: 100%;
+            width: 48%;
+            display: inline-block;
+            /*border: 1px black solid;*/
+            margin-top: 100px;
+            float: right;
+
+        }
+
+        li {
+            height: 35px;
+            list-style: none;
+        }
+
+        li img {
+            height: 20px;
+            padding-right: 10px;
+            float: left;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box-left"></div>
+    <div class="box-right">
+        <ul>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够说出为什么需要浮动</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够说出浮动的排列特性</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够说出3种最常见的布局</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够说出为什么清除浮动</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够写出至少2中清除浮动的方法</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够利用Photoshop实现基本切图</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够利用photoshop插件实现切图</li>
+            <li><img src="https://p0.ssl.qhimgs1.com/sdr/400__/t0172d6280069680240.jpg" alt="">能够完成学成在线的页面布局</li>
+        </ul>
+    </div>
+</div>
+<div>
+    <ul>
+        <li>浮动</li>
+        <li>常见网页布局</li>
+        <li>清除浮动</li>
+        <li>ps切片</li>
+        <li>学成在线案例</li>
+    </ul>
+</div>
+</body>
+</html>

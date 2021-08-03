@@ -1,0 +1,24 @@
+/*版心*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.style_red{
+    color: #c81623;
+}
+/*快捷导航模块-烧塔卡他*/
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+
+}
+.shortcut li{
+    float: left;
+}

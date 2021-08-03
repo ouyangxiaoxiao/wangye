@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+        p{
+            white-space:pre-line;
+        }
+    </style>
+</head>
+<body>
+<p>
+定位
+综合案例
+网页布局总结
+元素的显示与隐藏
+类似网站广告，当我们点击关闭就不见了，但是我们重新刷新页面，会重新出现！
+本质：让一个元素在页面中隐藏或者显示出来
+
+    1.display显示隐藏-迪斯坡垒
+    2.visibility-显示隐藏-为此伯雷替
+    3.overflow-哦喔佛老-溢出显示隐藏
+4.1 display 属性
+    display属性用于设置一个元素应如何显示。
+    display:none;隐藏对象
+    display:block;除了转换为快就元素之外，同时还有显示元素的意思。
+    display:隐藏元素后，不再有原来的位置。
+    后面应用极其广泛，搭配js可以做很多特效。
+4.2 visibility 可见性
+visibility 属性用于指定一个元素应可见还是隐藏
+    visibility:visible;元素可视
+    visibility:hidden;元素隐藏
+    visibility隐藏元素后继续占有原来的位置。
+    如果隐藏元素想要原来位置，就用visibility:hidden
+    如果隐藏元素不想要原来位置，就用display:none(用处多多，重点)
+4.3 overflow 溢出
+    overflow 属性指定了如果内容溢出一个元素的框(超出指定高度及宽度)时，会发生什么。
+
+    visible不剪切内容也不添加滚动条
+    hidden 不显示超对象尺寸的内容，超出的部分隐藏扔掉
+    scroll 不管超出内容否，总是显示滚动条
+    auto 查出自动显示滚动条，不超出不显示滚动条
+    一般情况下，我们不想让溢出部分内容显示出来，因为溢出的部分会影响布局。
+    但是如果有定位的盒子，请慎用overflow:hidden 因为他会隐藏多余的部分。
+
+1.display 显示隐藏元素但是不保留原来的位置
+2.visibility 显示隐藏元素，但是保留原来位置
+3.overflow 溢出显示隐藏元素 但是只是对于溢出的部分处理
+
+
+    案例：土豆网鼠标经过显示遮罩
+    1.练习元素的显示与隐藏
+    2.练习元素的定位
+    核心原理:原先半透明的黑色遮罩看不见，鼠标经过大盒子，就显示出来。
+    遮罩的盒子不占有位置的，就需要用绝对定位和display 配合使用。
+</p>
+</body>
+</html>

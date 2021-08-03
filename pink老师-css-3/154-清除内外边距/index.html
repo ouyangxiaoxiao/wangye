@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+       *{
+           margin: 0;/*清除外边距*/
+           padding: 0;/*清除内边距*/
+       }
+        span{
+            background-color: PINK;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.盒子模型</h1>
+<h2>1.9 清除内外边距</h2>
+<p>*{
+           margin: 0;/*清除外边距*/
+           padding: 0;/*清除内边距*/
+       }
+</p>
+<h2>注意：行内元素为了照顾兼容性，尽量只设置左右内外边距，不要设置上下内外边距，但是转为块级和行内块级元素就可以了</h2>
+
+123、
+<ul>
+    <li>abc</li>
+</ul>
+<span>行内元素尽量设置左右内外边距</span>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px black solid;
+            /*background-color: pink;*/
+            background: url("dog.jpg") no-repeat;
+
+            /*1.只写一个宽度 会等比例缩放*/
+            /* background-size:500px;*/
+            /*2.面积的单位科技跟% 相对于父盒子来说的*/
+            /*background-size:50%;*/
+            /*3.cover 等比例拉伸要完全覆盖div 可能有部分显示不完整*/
+            /*-webkit-background-size: cover;*/
+            /*background-size: cover;*/
+            /*4.contain 高度和宽度等比例拉伸，当宽度或高度铺满div盒子 就不在进行拉伸了， 可能有空白区域*/
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>移动端WEB rem</h1>
+<p>
+    能够使用rem单位
+能够使用媒体查询的基本语法
+能够使用less的基本语法
+能够使用less中的嵌套
+能够使用less中的运算
+能够使用2种rem适配方案
+能够独立完成苏宁移动端首页
+
+
+rem基础
+媒体查询
+less基础
+rem适配方案
+苏宁首页案例制作
+</p>
+
+<h2>方案？</h2>
+<p>
+    1.页面布局文字能否随着屏幕大小而变化？
+    2.流式布局和flex布局主要针对宽度布局，那高度如何设置？
+    3.怎么让屏幕发生变化的时候元素高度和宽度等比例缩放？
+
+
+</p>
+<h2>1. rem基础</h2>
+<h3>
+    rem单位
+</h3>
+<p>
+    rem(rootem)是一个相对单位，类似em，em是父元素字体大小。
+    不同的是rem的基准是相对于html元素的字体大小。
+    比如，根元素(html),设置font-size=12px；非根元素设置width:2em;则换成px表示就是24px
+</p>
+<h3>媒体查询</h3>
+<p>
+    2.1什么是媒体查询
+    媒体查询（media Query）是css3新语法
+    使用@media查询，可以针对不同的设备类型定义不同的样式
+    @media可以针对不同的屏幕尺寸设置不同的样式
+    当你重置浏览器大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面
+    目前针对很多苹果手机、android手机、平板灯设备都用的到媒体查询
+</p>
+<h2>2.2 语法规范</h2>
+<p>
+    @media mediatype and|not|only(media feature){
+    css-code;
+
+    用@media开头 注意@符号
+    mediatype 媒体类型
+    关键字 and not only
+    media feature 媒体特征 必须有小括号包含
+</p>
+<h3>1. mediatype 查询类型</h3>
+<p>
+    将不同的终端设备划分成不同的类型，称为媒体类型
+</p>
+   <table>
+       <thead>
+       <tr>
+           <th>值</th>
+           <th>解释说明</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr>
+           <td>all</td>
+           <td>用于所有设备</td>
+       </tr>
+       <tr>
+           <td>print</td>
+           <td>哦农工与打印机和打印预览</td>
+       </tr>
+       <tr>
+           <td>scree</td>
+           <td>用于电脑屏幕、平板电脑、只能手机等</td>
+       </tr>
+       </tbody>
+   </table>
+<h3>3. 媒体特性</h3>
+<p>
+    每种媒体类型都具有各自不同的特性，根据不同媒体类型的媒体特性设置不同的展示风格，我们暂且了解三个，注意他们要加小括号含
+
+</p>
+<table>
+    <thead>
+    <tr>
+        <th>值</th>
+        <th>解释说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>width</td>
+        <td>定义输出设备中页面可见区域的宽度</td>
+    </tr>
+    <tr>
+        <td>min-width</td>
+        <td>定义输出设备中页面最小可见区域宽度</td>
+    </tr>
+    <tr>
+        <td>max-width</td>
+        <td>蒂尼输出设备中最大可见区域宽度</td>
+    </tr>
+    </tbody>
+</table>
+<h3>2.媒体查询</h3>
+<h4>案例:根据页面宽度改变背景颜色</h4>
+<h4>案例：实现思路</h4>
+<p>
+    ①按照从大到小的或者从小到大的思路
+    ②注意我们有最大值max-width和最小min-width都是包含等于的
+    ③当屏幕小于540像素，背景色变为蓝色(X<539)
+    ④当屏幕大于等于540像素并且小于等于960像素的时候背景颜色为绿色(540=<x<969)
+    ⑤当屏幕大于等于970像素的时候，背景颜色为红色(x >970)
+</p>
+<h3>2. 媒体查询</h3>
+<h4>2.3 媒体查询+rem实现元素动态化大小变化</h4>
+
+rem单位是跟着html来走的，有了rem页面元素可以设置不同大小尺寸
+媒体查询可以根据不同设备宽度来修改样式
+媒体查询+ren 就可以实现不同设备宽度，实现页面元素大小的动态变化
+<h3>2.4引入资源(理解)</h3>
+当我们样式比较繁多的时候我们可以根据不同的媒体使用不同stylesheets(样式表)。
+原理，就是直接在link中判断设备的尺寸，然后引用不同的css文件。
+<h2>1.2 语法规范</h2>
+<p>
+    <link rel="stylesheet"  href="style320.css" media="screen and (min-width:320px)">
+</p>
+<h2>3.Less 基础</h2>
+<h3>3.1 维护css的弊端</h3>
+<p>
+    css是一门非程序语言，没有变量、函数、SCOPE(作用域)等概念。
+    css需要书写大量看似没有逻辑的代码，css冗余度是比较高的。
+    不方便维护及扩展，不利于复用。
+    css没有很好的计算能力
+    非前端开发工程师来讲，旺旺会因为缺少css编写经验而很难写出组织良好易于维护的css代码项目。
+
+</p>
+<h3>3.2 less介绍</h3>
+<p>
+    less(Leaner Style Sheets 的缩写)是一门css扩展语言，也成为了css预处理器。
+    作为css一种形式的扩展，他并没有减少css的功能，而是在现有css的语法上，为css加入程序语言的特性。
+    它在css语言基础上，引入变量，Mixin(混入)，运算以及函数等数学功能，大大简化了css编写，并且降低了css维护成本，就像他的名称所说的那样，Less可以让我们更少的代码做更多的事情。
+    less中文网址:http://lesscss.cn
+    常见的css预处理器：Sass、Less、Stylus
+    一句话：less是一门预处理语言，它拓展了css的动态特性。
+</p>
+<h3>less使用</h3>
+<p>
+    我们首先创建一个less文件，在这个less文件里面书写less语句。
+    less变量
+    less编译
+    less嵌套
+    less运算
+</p>
+<h3>3.4 less变量</h3>
+<p>
+    变量是指没有固定的值，可以改变的。因为我们的css中的一些颜色和数值等经常使用。
+    @变量名:值
+</p>
+<h4>1.变量名命名规范</h4>
+必须有@为前缀
+不能包含特殊字符
+不能以数字开头
+大小写敏感
+</body>
+</html>

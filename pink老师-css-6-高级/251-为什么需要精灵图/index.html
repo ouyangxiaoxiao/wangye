@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    能够使用我们的精灵图
+    能够使用字体图标
+    能够写出css三角
+    能够写出常见的css用户界面样式
+    vertical-align属性应用
+    溢出文字省略号显示
+    能够说出常见的布局技巧
+--精灵图技术目的：
+    为了有效的减少接收和发送请求的次数，提高页面的加载速度
+
+1.2精灵图(sprites)的使用
+    使用精灵图核心主：
+    1.精灵图技术主要针对于背景图片使用。就是把多个小背景图片整合到一张大图中。
+    2.这个大图也被称为sprites精灵图 或者雪碧图
+    3.移动背景图片位置，此时可以使用background-position。
+    4.移动的距离就是这个目标图片的x和y 坐标
+    5.因为一般情况下都是往左往右移动，所以数值都是负值。
+    6.使用精灵图的时候需要精准测量，每一个小背景图片的大小和位置。
+使用精灵图核心总结：
+    1.精灵图主要针对于小的背景图片使用。
+    2.主要借助于背景位置来实现--background-position。
+    3.一般情况下精灵图都是负值。（千万注意网页中的坐标：x轴右边走是正值，左边走是负值，y同理。）
+
+
+
+
+
+</p>
+</body>
+</html>

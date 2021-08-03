@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    div{
+        width: 150px;
+        height: 80px;
+        background-color: pink;
+        margin: 100px auto;
+        /*1.white-space: normal;!*正常，如果文字显示不开，自动换行*!*/
+        white-space: nowrap;/*这个单词的意思是如果文字显示不开也必须强制一行内显示*/
+        /*2.溢出部分隐藏*/
+        overflow: hidden;
+        /*3.文字溢出的时候用省略号代替*/
+        text-overflow: ellipsis;
+    }
+    </style>
+</head>
+<body>
+<div>啥也不说了，此处代表一万字</div>
+</body>
+</html>

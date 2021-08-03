@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .yuanxing{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*border-radius:100px ;*/
+            border-radius:50% ; /*就是宽度高度的一半*/
+            display: inline-block;
+            line-height: 200px;
+            text-align: center;
+        }
+        .juxing{
+            margin-top: 100px;
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /*border-radius:100px ;*/
+            border-radius:50px ; /*就是宽度高度的一半*/
+            display: inline-block;
+            line-height: 100px;
+            text-align: center;
+        }
+        .radius{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*border-radius: 40px  ;*/
+            /*border-radius: 40px 5px  ;!*对角线*!*/
+            border-top-left-radius:  30px ;/*三种或者四种不同角 需要单独设置*/
+            display: inline-block;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="yuanxing">1.圆形的做法</div>
+
+<div class="juxing">2.圆角矩形的做法</div>
+
+<div class="radius">3.可以设置不同的圆角</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px black solid;
+            padding: 15px;
+            /*box-sizing: content-box;!*这就是默认的*!*/
+            /*box-sizing: border-box;!**!*/
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px black solid;
+            padding: 15px;
+            /*box-sizing: content-box;!*这就是默认的*!*/
+            box-sizing: border-box;/*这个可以让外边距和内边距都计算在内，但是不能超过元素高度宽度*/
+        }
+    </style>
+</head>
+<body>
+<div>小猪乔治</div>
+<p>小猪佩奇</p>
+</body>
+</html>

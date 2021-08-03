@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        tr, th, td {
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.定位</h1>
+<h2>1.5绝对定位absolute(重要)</h2>
+绝对定位是元素在移动位置的时候，相对于他祖先元素来说的(拼爹型)
+语法:
+选择器{position:absolute;}
+绝对定位的特点:(务必记住)
+1.如果没有祖先元素或者祖先元素没有定位，则以浏览器为准定位(Document文档)。
+2.如果祖先元素有定位(相对，绝对，固定定位)，则是以最近一级的有定位祖先元素为参考点移动位置。
+3.绝对定位不在占有原先位置。（脱标）
+
+<h2>1.6绝对定位的由来</h2>
+弄清楚呢这个口诀，就明白了绝对定位和相对定位的使用场景。
+You know nothing， 油优那赛-定位的游戏
+这个子绝父相太重要了，是我们学习定位的口诀，是定位中最常用的一种方式 这句话的意思是 子级绝对定位的话，父级要用相对定位。
+① 子级绝对定位，不会占有位置，可以放到父级盒子的任何一个位置，不会影响其它兄弟盒子。
+②父盒子需要加定位限制子盒子在父盒子内显示。
+③父盒子布局时，需要有定位，因此父级只能是相对定位。
+
+这就是子绝父相的由来，所以相对定位经常用来作为绝对定位的父级。
+总结:因为父级需要占用位置，因此是相对定位，子盒子不需要占用为这事，则是绝对定位。
+当然，子绝父相不是永远不变的，如果父元素不需要占有位置，子绝父绝也会遇到。
+</body>
+</html>

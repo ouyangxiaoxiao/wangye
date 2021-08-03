@@ -1,0 +1,81 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px #c81523 solid;
+}
+
+.logo {
+    padding-top: 18px;
+}
+
+/*主体*/
+.registrerarea {
+    height: 512px;
+    border: 1px #ccc solid;
+    margin-top: 20px;
+}
+
+.registrerarea h3 {
+    height: 42px;
+    border-bottom: 1px #ccc solid;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.loging {
+    float: right;
+    font-size: 14px;
+}
+
+.loging a {
+    color: #c81623;
+}
+
+.reg_from {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.reg_from ul li{
+    margin-bottom: 20px;
+}
+.reg_from ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.reg_from ul li input {
+    width: 242px;
+    height: 37px;
+    border: 1px #ccc solid;
+}
+
+.reg_from ul li .error {
+    color: #df3033;
+}
+
+.error_icon,
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat;
+    margin-top: -2px;
+}
+
+.success {
+    color: green;
+}
+
+.success_icon {
+    background: url("../images/success.png") no-repeat;
+
+}

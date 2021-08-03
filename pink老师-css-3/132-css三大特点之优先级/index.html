@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        div {
+            color: pink!important;
+        }
+
+        .test {
+            color: red;
+        }
+
+        table {
+        border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>1.3优先级</h1>
+<dl>
+    <dt>相同一个元素指定多个选择器会有优先级的产生</dt>
+    <dd>选择器相同，则执行层叠性</dd>
+    <dd>选择器不同，则根据选择器权重执行</dd>
+</dl>
+
+<table>
+    <thead>
+    <tr>
+        <th>选择器</th>
+        <th>选择器权重</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>继承或*</td>
+        <td>0,0,0,0</td>
+    </tr>
+    <tr>
+        <td>元素选择器</td>
+        <td>0,0,0,1</td>
+    </tr>
+    <tr>
+        <td>类选择器，伪类选择器</td>
+        <td>0,0,1,0</td>
+    </tr>
+    <tr>
+        <td>ID选择器</td>
+        <td>0,1,0,0</td>
+    </tr>
+    <tr>
+        <td>行内样式 style=“”</td>
+        <td>1,0,0,0</td>
+    </tr>
+    <tr>
+        <td> !important 重要的</td>
+        <td> ∞无穷大</td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="test" style="color: yellow"> 您笑起来真好看</div>
+</body>
+</html>

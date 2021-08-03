@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px black solid;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<h2>2.4 元素显示模式总结</h2>
+<table>
+    <thead>
+    <tr>
+        <th>元素模式</th>
+        <th>元素排列</th>
+        <th>设置样式</th>
+        <th>默认宽度</th>
+        <th>包含</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>块级元素</td>
+        <td>一行只能放一个块级元素</td>
+        <td>可以设置宽度高度</td>
+        <td>容器的100%</td>
+        <td>容器可以包含任何标签</td>
+    </tr>
+    <tr>
+        <td>行内元素</td>
+        <td>一行可以放多个行内元素</td>
+        <td>不可以设置宽度和高度</td>
+        <td>它本身的内容的宽度</td>
+        <td>容纳文本或其他行内元素</td>
+    </tr>
+    <tr>
+        <td>行内块元素</td>
+        <td>一行放多个行内块元素</td>
+        <td>可以谁知宽度和高度</td>
+        <td>他本身内容的宽度</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

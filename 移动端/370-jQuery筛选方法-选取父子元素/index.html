@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--编码格式-->
+    <meta charset="UTF-8">
+    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <!--设置外链跳转域-->
+    <meta name="referrer" content="no-referrer"/>
+    <title>Title</title>
+    <script src="jQuery.min.js"></script>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px black solid;
+            padding: 5px 20px;
+        }
+    </style>
+
+</head>
+<h1> 1. jQuery 选择器</h1>
+<h3>1.5  jQuery 删选方法（重点）</h3>
+
+<table>
+    <thead>
+    <tr>
+        <th>语法</th>
+        <th>用法</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>parent()</td>
+        <td>$("li").parent();</td>
+        <td>查找父级严肃</td>
+    </tr>
+    <tr>
+         <td>children()</td>
+        <td>$("ul").children("li")</td>
+        <td>相当于$("ul>li"),最近一级（亲儿子）</td>
+    </tr>
+    <tr>
+        <td>find(selector)</td>
+        <td>$("ul").find("li")</td>
+        <td>相当于$("ul li"),后代选择器</td>
+    </tr>
+    <tr>
+        <td>siblings(selector)</td>
+        <td>$(".first").siblings("li")</td>
+        <td>查找兄弟节点，不包含自己本身</td>
+    </tr>
+    <tr>
+        <td>nexAll([expr])</td>
+        <td>$(".first").nexAll()</td>
+        <td>查找当前元素之后所有的同辈元素</td>
+    </tr>
+    <tr>
+        <td>prevAll([expr])</td>
+        <td>$(".first").prevAll()</td>
+        <td>查找当前元素之前的索引同辈元素</td>
+    </tr>
+    <tr>
+        <td>hasClass(class)</td>
+        <td>$('div').hasClass('protected')</td>
+        <td>检查当前元素是否包含有某个特定的类，如果有则返回true</td>
+    </tr>
+    <tr>
+        <td>eq(index)</td>
+        <td>$("li").eq(2)</td>
+        <td>相当于$("li:eq(2)"),index从0开开始</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<body>
+<div class="yeye">
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</div>
+
+
+<div class="nav">
+    <p>我是屁</p>
+    <div>
+        <p>我是p</p>
+    </div>
+</div>
+<script>
+    $(function () {
+        //1. 父 parent 返回的是最近一级的父元素，亲爸爸
+        console.log($(".son").parent());
+        //2.孩子
+        //只选亲儿子 子代选择器
+        // console.log($('.nav').children('p').css('color','red'));
+        //可以选里面的所有孩子 也包括儿子和孙子 类似后代选择器
+        console.log($(".nav").find("p").css("color", "red"))
+        //3.兄
+
+    })
+
+</script>
+
+</body>
+</html>

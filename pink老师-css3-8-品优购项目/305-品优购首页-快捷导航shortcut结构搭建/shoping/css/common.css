@@ -1,0 +1,16 @@
+/*版心*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.f1{
+    float: left;
+}
+.f2{
+    float: right;
+}
+/*快捷导航模块-烧塔卡他*/
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+}

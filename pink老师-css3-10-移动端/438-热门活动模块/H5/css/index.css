@@ -1,0 +1,260 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    height: 2000px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/*顶部搜索*/
+.search-index {
+    display: flex;
+    /*固定跟父级没关系 以屏幕为主 margin无效*/
+    position: fixed; /*固定定位 要有宽度*/
+    /*固定定位居中对齐*/
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    height: 44px;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    background-color: #f6f6f6;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+
+}
+
+.search {
+    position: relative;
+    height: 26px;
+    line-height: 24px;
+    border: 1px #ccc solid;
+    flex: 1;
+    font-size: 12px;
+    color: #666;
+    margin: 7px 10px;
+    padding-left: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url("../images/sprite.png") no-repeat -59px -279px;
+    -webkit-background-size: 104px;
+    background-size: 104px;
+    /*margin: 5px;*/
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+
+}
+
+.user:before {
+    display: block;
+    content: ' ';
+    width: 23px;
+    height: 23px;
+    background: url("../images/sprite.png") no-repeat -59px -194px;
+    -webkit-background-size: 104px;
+    background-size: 104px;
+    margin: 4px auto -2px;
+
+}
+
+/*focus*/
+.focus img {
+    width: 100%;
+    padding-top: 44px;
+}
+
+/*局部导航栏*/
+.local-nav {
+    display: flex;
+    height: 64px;
+    /*background-color: pink;*/
+    margin: 3px 4px;
+    border-radius: 8px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column; /*把主轴设为y轴*/
+    align-items: center; /*侧轴居中对齐-单行的*/
+    font-size: 12px;
+}
+
+.local-nav li [class^="local-nav-icon"] {
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+    margin-top: 8px;
+    background: url("../images/localnav_bg.png") no-repeat 0 0;
+    background-size: 32px;
+}
+
+.local-nav li .local-nav-icon-icon2 {
+    background-position: 0 -32px;
+}
+
+.local-nav li .local-nav-icon-icon3 {
+    background-position: 0 -64px;
+}
+
+.local-nav li .local-nav-icon-icon4 {
+    background-position: 0 -96px;
+}
+
+.local-nav li .local-nav-icon-icon5 {
+    background-position: 0 -128px;
+}
+
+/*nav*/
+nav {
+    border-radius: 8px;
+    margin: 0 4px 3px; /*上0 左右4px 下3px*/
+    overflow: hidden; /*切出小圆角*/
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    background-color: pink;
+}
+
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-items {
+    flex: 1; /*孩子*/
+    display: flex; /*父亲*/
+    flex-direction: column; /*主轴设置为列 y轴*/
+}
+
+.nav-items a {
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.nav-items a:nth-child(1) {
+    border-bottom: 1px #fff solid;
+}
+
+.nav-items:nth-child(1) a { /*第一列 里面的a去除底边框*/
+    border: 0;
+    background: url("../images/hotel.png") no-repeat bottom center;
+    background-size: 121px;
+}
+
+.nav-items:nth-child(-n+2) { /*前2个*/
+    border-right: 1px #fff solid;
+}
+
+.nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+}
+
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+}
+
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+}
+
+
+/*侧导航栏*/
+/* subnav-entry */
+
+.subnav-entry {
+    display: flex;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 4px;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.subnav-entry li {
+    /* 里面的子盒子可以写 % 相对于父级来说的 */
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry-icon {
+    width: 28px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 4px;
+    background: url(../images/subnav-bg.png) no-repeat;
+    background-size: 28px auto;
+}
+/*sales-box*/
+.sales-box{
+    border-top: 1px #bbb solid;
+    background-color: #fff;
+    margin: 4px;
+}
+
+.sales-hd{
+    height: 44px;
+    background-color: #ccc;
+}
+.sales-hd h2 {
+    position: relative;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.sales-hd h2::after{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    content: "";
+    width: 79px;
+    height: 15px;
+    background: url("../images/hot.png") no-repeat 0 -20px;
+    -webkit-background-size: 79px;
+    background-size: 79px;
+}

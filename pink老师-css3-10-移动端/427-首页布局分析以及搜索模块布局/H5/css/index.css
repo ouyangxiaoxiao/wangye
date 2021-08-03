@@ -1,0 +1,27 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+/*搜索模块*/
+.search-index {
+    /*固定跟父级没关系 以屏幕为主 margin无效*/
+    position: fixed; /*固定定位 要有宽度*/
+    /*固定定位居中对齐*/
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    height: 44px;
+    width: 100%;
+    max-width: 540px;
+    min-width: 320px;
+    background-color: pink;
+
+}

@@ -1,0 +1,10 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    /*因为flex 给我们划分了10等份*/
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
