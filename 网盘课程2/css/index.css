@@ -12,10 +12,17 @@ body {
     max-width: 640px;
     margin: 0 auto;
 }
+
 /*头部*/
 header {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
     height: 50px;
     background-color: rgb(112, 164, 1);
+    position: fixed;
+    top: 0;
 }
 
 .i_top_return img {
@@ -62,6 +69,7 @@ header {
 }
 
 .main_visual ul li {
+    margin-top: 50px;
     float: left;
 }
 
@@ -162,7 +170,7 @@ footer {
     width: 100%;
     display: flex;
     height: 49px;
-   /*border-bottom: 1px black solid;*/
+    /*border-bottom: 1px black solid;*/
     margin-top: 25px;
     margin-bottom: 20px;
     justify-content: flex-end;
@@ -180,10 +188,12 @@ footer a {
     color: #333333;
     /*width: 25%;*/
 }
-footer a:nth-child(1){
+
+footer a:nth-child(1) {
     text-align: left;
 }
-footer a:nth-child(4){
+
+footer a:nth-child(4) {
     text-align: right;
 }
 
@@ -198,3 +208,61 @@ footer span {
     /*width: 25%;*/
 }
 
+/*底部*/
+/*底部*/
+#di {
+    width: 100%;
+    /*height: 45px;*/
+    bottom: 0;
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    background-color: #fff;
+}
+
+#di ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 35px;
+    position: relative;
+
+
+}
+
+#di li {
+    width: 100%;
+    /*height: 55px;*/
+    padding-bottom: 0;
+}
+
+#di li:nth-child(1) {
+    width: 25%;
+    float: left;
+    left: 0;
+
+}
+
+#di li:nth-child(2) {
+    width: 25%;
+    float: left;
+    left: 0;
+    text-align: center;
+
+}
+
+#di li:nth-child(3) {
+    width: 25%;
+    float: left;
+    left: 0;
+    text-align: center;
+
+}
+
+#di li:nth-child(4) {
+    width: 25%;
+    float: left;
+    left: 0;
+    text-align: right;
+
+}
