@@ -1,48 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--编码格式-->
     <meta charset="UTF-8">
-    <!--禁止用户缩放 最大缩放倍数 最小缩放倍数-->
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0 user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <!--设置外链跳转域-->
-    <meta name="referrer" content="no-referrer"/>
-    <title>Title</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
+
 <body>
-<h3>2.移动端常见特效</h3>
-<h4>案例分析</h4>
-<ol>
-    <li>把数据存起来，用到本地存储</li>
-    <li>关闭页面，也可以显示用户名，所以用到localStorage</li>
-    <li>打开页面，先判断是否有这个用户名，如果有，就在表单显示用户名，并且勾选复选框</li>
-    <li>当复选框发生改变的时候change事件</li>
-    <li>如果勾选，就存储，否则就移除</li>
-</ol>
-
-
-<input type="text" id="username"> <input type="checkbox" name="" id="remember">记住用户名
-
-<script>
-    var username = document.querySelector('#username');
-    var remember = document.querySelector('#remember');
-    if(localStorage.getItem('username')){
-        username.value = localStorage.getItem('username');
-        remember.checked = true;/*复选框勾选*/
-    }
-    /*当复选框发生改变，瑞曼巴，add伊文特雷森呢（衬之）方可神*/
-    remember.addEventListener('change',function () {
-       if(this.chcked){
-           localStorage.setItem('username',username.value)
-       }else {
-           localStorage.removeItem('username');
-       }
-    })
-    // username.addEventListener('click', function () {
-    //
-    // })
-</script>
+    <input type="text" id="username"> <input type="checkbox" name="" id="remember"> 记住用户名
+    <script>
+        var username = document.querySelector('#username');
+        var remember = document.querySelector('#remember');
+        if (localStorage.getItem('username')) {
+            username.value = localStorage.getItem('username');
+            remember.checked = true;
+        }
+        remember.addEventListener('change', function() {
+            if (this.checked) {
+                localStorage.setItem('username', username.value)
+            } else {
+                localStorage.removeItem('username');
+            }
+        })
+    </script>
 </body>
-</html>
